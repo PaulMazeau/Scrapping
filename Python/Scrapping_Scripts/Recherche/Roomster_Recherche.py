@@ -19,14 +19,14 @@ params = {
     "search_params.include_total_count": True,
     "search_params.is_cache_loaded": True,
     "search_params.searchLocation": "Paris, France",
-    "search_params.page_size": 11,
+    "search_params.page_size": 10,
     "search_params.withoutPush": False,
     "search_params.geoIsNotFound": False
 }
 
 all_data = []
 page = 1
-total_scraped = 0
+total_scraped = 0  # Compteur pour les annonces scrapées
 
 while True:
     params["search_params.page_number"] = page
@@ -42,20 +42,18 @@ while True:
         break
 
     all_data.append(data)
-    total_scraped += len(data)
+    total_scraped += len(data)  # Ajouter le nombre d'annonces de cette page au compteur global
 
-    # Vérifiez si nous sommes à la dernière page ici.
-    # Si `roomster.com` ne fournit pas le total des pages ou des résultats, vous pouvez avoir besoin d'une autre condition
-    # Par exemple, si moins de "search_params.page_size" résultats sont retournés, vous pouvez supposer que vous êtes à la dernière page
+    # Vérifiez si nous sommes à la dernière page ici
     if len(data) < params["search_params.page_size"]:
         break
 
     page += 1
 
-#Obtenir la date actuelle sous forme de chaîne
+# Obtenir la date actuelle sous forme de chaîne
 current_date_string = datetime.now().strftime('%Y-%m-%d')
 
-#Ajouter cette date à la fin du nom du fichier lors de la sauvegarde
+# Ajouter cette date à la fin du nom du fichier lors de la sauvegarde
 output_file_name = f'../../Resultat_Recherche/Roomster_Recherche/Data_Roomster_Recherche_{current_date_string}.json'
 
 with open(output_file_name, 'w', encoding='utf-8') as file:
