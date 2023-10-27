@@ -1,5 +1,6 @@
 import requests
 import json
+from datetime import datetime
 
 base_url = "https://coliving.com/locations/search-listings"
 params = {
@@ -41,9 +42,14 @@ while True:
 
     page += 1
 
-# Sauvegarder toutes les données dans un fichier JSON
-with open('outputColiving_Recherche.json', 'w', encoding='utf-8') as file:
+#Obtenir la date actuelle sous forme de chaîne
+current_date_string = datetime.now().strftime('%Y-%m-%d')
+
+#Ajouter cette date à la fin du nom du fichier lors de la sauvegarde
+output_file_name = f'../../Resultat_Recherche/Coliving_Recherche/Data_Coliving_Recherche_{current_date_string}.json'
+
+with open(output_file_name, 'w', encoding='utf-8') as file:
     json.dump(all_data, file, ensure_ascii=False, indent=4)
 
 print(f"Total d'annonces scrapées : {total_scraped}")
-print("Données sauvegardées dans outputColiving_Recherche.json!")
+print(f"Données sauvegardées dans {output_file_name}!")
