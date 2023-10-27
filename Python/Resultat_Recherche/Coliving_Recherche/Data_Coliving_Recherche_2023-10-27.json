@@ -264,83 +264,6 @@
         "price_from_new": 665.525
     },
     {
-        "id": 17859,
-        "slug": "xvq6okpb",
-        "unique_id": "xvq6okpb",
-        "url": "https://coliving.com/spaces/xvq6okpb",
-        "name": "Bright Amazing Apt. w/ Terrace close to Bus station",
-        "price_month": 982.441,
-        "published_at": "2023-10-24",
-        "lat": 48.89845043152841,
-        "lng": 2.376559047345151,
-        "rating": 0,
-        "rating_count": 0,
-        "favorited_by_user": false,
-        "location": {
-            "name": "Paris",
-            "slug": "paris"
-        },
-        "photos": [
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/17859/photos/IQL3xLFPbe.jpg",
-                "order_column": 1
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/17859/photos/O2FGOKGDtD.jpg",
-                "order_column": 2
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/17859/photos/Dh9gUpcwi7.jpg",
-                "order_column": 3
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/17859/photos/OvYvKKGInc.jpg",
-                "order_column": 4
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/17859/photos/55F7N0maRm.jpg",
-                "order_column": 5
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/17859/photos/sdF0b7mNau.jpg",
-                "order_column": 6
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/17859/photos/MNJV6fR9uU.jpg",
-                "order_column": 7
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/17859/photos/UMXbqRhunX.jpg",
-                "order_column": 8
-            }
-        ],
-        "neighborhood": "Rosa Parks",
-        "total_bedrooms": 4,
-        "total_beds": 4,
-        "total_bathrooms": 2,
-        "has_walkthrough_3d": false,
-        "is_premium": 1,
-        "featured_amenities": [
-            "Fast WiFi",
-            "Kitchen"
-        ],
-        "monthly_price_from_room": 982.44,
-        "monthly_price_from_shared": 982.441,
-        "stay_min": 30,
-        "security_deposit": true,
-        "free_cancellation_policy": 0,
-        "room_type_prices": {
-            "private_min_price": 982.44,
-            "shared_min_price": 982.441
-        },
-        "pay_at_property": null,
-        "instant_booking": false,
-        "isConvertCell": false,
-        "available_date": "2023-10-27",
-        "listing_scores": 0,
-        "price_from_new": 979.26
-    },
-    {
         "id": 17857,
         "slug": "yikyz7nd",
         "unique_id": "yikyz7nd",
@@ -413,7 +336,7 @@
         "pay_at_property": null,
         "instant_booking": false,
         "isConvertCell": false,
-        "available_date": "2023-10-27",
+        "available_date": "2023-12-15",
         "listing_scores": 0,
         "price_from_new": 652.86
     },
@@ -12215,83 +12138,6 @@
         "available_date": "2023-12-09",
         "listing_scores": 0,
         "price_from_new": 645.48
-    },
-    {
-        "id": 16535,
-        "slug": "qqhfkqul",
-        "unique_id": "qqhfkqul",
-        "url": "https://coliving.com/spaces/qqhfkqul",
-        "name": "Beautiful Comfortable Apt. w/ Terrace",
-        "price_month": 570.449,
-        "published_at": "2023-03-08",
-        "lat": 43.62436483152841,
-        "lng": 1.4345366973305642,
-        "rating": 0,
-        "rating_count": 0,
-        "favorited_by_user": false,
-        "location": {
-            "name": "Toulouse",
-            "slug": "toulouse"
-        },
-        "photos": [
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16535/photos/thRm1Fqpz2.jpg",
-                "order_column": 1
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16535/photos/mJQi1tkGJ9.jpg",
-                "order_column": 2
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16535/photos/3n4utFg4uG.jpg",
-                "order_column": 3
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16535/photos/UjjdUuIunh.jpg",
-                "order_column": 4
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16535/photos/DrxiauDkTE.jpg",
-                "order_column": 5
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16535/photos/pdQI5RaQpO.jpg",
-                "order_column": 6
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16535/photos/UzrL0hDFS8.jpg",
-                "order_column": 7
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16535/photos/sFTdybywJ2.jpg",
-                "order_column": 8
-            }
-        ],
-        "neighborhood": "Minimes",
-        "total_bedrooms": 3,
-        "total_beds": 3,
-        "total_bathrooms": 1,
-        "has_walkthrough_3d": false,
-        "is_premium": 0,
-        "featured_amenities": [
-            "Fast WiFi",
-            "Kitchen"
-        ],
-        "monthly_price_from_room": 570.45,
-        "monthly_price_from_shared": 570.449,
-        "stay_min": 30,
-        "security_deposit": true,
-        "free_cancellation_policy": 0,
-        "room_type_prices": {
-            "private_min_price": 570.45,
-            "shared_min_price": 570.449
-        },
-        "pay_at_property": null,
-        "instant_booking": false,
-        "isConvertCell": false,
-        "available_date": "2023-10-27",
-        "listing_scores": 0,
-        "price_from_new": 568.62
     },
     {
         "id": 17716,
