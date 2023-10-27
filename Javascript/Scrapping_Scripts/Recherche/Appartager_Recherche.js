@@ -20,13 +20,13 @@ function getCurrentDateString() {
 
         const data = await page.evaluate(() => {
             const cards = [...document.querySelectorAll('.result-card')];
-
-            return cards.map(card => {
+        
+            return cards.map((card, index) => {
                 const imageUrl = card.querySelector('.result-card-media__image')?.src || "";
                 const rent = card.querySelector('.result-card-media__rent span:first-child')?.textContent.trim() || "";
                 const rentFrequency = card.querySelector('.result-card-media__rent-frequency')?.textContent.trim() || "";
                 const photoCount = card.querySelector('.result-card-media__count span[aria-label]')?.textContent.trim() || "";
-                const location = card.querySelector('.result-card-info__main-heading span#adLocation0')?.textContent.trim() || "";
+                const location = card.querySelector(`.result-card-info__main-heading span#adLocation${index}`)?.textContent.trim() || "";
                 const membership = card.querySelector('.result-card-info__membership')?.textContent.trim() || "";
                 const highlight = card.querySelector('.result-card-info__summary-item--highlight')?.textContent.trim() || "";
                 const availability = card.querySelector('.result-card-info__summary-item--availability')?.textContent.trim() || "";
@@ -34,7 +34,7 @@ function getCurrentDateString() {
                 const title = card.querySelector('.result-card-info__heading')?.textContent.trim() || "";
                 const description = card.querySelector('.result-card-info__description')?.textContent.trim() || "";
                 const link = card.querySelector('.result-card__link')?.href || "";
-    
+        
                 return {
                     imageUrl,
                     rent,
@@ -49,8 +49,8 @@ function getCurrentDateString() {
                     description,
                     link
                 };
-        });
-        })
+            });
+        });        
 
         console.log(`Scrapped ${data.length} ads from ${url}`); // <-- Ici
 
