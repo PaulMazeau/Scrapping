@@ -38,10 +38,10 @@ function getCurrentDateString() {
         };
     });
 
-    // Create the filename with the current date
-    const fileName = `outputAppartager_${getCurrentDateString()}.json`;
+    // Choisir le nom et l'emplacement de la sortie du fichier json
+    const fileName = `../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${getCurrentDateString()}.json`;
 
-    // Write to JSON file
+    // Créer le fichier json
     fs.writeFileSync(fileName, JSON.stringify(data, null, 2), 'utf-8');
     console.log(`Data saved to ${fileName}!`);
 

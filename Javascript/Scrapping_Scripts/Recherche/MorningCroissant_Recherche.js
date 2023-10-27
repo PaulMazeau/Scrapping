@@ -1,6 +1,11 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
+function getCurrentDateString() {
+    const date = new Date();
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
 (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -52,9 +57,12 @@ const fs = require('fs');
         currentPage += 1; 
     }
 
-    fs.writeFileSync('outputMorningCroissant_Recherche.json', JSON.stringify(allData, null, 2), 'utf-8');
+    // Choisir le nom et l'emplacement de la sortie du fichier json
+    const fileName = `../../Resultat_Recherche/MorningCroissant_Recherche/Data_MorningCroissant_Recherche_${getCurrentDateString()}.json`;
 
-    console.log("Data saved to outputMorningCroissant_Recherche.json!");
+    // Créer le fichier json
+    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
+    console.log(`Data saved to ${fileName}!`);
 
     await browser.close();
 })();

@@ -1,6 +1,11 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
+function getCurrentDateString() {
+    const date = new Date();
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
 (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -25,7 +30,7 @@ const fs = require('fs');
 
     
 
-    const data = await page.evaluate(() => {
+    const allData = await page.evaluate(() => {
         const cards = [...document.querySelectorAll('.card.col')];
 
         return cards.map(card => {
@@ -51,11 +56,14 @@ const fs = require('fs');
         });
     });
 
-    console.log(`Scrapped ${data.length} ads from ${url}`);
+    console.log(`Scrapped ${allData.length} ads from ${url}`);
 
-    fs.writeFileSync('outputImmoJeuneRecherche.json', JSON.stringify(data, null, 2), 'utf-8');
+    // Choisir le nom et l'emplacement de la sortie du fichier json
+    const fileName = `../../Resultat_Recherche/ImmoJeune_Recherche/Data_ImmoJeune_Recherche_${getCurrentDateString()}.json`;
 
-    console.log("Data saved to outputImmoJeuneRecherche.json!");
+    // Créer le fichier json
+    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
+    console.log(`Data saved to ${fileName}!`);
 
     await browser.close();
 })();
