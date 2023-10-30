@@ -1,7 +1,14 @@
 import requests
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 
+def get_old_data(filename):
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
+    
 BASE_URL = 'https://www.bienici.com/realEstateAds.json'
 PARAMS = {
     'filters': json.dumps({
@@ -43,14 +50,35 @@ while True:
         print(f"Erreur {response.status_code}: {response.text}")
         break
 
+
 #Obtenir la date actuelle sous forme de chaîne
 current_date_string = datetime.now().strftime('%Y-%m-%d')
 
-#Ajouter cette date à la fin du nom du fichier lors de la sauvegarde
-output_file_name = f'../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_{current_date_string}.json'
+# Chargement des anciennes données
+previous_day_string = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+old_file_name = f'../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_{previous_day_string}.json'
+old_data = get_old_data(old_file_name)
 
+# Identifier les nouvelles annonces et les annonces supprimées
+new_announcements = [item for item in all_data if item['id'] not in [old_item['id'] for old_item in old_data]]
+removed_announcements = [item for item in old_data if item['id'] not in [new_item['id'] for new_item in all_data]]
+
+# Créez la liste des annonces à jour en excluant les annonces supprimées
+updated_data = [item for item in all_data if item['id'] not in [removed_item['id'] for removed_item in removed_announcements]]
+
+# Sauvegardez toutes les annonces scrappées du jour
+output_file_name = f'../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_{current_date_string}.json'
 with open(output_file_name, 'w', encoding='utf-8') as file:
     json.dump(all_data, file, ensure_ascii=False, indent=4)
 
-print(f"Données sauvegardées dans {output_file_name}!")
+# Sauvegardez les annonces mises à jour
+updated_file_name = f'../../Resultat_Recherche/Up_To_Date_Recherche/Updated_Data_Bienici_Recherche_{current_date_string}.json'
+with open(updated_file_name, 'w', encoding='utf-8') as file:
+    json.dump(updated_data, file, ensure_ascii=False, indent=4)
+
 print(f"Total d'annonces scrappées: {len(all_data)}")
+print(f"Données du jour sauvegardées dans {output_file_name}!")
+print(f"{len(new_announcements)} nouvelle(s) annonce(s).")
+print(f"{len(removed_announcements)} annonce(s) supprimée(s).")
+print(f"{len(updated_data) - len(new_announcements)} annonce(s) conservée(s).")
+print(f"Données mises à jour sauvegardées dans {updated_file_name}!")
