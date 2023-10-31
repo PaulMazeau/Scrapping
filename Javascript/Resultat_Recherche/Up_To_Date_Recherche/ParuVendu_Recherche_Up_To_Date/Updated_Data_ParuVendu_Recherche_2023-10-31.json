@@ -25,19 +25,19 @@
   },
   {
     "imageUrl": "",
-    "price": "1 490 € CC*",
-    "title": "Appartement Paris 14\n\n\n2\npièces\n\n\n1\nchambre\n\n\n40m2",
-    "details": "2\npièces | 1\nchambre | 40m2",
-    "description": "Paris xive appartement 2 pièces. rue daguerre, dans la rue piétonne. au 2ème étage, un appartement de 40m² entièrement refait à neuf. location vide. grande pièce à vivre avec cuisine aménagée et équipée, une chambre avec une salle d'eau et un wc...",
-    "link": "https://www.paruvendu.fr/immobilier/location/appartement/paris-xive-appartement-2-pieces/1271036625A1KILHAP000"
-  },
-  {
-    "imageUrl": "",
     "price": "3 900 € CC*",
     "title": "Appartement Paris 3\n\n\n4\npièces\n\n\n3\nchambres\n\n\n117m2",
     "details": "4\npièces | 3\nchambres | 117m2",
     "description": "Appartement familial dans le marais. rue charlot dans un superbe hôtel particulier datant de la fin du 17ème siècle, dans un bâtiment sur cour pavée, aux parties communes vastes et majestueuses, 3ème étage (sans ascenseur)  par un très bel...",
     "link": "https://www.paruvendu.fr/immobilier/location/appartement/appartement-familial-dans-le-marais/1270929699A1KILHAP000"
+  },
+  {
+    "imageUrl": "",
+    "price": "1 490 € CC*",
+    "title": "Appartement Paris 14\n\n\n2\npièces\n\n\n1\nchambre\n\n\n40m2",
+    "details": "2\npièces | 1\nchambre | 40m2",
+    "description": "Paris xive appartement 2 pièces. rue daguerre, dans la rue piétonne. au 2ème étage, un appartement de 40m² entièrement refait à neuf. location vide. grande pièce à vivre avec cuisine aménagée et équipée, une chambre avec une salle d'eau et un wc...",
+    "link": "https://www.paruvendu.fr/immobilier/location/appartement/paris-xive-appartement-2-pieces/1271036625A1KILHAP000"
   },
   {
     "imageUrl": "",
@@ -73,19 +73,11 @@
   },
   {
     "imageUrl": "",
-    "price": "1 300 € CC*",
-    "title": "Appartement Paris 19\n\n\n2\npièces\n\n\n1\nchambre\n\n\n35m2\n\n\nExclusivité",
-    "details": "2\npièces | 1\nchambre | 35m2 | Exclusivité",
-    "description": "Paris. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     /! bail étudiant ou mobilité de 9 mois octobre...",
-    "link": "https://www.paruvendu.fr/immobilier/location/appartement/paris/1270183612A1KILHAP000"
-  },
-  {
-    "imageUrl": "",
-    "price": "1 930 € CC*",
-    "title": "Appartement Paris 11\n\n\n2\npièces\n\n\n1\nchambre\n\n\n54m2\n\n\nAscenseur\n\n\nExclusivité",
-    "details": "2\npièces | 1\nchambre | 54m2 | Ascenseur | Exclusivité",
-    "description": "Rue des boulets. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     a quelques pas du métro rue des...",
-    "link": "https://www.paruvendu.fr/immobilier/location/appartement/rue-des-boulets/1269950602A1KILHAP000"
+    "price": "1 550 € CC*",
+    "title": "Appartement Paris 6\n\n\n1\npièce\n\n\n31m2\n\n\nExclusivité",
+    "details": "1\npièce | 31m2 | Exclusivité",
+    "description": "Mabillon. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     situé à paris, au coeur du quartier de saint...",
+    "link": "https://www.paruvendu.fr/immobilier/location/appartement/mabillon/1270999422A1KILHAP000"
   },
   {
     "imageUrl": "",
@@ -97,14 +89,6 @@
   },
   {
     "imageUrl": "",
-    "price": "2 500 € CC*",
-    "title": "Appartement Paris 15\n\n\n4\npièces\n\n\n2\nchambres\n\n\n80m2\n\n\nExclusivité",
-    "details": "4\npièces | 2\nchambres | 80m2 | Exclusivité",
-    "description": "Balard. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     situé à paris 15, ce t4 non meublé se trouve...",
-    "link": "https://www.paruvendu.fr/immobilier/location/appartement/balard/1270927694A1KILHAP000"
-  },
-  {
-    "imageUrl": "",
     "price": "1 710 € CC*",
     "title": "Appartement Paris 15\n\n\n2\npièces\n\n\n1\nchambre\n\n\n50m2\n\n\nExclusivité",
     "details": "2\npièces | 1\nchambre | 50m2 | Exclusivité",
@@ -113,11 +97,27 @@
   },
   {
     "imageUrl": "",
-    "price": "1 550 € CC*",
-    "title": "Appartement Paris 6\n\n\n1\npièce\n\n\n31m2\n\n\nExclusivité",
-    "details": "1\npièce | 31m2 | Exclusivité",
-    "description": "Mabillon. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     situé à paris, au coeur du quartier de saint...",
-    "link": "https://www.paruvendu.fr/immobilier/location/appartement/mabillon/1270999422A1KILHAP000"
+    "price": "2 500 € CC*",
+    "title": "Appartement Paris 15\n\n\n4\npièces\n\n\n2\nchambres\n\n\n80m2\n\n\nExclusivité",
+    "details": "4\npièces | 2\nchambres | 80m2 | Exclusivité",
+    "description": "Balard. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     situé à paris 15, ce t4 non meublé se trouve...",
+    "link": "https://www.paruvendu.fr/immobilier/location/appartement/balard/1270927694A1KILHAP000"
+  },
+  {
+    "imageUrl": "",
+    "price": "1 930 € CC*",
+    "title": "Appartement Paris 11\n\n\n2\npièces\n\n\n1\nchambre\n\n\n54m2\n\n\nAscenseur\n\n\nExclusivité",
+    "details": "2\npièces | 1\nchambre | 54m2 | Ascenseur | Exclusivité",
+    "description": "Rue des boulets. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     a quelques pas du métro rue des...",
+    "link": "https://www.paruvendu.fr/immobilier/location/appartement/rue-des-boulets/1269950602A1KILHAP000"
+  },
+  {
+    "imageUrl": "",
+    "price": "1 300 € CC*",
+    "title": "Appartement Paris 19\n\n\n2\npièces\n\n\n1\nchambre\n\n\n35m2\n\n\nExclusivité",
+    "details": "2\npièces | 1\nchambre | 35m2 | Exclusivité",
+    "description": "Paris. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     /! bail étudiant ou mobilité de 9 mois octobre...",
+    "link": "https://www.paruvendu.fr/immobilier/location/appartement/paris/1270183612A1KILHAP000"
   },
   {
     "imageUrl": "",
@@ -241,14 +241,6 @@
   },
   {
     "imageUrl": "",
-    "price": "1 604 € CC*",
-    "title": "Appartement Paris 12\n\n\n3\npièces\n\n\n2\nchambres\n\n\n52m2\n\n\nExclusivité",
-    "details": "3\npièces | 2\nchambres | 52m2 | Exclusivité",
-    "description": "Dugommier. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     a quelques minutes du métro dugommier,...",
-    "link": "https://www.paruvendu.fr/immobilier/location/appartement/dugommier/1270844939A1KILHAP000"
-  },
-  {
-    "imageUrl": "",
     "price": "2 100 € CC*",
     "title": "Appartement Paris 19\n\n\n3\npièces\n\n\n2\nchambres\n\n\n68m2\n\n\nExclusivité",
     "details": "3\npièces | 2\nchambres | 68m2 | Exclusivité",
@@ -262,6 +254,14 @@
     "details": "2\npièces | 1\nchambre | 38m2 | Exclusivité",
     "description": "Goncourt. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     situé à paris, ce t2 meublé se trouve rue...",
     "link": "https://www.paruvendu.fr/immobilier/location/appartement/goncourt/1270892287A1KILHAP000"
+  },
+  {
+    "imageUrl": "",
+    "price": "1 604 € CC*",
+    "title": "Appartement Paris 12\n\n\n3\npièces\n\n\n2\nchambres\n\n\n52m2\n\n\nExclusivité",
+    "details": "3\npièces | 2\nchambres | 52m2 | Exclusivité",
+    "description": "Dugommier. logement flatlooker ! visitez et déposez votre dossier uniquement sur notre plateforme  ! nous ne vous enverrons jamais le bail ou le rib par mail - tout est sécurisé sur notre plateforme.     a quelques minutes du métro dugommier,...",
+    "link": "https://www.paruvendu.fr/immobilier/location/appartement/dugommier/1270844939A1KILHAP000"
   },
   {
     "imageUrl": "",

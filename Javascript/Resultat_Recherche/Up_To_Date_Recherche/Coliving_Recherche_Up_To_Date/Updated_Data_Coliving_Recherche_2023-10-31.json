@@ -8219,7 +8219,7 @@
         "pay_at_property": null,
         "instant_booking": false,
         "isConvertCell": false,
-        "available_date": "2023-10-31",
+        "available_date": "2023-11-30",
         "listing_scores": 0,
         "price_from_new": 763.381
     },
@@ -12072,7 +12072,7 @@
         "pay_at_property": null,
         "instant_booking": false,
         "isConvertCell": false,
-        "available_date": "2023-10-31",
+        "available_date": "2023-11-15",
         "listing_scores": 0,
         "price_from_new": 763.381
     },
@@ -13164,6 +13164,95 @@
         "available_date": "2024-04-17",
         "listing_scores": 0,
         "price_from_new": 978.613
+    },
+    {
+        "id": 16505,
+        "slug": "axezct3l",
+        "unique_id": "axezct3l",
+        "url": "https://coliving.com/spaces/axezct3l",
+        "name": "Chic Bright Apt. w/ Terrace",
+        "price_month": 870.342,
+        "published_at": "2023-03-14",
+        "lat": 48.898988431528416,
+        "lng": 2.294174748815934,
+        "rating": 0,
+        "rating_count": 0,
+        "favorited_by_user": false,
+        "location": {
+            "name": "Levallois-Perret",
+            "slug": "levallois-perret"
+        },
+        "photos": [
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/7gOBwIZcKu.jpg",
+                "order_column": 1
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/wcPVeS79uw.jpg",
+                "order_column": 2
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/8b5L20aCum.jpg",
+                "order_column": 3
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/3X9JVQmAEc.jpg",
+                "order_column": 4
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/3T6IUlIPu7.jpg",
+                "order_column": 5
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/7YEUuwOjJ7.jpg",
+                "order_column": 6
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/lK0We475HG.jpg",
+                "order_column": 7
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/NK6wFvFfD8.jpg",
+                "order_column": 8
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/6m86KarEOJ.jpg",
+                "order_column": 9
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/1rvvnw1rlF.jpg",
+                "order_column": 10
+            },
+            {
+                "url": "https://co-living.imgix.net/uploads/listings/16505/photos/ED9M3Yg2zL.jpg",
+                "order_column": 11
+            }
+        ],
+        "neighborhood": "SoOuest",
+        "total_bedrooms": 4,
+        "total_beds": 4,
+        "total_bathrooms": 1,
+        "has_walkthrough_3d": false,
+        "is_premium": 0,
+        "featured_amenities": [
+            "Fast WiFi",
+            "Kitchen"
+        ],
+        "monthly_price_from_room": 870.34,
+        "monthly_price_from_shared": 870.342,
+        "stay_min": 30,
+        "security_deposit": true,
+        "free_cancellation_policy": 0,
+        "room_type_prices": {
+            "private_min_price": 870.34,
+            "shared_min_price": 870.342
+        },
+        "pay_at_property": null,
+        "instant_booking": false,
+        "isConvertCell": false,
+        "available_date": "2023-10-31",
+        "listing_scores": 0,
+        "price_from_new": 869.406
     },
     {
         "id": 16511,
@@ -14582,67 +14671,6 @@
         "price_from_new": 922.419
     },
     {
-        "id": 16523,
-        "slug": "p1bmyzlc",
-        "unique_id": "p1bmyzlc",
-        "url": "https://coliving.com/spaces/p1bmyzlc",
-        "name": "First-class Stunning Apt.",
-        "price_month": 1029.551,
-        "published_at": "2023-03-09",
-        "lat": 48.860664031528415,
-        "lng": 2.38007364415402,
-        "rating": 0,
-        "rating_count": 0,
-        "favorited_by_user": false,
-        "location": {
-            "name": "Paris",
-            "slug": "paris"
-        },
-        "photos": [
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16523/photos/dvupIWT6yF.jpg",
-                "order_column": 1
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16523/photos/loHkarBcBe.jpg",
-                "order_column": 2
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16523/photos/L5nr57tumt.jpg",
-                "order_column": 3
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16523/photos/PjR0eNWAhg.jpg",
-                "order_column": 4
-            }
-        ],
-        "neighborhood": "Voltaire",
-        "total_bedrooms": 4,
-        "total_beds": 4,
-        "total_bathrooms": 1,
-        "has_walkthrough_3d": false,
-        "is_premium": 0,
-        "featured_amenities": [
-            "Fast WiFi",
-            "Kitchen"
-        ],
-        "monthly_price_from_room": 1029.55,
-        "monthly_price_from_shared": 1029.551,
-        "stay_min": 30,
-        "security_deposit": true,
-        "free_cancellation_policy": 0,
-        "room_type_prices": {
-            "private_min_price": 1029.55,
-            "shared_min_price": 1029.551
-        },
-        "pay_at_property": null,
-        "instant_booking": false,
-        "isConvertCell": false,
-        "available_date": "2023-12-10",
-        "listing_scores": 0,
-        "price_from_new": 1028.444
-    },
-    {
         "id": 16536,
         "slug": "eprekr6c",
         "unique_id": "eprekr6c",
@@ -14900,91 +14928,6 @@
         "available_date": "2023-10-31",
         "listing_scores": 0,
         "price_from_new": 910.835
-    },
-    {
-        "id": 16529,
-        "slug": "zb5lrilq",
-        "unique_id": "zb5lrilq",
-        "url": "https://coliving.com/spaces/zb5lrilq",
-        "name": "Lovely Elegant Apt.",
-        "price_month": 668.678,
-        "published_at": "2023-03-09",
-        "lat": 44.840744631528416,
-        "lng": -0.5783249108787091,
-        "rating": 0,
-        "rating_count": 0,
-        "favorited_by_user": false,
-        "location": {
-            "name": "Bordeaux",
-            "slug": "bordeaux"
-        },
-        "photos": [
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/oLCsECsiPt.jpg",
-                "order_column": 1
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/N6gwb4zSvO.jpg",
-                "order_column": 2
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/fiQVKaDtGt.jpg",
-                "order_column": 3
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/jBp4WIf5ze.jpg",
-                "order_column": 4
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/Z2q0QI1SpK.jpg",
-                "order_column": 5
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/DwtMTopZDz.jpg",
-                "order_column": 6
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/kJKlg2iPRF.jpg",
-                "order_column": 7
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/bnYL6UVJts.jpg",
-                "order_column": 8
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/fg6Ot3wNHf.jpg",
-                "order_column": 9
-            },
-            {
-                "url": "https://co-living.imgix.net/uploads/listings/16529/photos/hwizO3vVq5.jpg",
-                "order_column": 10
-            }
-        ],
-        "neighborhood": "Centre ville",
-        "total_bedrooms": 7,
-        "total_beds": 7,
-        "total_bathrooms": 2,
-        "has_walkthrough_3d": false,
-        "is_premium": 0,
-        "featured_amenities": [
-            "Fast WiFi",
-            "Kitchen"
-        ],
-        "monthly_price_from_room": 668.68,
-        "monthly_price_from_shared": 668.678,
-        "stay_min": 30,
-        "security_deposit": true,
-        "free_cancellation_policy": 0,
-        "room_type_prices": {
-            "private_min_price": 668.68,
-            "shared_min_price": 668.678
-        },
-        "pay_at_property": null,
-        "instant_booking": false,
-        "isConvertCell": false,
-        "available_date": "2023-12-24",
-        "listing_scores": 0,
-        "price_from_new": 667.959
     },
     {
         "id": 16532,

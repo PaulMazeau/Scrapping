@@ -175,17 +175,17 @@ axios.post(url, data, { headers: headers })
 
         const previousDayString = moment().subtract(1, 'days').format('YYYY-MM-DD'); // Obtenez la date du jour précédent avec moment
 
-        const oldFileName = path.join('../../Resultat_Recherche/Koliving_Recherche', `Data_Koliving_Recherche_${previousDayString}.json`);
+        const oldFileName = path.join(__dirname, '../../Resultat_Recherche/Koliving_Recherche', `Data_Koliving_Recherche_${previousDayString}.json`);        
         const oldData = await getOldData(oldFileName);
 
         const newAnnouncements = resultsToday.filter(item => !oldData.some(oldItem => oldItem._id === item._id));
         const removedAnnouncements = oldData.filter(item => !resultsToday.some(newItem => newItem._id === item._id));
         const updatedData = resultsToday.filter(item => !removedAnnouncements.some(removedItem => removedItem._id === item._id));
 
-        const outputFileName = path.join('../../Resultat_Recherche/Koliving_Recherche', `Data_Koliving_Recherche_${currentDateString}.json`);
-        await fs.writeFile(outputFileName, JSON.stringify({ data: { res: { results: resultsToday } } }, null, 4), 'utf-8');
+        const outputFileName = path.join(__dirname, '../../Resultat_Recherche/Koliving_Recherche', `Data_Koliving_Recherche_${currentDateString}.json`);
+        const updatedFileName = path.join(__dirname, '../../Resultat_Recherche/Up_To_Date_Recherche/Koliving_Recherche_Up_To_Date', `Updated_Data_Koliving_Recherche_${currentDateString}.json`);
 
-        const updatedFileName = path.join('../../Resultat_Recherche/Up_To_Date_Recherche/Koliving_Recherche_Up_To_Date', `Updated_Data_Koliving_Recherche_${currentDateString}.json`);
+        await fs.writeFile(outputFileName, JSON.stringify({ data: { res: { results: resultsToday } } }, null, 4), 'utf-8');
         await fs.writeFile(updatedFileName, JSON.stringify({ data: { res: { results: updatedData } } }, null, 4), 'utf-8');
 
         console.log(`Total d'annonces scrapées : ${resultsToday.length}`);
@@ -195,6 +195,3 @@ axios.post(url, data, { headers: headers })
         console.log(`${updatedData.length - newAnnouncements.length} annonce(s) conservée(s).`);
         console.log(`Données mises à jour sauvegardées dans ${updatedFileName}!`);
     })
-    .catch(error => {
-        console.log(`Erreur ${error.response.status}: ${error.response.statusText}`);
-    });
