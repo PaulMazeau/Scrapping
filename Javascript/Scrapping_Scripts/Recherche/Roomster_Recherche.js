@@ -56,7 +56,6 @@ const scrapeData = async () => {
         }
     }
 
-
     const currentDateString = moment().format('YYYY-MM-DD');
     const previousDateString = moment().subtract(1, 'days').format('YYYY-MM-DD');
     
