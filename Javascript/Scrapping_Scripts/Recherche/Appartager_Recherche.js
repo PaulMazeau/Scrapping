@@ -1,9 +1,18 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const path = require('path');
 
 function getCurrentDateString() {
     const date = new Date();
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
+function getOldData(filename) {
+    try {
+        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
+    } catch (e) {
+        return [];
+    }
 }
 
 (async () => {
@@ -12,11 +21,11 @@ function getCurrentDateString() {
 
     let offset = 0;
     let allData = [];
-    const search_id = '3000001176473'; // Ce sera probablement constant, mais assurez-vous qu'il en soit ainsi
+    const search_id = '3000001176473';
 
-    while (true) { // Cette boucle continue jusqu'à ce qu'il n'y ait plus d'annonces à scraper
+    while (true) {
         const url = `https://www.appartager.com/location/?offset=${offset}&search_id=${search_id}&sort_by=by_day&mode=list`;
-        await page.goto(url, { waitUntil: 'networkidle2' }); // attend jusqu'à ce que les requêtes réseau soient inactives
+        await page.goto(url, { waitUntil: 'networkidle2' });
 
         const data = await page.evaluate(() => {
             const cards = [...document.querySelectorAll('.result-card')];
@@ -50,25 +59,42 @@ function getCurrentDateString() {
                     link
                 };
             });
-        });        
+        }); 
 
-        console.log(`Scrapped ${data.length} ads from ${url}`); // <-- Ici
+        console.log(`Scrapped ${data.length} ads from ${url}`);
 
-        if (data.length < 10) { // Supposons que si la page n'a pas d'annonces, la liste renvoyée sera vide
-            break; // Si la liste est vide, sortez de la boucle
+        if (data.length < 10) {
+            break;
         }
 
-        allData.push(...data); // Ajoute les données de cette page à la liste principale
-        offset += 10; // Augmente l'offset pour la page suivante
+        allData.push(...data);
+        offset += 10;
     }
 
-    // Choisir le nom et l'emplacement de la sortie du fichier json
-    const fileName = `../../Resultat_Recherche/Appartager_Recherche/Data_Appartager_Recherche_${getCurrentDateString()}.json`;
+    const currentDate = getCurrentDateString();
+    const previousDate = new Date();
+    previousDate.setDate(previousDate.getDate() - 1);
+    const previousDateString = `${previousDate.getFullYear()}-${String(previousDate.getMonth() + 1).padStart(2, '0')}-${String(previousDate.getDate()).padStart(2, '0')}`;
 
-    // Créer le fichier json
-    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
-    console.log(`Data saved to ${fileName}!`);
+    const oldFileName = path.join(__dirname, `../../Resultat_Recherche/Appartager_Recherche/Data_Appartager_Recherche_${previousDateString}.json`);
+    const oldData = getOldData(oldFileName);
+
+    const newAnnouncements = allData.filter(item => !oldData.some(oldItem => oldItem.link === item.link));
+    const removedAnnouncements = oldData.filter(item => !allData.some(newItem => newItem.link === item.link));
+    const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.link === item.link));
+
+    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Appartager_Recherche/Data_Appartager_Recherche_${currentDate}.json`);
+    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Updated_Data_Appartager_Recherche_${currentDate}.json`);
+
+    fs.writeFileSync(outputFileName, JSON.stringify(allData, null, 2), 'utf-8');
+    fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 2), 'utf-8');
+
+    console.log(`Total scraped ads: ${allData.length}`);
+    console.log(`Today's data saved to ${outputFileName}`);
+    console.log(`${newAnnouncements.length} new ad(s).`);
+    console.log(`${removedAnnouncements.length} removed ad(s).`);
+    console.log(`${updatedData.length - newAnnouncements.length} retained ad(s).`);
+    console.log(`Updated data saved to ${updatedFileName}`);
 
     await browser.close();
 })();
-
