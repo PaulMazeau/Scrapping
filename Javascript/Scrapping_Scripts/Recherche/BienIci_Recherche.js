@@ -74,7 +74,7 @@ fetchData().then(() => {
     const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.id === item.id));
 
     const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_${currentDateString}.json`);
-    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Updated_Data_Bienici_Recherche_${currentDateString}.json`);
+    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/BienIci_Recherche_Up_To_Date/Updated_Data_Bienici_Recherche_${currentDateString}.json`);
 
     fs.writeFileSync(outputFileName, JSON.stringify(allData, null, 4), 'utf-8');
     fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 4), 'utf-8');

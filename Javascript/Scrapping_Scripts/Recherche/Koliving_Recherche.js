@@ -185,7 +185,7 @@ axios.post(url, data, { headers: headers })
         const outputFileName = path.join('../../Resultat_Recherche/Koliving_Recherche', `Data_Koliving_Recherche_${currentDateString}.json`);
         await fs.writeFile(outputFileName, JSON.stringify({ data: { res: { results: resultsToday } } }, null, 4), 'utf-8');
 
-        const updatedFileName = path.join('../../Resultat_Recherche/Up_To_Date_Recherche', `Updated_Data_Koliving_Recherche_${currentDateString}.json`);
+        const updatedFileName = path.join('../../Resultat_Recherche/Up_To_Date_Recherche/Koliving_Recherche_Up_To_Date', `Updated_Data_Koliving_Recherche_${currentDateString}.json`);
         await fs.writeFile(updatedFileName, JSON.stringify({ data: { res: { results: updatedData } } }, null, 4), 'utf-8');
 
         console.log(`Total d'annonces scrapées : ${resultsToday.length}`);

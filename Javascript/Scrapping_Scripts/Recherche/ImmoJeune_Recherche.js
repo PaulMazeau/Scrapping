@@ -78,7 +78,7 @@ function getOldData(filename) {
     const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.link === item.link));
 
     const outputFileName = path.join(__dirname, `../../Resultat_Recherche/ImmoJeune_Recherche/Data_ImmoJeune_Recherche_${currentDate}.json`);
-    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Updated_Data_ImmoJeune_Recherche_${currentDate}.json`);
+    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/ImmoJeune_Recherche_Up_To_Date/Updated_Data_ImmoJeune_Recherche_${currentDate}.json`);
 
     fs.writeFileSync(outputFileName, JSON.stringify(allData, null, 2), 'utf-8');
     fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 2), 'utf-8');

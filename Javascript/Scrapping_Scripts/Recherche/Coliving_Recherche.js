@@ -67,7 +67,7 @@ const scrapeData = async () => {
     const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.id === item.id));
 
     await fs.writeFile(outputFileName, JSON.stringify(allData, null, 4), 'utf-8');
-    const updatedFileName = path.join(__dirname, '../../Resultat_Recherche/Up_To_Date_Recherche', `Updated_Data_Coliving_Recherche_${currentDateString}.json`); // Utilisez path.join pour générer le chemin du fichier
+    const updatedFileName = path.join(__dirname, '../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date', `Updated_Data_Coliving_Recherche_${currentDateString}.json`); // Utilisez path.join pour générer le chemin du fichier
     await fs.writeFile(updatedFileName, JSON.stringify(updatedData, null, 4), 'utf-8');
 
 
