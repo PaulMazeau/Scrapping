@@ -18,7 +18,7 @@ function getCurrentDateString() {
 
     let properties = [];
     let previousHeight;
-    let maxScrolls = 10;  // nombre maximum de défilements
+    let maxScrolls = 10;
     let scrolls = 0;
 
     while (properties.length < totalAds && scrolls < maxScrolls) {
