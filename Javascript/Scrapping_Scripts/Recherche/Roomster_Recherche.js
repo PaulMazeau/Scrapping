@@ -26,8 +26,17 @@ const params = {
     "search_params.page_size": 11
 };
 
+const getOldData = async filename => {
+    try {
+        return JSON.parse(await fs.readFile(filename, 'utf-8'));
+    } catch (e) {
+        return [];
+    }
+};
+
 const scrapeData = async () => {
     let allData = [];
+    
     const response = await axios.get(baseURL, { params: params });
 
     if (response.status !== 200) {
@@ -47,11 +56,29 @@ const scrapeData = async () => {
         }
     }
 
+
     const currentDateString = moment().format('YYYY-MM-DD');
-    const outputFileName = path.join(__dirname, '../../Resultat_Recherche/Roomster_Recherche', `Data_Roomster_Recherche_${currentDateString}.json`);
+    const previousDateString = moment().subtract(1, 'days').format('YYYY-MM-DD');
     
+    const oldFileName = path.join(__dirname, '../../Resultat_Recherche/Roomster_Recherche', `Data_Roomster_Recherche_${previousDateString}.json`);
+    const oldData = await getOldData(oldFileName);
+
+    const newAnnouncements = allData.filter(item => !oldData.some(oldItem => oldItem.id === item.id));
+    const removedAnnouncements = oldData.filter(item => !allData.some(newItem => newItem.id === item.id));
+    const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.id === item.id));
+
+    const outputFileName = path.join(__dirname, '../../Resultat_Recherche/Roomster_Recherche', `Data_Roomster_Recherche_${currentDateString}.json`);
+    const updatedFileName = path.join(__dirname, '../../Resultat_Recherche/Up_To_Date_Recherche', `Updated_Data_Roomster_Recherche_${currentDateString}.json`);
+
     await fs.writeFile(outputFileName, JSON.stringify(allData, null, 4), 'utf-8');
-    console.log(`Données du jour sauvegardées dans ${outputFileName}!`);
+    await fs.writeFile(updatedFileName, JSON.stringify(updatedData, null, 4), 'utf-8');
+
+    console.log(`Total scraped listings: ${allData.length}`);
+    console.log(`Today's data saved to ${outputFileName}`);
+    console.log(`${newAnnouncements.length} new listing(s).`);
+    console.log(`${removedAnnouncements.length} removed listing(s).`);
+    console.log(`${updatedData.length - newAnnouncements.length} retained listing(s).`);
+    console.log(`Updated data saved to ${updatedFileName}`);
 };
 
 scrapeData().catch(error => console.error(error));
