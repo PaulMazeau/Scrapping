@@ -190,7 +190,7 @@ axios.post(url, data, { headers: headers })
 
         console.log(`Total d'annonces scrapées : ${resultsToday.length}`);
         console.log(`Données du jour sauvegardées dans ${outputFileName}!`);
-        console.log(`${newAnnouncements.length} nouvelle(s) annonce(s).`);
+        console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
         console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
         console.log(`${updatedData.length - newAnnouncements.length} annonce(s) conservée(s).`);
         console.log(`Données mises à jour sauvegardées dans ${updatedFileName}!`);

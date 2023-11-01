@@ -89,9 +89,8 @@ function getOldData(filename) {
     fs.writeFileSync(outputFileName, JSON.stringify(allData, null, 2), 'utf-8');
     fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 2), 'utf-8');
 
-    console.log(`Total scraped ads: ${allData.length}`);
-    console.log(`Today's data saved to ${outputFileName}`);
-    console.log(`${newAnnouncements.length} new ad(s).`);
+    console.log(`Il y a ${allData.length} sur Appartager`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
     console.log(`${removedAnnouncements.length} removed ad(s).`);
     console.log(`${updatedData.length - newAnnouncements.length} retained ad(s).`);
     console.log(`Updated data saved to ${updatedFileName}`);

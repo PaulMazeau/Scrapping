@@ -19,8 +19,10 @@ async function runScript(script) {
         console.warn(`Erreur avec le script ${script}:`, stderr);
         reject(error);
       } else {
-        console.log(`Script ${script} terminé avec succès.`);
-        resolve(stdout);
+        const totalAnnoncesMatch = stdout.match(/TOTAL_NOUVELLES_ANNONCES:(\d+)/);
+        const totalAnnonces = totalAnnoncesMatch ? parseInt(totalAnnoncesMatch[1], 10) : null;
+        console.log(`Script ${script} terminé avec succès. Total nouvelles annonces: ${totalAnnonces}`);
+        resolve(totalAnnonces);
       }
     });
   });

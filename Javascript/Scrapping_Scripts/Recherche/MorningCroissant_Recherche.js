@@ -86,7 +86,7 @@ function getOldData(filename) {
 
     console.log(`Total scraped items: ${allData.length}`);
     console.log(`Today's data saved to ${outputFileName}`);
-    console.log(`${newAnnouncements.length} new item(s).`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
     console.log(`${removedAnnouncements.length} removed item(s).`);
     console.log(`${updatedData.length - newAnnouncements.length} retained item(s).`);
     console.log(`Updated data saved to ${updatedFileName}`);
