@@ -1,9 +1,18 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const path = require('path');
 
 function getCurrentDateString() {
     const date = new Date();
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
+function getOldData(filename) {
+    try {
+        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
+    } catch (e) {
+        return [];
+    }
 }
 
 (async () => {
@@ -18,11 +27,18 @@ function getCurrentDateString() {
 
     let properties = [];
     let previousHeight;
-    let maxScrolls = 10;
-    let scrolls = 0;
+    let currentHeight;
 
-    while (properties.length < totalAds && scrolls < maxScrolls) {
-        previousHeight = await page.evaluate('document.body.scrollHeight');
+    const scrollContainer = await page.$('.flats-wrapper');
+
+    do {
+        previousHeight = await page.evaluate(element => element.scrollHeight, scrollContainer);
+
+        await page.evaluate(element => {
+            element.scrollTop = element.scrollHeight;
+        }, scrollContainer);
+
+        await page.waitForTimeout(2000);  // Adjust this wait time if needed
 
         properties = await page.$$eval('.card-header', headers => headers.map(header => {
             const images = Array.from(header.querySelectorAll('.carousel-item img')).map(img => img.getAttribute('data-src') || img.getAttribute('src'));
@@ -39,21 +55,36 @@ function getCurrentDateString() {
             };
         }));
 
-        let currentHeight = await page.evaluate('document.body.scrollHeight');
-        if (currentHeight === previousHeight) break;  // Si on atteint le bas de la page, on sort de la boucle
+        currentHeight = await page.evaluate(element => element.scrollHeight, scrollContainer);
 
-        if (properties.length < totalAds) {
-            await page.evaluate(() => window.scrollBy(0, window.innerHeight));
-            await page.waitForTimeout(3000);  // Augmenter le délai à 3 secondes
-            scrolls++;
-        }
-    }
+    } while (properties.length < totalAds && currentHeight !== previousHeight);
 
     console.log(`Scrapped ${properties.length} ads.`);
 
-    const fileName = `../../Resultat_Recherche/Flatlooker_Recherche/Data_Flatlooker_${getCurrentDateString()}.json`;
-    fs.writeFileSync(fileName, JSON.stringify(properties, null, 2), 'utf-8');
+    const currentDate = getCurrentDateString();
+    const previousDate = new Date();
+    previousDate.setDate(previousDate.getDate() - 1);
+    const previousDateString = `${previousDate.getFullYear()}-${String(previousDate.getMonth() + 1).padStart(2, '0')}-${String(previousDate.getDate()).padStart(2, '0')}`;
 
-    console.log(`Data saved to ${fileName}!`);
+    const oldFileName = path.join(__dirname, `../../Resultat_Recherche/Flatlooker_Recherche/Data_Flatlooker_${previousDateString}.json`);
+    const oldData = getOldData(oldFileName);
+
+    const newAnnouncements = properties.filter(item => !oldData.some(oldItem => oldItem.link === item.link));
+    const removedAnnouncements = oldData.filter(item => !properties.some(newItem => newItem.link === item.link));
+    const updatedData = properties.filter(item => !removedAnnouncements.some(removedItem => removedItem.link === item.link));
+
+    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Flatlooker_Recherche/Data_Flatlooker_${currentDate}.json`);
+    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Flatlooker_Recherche_Up_To_Date/Updated_Data_Flatlooker_${currentDate}.json`);
+
+    fs.writeFileSync(outputFileName, JSON.stringify(properties, null, 2), 'utf-8');
+    fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 2), 'utf-8');
+
+    console.log(`Total scraped ads: ${properties.length}`);
+    console.log(`Today's data saved to ${outputFileName}`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Flatlooker.`);
+    console.log(`${removedAnnouncements.length} removed ad(s).`);
+    console.log(`${updatedData.length - newAnnouncements.length} retained ad(s).`);
+    console.log(`Updated data saved to ${updatedFileName}`);
+
     await browser.close();
 })();

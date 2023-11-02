@@ -28,8 +28,8 @@ function getCurrentDateString() {
       const togglePath = favoriteBtn.getAttribute('data-toggle-path');
       const images = Array.from(adNode.querySelectorAll('.property-image')).map(img => img.getAttribute('data-src'));
       const location = adNode.querySelector('.location-label').innerText;
-      const surface = adNode.querySelector('.prop-value').innerText; // Assuming the first '.prop-value' is the surface
-      const rooms = adNode.querySelectorAll('.prop-value')[1].innerText; // Assuming the second '.prop-value' is the rooms
+      const surface = adNode.querySelector('.prop-value').innerText; 
+      const rooms = adNode.querySelectorAll('.prop-value')[1].innerText;      
       results.push({
         id,
         propertyId,
