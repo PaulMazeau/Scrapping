@@ -2,6 +2,7 @@ const { exec } = require('child_process');
 
 const scripts = [
   './Scrapping_Scripts/Recherche/Appartager_Recherche',
+  './Scrapping_Scripts/Recherche/Rentola_Recherche', // J'ai choisis une recherche avec peu d'annonce volontairement
   './Scrapping_Scripts/Recherche/Flatlooker_Recherche',
   './Scrapping_Scripts/Recherche/BienIci_Recherche',
   './Scrapping_Scripts/Recherche/Coliving_Recherche',
