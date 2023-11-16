@@ -43,42 +43,81 @@ async function scrapePage(browser, url) {
             });
         });
         console.log('Feature Row OK...');
-        const chargeDetails = {};
-        const chargeItems = document.querySelectorAll('.charges_table div.d-flex');
         console.log('Recherche Charge Item...');
-        chargeItems.forEach(item => {
-            const itemName = item.querySelector('span').textContent.trim();
-            const isIncluded = item.querySelector('img').classList.contains('filter_green');
-            chargeDetails[itemName] = isIncluded ? 'OK' : 'KO';
+        const chargesDetails = {
+            incluses: [],
+            nonIncluses: []
+        };
+    
+        // Sélectionner tous les éléments pour les charges incluses
+        const inclusesElements = document.querySelectorAll('.charges_table .filter_green');
+        inclusesElements.forEach(element => {
+            const chargeItem = element.closest('.d-flex.flex-column.align-items-center.mb-2');
+            const chargeName = chargeItem.querySelector('span').textContent.trim();
+            chargesDetails.incluses.push(chargeName);
+        });
+    
+        // Sélectionner tous les éléments pour les charges non incluses
+        const nonInclusesElements = document.querySelectorAll('.charges_table .filter_grey_from_white');
+        nonInclusesElements.forEach(element => {
+            const chargeItem = element.closest('.d-flex.flex-column.align-items-center.mb-2');
+            const chargeName = chargeItem.querySelector('span').textContent.trim();
+            chargesDetails.nonIncluses.push(chargeName);
         });
         console.log('Charge Item OK...');
-        const furnitureDetails = {};
-        const furnitureItems = document.querySelectorAll('.equipment_table div.d-flex');
         console.log('Recherche furniture item...');
-        furnitureItems.forEach(item => {
-            const itemName = item.querySelector('span').textContent.trim();
-            const isAvailable = item.querySelector('img').classList.contains('filter_green');
-            furnitureDetails[itemName] = isAvailable ? 'OK' : 'KO';
-        });
+    // Récupération des détails des meubles et équipements
+    const furnitureDetails = {
+        disponibles: [],
+        nonDisponibles: []
+    };
+
+    // Sélectionner tous les éléments pour les meubles et équipements disponibles
+    const disponiblesElements = document.querySelectorAll('.equipment_table .filter_green');
+    disponiblesElements.forEach(element => {
+        const furnitureItem = element.closest('.d-flex.flex-column.align-items-center.mb-2');
+        const furnitureName = furnitureItem.querySelector('span').textContent.trim();
+        furnitureDetails.disponibles.push(furnitureName);
+    });
+
+    // Sélectionner tous les éléments pour les meubles et équipements non disponibles
+    const nonDisponiblesElements = document.querySelectorAll('.equipment_table .filter_grey_from_black');
+    nonDisponiblesElements.forEach(element => {
+        const furnitureItem = element.closest('.d-flex.flex-column.align-items-center.mb-2');
+        const furnitureName = furnitureItem.querySelector('span').textContent.trim();
+        furnitureDetails.nonDisponibles.push(furnitureName);
+    });
         console.log('Furniture Item OK...');
-        const measuresDetails = {};
-        const measureTables = document.querySelectorAll('#measures table');
-        measureTables.forEach(table => {
-            // Obtenir le titre de la catégorie de mesure
-            const categoryTitle = table.querySelector('.features-title span').textContent.trim();
+
+        // Récupération des détails des mesures
+    const measuresDetails = {};
+
+    // Sélectionner toutes les tables de mesures
+    const measureTables = document.querySelectorAll('#measures table');
+    measureTables.forEach(table => {
+        // Récupérer le titre de la catégorie de mesure
+        const categoryElement = table.querySelector('.features-title span');
+        if (categoryElement) {
+            const categoryTitle = categoryElement.textContent.trim();
             measuresDetails[categoryTitle] = {};
 
-            // Parcourir chaque ligne du tableau pour obtenir les détails
-            const rows = table.querySelectorAll('tbody tr');
+            // Parcourir chaque ligne de la table pour obtenir les détails
+            const rows = table.querySelectorAll('tbody tr.responsive-data');
             rows.forEach(row => {
                 const cells = row.querySelectorAll('td');
                 cells.forEach(cell => {
-                    const label = cell.querySelector('div').textContent.trim();
-                    const value = cell.querySelector('.fw-bold').textContent.trim();
-                    measuresDetails[categoryTitle][label] = value;
+                    const labelDiv = cell.querySelector('div');
+                    const valueDiv = cell.querySelector('.fw-bold.text-right');
+                    if (labelDiv && valueDiv) {
+                        const label = labelDiv.textContent.trim();
+                        const value = valueDiv.textContent.trim();
+                        measuresDetails[categoryTitle][label] = value;
+                    }
                 });
             });
-        });
+        }
+    });
+
         
 
         return {
@@ -88,7 +127,7 @@ async function scrapePage(browser, url) {
             equipement,
             description,
             features,
-            chargeDetails,
+            chargesDetails,
             furnitureDetails,
             measuresDetails,
         };
@@ -99,20 +138,27 @@ async function scrapePage(browser, url) {
 }
 
 (async () => {
-    const browser = await puppeteer.launch();
-    const url = 'https://www.flatlooker.com/appartements/location-rue-henri-bergson-92600-asnieres-sur-seine-asnieres-sur-seine-meublee-41'; // Remplacez ceci par l'URL que vous souhaitez scraper
+    const annoncesPath = `../../Resultat_Recherche/Up_To_Date_Recherche/Flatlooker_Recherche_Up_To_Date/Updated_Data_Flatlooker_Recherche_${getCurrentDateString()}.json`;
+    const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
+    const allData = [];
 
-    try {
-        const data = await scrapePage(browser, url);
-        console.log('Annonce faite');
+    const browser = await puppeteer.launch(); 
 
-        // Créer un nom de fichier basé sur la date actuelle
-        const fileName = `../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonce_${getCurrentDateString()}.json`;
-        fs.writeFileSync(fileName, JSON.stringify(data, null, 2), 'utf-8'); // Écrire les données dans un fichier
-        console.log(`Data saved to ${fileName}!`);
-    } catch (error) {
-        console.error(`Failed to scrape the page at ${url} due to: ${error}`);
+    for (let annonce of annonces) {
+        try {
+            const data = await scrapePage(browser, annonce.url);
+            allData.push(data); 
+            console.log('Annonce faite')
+            console.log(allData.length)
+        } catch (error) {
+            console.error(`Failed to scrape the page at ${annonce.url} due to: ${error}`);
+        }
     }
 
-    await browser.close();
+    await browser.close(); 
+
+    // Créer un nom de fichier basé sur la date actuelle
+    const fileName = `../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${getCurrentDateString()}.json`;
+    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8'); // Écrire toutes les données dans un seul fichier
+    console.log(`All data saved to ${fileName}!`);
 })();
