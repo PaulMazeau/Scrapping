@@ -18,10 +18,11 @@ const params = {
     price_max: "",
     room_type: "",
     bathroom: "",
-    location_id: "77",
-    zoom: "4",
-    "center[lat]": "46.227638",
-    "center[lng]": "2.213749"
+    initialize: "0",
+    location_id: "339",
+    zoom: "11",
+    "center[lat]": "48.856614",
+    "center[lng]": "2.3522219"
 };
 let allData = [];
 let page = 1;
