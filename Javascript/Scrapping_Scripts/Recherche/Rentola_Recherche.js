@@ -19,7 +19,7 @@ function getOldData(filename) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
-    await page.goto('https://rentola.fr/location?location=paris&rent=0-500&rooms=0-1&property_types=studio');
+    await page.goto('https://rentola.fr/location?location=paris&rent=0-500&rooms=0-1&property_types=studio', { timeout: 60000 });
     await page.waitForSelector('.property');
 
     let ads = [];
