@@ -46,12 +46,15 @@ function getOldData(filename) {
             const city = description.querySelector('.card-flat-city').textContent;
             const priceAndArea = description.querySelector('.text-primary').textContent;
             const specs = Array.from(description.querySelectorAll('.card-flat-specs div')).map(div => div.textContent.trim());
-
+            const urlElement = header.closest('li').querySelector('a');
+            const url = urlElement ? 'https://www.flatlooker.com' + urlElement.getAttribute('href') : '';
+        
             return {
                 images,
                 city,
                 priceAndArea,
-                specs
+                specs,
+                url 
             };
         }));
 
@@ -73,8 +76,8 @@ function getOldData(filename) {
     const removedAnnouncements = oldData.filter(item => !properties.some(newItem => newItem.link === item.link));
     const updatedData = properties.filter(item => !removedAnnouncements.some(removedItem => removedItem.link === item.link));
 
-    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Flatlooker_Recherche/Data_Flatlooker_${currentDate}.json`);
-    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Flatlooker_Recherche_Up_To_Date/Updated_Data_Flatlooker_${currentDate}.json`);
+    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Flatlooker_Recherche/Data_Flatlooker_Recherche_${currentDate}.json`);
+    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Flatlooker_Recherche_Up_To_Date/Updated_Data_Flatlooker_Recherche_${currentDate}.json`);
 
     fs.writeFileSync(outputFileName, JSON.stringify(properties, null, 2), 'utf-8');
     fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 2), 'utf-8');
