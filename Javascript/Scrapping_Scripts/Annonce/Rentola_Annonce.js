@@ -11,8 +11,7 @@ async function scrapePage(browser, url) {
     await page.goto(url, { waitUntil: 'networkidle0' });
 
     const data = await page.evaluate(() => {
-        const imageElements = Array.from(document.querySelectorAll('.fotorama a'));
-        const imageUrls = imageElements.map(element => element.href);
+        const images = Array.from(document.querySelectorAll('img.fotorama__img')).map(img => img.src);
         const title = document.querySelector('.upper-content h1 span').textContent.trim();
         const adress = document.querySelector('.upper-content p.location').textContent.trim();
         const verified = document.querySelector('.f-row .f-column svg') ? 'Oui' : 'Non';
@@ -27,7 +26,7 @@ async function scrapePage(browser, url) {
             propertyDetails[label] = value;
         });
         return {
-            imageUrls,
+            images,
             title,
             adress,
             verified,
