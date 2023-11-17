@@ -40,6 +40,10 @@ function getOldData(filename) {
             const adNodes = document.querySelectorAll(selector);
             const results = [];
             adNodes.forEach(adNode => {
+                // Ajout du code pour extraire le href
+                const link = adNode.querySelector('a').getAttribute('href');
+                const fullLink = `https://rentola.fr${link}`; // Formation du lien complet
+        
                 const id = adNode.getAttribute('data-controller').split('--')[1];
                 const favoriteBtn = adNode.querySelector('.favorite');
                 const propertyId = favoriteBtn.getAttribute('data-property-id');
@@ -48,11 +52,12 @@ function getOldData(filename) {
                 const location = adNode.querySelector('.location-label').innerText;
                 const surface = adNode.querySelector('.prop-value').innerText; 
                 const rooms = adNode.querySelectorAll('.prop-value')[1].innerText;
-
+        
                 results.push({
                     id,
                     propertyId,
                     togglePath,
+                    link: fullLink, // Ajout du lien complet ici
                     images,
                     location,
                     surface,
@@ -94,8 +99,8 @@ function getOldData(filename) {
     const removedAds = oldData.filter(oldAd => !ads.some(ad => ad.id === oldAd.id));
     const updatedAds = ads.filter(ad => !removedAds.some(removedAd => removedAd.id === ad.id));
 
-    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Rentola_Recherche/Data_Rentola_${currentDate}.json`);
-    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Rentola_Recherche_Up_To_Date/Updated_Data_Rentola_${currentDate}.json`);
+    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Rentola_Recherche/Data_Rentola_Recherche_${currentDate}.json`);
+    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Rentola_Recherche_Up_To_Date/Updated_Data_Rentola_Recherche_${currentDate}.json`);
 
     fs.writeFileSync(outputFileName, JSON.stringify(ads, null, 2), 'utf-8');
     fs.writeFileSync(updatedFileName, JSON.stringify(updatedAds, null, 2), 'utf-8');
