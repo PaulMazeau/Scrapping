@@ -18,9 +18,10 @@ async function scrapePage(page, url) {
         const city = document.querySelector('#detail_loc')?.textContent.trim();
         const featuresElements = document.querySelectorAll('.cotea16-mes ul.crit-alignbloc li');
         const features = Array.from(featuresElements).map(li => li.textContent.trim());
-        const updateDateElement = document.querySelector('.cotea16-mes ul.crit-alignbloc li:nth-child(2) span');
+        const featuresList = document.querySelector('.cotea16-mes ul.crit-alignbloc');
+        const updateDateElement = featuresList ? featuresList.lastElementChild.querySelector('span') : null;
         const updateDate = updateDateElement ? updateDateElement.textContent.trim() : null;
-        
+
         return {
             description,
             imageUrls,
