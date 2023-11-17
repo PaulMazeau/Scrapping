@@ -81,7 +81,7 @@ fetchData().then(() => {
 
     console.log(`Total d'annonces scrappées: ${allData.length}`);
     console.log(`Données du jour sauvegardées dans ${outputFileName}`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur BienIci.`);
     console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
     console.log(`${updatedData.length - newAnnouncements.length} annonce(s) conservée(s).`);
     console.log(`Données mises à jour sauvegardées dans ${updatedFileName}`);
