@@ -21,7 +21,7 @@ function getOldData(filename) {
 
     let offset = 0;
     let allData = [];
-    const search_id = '3000001176473';
+    const search_id = '3000001224948';
 
     while (true) {
         const url = `https://www.appartager.com/location/?offset=${offset}&search_id=${search_id}&sort_by=by_day&mode=list`;
