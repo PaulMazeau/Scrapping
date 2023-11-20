@@ -12,18 +12,18 @@ async function scrapePage(page, url) {
 
     const data = await page.evaluate(() => {
         const imageElements = document.querySelectorAll('#pictures a[data-fancybox="housing"]');
-        const imageLinks = Array.from(imageElements).map(a => a.getAttribute('data-src'));
+        const images = Array.from(imageElements).map(a => a.getAttribute('data-src'));
         const title = document.querySelector('.item.title h1')?.textContent.trim();
         const virtualTourLinkElement = document.querySelector('.wrap.links a[data-type="iframe"]');
-        const virtualTourLink = virtualTourLinkElement ? virtualTourLinkElement.getAttribute('data-src') : null;
+        const virtualTour = virtualTourLinkElement ? virtualTourLinkElement.getAttribute('data-src') : null;
         const publicationDate = document.querySelector('.item.title .flex.grey:nth-child(2)')?.textContent.trim();
-        const location = document.querySelector('.item.title .flex.grey')?.textContent.trim();
+        const address = document.querySelector('.item.title .flex.grey')?.textContent.trim();
         const servicesElements = document.querySelectorAll('.item.services .service span');
-        const services = Array.from(servicesElements).map(span => span.textContent.trim());
+        const amenities = Array.from(servicesElements).map(span => span.textContent.trim());
         const description = document.querySelector('.item.description p')?.innerHTML.trim(); // Utilise innerHTML pour conserver les sauts de ligne
         const schoolSection = document.querySelector('.item.school');
         const schoolLinks = schoolSection.querySelectorAll('ul li a');
-        const schools = Array.from(schoolLinks).map(a => {
+        const nearTo = Array.from(schoolLinks).map(a => {
             return {
                 name: a.textContent.trim(),
                 link: a.getAttribute('href')
@@ -37,14 +37,14 @@ async function scrapePage(page, url) {
         const deposit = document.querySelector('#partial-advert-description strong:last-child')?.textContent.trim();
         
         return {
-            imageLinks,
+            images,
             title,
-            virtualTourLink,
+            virtualTour,
             publicationDate,
-            location,
-            services,
+            address,
+            amenities,
             description,
-            schools,
+            nearTo,
             area,
             price,
             charges,

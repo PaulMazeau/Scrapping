@@ -14,21 +14,14 @@ async function scrapePage(browser, url) {
     
     const data = await page.evaluate(() => {
 
-        console.log('Recherche du titre...');
         const title = document.querySelector('h1.title').innerText;
-        console.log('titre ok');
-        const imageUrls = Array.from(document.querySelectorAll('img')).map(img => img.src);
-        const filteredImageUrls = imageUrls.filter(url => url.startsWith('https://d3hcppa1ebcqsj.cloudfront.net/'));
+        const images = Array.from(document.querySelectorAll('img')).map(img => img.src);
+        const filteredImageUrls = images.filter(url => url.startsWith('https://d3hcppa1ebcqsj.cloudfront.net/'));
         const address = title.split(' au ')[1];
-        console.log('Recherche equipement...');
         const equipement = [...document.querySelectorAll('.scrolling-wrapper .essentialname')]
             .map(element => element.textContent.trim());
-        console.log('Equipement OK')
-        console.log('Recherche description...');
         const description = document.querySelector(".trix-content div")?.textContent.trim() || "";
-        console.log('Description OK');
         const features = {};
-        console.log('Recherche featureRow...');
         const featureRows = document.querySelectorAll('.table-responsive tr.responsive-data');
         featureRows.forEach(row => {
             const cells = row.querySelectorAll('td');
@@ -42,8 +35,6 @@ async function scrapePage(browser, url) {
                 }
             });
         });
-        console.log('Feature Row OK...');
-        console.log('Recherche Charge Item...');
         const chargesDetails = {
             incluses: [],
             nonIncluses: []
@@ -123,8 +114,8 @@ async function scrapePage(browser, url) {
         return {
             title,
             address,
-            imageUrls: filteredImageUrls,
-            equipement,
+            images: filteredImageUrls,
+            amenities,
             description,
             features,
             chargesDetails,

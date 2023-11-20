@@ -11,7 +11,7 @@ async function scrapePage(browser, url) {
     await page.goto(url);
 
     const data = await page.evaluate(() => {
-        const imageLinks = _sr.page.photos.map(photoObj => photoObj.photo);
+        const images = _sr.page.photos.map(photoObj => photoObj.photo);
         const price = document.querySelector(".pricing-box__price")?.textContent.trim() || "";
         const roomPrice = document.querySelector(".pricing-box__room")?.textContent.trim() || "";
         const features = [...document.querySelectorAll('.property-feature-list__text')].map(el => el.textContent.trim());
@@ -22,7 +22,7 @@ async function scrapePage(browser, url) {
         const address = document.querySelector(".listing-detail__listing-header p.small-text")?.textContent.trim() || "";
 
         return {
-            imageLinks,
+            images,
             price,
             roomPrice,
             features,

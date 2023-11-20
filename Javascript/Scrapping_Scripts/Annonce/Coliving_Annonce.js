@@ -12,10 +12,10 @@ async function scrapePage(browser, url) {
 
     const data = await page.evaluate(() => {
         const imageAnchors = Array.from(document.querySelectorAll('a[data-fancybox="main"]'));
-        const imageLinks = imageAnchors.map(anchor => anchor.href);
-        const name = document.querySelector('h1')?.textContent.trim() || "";
+        const images = imageAnchors.map(anchor => anchor.href);
+        const title = document.querySelector('h1')?.textContent.trim() || "";
         const bedrooms = document.querySelector('div.grid > div:nth-child(1) > span')?.textContent.trim() || "";
-        const baths = document.querySelector('div.grid > div:nth-child(2) > span')?.textContent.trim() || "";
+        const bathrooms = document.querySelector('div.grid > div:nth-child(2) > span')?.textContent.trim() || "";
         const residents = document.querySelector('div.grid > div:nth-child(3) > span')?.textContent.trim() || "";
         const gender = document.querySelector('div.grid > div:nth-child(4) > span')?.textContent.trim() || "";
         const size = document.querySelector('div.grid > div:nth-child(5) > span')?.textContent.trim() || "";
@@ -23,8 +23,8 @@ async function scrapePage(browser, url) {
         const description = document.querySelector('div.w-full + p')?.textContent.trim() || "";
         const amenitiesElements = document.querySelectorAll('.grid.grid-cols-2.xl\\:grid-cols-3.gap-6.text-sm.text-neutral-700 div.ml-2');
         const amenities = [...amenitiesElements].map(el => el.textContent.trim());
-        const matterportIframe = document.querySelector('iframe[src*="mpembed.com"]')?.getAttribute('src') || "";
-        const location = document.querySelector('div.text-gray-700')?.textContent.trim() || "";
+        const virtualTour = document.querySelector('iframe[src*="mpembed.com"]')?.getAttribute('src') || "";
+        const address = document.querySelector('div.text-gray-700')?.textContent.trim() || "";
 
         // Récupération des informations des chambres disponibles
         const rooms = Array.from(document.querySelectorAll('.js-room-type-item')).map(room => {
@@ -48,10 +48,10 @@ async function scrapePage(browser, url) {
         });
     
         return {
-            imageLinks,
-            name,
+            images,
+            title,
             bedrooms,
-            baths,
+            bathrooms,
             residents,
             gender,
             size,
@@ -59,8 +59,8 @@ async function scrapePage(browser, url) {
             description,
             amenities,
             rooms,
-            matterportIframe,
-            location,
+            virtualTour,
+            address,
         };
     });
 

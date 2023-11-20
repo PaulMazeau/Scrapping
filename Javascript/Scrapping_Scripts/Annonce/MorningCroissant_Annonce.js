@@ -11,9 +11,9 @@ async function scrapePage(page, url) {
 
     const data = await page.evaluate(() => {
         const photoElements = document.querySelectorAll('.flat-carousel-list span');
-        const photoUrls = Array.from(photoElements).map(span => span.getAttribute('data-url'));
+        const images = Array.from(photoElements).map(span => span.getAttribute('data-url'));
         const title = document.querySelector('h1[itemprop="name"]')?.textContent.trim();
-        const location = document.querySelector('.location[itemprop="address"]')?.textContent.trim();
+        const address = document.querySelector('.location[itemprop="address"]')?.textContent.trim();
         const pieces = document.querySelector('.flat-size span:first-child')?.textContent.trim();
         const size = document.querySelector('.flat-size span:last-child')?.textContent.trim();
         const description = document.querySelector('#product_description .txt p')?.innerHTML.trim();
@@ -61,7 +61,7 @@ async function scrapePage(page, url) {
             return modalitiesObj;
         }, {});
         const equipmentElements = document.querySelectorAll('#product_amenities .container div');
-        const equipments = Array.from(equipmentElements).map(equip => {
+        const amenities = Array.from(equipmentElements).map(equip => {
             const name = equip.querySelector('.value')?.textContent.trim();
             const available = equip.classList.contains('ok');
             return { [name]: available };
@@ -78,12 +78,12 @@ async function scrapePage(page, url) {
         const ownerType = document.querySelector('#host-contact .contact .profile')?.textContent.trim();
         const memberSince = document.querySelector('#host-contact .information .since')?.textContent.trim();
         const professionalType = document.querySelector('#host-contact .information .type')?.textContent.trim();
-        const rentAmount = document.querySelector('.base-price .price .amount')?.getAttribute('data-amount');
+        const price = document.querySelector('.base-price .price .amount')?.getAttribute('data-amount');
 
         return {
-            photoUrls,
+            images,
             title,
-            location,
+            address,
             pieces,
             size,
             description,
@@ -91,7 +91,7 @@ async function scrapePage(page, url) {
             bedDisposal,
             rentDetails,
             modalities,
-            equipments,
+            amenities,
             security,
             neighborhoodDescription,
             owner: {
@@ -101,7 +101,7 @@ async function scrapePage(page, url) {
                 memberSince,
                 professionalType
             },
-            rentAmount
+            price
         };
     });
 

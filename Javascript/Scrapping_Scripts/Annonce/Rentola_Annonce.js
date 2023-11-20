@@ -13,7 +13,7 @@ async function scrapePage(browser, url) {
     const data = await page.evaluate(() => {
         const images = Array.from(document.querySelectorAll('img.fotorama__img')).map(img => img.src);
         const title = document.querySelector('.upper-content h1 span').textContent.trim();
-        const adress = document.querySelector('.upper-content p.location').textContent.trim();
+        const address = document.querySelector('.upper-content p.location').textContent.trim();
         const verified = document.querySelector('.f-row .f-column svg') ? 'Oui' : 'Non';
         const infoElements = Array.from(document.querySelectorAll('.white-container.about .circle p'));
         const descriptionElement = document.querySelector('span[itemprop="description"]');
@@ -28,7 +28,7 @@ async function scrapePage(browser, url) {
         return {
             images,
             title,
-            adress,
+            address,
             verified,
             description,
             propertyDetails,
