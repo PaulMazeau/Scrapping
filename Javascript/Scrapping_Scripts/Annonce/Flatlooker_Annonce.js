@@ -18,7 +18,7 @@ async function scrapePage(browser, url) {
         const images = Array.from(document.querySelectorAll('img')).map(img => img.src);
         const filteredImageUrls = images.filter(url => url.startsWith('https://d3hcppa1ebcqsj.cloudfront.net/'));
         const address = title.split(' au ')[1];
-        const equipement = [...document.querySelectorAll('.scrolling-wrapper .essentialname')]
+        const amenities = [...document.querySelectorAll('.scrolling-wrapper .essentialname')]
             .map(element => element.textContent.trim());
         const description = document.querySelector(".trix-content div")?.textContent.trim() || "";
         const features = {};
@@ -108,6 +108,9 @@ async function scrapePage(browser, url) {
             });
         }
     });
+
+        
+
         return {
             title,
             address,

@@ -11,11 +11,11 @@ let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
 function normalizeData(data) {
     // Extraction de la ville et du code postal depuis l'adresse
     const addressParts = data.address.split(',');
-    const city = addressParts.length > 1 ? addressParts[1].trim() : '';
-    const postalCode = addressParts.length > 2 ? addressParts[2].trim() : '';
+    const postalCode = addressParts.length > 1 ? addressParts[1].trim() : '';
+    const city = addressParts.length > 2 ? addressParts[2].trim() : '';
+
 
     return {
-        id: '', // Générer ou obtenir un identifiant unique si nécessaire
         title: data.title,
         location: {
             address: data.address,
