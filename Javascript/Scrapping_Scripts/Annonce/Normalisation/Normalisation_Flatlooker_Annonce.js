@@ -5,37 +5,37 @@ function getCurrentDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-// Spécifiez le chemin d'accès au fichier contenant votre JSON brut
-const rawDataPath = `../../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${getCurrentDateString()}.json`;
-
-// Lecture du fichier JSON brut
+const rawDataPath = `../../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${getCurrentDateString()}.json`;
 let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
 
 function normalizeData(data) {
+    // Extraction de la ville et du code postal depuis l'adresse
+    const addressParts = data.address.split(',');
+    const city = addressParts.length > 1 ? addressParts[1].trim() : '';
+    const postalCode = addressParts.length > 2 ? addressParts[2].trim() : '';
+
     return {
+        id: '', // Générer ou obtenir un identifiant unique si nécessaire
         title: data.title,
         location: {
             address: data.address,
-            city: '', // Il suffit de décortiquer l'adresse
-            postalCode: '', // Il suffit de décortiquer l'adresse
+            city: city,
+            postalCode: postalCode
         },
-        images: data.images, // Si vous souhaitez conserver le tableau d'images tel quel
+        images: data.images,
         price: {
-            rent: data.features && data.features["Honoraires de location :"] ? data.features["Honoraires de location :"].replace(':', '').trim() : '',
-            rentWithoutCharge: '', // Ajoutez si disponible
-            pricem2: data.propertyDetails && data.propertyDetails["Prix au m² :"] ? data.propertyDetails["Prix au m² :"].replace('€', '').trim() : '',
-            charge: '', // Ajoutez si disponible
-            deposit: data.features && data.features["Honoraires de location :"] ? data.features["Honoraires de location :"].replace(':', '').trim() : '',
+            rent: data.features["Honoraires de location"] ? data.features["Honoraires de location"].replace('€', '').trim() : '',
+            deposit: data.features["Dépôt de garantie"] ? data.features["Dépôt de garantie"].replace('€', '').trim() : '',
         },
-        furnished: 'Oui',
+        furnished: 'Oui', 
         description: data.description,
-        verified: data.verified === 'Oui',
+        amenities: data.amenities || [],
+        meuble: data.furnitureDetails.disponibles || [],
+        publicationDate: getCurrentDateString(),
+        lastUpdate: getCurrentDateString(),
     };
 }
 
-// Normalisation de chaque annonce
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
-
-// Écriture des données normalisées dans un fichier (facultatif)
-const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_Appartager_Annonces_${getCurrentDateString()}.json`;
+const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_Flatlooker_Annonces_${getCurrentDateString()}.json`;
 fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');

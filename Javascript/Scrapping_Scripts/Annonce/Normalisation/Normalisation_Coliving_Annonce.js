@@ -5,40 +5,48 @@ function getCurrentDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-// Spécifiez le chemin d'accès au fichier contenant votre JSON brut
-const rawDataPath = `../../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${getCurrentDateString()}.json`;
+// Chemin d'accès au fichier JSON brut
+const rawDataPath = `../../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${getCurrentDateString()}.json`;
 
 // Lecture du fichier JSON brut
 let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
 
 function normalizeData(data) {
+    // Extraction et normalisation des informations de localisation
+    const [address, city, postalCode] = ['Unknown Address', 'Unknown City', 'Unknown Postal Code']; // Ajuster selon les données disponibles
+
     return {
-        title: data.title,
+        title: data.name,
         location: {
-            address: '',
-            city: '',
-            postalCode: '',
+            address: address,
+            city: city,
+            postalCode: postalCode
         },
-        images: data.images, // Si vous souhaitez conserver le tableau d'images tel quel
+        images: data.imageLinks.map(link => ({ photo1: link })), // Transformer selon la structure requise
         price: {
-            rent: data.price.replace('€', '').trim(),
-            rentWithoutCharge: '', // Ajoutez si disponible
-            pricem2: data.propertyDetails && data.propertyDetails["Prix au m² :"] ? data.propertyDetails["Prix au m² :"].replace('€', '').trim() : '',
-            charge: '', // Ajoutez si disponible
-            deposit: data.propertyDetails && data.propertyDetails["Dépôt de garantie :"] ? data.propertyDetails["Dépôt de garantie :"].replace('€', '').trim() : '',
+            rent: data.price ? data.price.replace('€', '').trim() : '0',
+            deposit: '',
         },
-        furnished: 'Oui',
+        furnished: 'Oui', 
         bedrooms: data.bedrooms.replace('bedrooms', '').trim(),
-        bathrooms: data.bath.replace('baths', '').trim(),
+        bathrooms: data.baths.replace('baths', '').trim(),
+        residents: data.residents || '',
         size: data.size.replace('m2', '').trim(),
+        minStay: data.minStay || '',
         description: data.description,
-        verified: data.verified === 'Oui',
+        amenities: data.amenities || [],
+        virtualTour: data.matterportIframe || '',
+        publicationDate: getCurrentDateString(),
+        lastUpdate: getCurrentDateString(),
+        verified: data.verified === 'Oui' ? 'Oui' : 'Non',
     };
 }
 
 // Normalisation de chaque annonce
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
-// Écriture des données normalisées dans un fichier (facultatif)
-const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_Appartager_Annonces_${getCurrentDateString()}.json`;
+// Chemin d'accès pour enregistrer les données normalisées
+const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_Coliving_Annonces_${getCurrentDateString()}.json`;
+
+// Écriture des données normalisées dans un fichier
 fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');

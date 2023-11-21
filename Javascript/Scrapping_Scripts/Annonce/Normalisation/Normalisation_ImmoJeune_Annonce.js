@@ -6,7 +6,7 @@ function getCurrentDateString() {
 }
 
 // Spécifiez le chemin d'accès au fichier contenant votre JSON brut
-const rawDataPath = `../../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${getCurrentDateString()}.json`;
+const rawDataPath = `../../../Resultat_Annonce/ImmoJeune_Annonce/Data_ImmoJeune_Annonces_${getCurrentDateString()}.json`;
 
 // Lecture du fichier JSON brut
 let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
@@ -15,25 +15,26 @@ function normalizeData(data) {
     return {
         title: data.title,
         location: {
-            address: data.address,
-            city: data.propertyDetails && data.propertyDetails["Ville :"] ? data.propertyDetails["Ville :"].replace(':', '').trim() : '',
-            postalCode: '', // Ajoutez le code postal si disponible
+            address: data.address || '',
+            city: data.city || '',
+            postalCode: data.postalCode || ''
         },
-        images: data.images, // Si vous souhaitez conserver le tableau d'images tel quel
+        images: data.images,
+        address: data.address,
         price: {
-            rent: data.price.replace('€', '').trim(),
-            rentWithoutCharge: '', // Ajoutez si disponible
-            pricem2: data.propertyDetails && data.propertyDetails["Prix au m² :"] ? data.propertyDetails["Prix au m² :"].replace('€', '').trim() : '',
-            charge: '', // Ajoutez si disponible
-            deposit: data.propertyDetails && data.propertyDetails["Dépôt de garantie :"] ? data.propertyDetails["Dépôt de garantie :"].replace('€', '').trim() : '',
+            rent: data.price,
+            deposit: data.deposit,
+            agencyFees: data.agencyFees,
+
         },
-        furnished: data.propertyDetails && data.propertyDetails["Meublé :"] ? data.propertyDetails["Meublé :"].replace(':', '').trim() : 'Non',
-        type: data.propertyDetails && data.propertyDetails["Type de propriété:"] ? data.propertyDetails["Type de propriété:"].replace(':', '').trim() : '',
-        bedrooms: data.propertyDetails && data.propertyDetails["Pièces :"] ? data.propertyDetails["Pièces :"].replace(':', '').trim() : '',
-        bathrooms: data.propertyDetails && data.propertyDetails["Salles de bain :"] ? data.propertyDetails["Salles de bain :"].replace(':', '').trim() : '',
-        size: data.propertyDetails && data.propertyDetails["Surface :"] ? data.propertyDetails["Surface :"].replace('m2', '').trim() : '',
-        description: data.description,
-        verified: data.verified === 'Oui',
+        amenities: data.amenities || [],        
+        publicationDate: data.publicationDate,
+        lastUpdate: getCurrentDateString(),
+        disponibility: getCurrentDateString(),
+        virtualTour: data.virtualTour || '',
+        size: data.area.replace('m²', '').trim(),
+        description: data.description.replace(/<br>\n/g, '').replace(/<[^>]*>/g, ''),
+        nearTo: data.schools ? data.schools.map(school => school.name.trim()) : [],
     };
 }
 
@@ -41,5 +42,5 @@ function normalizeData(data) {
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
 // Écriture des données normalisées dans un fichier (facultatif)
-const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_Appartager_Annonces_${getCurrentDateString()}.json`;
+const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_ImmoJeune_Annonces_${getCurrentDateString()}.json`;
 fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
