@@ -213,7 +213,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
       await sleep(1000);
     }
 
-    const fileName = `../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${getCurrentDateString()}.json`;
+    const fileName = `../../Resultat_Annonce/Koliving_Annonce/Data_Koliving_Annonces_${getCurrentDateString()}.json`;
     fs.writeFileSync(fileName, JSON.stringify(allResponses, null, 2), 'utf-8'); // Écrire toutes les données dans un seul fichier
     console.log(`All data saved to ${fileName}!`);
   };
