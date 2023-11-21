@@ -108,9 +108,6 @@ async function scrapePage(browser, url) {
             });
         }
     });
-
-        
-
         return {
             title,
             address,
