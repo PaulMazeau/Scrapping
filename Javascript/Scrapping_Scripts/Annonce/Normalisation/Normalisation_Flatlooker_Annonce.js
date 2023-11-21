@@ -16,22 +16,18 @@ function normalizeData(data) {
         title: data.title,
         location: {
             address: data.address,
-            city: data.propertyDetails && data.propertyDetails["Ville :"] ? data.propertyDetails["Ville :"].replace(':', '').trim() : '',
-            postalCode: '', // Ajoutez le code postal si disponible
+            city: '', // Il suffit de décortiquer l'adresse
+            postalCode: '', // Il suffit de décortiquer l'adresse
         },
         images: data.images, // Si vous souhaitez conserver le tableau d'images tel quel
         price: {
-            rent: data.price.replace('€', '').trim(),
+            rent: data.features && data.features["Honoraires de location :"] ? data.features["Honoraires de location :"].replace(':', '').trim() : '',
             rentWithoutCharge: '', // Ajoutez si disponible
             pricem2: data.propertyDetails && data.propertyDetails["Prix au m² :"] ? data.propertyDetails["Prix au m² :"].replace('€', '').trim() : '',
             charge: '', // Ajoutez si disponible
-            deposit: data.propertyDetails && data.propertyDetails["Dépôt de garantie :"] ? data.propertyDetails["Dépôt de garantie :"].replace('€', '').trim() : '',
+            deposit: data.features && data.features["Honoraires de location :"] ? data.features["Honoraires de location :"].replace(':', '').trim() : '',
         },
-        furnished: data.propertyDetails && data.propertyDetails["Meublé :"] ? data.propertyDetails["Meublé :"].replace(':', '').trim() : 'Non',
-        type: data.propertyDetails && data.propertyDetails["Type de propriété:"] ? data.propertyDetails["Type de propriété:"].replace(':', '').trim() : '',
-        bedrooms: data.propertyDetails && data.propertyDetails["Pièces :"] ? data.propertyDetails["Pièces :"].replace(':', '').trim() : '',
-        bathrooms: data.propertyDetails && data.propertyDetails["Salles de bain :"] ? data.propertyDetails["Salles de bain :"].replace(':', '').trim() : '',
-        size: data.propertyDetails && data.propertyDetails["Surface :"] ? data.propertyDetails["Surface :"].replace('m2', '').trim() : '',
+        furnished: 'Oui',
         description: data.description,
         verified: data.verified === 'Oui',
     };
