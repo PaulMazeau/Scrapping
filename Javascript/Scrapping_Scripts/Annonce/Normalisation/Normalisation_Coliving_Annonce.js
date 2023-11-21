@@ -15,9 +15,9 @@ function normalizeData(data) {
     return {
         title: data.title,
         location: {
-            address: data.address,
-            city: data.propertyDetails && data.propertyDetails["Ville :"] ? data.propertyDetails["Ville :"].replace(':', '').trim() : '',
-            postalCode: '', // Ajoutez le code postal si disponible
+            address: '',
+            city: '',
+            postalCode: '',
         },
         images: data.images, // Si vous souhaitez conserver le tableau d'images tel quel
         price: {
@@ -27,11 +27,10 @@ function normalizeData(data) {
             charge: '', // Ajoutez si disponible
             deposit: data.propertyDetails && data.propertyDetails["Dépôt de garantie :"] ? data.propertyDetails["Dépôt de garantie :"].replace('€', '').trim() : '',
         },
-        furnished: data.propertyDetails && data.propertyDetails["Meublé :"] ? data.propertyDetails["Meublé :"].replace(':', '').trim() : 'Non',
-        type: data.propertyDetails && data.propertyDetails["Type de propriété:"] ? data.propertyDetails["Type de propriété:"].replace(':', '').trim() : '',
-        bedrooms: data.propertyDetails && data.propertyDetails["Pièces :"] ? data.propertyDetails["Pièces :"].replace(':', '').trim() : '',
-        bathrooms: data.propertyDetails && data.propertyDetails["Salles de bain :"] ? data.propertyDetails["Salles de bain :"].replace(':', '').trim() : '',
-        size: data.propertyDetails && data.propertyDetails["Surface :"] ? data.propertyDetails["Surface :"].replace('m2', '').trim() : '',
+        furnished: 'Oui',
+        bedrooms: data.bedrooms.replace('bedrooms', '').trim(),
+        bathrooms: data.bath.replace('baths', '').trim(),
+        size: data.size.replace('m2', '').trim(),
         description: data.description,
         verified: data.verified === 'Oui',
     };
