@@ -5,41 +5,52 @@ function getCurrentDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-// Spécifiez le chemin d'accès au fichier contenant votre JSON brut
-const rawDataPath = `../../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${getCurrentDateString()}.json`;
-
-// Lecture du fichier JSON brut
+const rawDataPath = `../../../Resultat_Annonce/MorningCroissant_Annonce/Data_MorningCroissant_Annonces_${getCurrentDateString()}.json`;
 let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
 
 function normalizeData(data) {
+    const [city, postalCode] = data.address.split(',').map(item => item.trim());
+    const amenities = data.amenities.reduce((acc, amenity) => {
+        const key = Object.keys(amenity)[0];
+        if (amenity[key] === true) {
+            acc.push(key);
+        }
+        return acc;
+    }, []);
+
     return {
         title: data.title,
         location: {
             address: data.address,
-            city: data.propertyDetails && data.propertyDetails["Ville :"] ? data.propertyDetails["Ville :"].replace(':', '').trim() : '',
-            postalCode: '', // Ajoutez le code postal si disponible
+            city: city,
+            postalCode: postalCode
         },
-        images: data.images, // Si vous souhaitez conserver le tableau d'images tel quel
+        images: data.images.map(img => `https://www.morningcroissant.fr${img}`),
         price: {
-            rent: data.price.replace('€', '').trim(),
-            rentWithoutCharge: '', // Ajoutez si disponible
-            pricem2: data.propertyDetails && data.propertyDetails["Prix au m² :"] ? data.propertyDetails["Prix au m² :"].replace('€', '').trim() : '',
-            charge: '', // Ajoutez si disponible
-            deposit: data.propertyDetails && data.propertyDetails["Dépôt de garantie :"] ? data.propertyDetails["Dépôt de garantie :"].replace('€', '').trim() : '',
+            rent: data.price,
+            rentWithoutCharge: data.rentDetails["Loyer mensuel hors charges"],
+            charge: data.rentDetails["Charges mensuelles ?"],
+            deposit: data.rentDetails["Dépôt de garantie ?"],
         },
-        furnished: data.propertyDetails && data.propertyDetails["Meublé :"] ? data.propertyDetails["Meublé :"].replace(':', '').trim() : 'Non',
-        type: data.propertyDetails && data.propertyDetails["Type de propriété:"] ? data.propertyDetails["Type de propriété:"].replace(':', '').trim() : '',
-        bedrooms: data.propertyDetails && data.propertyDetails["Pièces :"] ? data.propertyDetails["Pièces :"].replace(':', '').trim() : '',
-        bathrooms: data.propertyDetails && data.propertyDetails["Salles de bain :"] ? data.propertyDetails["Salles de bain :"].replace(':', '').trim() : '',
-        size: data.propertyDetails && data.propertyDetails["Surface :"] ? data.propertyDetails["Surface :"].replace('m2', '').trim() : '',
+        furnished: data.details["Meublé / non meublé"],
+        type: data.details.Catégorie,
+        bedrooms: data.details.Chambres,
+        bathrooms: data.details["Salles de bains"],
+        residents: data.details.Capacité,
+        size: data.size,
+        minStay: data.modalities["Durée minimum"],
+        maxStay: data.modalities["Durée maximum"],
         description: data.description,
-        verified: data.verified === 'Oui',
+        amenities: amenities,        
+        rooms: data.bedDisposal.map(bed => ({ room: bed.room, beds: bed.beds })),
+        nearTo: data.neighborhoodDescription,
+        rules: data.modalities,
+        publicationDate: getCurrentDateString(),
+        lastUpdate: getCurrentDateString(),
     };
 }
 
-// Normalisation de chaque annonce
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
-// Écriture des données normalisées dans un fichier (facultatif)
-const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_Appartager_Annonces_${getCurrentDateString()}.json`;
+const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_MorningCroissant_Annonces_${getCurrentDateString()}.json`;
 fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
