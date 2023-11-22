@@ -31,7 +31,7 @@ function normalizeData(data) {
         size: data.surfaceArea ? data.surfaceArea.toString() : '0',
         description: data.description || '',
         amenities: data.equipement || [],
-        pieces: [data.roomsQuantity ? data.roomsQuantity.toString() : '0'],
+        pieces: data.roomsQuantity ? data.roomsQuantity.toString() : '0',
         nearTo: data.district ? [data.district.libelle] : [],
         virtualTour: data.virtualTours && data.virtualTours.length > 0 ? data.virtualTours[0].url : '',
         publicationDate: data.publicationDate || '',
