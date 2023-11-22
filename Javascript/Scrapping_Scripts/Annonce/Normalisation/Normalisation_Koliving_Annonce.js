@@ -5,41 +5,40 @@ function getCurrentDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-// Spécifiez le chemin d'accès au fichier contenant votre JSON brut
-const rawDataPath = `../../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${getCurrentDateString()}.json`;
-
-// Lecture du fichier JSON brut
+const rawDataPath = `../../../Resultat_Annonce/Koliving_Annonce/Data_Koliving_Annonces_${getCurrentDateString()}.json`;
 let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
 
 function normalizeData(data) {
+    // Conversion des URLs d'images
+    const images = data.data.pictures ? data.data.pictures.map(pic => pic.url ) : [];
+
     return {
-        title: data.title,
+        title: data.data.title || '',
         location: {
-            address: data.address,
-            city: data.propertyDetails && data.propertyDetails["Ville :"] ? data.propertyDetails["Ville :"].replace(':', '').trim() : '',
-            postalCode: '', // Ajoutez le code postal si disponible
+            address: data.data.addressObj ? data.data.addressObj.street : '',
+            city: data.data.addressObj ? data.data.addressObj.city : '',
+            postalCode: data.data.addressObj ? data.data.addressObj.zip : ''
         },
-        images: data.images, // Si vous souhaitez conserver le tableau d'images tel quel
+        images: images,
         price: {
-            rent: data.price.replace('€', '').trim(),
-            rentWithoutCharge: '', // Ajoutez si disponible
-            pricem2: data.propertyDetails && data.propertyDetails["Prix au m² :"] ? data.propertyDetails["Prix au m² :"].replace('€', '').trim() : '',
-            charge: '', // Ajoutez si disponible
-            deposit: data.propertyDetails && data.propertyDetails["Dépôt de garantie :"] ? data.propertyDetails["Dépôt de garantie :"].replace('€', '').trim() : '',
+            rent: data.data.rentInfos ? data.data.rentInfos.rentPrice : '0',
+            charge: data.data.rentInfos ? data.data.rentInfos.utilities : '0',
+            deposit: data.data.rentInfos ? data.data.rentInfos.deposit : '0',
+            
         },
-        furnished: data.propertyDetails && data.propertyDetails["Meublé :"] ? data.propertyDetails["Meublé :"].replace(':', '').trim() : 'Non',
-        type: data.propertyDetails && data.propertyDetails["Type de propriété:"] ? data.propertyDetails["Type de propriété:"].replace(':', '').trim() : '',
-        bedrooms: data.propertyDetails && data.propertyDetails["Pièces :"] ? data.propertyDetails["Pièces :"].replace(':', '').trim() : '',
-        bathrooms: data.propertyDetails && data.propertyDetails["Salles de bain :"] ? data.propertyDetails["Salles de bain :"].replace(':', '').trim() : '',
-        size: data.propertyDetails && data.propertyDetails["Surface :"] ? data.propertyDetails["Surface :"].replace('m2', '').trim() : '',
-        description: data.description,
-        verified: data.verified === 'Oui',
+        furnished: 'Oui', // Ou 'Non' selon les données
+        type: data.data.type || '',
+        bedrooms: data.data.nbBedrooms ? data.data.nbBedrooms.toString() : '0',
+        size: data.data.surface ? data.data.surface.toString() : '0',
+        description: data.data.description || '',
+        amenities: data.data.amenities || [],
+        pieces: data.data.nbRooms ? data.data.nbRooms.toString() : '0',
+        virtualTour: data.data.virtualVisitUrl || '',
+        verified: data.data.isPublished ? 'Oui' : 'Non',
+        link: '' 
     };
 }
 
-// Normalisation de chaque annonce
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
-
-// Écriture des données normalisées dans un fichier (facultatif)
-const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_Appartager_Annonces_${getCurrentDateString()}.json`;
+const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_Koliving_Annonces_${getCurrentDateString()}.json`;
 fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
