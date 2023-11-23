@@ -1,20 +1,64 @@
-const axios = require('axios');
+const puppeteer = require('puppeteer');
 const fs = require('fs');
 
-// URL de la requête
-const url = 'https://www.lacartedescolocs.fr/listing_search/list_results?viewport=%7B%22canonical_path%22%3A%22%2Ffr%2File-de-france%2Fparis%22%2C%22city%22%3A%22Paris%22%2C%22county%22%3A%22Paris%22%2C%22administrative%22%3A%22%C3%8Ele-de-France%22%2C%22country_code%22%3A%22fr%22%2C%22sw_lat%22%3A48.815575%2C%22sw_lon%22%3A2.224122%2C%22ne_lat%22%3A48.902156%2C%22ne_lon%22%3A2.469703%7D&filters=%7B%22offset%22%3A0%2C%22sortBy%22%3A%22published_at%20DESC%22%2C%22currency%22%3A%22EUR%22%7D';
+async function interceptXHRRequests(url, city) {
+    const browser = await puppeteer.launch({ headless: false });
+    const page = await browser.newPage();
 
-axios.get(url)
-  .then(response => {
-    // Stocker la réponse dans un fichier JSON
-    fs.writeFile('response.json', JSON.stringify(response.data, null, 2), 'utf8', (err) => {
-      if (err) {
-        console.error(err);
-        return;
-      }
-      console.log('Les données ont été enregistrées dans response.json');
+    console.log(`Ouverture de la page : ${url}`);
+
+    let allData = [];
+
+    // Écouter les réponses XHR et enregistrer les réponses JSON
+    page.on('response', async response => {
+        const contentType = response.headers()['content-type'] || '';
+
+        if (contentType.includes('application/json') && response.url().includes('listing_search/list_results')) {
+            try {
+                const json = await response.json();
+                if (json && typeof json.results === 'string') {
+                    json.results = JSON.parse(json.results);
+                }
+                allData.push(...json.results);
+            } catch (error) {
+                console.error('Erreur lors du traitement de la réponse JSON:', error);
+            }
+        }
     });
-  })
-  .catch(error => {
-    console.error('Erreur lors de la requête :', error);
-  });
+
+    await page.goto(url);
+
+    // Scroller jusqu'à ce qu'il n'y ait plus de nouvelles annonces à charger
+    let lastHeight = await page.evaluate('document.body.scrollHeight');
+    while (true) {
+      await page.evaluate('window.scrollBy(0, 1000)'); // Défilement progressif
+      await page.waitForTimeout(4000); // Augmentation du délai d'attente
+
+      let newHeight = await page.evaluate('document.body.scrollHeight');
+      if (newHeight === lastHeight) {
+          break; // Arrêter le défilement si on atteint le bas de la page
+      }
+      lastHeight = newHeight;
+  }
+
+    // Sauvegarde des données collectées
+    const filename = `data_${city}.json`;
+    fs.writeFileSync(filename, JSON.stringify(allData, null, 4));
+    console.log(`Le JSON pour ${city} a été sauvegardé dans ${filename}`);
+
+    console.log(`Fermeture du navigateur pour ${city}`);
+    await browser.close();
+}
+
+function getJson(url, city) {
+    console.log(`Début du scrap de ${city}...`);
+    const startTime = new Date().getTime();
+
+    interceptXHRRequests(url, city).then(() => {
+        const endTime = new Date().getTime();
+        console.log(`${city} bien scrappé en ${(endTime - startTime) / 1000} secondes`);
+    });
+}
+
+// Exemple d'utilisation
+getJson('https://www.lacartedescolocs.fr/logements/fr/ile-de-france', 'Paris');
