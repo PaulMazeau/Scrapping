@@ -25,6 +25,7 @@ async function scrapePage(browser, url) {
         const amenities = [...amenitiesElements].map(el => el.textContent.trim());
         const virtualTour = document.querySelector('iframe[src*="mpembed.com"]')?.getAttribute('src') || "";
         const address = document.querySelector('div.text-gray-700')?.textContent.trim() || "";
+        const price = document.querySelector('span.x-text')?.textContent.trim() || "";
 
         // Récupération des informations des chambres disponibles
         const rooms = Array.from(document.querySelectorAll('.js-room-type-item')).map(room => {
@@ -33,7 +34,7 @@ async function scrapePage(browser, url) {
             const details = room.querySelectorAll('.pb-2.mb-1.border-b.border-gray-200 span.items-center');
             const amenities = room.querySelectorAll('.text-gray-500 span');
             const images = room.querySelectorAll('.js-col-photos a[href]');
-    
+            const price = document.querySelector('span.notranslate.font-bold');            
             const roomDetails = Array.from(details).map(detail => detail.textContent.trim());
             const roomAmenities = Array.from(amenities).map(amenity => amenity.textContent.trim());
             const imageUrls = Array.from(images).map(image => image.getAttribute('href'));
@@ -43,7 +44,8 @@ async function scrapePage(browser, url) {
                 title,
                 details: roomDetails,
                 amenities: roomAmenities,
-                images: imageUrls
+                images: imageUrls,
+                price
             };
         });
     
@@ -51,6 +53,7 @@ async function scrapePage(browser, url) {
             images,
             title,
             bedrooms,
+            price,
             bathrooms,
             residents,
             gender,

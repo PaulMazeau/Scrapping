@@ -9,15 +9,20 @@ function getCurrentDateString() {
 async function scrapePage(browser, url) {
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle0' });
-    page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
-    
     const data = await page.evaluate(() => {
 
         const title = document.querySelector('h1.title').innerText;
         const images = Array.from(document.querySelectorAll('img')).map(img => img.src);
         const filteredImageUrls = images.filter(url => url.startsWith('https://d3hcppa1ebcqsj.cloudfront.net/'));
         const address = title.split(' au ')[1];
+        const priceAndChargeText = document.querySelector('p.pl-2.my-auto').textContent.trim();
+        const priceMatch = priceAndChargeText.match(/(\d+,\d+)€\/mois/);
+        let price = priceMatch ? priceMatch[1] : "";
+        const chargeMatch = priceAndChargeText.match(/Dont (\d+ €) de charges/);
+        let charge = chargeMatch ? chargeMatch[1] : "";
+        price = price.split(',')[0];
+        charge = charge.replace(' €', '').trim();   
         const amenities = [...document.querySelectorAll('.scrolling-wrapper .essentialname')]
             .map(element => element.textContent.trim());
         const description = document.querySelector(".trix-content div")?.textContent.trim() || "";
@@ -55,8 +60,6 @@ async function scrapePage(browser, url) {
             const chargeName = chargeItem.querySelector('span').textContent.trim();
             chargesDetails.nonIncluses.push(chargeName);
         });
-        console.log('Charge Item OK...');
-        console.log('Recherche furniture item...');
     // Récupération des détails des meubles et équipements
     const furnitureDetails = {
         disponibles: [],
@@ -78,7 +81,6 @@ async function scrapePage(browser, url) {
         const furnitureName = furnitureItem.querySelector('span').textContent.trim();
         furnitureDetails.nonDisponibles.push(furnitureName);
     });
-        console.log('Furniture Item OK...');
 
         // Récupération des détails des mesures
     const measuresDetails = {};
@@ -116,6 +118,8 @@ async function scrapePage(browser, url) {
             address,
             images: filteredImageUrls,
             amenities,
+            price, 
+            charge,
             description,
             features,
             chargesDetails,

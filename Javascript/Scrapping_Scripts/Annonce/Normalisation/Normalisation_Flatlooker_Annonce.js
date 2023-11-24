@@ -24,8 +24,9 @@ function normalizeData(data) {
         },
         images: data.images,
         price: {
-            rent: data.features["Honoraires de location"] ? data.features["Honoraires de location"].replace('€', '').trim() : '',
+            rent: data.price,
             deposit: data.features["Dépôt de garantie"] ? data.features["Dépôt de garantie"].replace('€', '').trim() : '',
+            charge: data.charge
         },
         furnished: 'Oui', 
         description: data.description,

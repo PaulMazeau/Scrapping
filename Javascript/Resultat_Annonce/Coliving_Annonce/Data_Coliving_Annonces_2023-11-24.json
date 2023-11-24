@@ -43,6 +43,7 @@
     ],
     "title": "Cozy Bright Apt. w/ Terrace near 1km away from Place de la Nation",
     "bedrooms": "2 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "2 residents",
     "gender": "39 m2",
@@ -76,7 +77,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38423/photos/YTm1U5Dl32.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38423/photos/ufGFXRS9tx.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38423/photos/37KSgqyApn.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38603",
@@ -99,7 +101,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38603/photos/JpCwODRlii.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38603/photos/kcuiCcvPq7.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38603/photos/2y4iSXCz9t.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38604",
@@ -122,7 +125,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38604/photos/O7WUq7oz64.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38604/photos/tsdazsKogp.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38604/photos/B0TqgaKrP9.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38425",
@@ -146,7 +150,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38425/photos/seRosEEO0H.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38425/photos/TH88CK3BhL.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38425/photos/dbsHZi8xVG.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38422",
@@ -172,7 +177,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38422/photos/FRVabZMuZ3.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38422/photos/UFWtPzeaeR.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38422/photos/dVHyp1or2j.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38395",
@@ -193,7 +199,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38395/photos/VgIg4s0TAa.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38395/photos/zHPTLVAZ9G.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38395/photos/CVVLMklNmu.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38606",
@@ -217,7 +224,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38606/photos/YIxb4mfGYm.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38606/photos/q1gvtKSlFL.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38606/photos/wQofa4lt87.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38421",
@@ -241,7 +249,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38421/photos/0vltQHeBjT.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38421/photos/iO7Y9o3NGH.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38421/photos/o1rBxoKKPA.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38605",
@@ -266,7 +275,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38605/photos/RSuDYZN2Mo.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38605/photos/IQxDc5RxAc.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38605/photos/iNL8igFtWL.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38393",
@@ -288,7 +298,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38393/photos/XxiNnNyQ19.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38393/photos/B733hWVvZS.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38393/photos/QFr8AqfDUK.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38394",
@@ -310,7 +321,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38394/photos/YvY32qIvbS.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38394/photos/7DXO7kCqkH.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38394/photos/480EZR1okb.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38424",
@@ -332,7 +344,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38424/photos/JifLiywdHm.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38424/photos/00mRstJ3Df.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38424/photos/quiCYKtYMI.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=8pEueLosPCm&cloudEdit=1&sr=-3.12,1.22&ss=12&mdir=3&minimap=1&lang=fr&qs=1",
@@ -363,6 +376,7 @@
     ],
     "title": "Stunning Vibrant Complex w/ Terrace + Gym + Cinema Room",
     "bedrooms": "11 bedrooms",
+    "price": "",
     "bathrooms": "7 baths",
     "residents": "11 residents",
     "gender": "320 m2",
@@ -442,7 +456,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/20097/photos/vaPznc8J55.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/20097/photos/UOhKSGw7ZB.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/20097/photos/KNbiurB3nc.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "20096",
@@ -475,7 +490,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/20096/photos/jt0qOwA9BH.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/20096/photos/jUjyaO2Ym4.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/20096/photos/utjF842FcX.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -504,6 +520,7 @@
     ],
     "title": "Stylish Elegant Apt.",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "102 m2",
@@ -561,7 +578,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35945/photos/SztTCEDRB3.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35945/photos/tfd5EelB2n.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35945/photos/3zD4Q1plaC.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35841",
@@ -582,7 +600,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35841/photos/LkedqjeJt0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35841/photos/xPP9UzzkHR.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35841/photos/a629XkSgmS.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34767",
@@ -604,7 +623,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34767/photos/dZqh8s6MEr.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34767/photos/aivXd0yRXq.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34767/photos/Z239hcb5XQ.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33783",
@@ -626,7 +646,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33783/photos/mHSTwwOabl.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33783/photos/QbQxtknclL.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33783/photos/EAOEkrLUHM.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33380",
@@ -649,7 +670,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33380/photos/drlwltTlBu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33380/photos/hOIgeeUbeA.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33380/photos/whYfbK5Jr5.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36990",
@@ -671,7 +693,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36990/photos/LWLHH4uGt9.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36990/photos/ei31cmrb1g.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36990/photos/INaMuitZbz.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33335",
@@ -695,7 +718,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33335/photos/zvUP4PZKNh.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33335/photos/rmfi6aROBq.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33335/photos/csMQ92EOL0.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show?m=Kv2d5yzP7X4&start=%7B%22camera_mode%22%3A1%2C%22camera_position%22%3A%7B%22x%22%3A9.016002655029297%2C%22y%22%3A1.634107232093811%2C%22z%22%3A10.737889289855957%7D%2C%22camera_quaternion%22%3A%7B%22x%22%3A0.004393148362253075%2C%22y%22%3A-0.9675320443502586%2C%22z%22%3A-0.2521473306647468%2C%22w%22%3A-0.016857254863095267%7D%2C%22scan_id%22%3A%22bf1a975919fa4b159c37f8f62efcf47d%22%7D&mdir=3&minimap=1&lang=fr&qs=1",
@@ -732,6 +756,7 @@
     ],
     "title": "Stunning house near Pelleport Subway Station",
     "bedrooms": "19 bedrooms",
+    "price": "",
     "bathrooms": "12 baths",
     "residents": "19 residents",
     "gender": "414 m2",
@@ -796,9 +821,9 @@
           "· Essentials",
           "· Lock on door",
           "· WiFi",
-          "€1,107",
+          "",
           "/month",
-          "-5%"
+          ""
         ],
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/35963/photos/xri5hzJ6au.jpg?h=960",
@@ -823,7 +848,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35963/photos/bWt3aVp2vi.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35963/photos/fpRXgmGigT.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35963/photos/ASEoLS9WFp.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35962",
@@ -843,9 +869,9 @@
           "· Essentials",
           "· Lock on door",
           "· WiFi",
-          "€1,253",
+          "",
           "/month",
-          "-5%"
+          ""
         ],
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/35962/photos/xyGyUWdkTU.jpg?h=960",
@@ -868,26 +894,830 @@
           "https://co-living.imgix.net/uploads/roomtypes/35962/photos/O7rBj1bbip.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35962/photos/FBmkGPRpkm.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35962/photos/r9eMr4SJ9o.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
     "address": "Find my home\n\n\n\n\nWhat is coliving?\n\n\n\n\nAbout\n\n\n\n\n\n\n \n\n\n\n\n\n \n\n\n\n\n \n\n\n\n \n\n\n\n\n\nWhat is coliving\n\n\nFind my home\n\n\n\nAbout\n\n\nHelp center\n\n\n\nList your coliving\n\n\n\n\nSign up\n\n\nLog in"
   },
   {
-    "images": [],
-    "title": "Bad gateway\n              Error code 502",
-    "bedrooms": "",
-    "bathrooms": "",
-    "residents": "",
-    "gender": "",
-    "size": "",
+    "images": [
+      "https://co-living.imgix.net/uploads/listings/16847/photos/4eJlDic8lt.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/nNZ2rum6R9.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/onIV31eYrl.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/QJqipEwK5g.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/vMVqm0BGbS.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/YcIQYQRvuw.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/sKdYvoVicG.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/qtpScfGA1K.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/jeyc2efi7M.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/isIeTrZ0ky.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/afz9PqlwKi.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/3nrGyerFo2.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/EXqqlE7372.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/JKttlRvpCn.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/jyezEdbI9l.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/gfJE2hJYpO.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/fOiyYOHtw1.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/I1xPP5TCWh.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/DEelojwgEQ.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/IEE5xxKlV9.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/eR2897CLAv.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/QG32rgSFZD.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/pZ7RnfZ4EH.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/ij1ZWRSHER.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/kog85bNfTt.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/zWjiBq3f4p.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/p57moGhDVP.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/dkQneNt8No.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/jdvtP2dkJ4.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/TV5eTclADP.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/YhW41Z5CSN.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/vp3F1VqBxc.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/NwaXycSysg.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/vWBImQIOT5.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/i82vXDka0A.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/k7USBeBTdo.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/HVNo3M4fK6.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/7MgNAGr1ug.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/dxyJwjGCGy.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/hP9E72wWCU.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/0v1EjJIQOw.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/b2bKPGJuZL.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/KGwu5NmbcK.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/g8gj0N8dk8.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/FIWDFqb6dP.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/8rDzfj1xIP.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/dKXNCiAt2K.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/KreHuNXdcb.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/DYwjzfdDRe.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/5988X8WHQx.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/LOxWTfbT6z.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/3JRzseDev5.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/11r02K8o43.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/QbLm9cPVxZ.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/TTZ1aBIFrY.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/wM6mCg1b4B.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/CcMcPguOnH.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/a0JTOcm0v1.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/6knws2OPkZ.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/qEBBR1VvhM.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/1z6AYouT7C.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/mcTylc13Ti.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/gTxFSNePcq.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/OLaGYrF5AX.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/ErlPThz6W5.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/pxudjC0hRF.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/of35wPhrPG.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/ewIdjMnaUC.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/aZmRCdnYjz.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/mrclWcAqe6.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/6azDpJw3kl.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/0nrxfVXyyF.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/yl7PTZBlD4.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/bO763J8PbV.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/yzGnVzD3uW.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/qtUeWotj9N.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/55lglNw6wK.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/DoSu5m2qQw.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/tLA2CHwajM.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/BUTNQxEv24.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/ksBpfJ1GYb.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/zmrEzDuhtk.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/E0oi59dgb5.jpg?h=960",
+      "https://co-living.imgix.net/uploads/listings/16847/photos/FuhUiJ5RDS.jpg?h=960"
+    ],
+    "title": "Good-lucking Stunning Apt. Incl. - City Views near Grandes Carriéres",
+    "bedrooms": "3 bedrooms",
+    "price": "",
+    "bathrooms": "1 baths",
+    "residents": "3 residents",
+    "gender": "47 m2",
+    "size": "1 month min.",
     "minStay": "",
-    "description": "",
-    "amenities": [],
-    "rooms": [],
-    "virtualTour": "",
-    "address": ""
+    "description": "Furnished flat share !\n--------------------------------\n\nAll our flats are located in the city centre and close to all amenities\nand public transport (Metro, Tramway and Bus).\n\n---------\n\nThis lovely private bedroom in a fully equipped, furnished and all-inclusive flatshare in Paris is a mix of comfort and design. It has got household furnishings, including a bed with pillows and duvet What is missing is your things to feel at home! The room can be locked if you need intimacy.\n\nAll our rooms are fully furnished (bed, desk, wardrobe, duvet, pillows...).\n\n---------\n\nThe flatshare can be found in the Grandes Carrières neighborhood, in the heart of Paris. Plenty of shops, public transports, restaurants are accessible close by. The apartment is on floor 6 without lift. It is entirely equipped and is composed of a large kitchen with refrigerator, microwave, pans, crockery, kitchen ustensils, kettle… The accommodation also contains an ironing board, a washing machine, a clothes rack, an iron. Additionally, you will find cleaning items in the accommodation: bagless hoover, dustpan and brush, broom, mop and bucket… Every furnished flatshare includes all expenses: housing insurance, water, electricity, unlimited wi-fi, condominium fees, household waste tax.\n\nAll our flats are fully equipped (washing machine, dishes, decoration...)\nby our teams, who also take care of the technical and material maintenance.\n\n---------\n\n\n\n---------\n\nMinimum stay : 1 mois\n\nApartment eligible for CAF up to 258€ / month. The CAF for Caisse\nd'allocations familiales is a free public service eligible for all,\nincluding foreigners and can help you financially to pay part of your\nhousing according to your situation whether you are French or foreign. To\nfind out the potential amount of your assistance, go to the CAF website and\ncomplete the online APL (housing assistance) estimate.\n\nService fee : from 790€\nThe service fee covers the writing of the lease but also the assistance \nthroughout your stay. The service fee covers the repair and maintenance of \nthe equipment as well as access to our ultra-reactive support in case of \nneed for intervention in your accommodation.\n\nDeposit : 1100€",
+    "amenities": [
+      "Air condition",
+      "Balcony",
+      "Cable TV",
+      "Chill out area",
+      "Cleaning (common areas)",
+      "Dining area",
+      "Dishwasher",
+      "Dryer",
+      "Elevator",
+      "Air condition",
+      "Balcony",
+      "Cable TV",
+      "Chill out area",
+      "Cleaning (common areas)",
+      "Dining area",
+      "Dishwasher",
+      "Dryer",
+      "Elevator",
+      "Fast WiFi",
+      "Hair-dryer",
+      "Heating",
+      "Iron",
+      "Kitchen",
+      "Linen",
+      "Living area",
+      "Meeting room",
+      "Outdoor space",
+      "Parking (chargeable)",
+      "Projector",
+      "Shampoo",
+      "Skype room",
+      "Soap",
+      "Toilet paper",
+      "Towels",
+      "Washer"
+    ],
+    "rooms": [
+      {
+        "id": "34813",
+        "title": "61 Cloys 5 - Bedroom 2",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "13 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/34813/photos/RG5AqYSuqE.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/34813/photos/OwcClKpxDT.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/34813/photos/J2BRWm8Vpv.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/34813/photos/4z4qO0EwzB.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "36714",
+        "title": "61 Cloys 5 - Bedroom 9",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "9 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/36714/photos/TslwwN4j7i.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/36714/photos/4nA04zogoZ.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "35832",
+        "title": "61 Cloys 6 - Bedroom 5",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "12 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/35832/photos/wrGANwsdYp.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/35832/photos/VQo6Vro4oL.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/35832/photos/5wR6BY8u21.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33178",
+        "title": "61 Cloys 4 - Bedroom 6",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "10 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33178/photos/x4p2yjZYGO.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33178/photos/7cE1pzRVeK.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33178/photos/6mtSvMYxmB.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33052",
+        "title": "61 Cloys 5 - Bedroom 8",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "11 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33052/photos/i1ryB22h9G.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33052/photos/mODu7Adxhz.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33052/photos/1uanL0t4gc.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33052/photos/WlM3Px0cxO.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "36108",
+        "title": "61 Cloys 6 - Bedroom 9",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "9 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/36108/photos/qb3UaqBNvX.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/36108/photos/M4ecme7j9l.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/36108/photos/LNZeFT4Q1Y.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/36108/photos/t65EqSgjfw.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33125",
+        "title": "61 Cloys 5 - Bedroom 6",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "11 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33125/photos/NFK1zbVUgI.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33125/photos/34Oan3syxz.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33125/photos/1MfE7RUldH.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33176",
+        "title": "61 Cloys 4 - Bedroom 5",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "11 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33176/photos/GF6fAUki9Y.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33176/photos/cLXplXMlnc.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33176/photos/SkSoR8G9Hr.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33182",
+        "title": "61 Cloys 4 - Bedroom 4",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "9 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33182/photos/nEWoa2gXGp.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33182/photos/F1NzUnhDKf.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33182/photos/c0vmqH3akE.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33128",
+        "title": "61 Cloys 5 - Bedroom 4",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "13 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33128/photos/N6VBRq83Eb.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33128/photos/tqdZh1i0iM.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33128/photos/ywYjPD3n7Q.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33128/photos/cKbuGWYQ38.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33098",
+        "title": "61 Cloys 5 - Bedroom 5",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "13 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33098/photos/56hwe8petO.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33098/photos/baCRPDhTvR.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33098/photos/CowH4TpfIz.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33098/photos/z0uPbXkXN8.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "36535",
+        "title": "61 Cloys 6 - Bedroom 2",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "12 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/36535/photos/A7WOlYDYOr.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/36535/photos/yFdlP9Nvnu.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/36535/photos/Gy58UNNgRo.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/36535/photos/QdGSxXpX7N.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "35199",
+        "title": "61 Cloys 2B - Bedroom 2",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "13 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/35199/photos/SEtzNPHXpn.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/35199/photos/CroNJDpyEt.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/35199/photos/P8MtBStDSh.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "38340",
+        "title": "61 Cloys 6 - Bedroom 8",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "11 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/38340/photos/RCRAq3yZge.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/38340/photos/QMvNDojAer.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/38340/photos/MTrNcWzi7X.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37414",
+        "title": "61 Cloys 2C - Bedroom 2",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "9 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37414/photos/SJrhMhUZeK.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37414/photos/k4qiKndETY.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37414/photos/lyf5Cwf8Pa.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37414/photos/FtqcEwrwhc.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "36156",
+        "title": "61 Cloys 6 - Bedroom 6",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "11 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/36156/photos/ga28X2pyFp.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/36156/photos/BH9Wpx5IK3.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/36156/photos/v9Fufu6O8o.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33181",
+        "title": "61 Cloys 4 - Bedroom 2",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "13 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33181/photos/Lzz6Rz63ZG.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33181/photos/HAR5t0WMyy.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33181/photos/UO1pxf6mBl.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33181/photos/SIkEDCTC8S.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "35964",
+        "title": "61 Cloys 6 - Bedroom 3",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "12 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/35964/photos/i9ua6BZHqc.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/35964/photos/hXkNZiVL3d.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/35964/photos/YF9No6Gxuv.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37970",
+        "title": "61 Cloys 5B - Bedroom 1",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "11 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37970/photos/tazWtADwaR.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37970/photos/l15thCaV5G.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37970/photos/NsllL2r45L.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "34812",
+        "title": "61 Cloys 5 - Bedroom 7",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "9 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/34812/photos/SkCyE9SjgE.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/34812/photos/DC06SMRAAv.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "34322",
+        "title": "61 Cloys 6 - Bedroom 4",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "12 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/34322/photos/FJxln658fx.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/34322/photos/pWLaJx6fZU.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/34322/photos/OB7PCLbCCK.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37186",
+        "title": "61 Cloys 6 - Bedroom 7",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "9 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37186/photos/rTuPfDRQq9.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37186/photos/btMuMoAVHc.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37186/photos/1WjhtfmYjZ.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37971",
+        "title": "61 Cloys 5B - Bedroom 2",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "10 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37971/photos/ut1y3qMqgz.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37971/photos/KG3NT3ZflF.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37971/photos/I8nXsnmi13.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37971/photos/O85KyUrhDM.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37415",
+        "title": "61 Cloys 2C - Bedroom 3",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "9 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37415/photos/VnTPWahXUj.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37415/photos/TutQFbxSw0.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37415/photos/mgSklQDzA4.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37415/photos/gNLGO8CkT8.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33180",
+        "title": "61 Cloys 4 - Bedroom 1",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "13 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33180/photos/4nIy5aQiO7.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33180/photos/KmbF243SIT.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33180/photos/JcjORCgWnf.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37624",
+        "title": "61 Cloys 6B - Bedroom 3",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "9 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37624/photos/iaBdwL0ArQ.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37624/photos/zwAue5Of9D.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37624/photos/ekUzCD4Gkz.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37972",
+        "title": "61 Cloys 5B - Bedroom 3",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "10 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37972/photos/JnTVbsrTSB.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37972/photos/YKx1mLLmQx.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37972/photos/0R8sLHqSf5.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37972/photos/s7pEGpf9Dm.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37623",
+        "title": "61 Cloys 6B - Bedroom 2",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "10 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37623/photos/co9gVt4qCT.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37623/photos/0lUEZMhCDD.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37623/photos/K2f5AwCOjS.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "33187",
+        "title": "61 Cloys 4 - Bedroom 3",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "11 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/33187/photos/a4UlfxZMB0.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33187/photos/R2hukTCVnh.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/33187/photos/JjYphLGIdu.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37622",
+        "title": "61 Cloys 6B - Bedroom 1",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "10 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37622/photos/VSMteVK66u.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37622/photos/2VnRrtxKCI.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37622/photos/qZuNYA2KZn.jpg?h=960"
+        ],
+        "price": null
+      },
+      {
+        "id": "37413",
+        "title": "61 Cloys 2C - Bedroom 1",
+        "details": [
+          "Private room ·",
+          "Single occupancy ·",
+          "Single bed ·",
+          "10 m² ·",
+          "Shared bathroom"
+        ],
+        "amenities": [
+          "Chair",
+          "· Closet/drawers",
+          "· Desk/workspace"
+        ],
+        "images": [
+          "https://co-living.imgix.net/uploads/roomtypes/37413/photos/bM3x4eMr7I.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37413/photos/HsHTMG277M.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37413/photos/InQ386vnWJ.jpg?h=960",
+          "https://co-living.imgix.net/uploads/roomtypes/37413/photos/5IlXdKbKWt.jpg?h=960"
+        ],
+        "price": null
+      }
+    ],
+    "virtualTour": "https://mpembed.com/show/?m=wcc2piJZ8kY&cloudEdit=1&sr=-3.07,.09&ss=78&mdir=3&minimap=1&lang=fr&qs=1",
+    "address": "Find my home\n\n\n\n\nWhat is coliving?\n\n\n\n\nAbout\n\n\n\n\n\n\n \n\n\n\n\n\n \n\n\n\n\n \n\n\n\n \n\n\n\n\n\nWhat is coliving\n\n\nFind my home\n\n\n\nAbout\n\n\nHelp center\n\n\n\nList your coliving\n\n\n\n\nSign up\n\n\nLog in"
   },
   {
     "images": [
@@ -932,6 +1762,7 @@
     ],
     "title": "3-Bed Apartment on Rue de Saussure 75017 Paris",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "69 m2",
@@ -993,7 +1824,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34766/photos/dzU53vQn3W.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34766/photos/f2jUiF4zT3.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34766/photos/Cnu3FObgwO.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36662",
@@ -1014,7 +1846,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36662/photos/TBWaOD8pE7.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36662/photos/4ISPJ60t6O.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36662/photos/uDl5Dn4Ogd.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34463",
@@ -1035,7 +1868,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34463/photos/EaWtNJwxCc.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34463/photos/FMyS5NUcnz.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34463/photos/bjPFlZ7s2a.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38335",
@@ -1056,7 +1890,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38335/photos/4VEGUcKEW9.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38335/photos/wd7izrNQNJ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38335/photos/J3jgUNj3rI.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33244",
@@ -1077,7 +1912,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33244/photos/X6hur4JABe.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33244/photos/ly4zrSO1cL.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33244/photos/lbqJ2qT6yC.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33085",
@@ -1098,7 +1934,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33085/photos/pZX8dD3kYy.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33085/photos/ZvVmeF3JXv.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33085/photos/oxrKkymLgX.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35839",
@@ -1120,7 +1957,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35839/photos/FLUuEBFeOv.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35839/photos/bNzdefbINE.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35839/photos/2OIKdfgIOj.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33632",
@@ -1141,7 +1979,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33632/photos/nLh07R2WK0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33632/photos/9KAOz9ac0f.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33632/photos/FxhMIm28Mw.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36709",
@@ -1163,7 +2002,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36709/photos/np6IRjIZct.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36709/photos/5Wi4BPwHho.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36709/photos/xWUsH5GU6y.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33056",
@@ -1185,7 +2025,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33056/photos/tf8JgYp4yg.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33056/photos/AIVdu8Bn3E.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33056/photos/qnoFPItu8I.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33104",
@@ -1207,7 +2048,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33104/photos/Zf5VJGJRMV.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33104/photos/PvmhN7SPtS.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33104/photos/jH4ba1F6pD.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33118",
@@ -1229,7 +2071,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33118/photos/mS2Zl0FPxB.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33118/photos/AIqK0R39qc.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33118/photos/tNjC23Qz7P.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34477",
@@ -1251,7 +2094,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34477/photos/bImuiFXMLY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34477/photos/abvzTLoXJD.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34477/photos/HpTrRE2DFf.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37153",
@@ -1272,7 +2116,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37153/photos/Qtf99eNylQ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37153/photos/wQHm5rOCJB.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37153/photos/hq1pBS7nGq.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=ZkSjMGqDX2y&cloudEdit=1&sr=-.111,.83&ss=38&mdir=3&minimap=1&lang=fr&qs=1",
@@ -1304,6 +2149,7 @@
     ],
     "title": "Elegant Vibrant Complex w/ Gym + Cinema Room",
     "bedrooms": "12 bedrooms",
+    "price": "",
     "bathrooms": "7 baths",
     "residents": "12 residents",
     "gender": "300 m2",
@@ -1365,9 +2211,9 @@
           "· Essentials",
           "· Lock on door",
           "· WiFi",
-          "€1,132",
+          "",
           "/month",
-          "-5%"
+          ""
         ],
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/35976/photos/P89eFr06jj.jpg?h=960",
@@ -1375,7 +2221,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35976/photos/DpqsMT8Aol.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35976/photos/cOnbMbIxBr.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35976/photos/oQhV3prOs7.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "14942",
@@ -1418,7 +2265,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/14942/photos/yVUEmm8J6J.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/14942/photos/BAwDUqIsGc.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/14942/photos/p1XmOKylwc.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -1547,6 +2395,7 @@
     ],
     "title": "Astonishing Spacious House near Saint Georges",
     "bedrooms": "1 bedrooms",
+    "price": "",
     "bathrooms": "1 residents",
     "residents": "28 m2",
     "gender": "1 month min.",
@@ -1583,7 +2432,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34913/photos/UTdjasUmCE.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34913/photos/oyZX6M6nUd.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34913/photos/IOwLU8LNm9.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37117",
@@ -1607,7 +2457,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37117/photos/VXw5EA1aB7.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37117/photos/5C7BHCVjSV.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37117/photos/vwMXaEJOqY.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37293",
@@ -1634,7 +2485,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37293/photos/KrZKV01xBu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37293/photos/mHvsIUHKAu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37293/photos/TQdpzLQCC3.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37213",
@@ -1660,7 +2512,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37213/photos/7Q1IhExhmZ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37213/photos/0fTfYeC8yw.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37213/photos/l4gj8je6TB.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37116",
@@ -1684,7 +2537,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37116/photos/hvtIhff2IU.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37116/photos/kSlHivUVIG.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37116/photos/bE7X95QnE5.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37237",
@@ -1711,7 +2565,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37237/photos/9mGZjsIS3z.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37237/photos/2nHOkBUb3n.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37237/photos/Lkaz7Am0Wr.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37436",
@@ -1735,7 +2590,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37436/photos/MeC3djcNzS.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37436/photos/DFk6zqyjJE.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37436/photos/3qoE9t3QtB.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37925",
@@ -1761,7 +2617,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37925/photos/0VkXKWLVgf.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37925/photos/qxvudMyWMW.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37925/photos/uHneGo3NNB.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37375",
@@ -1790,7 +2647,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37375/photos/VlcxDve5D2.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37375/photos/5RIsz0LwVl.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37375/photos/Z287TI6LLo.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37621",
@@ -1817,7 +2675,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37621/photos/CGq2DCWJgb.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37621/photos/QbSPEqTdTE.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37621/photos/HyKGGHQsPr.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38252",
@@ -1843,7 +2702,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38252/photos/Lhuy2XLbNm.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38252/photos/PWHnS0PrZ0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38252/photos/w4BiKmcDTs.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37692",
@@ -1868,7 +2728,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37692/photos/LEGxRyjj4B.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37692/photos/FxPSXAa660.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37692/photos/55omWOALmN.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=y7JDcbkMBpq&cloudEdit=1&sr=-2.57,-1.09&ss=293&mdir=3&minimap=1&lang=fr&qs=1",
@@ -1892,6 +2753,7 @@
     ],
     "title": "Cozy Stylish Apt. near Auteuil",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "5 residents",
     "gender": "93 m2",
@@ -1947,7 +2809,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34448/photos/MddXqBBoNW.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34448/photos/JigG3TKNbO.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34448/photos/x1h9fRrV5I.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35847",
@@ -1970,7 +2833,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35847/photos/IPPuy8rIku.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35847/photos/GJx6KsPdjz.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35847/photos/CS69J3fFjd.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38357",
@@ -1991,7 +2855,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38357/photos/Zel4NiGz4P.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38357/photos/mLl0JA0yQI.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38357/photos/XEp2b5lB7e.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38358",
@@ -2014,7 +2879,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38358/photos/sQkTd8R18d.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38358/photos/fdImzX2PZy.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38358/photos/S9DMuVOXfJ.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36808",
@@ -2036,7 +2902,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36808/photos/Wox7kW2mPD.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36808/photos/glZjGLuL2i.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36808/photos/ANJDZozLdA.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=4RhqEHZmBGP&cloudEdit=1&sr=-2.82,.63&ss=20&mdir=3&minimap=1&lang=fr&qs=1",
@@ -2105,6 +2972,7 @@
     ],
     "title": "Elegant apartment near Monceau",
     "bedrooms": "7 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "7 residents",
     "gender": "221 m2",
@@ -2138,7 +3006,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36849/photos/DfpoCVvOTx.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36849/photos/qxkdzP7EmG.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36849/photos/oGlOBnwbAt.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36443",
@@ -2159,7 +3028,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36443/photos/X9B2Yis9kg.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36443/photos/JfHVDZ5HL5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36443/photos/TkfPId5hPt.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35196",
@@ -2184,7 +3054,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35196/photos/HymRtDl61v.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35196/photos/ddAjriFdLW.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35196/photos/xRZXbA05kd.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35185",
@@ -2208,7 +3079,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35185/photos/kJGgGsf4Lu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35185/photos/6FPoYUn2sl.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35185/photos/5BDRyLrFMN.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34210",
@@ -2230,7 +3102,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34210/photos/tAkWLWsWBt.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34210/photos/SxxfW8HMYH.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34210/photos/CemzBdCnIz.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36660",
@@ -2254,7 +3127,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36660/photos/uBpjQeloOW.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36660/photos/qTTZDMCc7Q.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36660/photos/IA24K8JsEn.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36986",
@@ -2276,7 +3150,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36986/photos/pxWwZ9c3CO.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36986/photos/eGOnRxlDPG.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36986/photos/IE4rDktQej.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33246",
@@ -2299,7 +3174,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33246/photos/BVMT5nK9fY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33246/photos/myCZTonXjA.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33246/photos/wAcg932gGh.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36923",
@@ -2321,7 +3197,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36923/photos/H0cRYYIvxE.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36923/photos/RFYXz34c88.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36923/photos/Hn2bdZaT1S.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36711",
@@ -2345,7 +3222,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36711/photos/QyyGI3osdf.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36711/photos/RuHbBY2Sks.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36711/photos/UDEeWp30Hj.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37211",
@@ -2367,7 +3245,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37211/photos/Fre50edSqd.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37211/photos/9zHIHsDjcN.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37211/photos/cYfxPNhvns.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36494",
@@ -2392,7 +3271,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36494/photos/pnSHOjyAH5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36494/photos/oVia5Adq4W.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36494/photos/le8WGLVttP.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38590",
@@ -2414,7 +3294,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38590/photos/yIsYbxt4rh.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38590/photos/CNNhEz1K6o.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38590/photos/AyYHoET7gW.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36143",
@@ -2437,7 +3318,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36143/photos/DCNZMJoYIk.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36143/photos/G07kqIZtyR.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36143/photos/V2yEVL4MN5.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38334",
@@ -2461,7 +3343,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38334/photos/ADDMReWYM5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38334/photos/EI0Y89zGUb.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38334/photos/ekESlWzrpv.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34283",
@@ -2485,7 +3368,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34283/photos/5YvIDZ3891.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34283/photos/tqvelrNCJM.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34283/photos/ngom4wWBQq.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33405",
@@ -2509,7 +3393,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33405/photos/UrlAmT86K2.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33405/photos/5QpMHrL33n.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33405/photos/wo4H4PnMsx.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -2530,6 +3415,7 @@
     ],
     "title": "Cozy Chic Apt. near Lamarck - Guy Moquet",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "80 m2",
@@ -2563,7 +3449,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36391/photos/Fb44KjyDuo.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36391/photos/43JCNJYmrg.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36391/photos/70dTt07JeG.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38436",
@@ -2585,7 +3472,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38436/photos/q7OwcOdJUY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38436/photos/WcaoP9KN4U.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38436/photos/wohtUGePRz.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=zR9AEkBobwJ&cloudEdit=1&sr=-2.75,1.21&ss=8&mdir=3&minimap=1&lang=fr&qs=1",
@@ -2602,6 +3490,7 @@
     ],
     "title": "Luxury Cozy Apt. near Porte des Lilas Metro Station",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "5 residents",
     "gender": "106 m2",
@@ -2631,7 +3520,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33082/photos/JHxYRlOGFb.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33082/photos/hH9Sm2doRw.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33082/photos/gekt6aAZkp.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36902",
@@ -2653,7 +3543,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36902/photos/Ye6M1yiMTd.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36902/photos/JpbZfpOsWq.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36902/photos/f2CwpsyZ9M.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36899",
@@ -2676,7 +3567,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36899/photos/7fZ757KMJ2.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36899/photos/vKKS7etwqE.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36899/photos/xpkXb7Jbhf.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36900",
@@ -2698,7 +3590,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36900/photos/2ASOOPJImV.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36900/photos/HASKQgxb34.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36900/photos/PcPAsHmVkC.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=fVWbvDVRi18&cloudEdit=1&sr=-3.07,-.75&ss=32#edit&mdir=3&minimap=1&lang=fr&qs=1",
@@ -2717,6 +3610,7 @@
     ],
     "title": "Ideally Upscale Apt. right away from Centre Sportif Championnet",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "84 m2",
@@ -2749,7 +3643,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33123/photos/tE7dBB5taL.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33123/photos/mvz7ZH7W06.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33123/photos/wWktOXEaNS.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36422",
@@ -2770,7 +3665,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36422/photos/JjaJ0TgDQH.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36422/photos/ai4udgdpQ8.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36422/photos/P76tfno9CS.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37360",
@@ -2791,7 +3687,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37360/photos/CDkAGL5VD3.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37360/photos/uDF9dvS0Qj.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37360/photos/SirJXiankd.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36807",
@@ -2813,7 +3710,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36807/photos/KuW5GV5BS6.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36807/photos/1CyKpiEtdw.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36807/photos/32YbXo3GVw.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=dn1p6tQLU5a&brand=1&play=1&qs=1&help=0&vrcoll=0&nozoom=1&sr=-.61,1.12&ss=13&mdir=3&minimap=1&lang=fr&qs=1",
@@ -2840,6 +3738,7 @@
     ],
     "title": "Nicely Stylish House 5 min. from Porte de Saint-Cloud",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "5 residents",
     "gender": "113 m2",
@@ -2874,7 +3773,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33373/photos/26Pt09srzd.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33373/photos/znup5XJdu5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33373/photos/bXsedWbt3p.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38352",
@@ -2898,7 +3798,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38352/photos/e9kWvV2z82.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38352/photos/ZdkyL3figk.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38352/photos/qSPCX12bVT.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -2920,6 +3821,7 @@
     ],
     "title": "Fantastic Spacious Apt. near Monceau",
     "bedrooms": "7 bedrooms",
+    "price": "",
     "bathrooms": "3 baths",
     "residents": "7 residents",
     "gender": "182 m2",
@@ -2953,7 +3855,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34348/photos/YlaKLAd2zS.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34348/photos/RhwFcNfKnr.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34348/photos/YFBYJlBzcR.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34814",
@@ -2975,7 +3878,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34814/photos/DUASIlNmjh.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34814/photos/ppQ1ZCFq88.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34814/photos/gKVllQpW2j.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34978",
@@ -2997,7 +3901,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34978/photos/Qy6xWMwf6r.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34978/photos/SJbd8zyLto.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34978/photos/Cyv2Hpujsl.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34047",
@@ -3019,7 +3924,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34047/photos/UKMtrhq0fv.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34047/photos/aA7LBkN7ku.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34047/photos/0S79Alaglx.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34885",
@@ -3041,7 +3947,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34885/photos/7K1Jn1Qk7Z.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34885/photos/Ng7sLWDxAl.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34885/photos/zdKBWWAoPi.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34883",
@@ -3064,7 +3971,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34883/photos/Zc2soKFxX2.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34883/photos/F4jG4cs9Ov.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34883/photos/OfsNDfpzQo.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36152",
@@ -3086,7 +3994,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36152/photos/PPLjddFR7k.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36152/photos/Vl77Kvp6kP.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36152/photos/bbPTta7njn.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -3108,6 +4017,7 @@
     ],
     "title": "Delightful Majestic Apt. in Ternes",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "73 m2",
@@ -3141,7 +4051,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34937/photos/oNYW2DXXPD.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34937/photos/j35dEy6VJ5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34937/photos/69yOn4AhPP.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38348",
@@ -3162,7 +4073,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38348/photos/F6R3tAyYRT.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38348/photos/ZNFNaZVeVW.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38348/photos/zpl5Zkbdw6.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=zfMU4ft4Y5w&cloudEdit=1&sr=-2.95,.84&ss=3&mdir=3&minimap=1&lang=fr&qs=1",
@@ -3191,6 +4103,7 @@
     ],
     "title": "14-Bed Apartment on Rue Georges Lardennois",
     "bedrooms": "14 bedrooms",
+    "price": "",
     "bathrooms": "12 baths",
     "residents": "14 residents",
     "gender": "285 sqft",
@@ -3273,7 +4186,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33880/photos/KD9RF2xiJY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33880/photos/KAZHUSZQVc.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33880/photos/KYYVqSFAQZ.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33879",
@@ -3319,7 +4233,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33879/photos/VlyWBApZOV.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33879/photos/vowSoKgW67.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33879/photos/WDxWELC15B.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -3336,6 +4251,7 @@
     ],
     "title": "Typical Comfortable Apt. close to Saint Lambert",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "75 m2",
@@ -3369,7 +4285,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36543/photos/SElOIfsOlE.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36543/photos/pXzGa7Yoga.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36543/photos/6F1msDxh9I.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34323",
@@ -3393,7 +4310,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34323/photos/o3iRhYUr67.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34323/photos/fD0MIAHFpv.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34323/photos/ZomkGdeKgi.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=epeHxPoTjF8&cloudEdit=1&sr=-2.28,1.26&ss=39&mdir=3&minimap=1&lang=fr&qs=1",
@@ -3410,6 +4328,7 @@
     ],
     "title": "Newly Renovated Apt. w/ Terrace",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "75 m2",
@@ -3468,7 +4387,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/25549/photos/whfYyelWBp.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/25549/photos/0W47MSDIEx.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/25549/photos/DcaCmJcbON.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "25547",
@@ -3496,7 +4416,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/25547/photos/zceRs6PzFy.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/25547/photos/mYKicsj6SR.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/25547/photos/IiBx5LX2rY.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "25548",
@@ -3524,7 +4445,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/25548/photos/TNa9vnMngF.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/25548/photos/Gs4H1IT4tc.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/25548/photos/r2rK3X3Ofs.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "25550",
@@ -3553,7 +4475,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/25550/photos/pm7NgVXObB.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/25550/photos/t8TnSyXCxP.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/25550/photos/n8teMIb6BQ.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -3575,6 +4498,7 @@
     ],
     "title": "Outstanding Complex w/ Gym + Screening Room + Wine Bar",
     "bedrooms": "58 bedrooms",
+    "price": "",
     "bathrooms": "53 baths",
     "residents": "58 residents",
     "gender": "1 month min.",
@@ -3646,7 +4570,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/21401/photos/hrwPx3RWib.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/21401/photos/npLU9KuMTX.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/21401/photos/Fejw5cWfcT.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "21402",
@@ -3677,7 +4602,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/21402/photos/jR12TuCL3H.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/21402/photos/sjePyV7mwW.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/21402/photos/0JLAY2PlV5.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "21403",
@@ -3707,7 +4633,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/21403/photos/7fTTRhbRE5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/21403/photos/2dgbv99peC.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/21403/photos/C6sseLIkfT.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -3739,6 +4666,7 @@
     ],
     "title": "Vast Lovely Apt. closeby Amérique",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "67 m2",
@@ -3772,7 +4700,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35188/photos/aFXKnS3hty.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35188/photos/7saxJI6oDh.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35188/photos/ppoTHyDPKE.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33105",
@@ -3794,7 +4723,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33105/photos/J0sQ5sHtLi.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33105/photos/IJ2RTzkhyA.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33105/photos/tD9iTa0TWa.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37115",
@@ -3817,7 +4747,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37115/photos/cVczrLAsO6.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37115/photos/z08MmZ5wZI.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37115/photos/KaIt2nhVJn.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=j8T7ytNYQ9p&cloudEdit=1&sr=-.211,-.45&ss=8&mdir=3&minimap=1&lang=fr&qs=1",
@@ -3846,6 +4777,7 @@
     ],
     "title": "63 avenue de Wagram",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "66 m2",
@@ -3902,7 +4834,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38712/photos/7bsXK6bQ6R.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38712/photos/9o9rZ26M87.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38712/photos/e0J0tGbvuf.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34576",
@@ -3924,7 +4857,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34576/photos/EwLDDNRjkr.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34576/photos/ABFfWE710R.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34576/photos/jmno4brNiF.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36991",
@@ -3945,7 +4879,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36991/photos/eXewIussCm.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36991/photos/OS93L6MyTN.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36991/photos/HkWBkuqUxY.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33989",
@@ -3967,7 +4902,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33989/photos/zHi7XLIfdJ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33989/photos/ZjH10i6zBL.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33989/photos/FU91m7XzXn.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37082",
@@ -3989,7 +4925,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37082/photos/RfqWtXh2I0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37082/photos/ejw0aCZIk2.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37082/photos/mO4nlpX2Qd.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38728",
@@ -4011,7 +4948,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38728/photos/f73B0MiY2L.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38728/photos/S8n4ud8uHG.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38728/photos/R9lxYwOOvg.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=WTt2ZLsuYMh&cloudEdit=1&sr=3.14,-.92&ss=45&mdir=3&minimap=1&lang=fr&qs=1",
@@ -4034,6 +4972,7 @@
     ],
     "title": "4-Bed Apartment on rue du Quatre Septembre",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "84 m2",
@@ -4094,7 +5033,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33732/photos/t68jme6Pmf.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33732/photos/l7F2eh7TkY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33732/photos/ArKTpN1Kaq.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38730",
@@ -4115,7 +5055,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38730/photos/UdikVYxyUK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38730/photos/yvgWT3YFyQ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38730/photos/JOgGdMHf3L.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33728",
@@ -4139,7 +5080,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33728/photos/vTG3OzBqtd.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33728/photos/PPBUmd8Arw.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33728/photos/qffmWS5QFY.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34340",
@@ -4163,7 +5105,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34340/photos/kid8FLbGtu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34340/photos/MGi21q048S.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34340/photos/FapgJVKi2u.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=Pvob194621w&cloudEdit=1&sr=-.29,1.07&ss=9&mdir=3&minimap=1&lang=fr&qs=1",
@@ -4195,6 +5138,7 @@
     ],
     "title": "4-Bed Apartment on Rue de l'Aqueduc",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "71 m2",
@@ -4256,7 +5200,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33075/photos/1wUSISVyJx.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33075/photos/fHfACAv9CV.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33075/photos/ShspCyeb7f.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34627",
@@ -4278,7 +5223,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34627/photos/V6P5pTwjvS.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34627/photos/XBebFZT6eB.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34627/photos/nJS2mGSBJa.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33086",
@@ -4301,7 +5247,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33086/photos/krnbh3cjZo.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33086/photos/SSgodEU0Im.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33086/photos/i0JGldVf21.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37499",
@@ -4323,7 +5270,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37499/photos/EtWL9V3DYu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37499/photos/d8JbuBpzq2.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37499/photos/w2O8N82P3m.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -4339,6 +5287,7 @@
     ],
     "title": "Elegant Stunning Apt.",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "5 residents",
     "gender": "82 m2",
@@ -4397,7 +5346,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16318/photos/k7dQeyP7WO.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16318/photos/dRbTvDemAQ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16318/photos/oapDPtGVoW.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16317",
@@ -4425,7 +5375,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16317/photos/582Q7kX0C7.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16317/photos/TBoJNtCQEr.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16317/photos/azxAcjQjiL.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16315",
@@ -4452,7 +5403,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16315/photos/IG35ms2Fox.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16315/photos/Z0M7yYS8eA.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16315/photos/L6FYisZgDR.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16314",
@@ -4479,7 +5431,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16314/photos/d5FQWwRQJJ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16314/photos/FdFpZwzZ41.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16314/photos/KFHUr4zHfo.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16316",
@@ -4509,7 +5462,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16316/photos/lEo9z3ex1A.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16316/photos/QkIdirIHQV.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16316/photos/FXGLHmYdRl.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -4528,6 +5482,7 @@
     ],
     "title": "Bright Comfortable Apt.",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "4 residents",
     "gender": "78 m2",
@@ -4585,7 +5540,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16516/photos/h7JmXojpug.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16516/photos/CHnhpm9NuP.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16516/photos/iQuGcZj5aV.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16513",
@@ -4613,7 +5569,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16513/photos/AaXcdJzxOp.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16513/photos/YQthBTZ66k.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16513/photos/Jm1XGu6Bcr.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16514",
@@ -4642,7 +5599,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16514/photos/EjJQkSJU9S.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16514/photos/iCAkfmS0H7.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16514/photos/miGfsewzKm.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16511",
@@ -4670,7 +5628,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16511/photos/Km0WVhgHw0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16511/photos/ChrJ9TlVw3.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16511/photos/FDkYybbhF3.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -4686,6 +5645,7 @@
     ],
     "title": "Urban Majestic Apt.",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "62 m2",
@@ -4743,7 +5703,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16502/photos/ROW4l5MIbE.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16502/photos/1hSdbmuwrf.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16502/photos/30pjuV6YRA.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16497",
@@ -4771,7 +5732,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16497/photos/8HAEbYs3c1.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16497/photos/1WkYfjIK2L.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16497/photos/mMDuJCB8C7.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16499",
@@ -4799,7 +5761,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16499/photos/SeyLsOnSJ3.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16499/photos/K6FEVsdgzX.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16499/photos/pPMfDcFEMb.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -4815,6 +5778,7 @@
     ],
     "title": "Cozy Stylish Apt.",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "70 m2",
@@ -4871,7 +5835,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16494/photos/zi3S1Cnm9x.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16494/photos/MLYbHWEI7D.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16494/photos/DURnwFAdAW.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16491",
@@ -4898,7 +5863,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16491/photos/rf4DlCwARK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16491/photos/Kve8fw8W7S.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16491/photos/YhIcntJzxS.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16495",
@@ -4927,7 +5893,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16495/photos/e68FteUo9g.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16495/photos/DaIOisWcc8.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16495/photos/YTDP47e4U6.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -4947,6 +5914,7 @@
     ],
     "title": "Delightful Bright House",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "60 m2",
@@ -5004,7 +5972,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16522/photos/wftc9NqJh9.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16522/photos/aPpeDfEMyK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16522/photos/w0qAMO9v7F.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16525",
@@ -5032,7 +6001,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16525/photos/4dEPPsw5J4.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16525/photos/ECuxdsSI3F.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16525/photos/fWLKOVwDM5.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16523",
@@ -5060,7 +6030,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16523/photos/Ysa2Mk7a6I.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16523/photos/WckdiDoO14.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16523/photos/O6e862m0oc.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -5091,6 +6062,7 @@
     ],
     "title": "Amazing Stylish Apt. close to Boissière Metro Station",
     "bedrooms": "6 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "6 residents",
     "gender": "166 m2",
@@ -5123,7 +6095,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37069/photos/l8BSdfYDEh.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37069/photos/kFhhPhHW8U.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37069/photos/SST0KrMfZp.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35992",
@@ -5148,7 +6121,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35992/photos/ISYdIdKR5P.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35992/photos/Myk9tqUNV0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35992/photos/6K9pqdkWT7.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38350",
@@ -5172,7 +6146,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38350/photos/EHlyzlfHOx.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38350/photos/kLGfS4YMuK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38350/photos/Dfgbayq8Bh.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33330",
@@ -5198,7 +6173,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33330/photos/E3qqN0rHv9.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33330/photos/sIU5YAm6XH.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33330/photos/tK7eW5bv8g.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -5218,6 +6194,7 @@
     ],
     "title": "Delightful Comfortable Flat located near Ternes",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "65 m2",
@@ -5251,7 +6228,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35937/photos/iiRZPsCXd1.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35937/photos/9nCNV1Ue1X.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35937/photos/2COV5crLLs.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38355",
@@ -5273,7 +6251,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38355/photos/5BKs5glHbk.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38355/photos/xDlTAFrHXu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38355/photos/gM4nxGkJuq.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33177",
@@ -5292,7 +6271,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33177/photos/kNmoTuQlMN.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33177/photos/HAhxtQpSdC.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33177/photos/grLtpYNJph.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -5346,6 +6326,7 @@
     ],
     "title": "Nicely Stylish House neary Muette",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "4 residents",
     "gender": "80 m2",
@@ -5378,7 +6359,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35201/photos/QyNbrJuLuA.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35201/photos/jCVByfBLcL.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35201/photos/0y3n50V32b.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36537",
@@ -5399,7 +6381,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36537/photos/dLuBib5Nsc.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36537/photos/Cepx27jsh5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36537/photos/R1Hzzq9t82.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34203",
@@ -5420,7 +6403,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34203/photos/b1Qbd6lKsK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34203/photos/WHvemXKmcM.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34203/photos/39GrPWdn67.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36625",
@@ -5442,7 +6426,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36625/photos/18WX5DIYxi.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36625/photos/LtRS8FIx47.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36625/photos/4G2XnWMaLD.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38622",
@@ -5463,7 +6448,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38622/photos/LiMKyobm1m.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38622/photos/SbTzjOANOd.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38622/photos/Bxx6o4FUnl.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38419",
@@ -5487,7 +6473,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38419/photos/PybR1A20zf.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38419/photos/6q852dSumj.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38419/photos/PM8ULbYY7S.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38591",
@@ -5510,7 +6497,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38591/photos/G0SxVOEUlz.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38591/photos/xm4mhBEoOY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38591/photos/XTY9s1RaMd.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=Tv7vb6xBJec&cloudEdit=1&sr=-.28,-.74&ss=32&mdir=3&minimap=1&lang=fr&qs=1",
@@ -5530,6 +6518,7 @@
     ],
     "title": "4-Bed Apartment on Bis Avenue de Gambetta",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "4 residents",
     "gender": "100 m2",
@@ -5591,7 +6580,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38347/photos/BqfSvYwmNT.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38347/photos/l0La9Lvkkt.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38347/photos/22o6kvAHqW.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33331",
@@ -5612,7 +6602,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33331/photos/vwFQUnehRi.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33331/photos/h4JzlbAyzu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33331/photos/INMSYjlphw.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38579",
@@ -5635,7 +6626,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38579/photos/9pKrDOiJUW.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38579/photos/LKJ188lOn1.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38579/photos/spp5qOMxNE.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=vGSKrV5qXAk&cloudEdit=1&sr=-.26,-.7&ss=30&mdir=3&minimap=1&lang=fr&qs=1",
@@ -5654,6 +6646,7 @@
     ],
     "title": "Bright Amazing Apt. w/ Terrace close to Bus station",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "4 residents",
     "gender": "89 m2",
@@ -5712,7 +6705,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33883/photos/8q9TSLMTkH.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33883/photos/AMCnCAoRl3.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33883/photos/iYGuViB5Ot.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33882",
@@ -5740,7 +6734,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33882/photos/0WxXJymY3b.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33882/photos/u0vWXlhMeG.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33882/photos/zWqCmNJ9Hn.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33884",
@@ -5769,7 +6764,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33884/photos/SGMZfQbryn.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33884/photos/g0gEyuNFsv.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33884/photos/Ox5jTmePho.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33881",
@@ -5796,7 +6792,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33881/photos/BoLZNkLkae.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33881/photos/9aMzwzmBfj.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33881/photos/W4jD6LDUH6.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -5818,6 +6815,7 @@
     ],
     "title": "Magnificent Comfortable Apt. near Convention Metro Station",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "73 m2",
@@ -5850,7 +6848,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37214/photos/GrfyoOBADK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37214/photos/pyDFneelk2.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37214/photos/lOn2NnFDGF.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=45kTdNYfwPm&cloudEdit=1&sr=-.38,.74&ss=20&mdir=3&minimap=1&lang=fr&qs=1",
@@ -5875,6 +6874,7 @@
     ],
     "title": "Gorgeous Stunning Apt. near to Eiffel Tower Gardens",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "91 m2",
@@ -5906,7 +6906,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/37084/photos/G4Rn27OR7R.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37084/photos/H3qvbL8ANz.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36960",
@@ -5928,7 +6929,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36960/photos/n6qgrHAen0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36960/photos/90vckSsgmC.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36960/photos/Q4FskMpOuv.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=Yu8uvjWKfTb&cloudEdit=1&sr=-.09,-.9&ss=58&mdir=3&minimap=1&lang=fr&qs=1",
@@ -5947,6 +6949,7 @@
     ],
     "title": "Comfortable Bright Apt. close to Exelmans Metro Station",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "5 residents",
     "gender": "128 m2",
@@ -5980,7 +6983,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36874/photos/AFYfCkDihB.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36874/photos/lBM4ukWtST.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36874/photos/dpT5HOvdJO.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36959",
@@ -6002,7 +7006,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36959/photos/GFgqCCJxDQ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36959/photos/kjMmS17UIz.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36959/photos/aYxsryoRDT.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37073",
@@ -6024,7 +7029,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37073/photos/lgV0IWaoq4.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37073/photos/nm8JTm4xFe.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37073/photos/KnoMXKermW.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=LacBafYaYqj&start=%7B%22camera_mode%22%3A1%2C%22camera_position%22%3A%7B%22x%22%3A0.07807989418506622%2C%22y%22%3A1.5204381942749023%2C%22z%22%3A2.096597909927368%7D%2C%22camera_quaternion%22%3A%7B%22x%22%3A0.008296030837904705%2C%22y%22%3A0.9618891328393883%2C%22z%22%3A0.02936670439475304%2C%22w%22%3A-0.2717316114676711%7D%2C%22scan_id%22%3A%22aabbcff2d93e40c29ca218354729946c%22%7D&mdir=3&minimap=1&qs=1",
@@ -6045,6 +7051,7 @@
     ],
     "title": "Vibrant Exceptional Apt. w/ City Views 1 block away from Parc des Buttes-Chaumont",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "97 m2",
@@ -6078,7 +7085,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38339/photos/m1jaFKk8yn.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38339/photos/Exkr1EQjzN.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38339/photos/z7Iv3ibI52.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36658",
@@ -6100,7 +7108,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36658/photos/i0GiGtqwck.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36658/photos/preKq8gInx.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36658/photos/Yv0Y6VDO25.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37113",
@@ -6123,7 +7132,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37113/photos/MA25LEmF90.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37113/photos/gAVXjSr02b.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37113/photos/xyBseshCCf.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -6145,6 +7155,7 @@
     ],
     "title": "Colorful Stylish Apt. w/ Terrace close to Place d' Italie",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "4 residents",
     "gender": "77 m2",
@@ -6178,7 +7189,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36661/photos/pKrcQTO6cX.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36661/photos/G7BxpEALU4.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36661/photos/aELVzg7nXj.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37127",
@@ -6200,7 +7212,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37127/photos/L2AfEhUR8z.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37127/photos/GG6YjvF8EO.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37127/photos/8kYfpXqcUA.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -6222,6 +7235,7 @@
     ],
     "title": "Urban Majestic Apt. near Saint Lambert",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "5 residents",
     "gender": "114 m2",
@@ -6255,7 +7269,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36536/photos/szLNtTrryl.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36536/photos/42djIL9ZV0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36536/photos/wv4cBNJj1n.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38669",
@@ -6277,7 +7292,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38669/photos/S81e43M0ue.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38669/photos/17Tn6Uy05J.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38669/photos/0YkeihDEAL.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36901",
@@ -6299,7 +7315,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36901/photos/K4eBXsKLkc.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36901/photos/lLh1jEo3E9.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36901/photos/iuEIzTSwfK.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show?m=bsMuWVKSiHp&start=%7B%22camera_mode%22%3A1%2C%22camera_position%22%3A%7B%22x%22%3A-3.291956901550293%2C%22y%22%3A1.5801753997802734%2C%22z%22%3A2.244088888168335%7D%2C%22camera_quaternion%22%3A%7B%22x%22%3A-0.0652981893713482%2C%22y%22%3A0.631091226389793%2C%22z%22%3A0.053441589382561036%2C%22w%22%3A0.7711057041436772%7D%2C%22scan_id%22%3A%225a482fc9a5a1465a95eb3db646a6b855%22%7D&mdir=3&minimap=1&qs=1",
@@ -6325,6 +7342,7 @@
     ],
     "title": "Gorgeous Ideally Apt. near Square Olave and Robert Baden-Powell",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "62 m2",
@@ -6359,7 +7377,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36257/photos/31IXK9QgpG.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36257/photos/86Rpw7Ucl8.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36257/photos/wyWv5PPNrc.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36259",
@@ -6381,7 +7400,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36259/photos/GzezoGHhvi.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36259/photos/wnQTr8NR0v.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36259/photos/w0Ak9jX65l.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36258",
@@ -6404,7 +7424,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36258/photos/4PqV9UKuVS.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36258/photos/8TVx83954n.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36258/photos/wwjsDd4hgL.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=YGQKkeMneWF&cloudEdit=1&sr=-2.27,1.2&ss=7&mdir=3&minimap=1&lang=fr&qs=1",
@@ -6431,6 +7452,7 @@
     ],
     "title": "Exceptional Stunning Apt. right away Arc de Triomphe",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "100 m2",
@@ -6464,7 +7486,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36062/photos/mJYvhwla1t.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36062/photos/MoK1hT46Wr.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36062/photos/3p9Zsv52Ov.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36612",
@@ -6486,7 +7509,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36612/photos/W9FDHm3afK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36612/photos/GBcmxjYI55.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36612/photos/2XMb2YDSu1.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -6507,6 +7531,7 @@
     ],
     "title": "Typical Comfortable House near Mail de Bièvre Park",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "80 m2",
@@ -6541,7 +7566,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36063/photos/Y2t4HbHBvl.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36063/photos/T16chTGN7t.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36063/photos/07q1xtSguU.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36065",
@@ -6564,7 +7590,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36065/photos/BVPo0n1fIx.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36065/photos/nDpjNhzkYS.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36065/photos/f9NqExeIeK.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -6588,6 +7615,7 @@
     ],
     "title": "Outstanding Bright Complex near Université Paris Cité - UFR STAPS",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "83 m2",
@@ -6620,7 +7648,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36256/photos/GwgxcZvJ3J.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36256/photos/5hQAAnyHRk.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36256/photos/eqQZAuUHeX.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37276",
@@ -6642,7 +7671,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37276/photos/1XiCsWr5EO.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37276/photos/DtLiqmLzwD.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37276/photos/f6VqYauaCz.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36123",
@@ -6664,7 +7694,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36123/photos/KUDsoXJgPi.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36123/photos/Es1Zuc1uQV.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36123/photos/K0S3Unjhjt.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=58HzsEU1T7E&cloudEdit=1&sr=-3.07,-.72&ss=8&mdir=3&minimap=1&lang=fr&qs=1",
@@ -6691,6 +7722,7 @@
     ],
     "title": "Chic Bright Apt. near Saint Merri",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "82 m2",
@@ -6723,7 +7755,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34572/photos/vtPhI35LWg.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34572/photos/K3XIm50w1o.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34572/photos/fyIsUx0pP2.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35939",
@@ -6746,7 +7779,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35939/photos/YHpDq8pZS5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35939/photos/ORCPhcHkLb.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35939/photos/whJFviiaTz.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34436",
@@ -6769,7 +7803,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34436/photos/U0uUrlTvlz.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34436/photos/jTa8ICTckK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34436/photos/AIKeyIR5N8.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33379",
@@ -6794,7 +7829,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33379/photos/gfRIje2AB3.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33379/photos/tenMWF59HU.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33379/photos/NxQuLrbhfd.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38392",
@@ -6816,7 +7852,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38392/photos/74sPcBLU9I.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38392/photos/4gB7yYSOmp.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38392/photos/UOJ6cTUzGQ.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36437",
@@ -6839,7 +7876,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36437/photos/JKvmi525gj.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36437/photos/BhjOPxcqXv.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36437/photos/No4IDy0Sws.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show?m=UGxbwuDVHea&start=%7B%22camera_mode%22%3A1%2C%22camera_position%22%3A%7B%22x%22%3A-3.0040996074676514%2C%22y%22%3A1.6392415761947632%2C%22z%22%3A-2.6703031063079834%7D%2C%22camera_quaternion%22%3A%7B%22x%22%3A0.09973170241631307%2C%22y%22%3A0.5688765433054789%2C%22z%22%3A0.06975214872822884%2C%22w%22%3A-0.8133681231507347%7D%2C%22scan_id%22%3A%2264a78989a2994ba8b64d2ec3fe64b743%22%7D&mdir=3&minimap=1&lang=fr",
@@ -6863,6 +7901,7 @@
     ],
     "title": "Elegant Stunning Apt. near Necker",
     "bedrooms": "6 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "6 residents",
     "gender": "133 m2",
@@ -6895,7 +7934,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34628/photos/jJUiOxXWYY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34628/photos/bT3VZjGhjz.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34628/photos/TduRliq6q6.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34880",
@@ -6916,7 +7956,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34880/photos/rxbEWphUz2.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34880/photos/RFo7ctZPbb.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34880/photos/TJQ53rmru8.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34979",
@@ -6937,7 +7978,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34979/photos/YBjXGbcJnY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34979/photos/fotHROGtZF.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34979/photos/8Wj4HbB7Za.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36538",
@@ -6958,7 +8000,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36538/photos/rr9UwOvv7F.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36538/photos/xoXXjoRTa5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36538/photos/Ld7RMSgGHh.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38053",
@@ -6979,7 +8022,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38053/photos/5tnQRnqS0q.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38053/photos/qMsGqm00SK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38053/photos/x4AsAW0tap.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=2diidDbcBLv&cloudEdit=1&sr=-2.9,.34&ss=31#edit&mdir=3&minimap=1&lang=fr&qs=1",
@@ -7006,6 +8050,7 @@
     ],
     "title": "Astonishing Stylish House near Gros Caillou",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "5 residents",
     "gender": "123 m2",
@@ -7039,7 +8084,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34762/photos/81Ltd6oyFz.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34762/photos/Naraek3vze.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34762/photos/1mcvUDBXTL.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34939",
@@ -7061,7 +8107,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34939/photos/ssdVGCfxmi.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34939/photos/cOUrO3anSV.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34939/photos/RzTCNzzsck.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37083",
@@ -7083,7 +8130,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37083/photos/BxBeNXODyY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37083/photos/ykHhgRCI0V.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37083/photos/fLVG3aL0gM.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -7112,6 +8160,7 @@
     ],
     "title": "Delightful Majestic Flat near Auteuil",
     "bedrooms": "6 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "6 residents",
     "gender": "130 m2",
@@ -7145,7 +8194,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35806/photos/f72QniGUcw.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35806/photos/OdAhYll1MI.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35806/photos/zyYrWrfRkA.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33591",
@@ -7167,7 +8217,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33591/photos/hpREpnNHSu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33591/photos/prKjulKiAr.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33591/photos/EeCEmvg6iS.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35002",
@@ -7189,7 +8240,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35002/photos/yvb6rh7ouU.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35002/photos/YPcfKuL7x4.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35002/photos/t9RnqLKaAx.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37129",
@@ -7210,7 +8262,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37129/photos/oAQALIXaFb.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37129/photos/EHO34QZ5Eb.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37129/photos/r37dBsdOIy.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35021",
@@ -7232,7 +8285,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35021/photos/tznFDVKwy8.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35021/photos/ts4kHWnGbi.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35021/photos/Ehr7ikX5Ks.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=3qRwfsGVk7x&start=%7B%22camera_mode%22%3A1%2C%22camera_position%22%3A%7B%22x%22%3A-0.027463436126708984%2C%22y%22%3A1.6398848295211792%2C%22z%22%3A0.7532638311386108%7D%2C%22camera_quaternion%22%3A%7B%22x%22%3A0.0669464881779893%2C%22y%22%3A-0.923505286013136%2C%22z%22%3A-0.1890948958177591%2C%22w%22%3A-0.3269545454678692%7D%2C%22scan_id%22%3A%22da15bfee131e43568c0531b5f5db91b6%22%7D&mdir=3&minimap=1&lang=fr&qs=1",
@@ -7255,6 +8309,7 @@
     ],
     "title": "Chic Bright Apt. close by Notre Dame",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "102 m2",
@@ -7287,7 +8342,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36071/photos/EVU4c9yoPA.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36071/photos/5CWSOdErIo.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36071/photos/HXch3TLZ1a.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36070",
@@ -7309,7 +8365,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36070/photos/KzcAuLsWDA.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36070/photos/iE5Ckv12HU.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36070/photos/YFqFSvFW0D.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35618",
@@ -7331,7 +8388,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35618/photos/qMCNCmsaGR.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35618/photos/YdvMYoQ8BO.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35618/photos/0Ktga7GoXh.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36611",
@@ -7352,7 +8410,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36611/photos/4MNHlirbok.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36611/photos/zBpBWuogKY.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36611/photos/xpwQhxsRh2.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=uf14W6Wn2Xz&cloudEdit=1&sr=-3.066,.68&ss=39&mdir=3&minimap=1&lang=fr&qs=1",
@@ -7382,6 +8441,7 @@
     ],
     "title": "Outstanding Comfortable Apt. close to Rochechouart",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "4 residents",
     "gender": "140 m2",
@@ -7416,7 +8476,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35614/photos/ZXlJpJXwKJ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35614/photos/yt3oia98KJ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35614/photos/GFQDJRnQM6.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36604",
@@ -7440,7 +8501,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36604/photos/kJdjm84m2o.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36604/photos/OxXEdZFXQd.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36604/photos/Tl8BRu9MSo.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36659",
@@ -7464,7 +8526,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36659/photos/1HmLQPfPZC.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36659/photos/aDE3cPsrQj.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36659/photos/Kh4BluDCd4.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38589",
@@ -7488,7 +8551,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38589/photos/1LxvtPG2ip.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38589/photos/PxtG4zOy1i.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38589/photos/Z1GNbcnbkK.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -7509,6 +8573,7 @@
     ],
     "title": "Large Spacious Apt. closeby Auteuil",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "66 m2",
@@ -7542,7 +8607,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34817/photos/un1LdUzvge.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34817/photos/sK3wKSEom8.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34817/photos/ji4MFLgwGW.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38688",
@@ -7564,7 +8630,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38688/photos/yrHTrU1lWm.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38688/photos/YJY5NODvWS.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38688/photos/DbueoMZ49Y.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -7585,6 +8652,7 @@
     ],
     "title": "Astonishing Elegant House near Auteuil",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "5 residents",
     "gender": "90 m2",
@@ -7619,7 +8687,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36399/photos/JZy7EHA9Ud.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36399/photos/AGULvNZ9bQ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36399/photos/XpEFEYxIVE.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34826",
@@ -7642,7 +8711,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34826/photos/Y5XHjGuxaq.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34826/photos/QnbFbgF7to.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34826/photos/lgKsPCYyzk.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33862",
@@ -7665,7 +8735,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33862/photos/PUHI7hJQhz.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33862/photos/ZzSBhggmKU.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33862/photos/hyq0Qay0Qp.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -7688,6 +8759,7 @@
     ],
     "title": "Cozy Stylish Apt. near Salpêtrière",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "5 residents",
     "gender": "102 m2",
@@ -7719,7 +8791,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/34465/photos/P61Oubb2Qb.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34465/photos/Kg1QOnsTDM.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34594",
@@ -7739,7 +8812,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/34594/photos/NH72bajZ5m.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34594/photos/iJYZjfuRww.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36150",
@@ -7759,7 +8833,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/36150/photos/StaVmEJeTB.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36150/photos/prAjFECeSt.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33115",
@@ -7781,7 +8856,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33115/photos/asXg5o5VhR.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33115/photos/hTBptpr04j.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33115/photos/E2sIjDJBVs.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36918",
@@ -7801,7 +8877,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/36918/photos/6NzN99jDzX.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36918/photos/0W0CENEbLP.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=FzNYGK9uwJp&cloudEdit=1&sr=-3.11,.61&ss=19&mdir=3&minimap=1&lang=fr&qs=1",
@@ -7822,6 +8899,7 @@
     ],
     "title": "5-Bed Apartment on Boulevard St-Martin",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "5 residents",
     "gender": "92 m2",
@@ -7853,7 +8931,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/34015/photos/pdXh7oTkvd.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34015/photos/dLw7bdjTi5.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34768",
@@ -7873,7 +8952,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/34768/photos/Uv18tskfe7.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34768/photos/CbLUsbQrHj.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36958",
@@ -7893,7 +8973,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/36958/photos/xmr5xuo3LC.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36958/photos/c6UJGqF7PG.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38580",
@@ -7913,7 +8994,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/38580/photos/92XPtTb0iR.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38580/photos/tBgFUnBSEb.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "37359",
@@ -7934,7 +9016,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/37359/photos/HPoviVBVEh.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37359/photos/IV4JINW3bn.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/37359/photos/VruspngbTj.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -7955,6 +9038,7 @@
     ],
     "title": "5-Bed Apartment on boulevard Voltaire",
     "bedrooms": "5 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "5 residents",
     "gender": "113 m2",
@@ -8014,7 +9098,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36495/photos/VlGLpdzyjl.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36495/photos/cFzKf73pRm.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36495/photos/DGAfCwzuqR.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34341",
@@ -8036,7 +9121,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34341/photos/95NtnXHn7S.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34341/photos/c9qpARC78a.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34341/photos/pm9AgrCdZn.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "36541",
@@ -8058,7 +9144,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36541/photos/0Tsw51yHUF.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36541/photos/bgwmA2qGTP.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36541/photos/qOF05nrBh2.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33734",
@@ -8080,7 +9167,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33734/photos/XVnGGHlqlu.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33734/photos/Ig8HGzlxVQ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33734/photos/BU3uozwRyh.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -8107,6 +9195,7 @@
     ],
     "title": "3-Bed Apartment on Boulevard de la Villette",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "3 residents",
     "gender": "71 m2",
@@ -8138,7 +9227,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33520/photos/hR2SeJGxUM.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33520/photos/40Vgd2pQe5.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33520/photos/Mv7HYfjTks.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=YKBeEEhz3nc&cloudEdit=1&sr=-2.93,.63&ss=6&mdir=3&minimap=1&lang=fr&qs=1",
@@ -8153,6 +9243,7 @@
     ],
     "title": "First-class Stunning Apt.",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "57 m2",
@@ -8209,7 +9300,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16409/photos/iVUYcfd1OW.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16409/photos/GLYlkeeiTX.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16409/photos/5x8KQTR1OZ.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16414",
@@ -8235,7 +9327,8 @@
         "images": [
           "https://co-living.imgix.net/uploads/roomtypes/16414/photos/XbUQrwQOua.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16414/photos/q4bHB9fiQz.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "16408",
@@ -8262,7 +9355,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/16408/photos/Gvgl6RXXuW.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16408/photos/Ri3LQOwfpN.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/16408/photos/FqpTOx6V5a.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -8281,6 +9375,7 @@
     ],
     "title": "Incredible Stunning Apt. right away Theater of the Eiffel Tower",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "2 baths",
     "residents": "4 residents",
     "gender": "84 m2",
@@ -8314,7 +9409,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36064/photos/67GW0hPtoL.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36064/photos/d6rNwlpz05.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36064/photos/lDfvehUjyw.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -8332,6 +9428,7 @@
     ],
     "title": "Ideally Upscale Apt. near Ternes",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "93 m2",
@@ -8364,7 +9461,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/36214/photos/yUlqw42zRk.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36214/photos/Jws6Udgazz.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/36214/photos/ePMbQHltPf.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38667",
@@ -8385,7 +9483,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38667/photos/VO9nD58FyV.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38667/photos/zeu5FrMZ0E.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38667/photos/CEqyPKJK0D.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "33376",
@@ -8407,7 +9506,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33376/photos/uvoXljeiRD.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33376/photos/JUP8LvVbij.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33376/photos/aZk4GCSS87.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34749",
@@ -8430,7 +9530,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34749/photos/BoaqbmUZHQ.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34749/photos/OSP5UkuTnN.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34749/photos/aGhKRi17FF.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=CRaq32pxwF3&start=%7B%22camera_mode%22%3A1%2C%22camera_position%22%3A%7B%22x%22%3A4.698959827423096%2C%22y%22%3A1.6308488845825195%2C%22z%22%3A-1.9679149389266968%7D%2C%22camera_quaternion%22%3A%7B%22x%22%3A0.007676196364032141%2C%22y%22%3A-0.32245954916275693%2C%22z%22%3A0.0026150406446862236%2C%22w%22%3A0.9465485073283667%7D%2C%22scan_id%22%3A%22ce38f6208c7d4a5082ed78bba193c77b%22%7D&mdir=3&minimap=1&qs=1",
@@ -8449,6 +9550,7 @@
     ],
     "title": "Newly Bright House near Europe",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "80 m2",
@@ -8482,7 +9584,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34763/photos/92MF1hJgLF.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34763/photos/SRHrSCNJq6.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34763/photos/bixLxOcEIK.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "38602",
@@ -8504,7 +9607,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/38602/photos/hpESyX0k69.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38602/photos/Stc4BAa5n0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/38602/photos/0J96O6ACZy.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=C4gjVErS6Pf&cloudEdit=1&sr=-3.05,-.58&ss=39&mdir=3&minimap=1&lang=fr&qs=1",
@@ -8524,6 +9628,7 @@
     ],
     "title": "Perplexing Comfortable Apt. near Gros Caillou",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "4 residents",
     "gender": "83 m2",
@@ -8557,7 +9662,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34318/photos/QyB1Kuknc0.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34318/photos/5qRH6xJVcG.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34318/photos/jRbDVU3CG1.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35920",
@@ -8580,7 +9686,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35920/photos/gf8xsjOitf.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35920/photos/AVr6Q5Z8sK.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35920/photos/pEx80IDnUu.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
@@ -8598,6 +9705,7 @@
     ],
     "title": "3-Bed Apartment on rue Dunois",
     "bedrooms": "3 bedrooms",
+    "price": "",
     "bathrooms": "1 baths",
     "residents": "3 residents",
     "gender": "70 m2",
@@ -8634,7 +9742,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/33568/photos/0JN2af3m4p.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33568/photos/TyLIm6Ha15.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/33568/photos/WI81vtBLtZ.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "34420",
@@ -8660,7 +9769,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/34420/photos/CBIv6pwFaA.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34420/photos/yU5aS8GWXi.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/34420/photos/VMHoZKTpqM.jpg?h=960"
-        ]
+        ],
+        "price": null
       },
       {
         "id": "35780",
@@ -8685,7 +9795,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/35780/photos/8vbr9OdgER.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35780/photos/Gf76NlumTh.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/35780/photos/S0nh0UK2KQ.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "https://mpembed.com/show/?m=A47gMNrX1B4&cloudEdit=1&sr=-2.96,.9&ss=29&mdir=3&minimap=1&lang=fr&qs=1",
@@ -8704,6 +9815,7 @@
     ],
     "title": "Modern Bright Apt. w/ Kitchen + Elevator",
     "bedrooms": "4 bedrooms",
+    "price": "",
     "bathrooms": "3 baths",
     "residents": "4 residents",
     "gender": "114 m2",
@@ -8762,7 +9874,8 @@
           "https://co-living.imgix.net/uploads/roomtypes/31809/photos/kLip73XFCg.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/31809/photos/9Wt1JnlVOg.jpg?h=960",
           "https://co-living.imgix.net/uploads/roomtypes/31809/photos/dd1LsLnRgr.jpg?h=960"
-        ]
+        ],
+        "price": null
       }
     ],
     "virtualTour": "",
