@@ -6,29 +6,12 @@ function getCurrentDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-async function fetchRoomDetails(page, roomsApiUrl) {
-    return await page.evaluate(async (roomsApiUrl) => {
-        try {
-            const response = await fetch(roomsApiUrl);
-            if (!response.ok) {
-                throw new Error(`Error fetching rooms details: ${response.status}`);
-            }
-            return await response.json();
-        } catch (error) {
-            console.error('Fetch error:', error);
-            return [];
-        }
-    }, roomsApiUrl);
-}
-
 async function scrapePage(browser, url, roomsApiUrl) {
     const page = await browser.newPage();
-    await page.goto(url);
-
-    // Récupération des détails des chambres
-    const roomsDetails = await fetchRoomDetails(page, roomsApiUrl);
+    await page.goto(url, { waitUntil: 'networkidle0' });
 
     const data = await page.evaluate(() => {
+        
         const imageAnchors = Array.from(document.querySelectorAll('a[data-fancybox="main"]'));
         const images = imageAnchors.map(anchor => anchor.href);
         const title = document.querySelector('h1')?.textContent.trim() || "";
@@ -42,31 +25,26 @@ async function scrapePage(browser, url, roomsApiUrl) {
         const amenitiesElements = document.querySelectorAll('.grid.grid-cols-2.xl\\:grid-cols-3.gap-6.text-sm.text-neutral-700 div.ml-2');
         const amenities = [...amenitiesElements].map(el => el.textContent.trim());
         const virtualTour = document.querySelector('iframe[src*="mpembed.com"]')?.getAttribute('src') || "";
-        const address = document.querySelector('div.text-gray-700')?.textContent.trim() || "";
-        const price = document.querySelector('span.x-text')?.textContent.trim() || "";
+        const address = document.querySelector('.mb-6')?.textContent.trim() || "";
+        const price = document.querySelector('span.notranslate.text-2xl')?.textContent.trim() || "";
 
-        // Récupération des informations des chambres disponibles
-        const rooms = Array.from(document.querySelectorAll('.js-room-type-item')).map(room => {
-            const id = room.getAttribute('data-room-type-id');
-            const title = room.querySelector('h3')?.textContent.trim();
-            const details = room.querySelectorAll('.pb-2.mb-1.border-b.border-gray-200 span.items-center');
-            const amenities = room.querySelectorAll('.text-gray-500 span');
-            const images = room.querySelectorAll('.js-col-photos a[href]');
-            const price = document.querySelector('span.notranslate.font-bold');            
-            const roomDetails = Array.from(details).map(detail => detail.textContent.trim());
-            const roomAmenities = Array.from(amenities).map(amenity => amenity.textContent.trim());
-            const imageUrls = Array.from(images).map(image => image.getAttribute('href'));
-    
-            return {
-                id,
-                title,
-                details: roomDetails,
-                amenities: roomAmenities,
-                images: imageUrls,
-                price
-            };
+        const rooms = Array.from(document.querySelectorAll('li.js-room-type-item')).map(room => {
+            const title = room.querySelector('h3')?.textContent.trim() || "";
+            const details = room.querySelector('div.pb-2.mb-1.border-b.border-gray-200')?.textContent.trim() || "";
+            const amenities = room.querySelector('div.text-gray-500')?.textContent.trim().split(' · ') || [];
+            const price = room.querySelector('.base-price .notranslate')?.textContent.trim() || ""; 
+            const availability = room.querySelector('.text-xs.text-red-600, .text-xs.text-green-700')?.textContent.trim() || "";
+            const photoURL = room.querySelector('a[data-fancybox]')?.getAttribute('href') || "";
+            let availabilityText = room.querySelector('.text-xs.text-green-700')?.textContent.trim() || "";
+            if (!availabilityText) {
+                const availablePrefix = room.querySelector('.text-xs.text-red-600')?.textContent.trim() || "";
+                const availableDate = room.querySelector('.notranslate.text-xs.text-red-600')?.textContent.trim() || "";
+                availabilityText = `${availablePrefix} ${availableDate}`;
+            }
+        
+            return { title, details, amenities, price, availability, photoURL, availability: availabilityText };
         });
-    
+
         return {
             images,
             title,
@@ -85,9 +63,10 @@ async function scrapePage(browser, url, roomsApiUrl) {
         };
     });
 
-    await page.close(); // Fermez l'onglet après le scraping
-    return {...data, rooms: roomsDetails};
+    await page.close();
+    return {...data};
 }
+
 
 (async () => {
     const annoncesPath = `../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date/Updated_Data_Coliving_Recherche_${getCurrentDateString()}.json`;
