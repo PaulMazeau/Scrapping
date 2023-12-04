@@ -21,7 +21,6 @@ function getOldData(filename) {
 
     await page.goto('https://www.flatlooker.com/appartements?lieu=Paris&min_latitude=48.9166&min_longitude=2.4722&max_latitude=48.7966&max_longitude=2.2322&move_search=true&type=true&zoom=12&commit=Rechercher&show_rented_flats=true', { waitUntil: 'networkidle2' });
 
-    // Obtenez le nombre total de logements
     const totalAdsText = await page.$eval('.fs-3', span => span.textContent.trim());
     const totalAds = parseInt(totalAdsText.split(' ')[0]);
 
@@ -38,22 +37,24 @@ function getOldData(filename) {
             element.scrollTop = element.scrollHeight;
         }, scrollContainer);
 
-        await page.waitForTimeout(2000);  // Adjust this wait time if needed
+        await page.waitForTimeout(2000);
 
-        properties = await page.$$eval('.card-header', headers => headers.map(header => {
-            const images = Array.from(header.querySelectorAll('.carousel-item img')).map(img => img.getAttribute('data-src') || img.getAttribute('src'));
-            const description = header.nextElementSibling.querySelector('.card-flat-description');
-            const city = description.querySelector('.card-flat-city').textContent;
-            const priceAndArea = description.querySelector('.text-primary').textContent;
-            const specs = Array.from(description.querySelectorAll('.card-flat-specs div')).map(div => div.textContent.trim());
-            const urlElement = header.closest('li').querySelector('a');
+        properties = await page.$$eval('.flat-showcase', showcases => showcases.map(showcase => {
+            const images = Array.from(showcase.querySelectorAll('.carousel-inner .carousel-item img')).map(img => img.getAttribute('data-src') || img.getAttribute('src'));
+            const descriptionElement = showcase.querySelector('.flat-card-description');
+            const description = descriptionElement ? descriptionElement.textContent.trim() : '';
+            const cityElement = showcase.querySelector('.flat-card-city');
+            const city = cityElement ? cityElement.textContent.trim() : '';
+            const priceElement = showcase.querySelector('.flat-card-price');
+            const price = priceElement ? priceElement.textContent.trim() : '';
+            const urlElement = showcase.querySelector('a');
             const url = urlElement ? 'https://www.flatlooker.com' + urlElement.getAttribute('href') : '';
         
             return {
                 images,
+                description,
                 city,
-                priceAndArea,
-                specs,
+                price,
                 url 
             };
         }));
@@ -72,9 +73,9 @@ function getOldData(filename) {
     const oldFileName = path.join(__dirname, `../../Resultat_Recherche/Flatlooker_Recherche/Data_Flatlooker_${previousDateString}.json`);
     const oldData = getOldData(oldFileName);
 
-    const newAnnouncements = properties.filter(item => !oldData.some(oldItem => oldItem.link === item.link));
-    const removedAnnouncements = oldData.filter(item => !properties.some(newItem => newItem.link === item.link));
-    const updatedData = properties.filter(item => !removedAnnouncements.some(removedItem => removedItem.link === item.link));
+    const newAnnouncements = properties.filter(item => !oldData.some(oldItem => oldItem.url === item.url));
+    const removedAnnouncements = oldData.filter(item => !properties.some(newItem => newItem.url === item.url));
+    const updatedData = properties.filter(item => !removedAnnouncements.some(removedItem => removedItem.url === item.url));
 
     const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Flatlooker_Recherche/Data_Flatlooker_Recherche_${currentDate}.json`);
     const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Flatlooker_Recherche_Up_To_Date/Updated_Data_Flatlooker_Recherche_${currentDate}.json`);

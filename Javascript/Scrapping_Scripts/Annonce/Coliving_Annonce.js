@@ -6,9 +6,27 @@ function getCurrentDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-async function scrapePage(browser, url) {
+async function fetchRoomDetails(page, roomsApiUrl) {
+    return await page.evaluate(async (roomsApiUrl) => {
+        try {
+            const response = await fetch(roomsApiUrl);
+            if (!response.ok) {
+                throw new Error(`Error fetching rooms details: ${response.status}`);
+            }
+            return await response.json();
+        } catch (error) {
+            console.error('Fetch error:', error);
+            return [];
+        }
+    }, roomsApiUrl);
+}
+
+async function scrapePage(browser, url, roomsApiUrl) {
     const page = await browser.newPage();
     await page.goto(url);
+
+    // Récupération des détails des chambres
+    const roomsDetails = await fetchRoomDetails(page, roomsApiUrl);
 
     const data = await page.evaluate(() => {
         const imageAnchors = Array.from(document.querySelectorAll('a[data-fancybox="main"]'));
@@ -68,31 +86,31 @@ async function scrapePage(browser, url) {
     });
 
     await page.close(); // Fermez l'onglet après le scraping
-    return data;
+    return {...data, rooms: roomsDetails};
 }
 
 (async () => {
     const annoncesPath = `../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date/Updated_Data_Coliving_Recherche_${getCurrentDateString()}.json`;
     const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
-    const allData = []; // Initialiser le tableau pour stocker les données de toutes les annonces
+    const allData = [];
 
-    const browser = await puppeteer.launch(); // Ouvrir un seul navigateur
+    const browser = await puppeteer.launch();
 
     for (let annonce of annonces) {
         try {
-            const data = await scrapePage(browser, annonce.url); // Utiliser 'url' au lieu de 'link'
-            allData.push(data); // Ajouter les données de chaque annonce au tableau
-            console.log('Annonce faite')
-            console.log(allData.length)
+            const roomsApiUrl = `https://coliving.com/listing/${annonce.id}/room-availability?location_id=${annonce.locationId}`;
+            const data = await scrapePage(browser, annonce.url, roomsApiUrl);
+            allData.push(data);
+            console.log('Annonce faite');
+            console.log(allData.length);
         } catch (error) {
             console.error(`Failed to scrape the page at ${annonce.url} due to: ${error}`);
         }
     }
 
-    await browser.close(); // Fermez le navigateur une fois toutes les pages visitées
+    await browser.close();
 
-    // Créer un nom de fichier basé sur la date actuelle
     const fileName = `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${getCurrentDateString()}.json`;
-    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8'); // Écrire toutes les données dans un seul fichier
+    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
     console.log(`All data saved to ${fileName}!`);
 })();
