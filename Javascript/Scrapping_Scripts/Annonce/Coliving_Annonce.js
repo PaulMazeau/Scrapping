@@ -1,8 +1,15 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const path = require('path');
 
 function getCurrentDateString() {
     const date = new Date();
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
+function getPreviousDateString() {
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
@@ -67,9 +74,19 @@ async function scrapePage(browser, url, roomsApiUrl) {
     return {...data};
 }
 
-
 (async () => {
-    const annoncesPath = `../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date/Updated_Data_Coliving_Recherche_${getCurrentDateString()}.json`;
+    const currentDate = getCurrentDateString();
+    const previousDate = getPreviousDateString();
+
+    const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${previousDate}.json`);
+    let previousData;
+    try {
+        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+    } catch (error) {
+        previousData = []; // Si le fichier du jour précédent n'existe pas
+    }
+
+    const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date/Updated_Data_Coliving_Recherche_${currentDate}.json`);
     const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
     const allData = [];
 
@@ -89,7 +106,18 @@ async function scrapePage(browser, url, roomsApiUrl) {
 
     await browser.close();
 
-    const fileName = `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${getCurrentDateString()}.json`;
+    const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+    const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
+    const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+
+    const fileName = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Coliving_Annonce_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
+
     fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+
     console.log(`All data saved to ${fileName}!`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Coliving.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
 })();

@@ -1,15 +1,30 @@
 const fs = require('fs');
+const path = require('path');
 
 function getCurrentDateString() {
     const date = new Date();
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-// Chemin d'accès au fichier JSON brut
-const rawDataPath = `../../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${getCurrentDateString()}.json`;
+function getPreviousDateString() {
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
 
-// Lecture du fichier JSON brut
+const currentDate = getCurrentDateString();
+const previousDate = getPreviousDateString();
+
+const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${currentDate}.json`);
 let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+
+const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${previousDate}.json`);
+let previousData;
+try {
+    previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+} catch (error) {
+    previousData = [];
+}
 
 function normalizeData(data) {
     // Extraction et normalisation des informations de localisation
@@ -22,14 +37,14 @@ function normalizeData(data) {
             city: city,
             postalCode: postalCode
         },
-        images: data.imageLinks.map(link => ({ photo1: link })), // Transformer selon la structure requise
+        images: data.images.map(link => ({ photo1: link })),
         price: {
             rent: data.price ? data.price.replace('€', '').trim() : '0',
             deposit: '',
         },
         furnished: 'Oui', 
         bedrooms: data.bedrooms.replace('bedrooms', '').trim(),
-        bathrooms: data.baths.replace('baths', '').trim(),
+        bathrooms: data.bathrooms.replace('baths', '').trim(),
         residents: data.residents || '',
         size: data.size.replace('m2', '').trim(),
         minStay: data.minStay || '',
@@ -42,11 +57,19 @@ function normalizeData(data) {
     };
 }
 
-// Normalisation de chaque annonce
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
-// Chemin d'accès pour enregistrer les données normalisées
-const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_Coliving/Normalized_Data_Coliving_Annonces_${getCurrentDateString()}.json`;
+const newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+const removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
+const upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
 
-// Écriture des données normalisées dans un fichier
+const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Coliving/Normalized_Data_Coliving_Annonces_${currentDate}.json`);
+const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Coliving_Normalisation_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
+
 fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+console.log(`Il y a ${normalizedDataArray.length} annonces sur Coliving.`);
+console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Coliving.`);
+console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
