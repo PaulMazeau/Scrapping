@@ -41,5 +41,5 @@ function normalizeData(data) {
 }
 
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
-const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci_Annonces_${getCurrentDateString()}.json`;
+const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${getCurrentDateString()}.json`;
 fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
