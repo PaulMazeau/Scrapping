@@ -1,8 +1,15 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const path = require('path');
 
 function getCurrentDateString() {
     const date = new Date();
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
+function getPreviousDateString() {
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
@@ -36,12 +43,23 @@ async function scrapePage(page, url) {
 }
 
 (async () => {
-    const annoncesPath = `../../Resultat_Recherche/Up_To_Date_Recherche/ParuVendu_Recherche_Up_To_Date/Updated_Data_ParuVendu_Recherche_${getCurrentDateString()}.json`;
+    const currentDate = getCurrentDateString();
+    const previousDate = getPreviousDateString();
+
+    const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${previousDate}.json`);
+    let previousData;
+    try {
+        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+    } catch (error) {
+        previousData = []; // Si le fichier du jour précédent n'existe pas
+    }
+
+    const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/ParuVendu_Recherche_Up_To_Date/Updated_Data_ParuVendu_Recherche_${currentDate}.json`);
     const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
-    const allData = []; // Pour stocker les données de toutes les annonces
+    const allData = [];
 
     const browser = await puppeteer.launch();
-    const page = await browser.newPage(); // Créez une page une seule fois ici
+    const page = await browser.newPage();
 
     for (let annonce of annonces) {
         try {
@@ -54,11 +72,21 @@ async function scrapePage(page, url) {
         }
     }
 
-    await page.close(); // Fermez la page après le traitement de toutes les annonces
-    await browser.close(); // Fermez le navigateur après la fermeture de la page
+    await page.close();
+    await browser.close();
 
-    // Écrivez toutes les données accumulées dans un fichier JSON
-    const fileName = `../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${getCurrentDateString()}.json`;
+    const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.city === item.city));
+    const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.title === newItem.title && newItem.city === item.city));
+    const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+
+    const fileName = path.join(__dirname, `../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/ParuVendu_Annonce_Up_To_Date/Updated_Data_ParuVendu_Annonces_${currentDate}.json`);
+
     fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+
     console.log(`All data saved to ${fileName}!`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur ParuVendu.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
 })();

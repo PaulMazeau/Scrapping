@@ -1,8 +1,15 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const path = require('path');
 
 function getCurrentDateString() {
     const date = new Date();
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
+function getPreviousDateString() {
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
@@ -41,11 +48,22 @@ async function scrapePage(browser, url) {
 
 
 (async () => {
-    const annoncesPath = `../../Resultat_Recherche/Up_To_Date_Recherche/Rentola_Recherche_Up_To_Date/Updated_Data_Rentola_Recherche_${getCurrentDateString()}.json`;
-    const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
-    const allData = []; // Initialiser le tableau pour stocker les données de toutes les annonces
+    const currentDate = getCurrentDateString();
+    const previousDate = getPreviousDateString();
 
-    const browser = await puppeteer.launch(); // Ouvrir un seul navigateur
+    const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Rentola_Annonce/Data_Rentola_Annonces_${previousDate}.json`);
+    let previousData;
+    try {
+        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+    } catch (error) {
+        previousData = []; // Si le fichier du jour précédent n'existe pas
+    }
+
+    const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Rentola_Recherche_Up_To_Date/Updated_Data_Rentola_Recherche_${currentDate}.json`);
+    const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
+    const allData = [];
+
+    const browser = await puppeteer.launch();
 
     for (let annonce of annonces) {
         try {
@@ -58,9 +76,20 @@ async function scrapePage(browser, url) {
         }
     }
 
-    await browser.close(); // Fermez le navigateur une fois toutes les pages visitées
+    await browser.close();
 
-    const fileName = `../../Resultat_Annonce/Rentola_Annonce/Data_Rentola_Annonces_${getCurrentDateString()}.json`;
-    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8'); // Écrire toutes les données dans un seul fichier
+    const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.address === item.address));
+    const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.title === newItem.title && newItem.address === item.address));
+    const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+
+    const fileName = path.join(__dirname, `../../Resultat_Annonce/Rentola_Annonce/Data_Rentola_Annonces_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Rentola_Annonce_Up_To_Date/Updated_Data_Rentola_Annonces_${currentDate}.json`);
+
+    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+
     console.log(`All data saved to ${fileName}!`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Rentola.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
 })();

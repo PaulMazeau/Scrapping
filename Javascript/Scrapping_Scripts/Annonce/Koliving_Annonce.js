@@ -1,27 +1,44 @@
 const axios = require('axios');
 const fs = require('fs');
+const path = require('path');
 
 function getCurrentDateString() {
     const date = new Date();
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-const filePath = `../../Resultat_Recherche/Up_To_Date_Recherche/Koliving_Recherche_Up_To_Date/Updated_Data_Koliving_Recherche_${getCurrentDateString()}.json`;
-const graphqlEndpoint = 'https://kg-backend-prod.herokuapp.com/graphql';
-const allResponses = [];
+function getPreviousDateString() {
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
 
-fs.readFile(filePath, 'utf8', (err, data) => {
-  if (err) {
-    console.error('Error reading file:', err);
-    return;
-  }
+const currentDate = getCurrentDateString();
+const previousDate = getPreviousDateString();
 
-  const jsonContent = JSON.parse(data);
-  const annonces = jsonContent.data.res.results;
+const rawDataPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Koliving_Recherche_Up_To_Date/Updated_Data_Koliving_Recherche_${currentDate}.json`);
+const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Koliving_Annonce/Data_Koliving_Annonces_${previousDate}.json`);
+let previousData;
+try {
+    previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+} catch (error) {
+    previousData = []; // Si le fichier du jour précédent n'existe pas
+}
 
-  const fetchData = async () => {
+fs.readFile(rawDataPath, 'utf8', async (err, data) => {
+    if (err) {
+        console.error('Error reading file:', err);
+        return;
+    }
+
+    const jsonContent = JSON.parse(data);
+    const annonces = jsonContent.data.res.results;
+    const allResponses = [];
+
+    const graphqlEndpoint = 'https://kg-backend-prod.herokuapp.com/graphql';
+
     for (const annonce of annonces) {
-      const propertyIdNumber = annonce.propertyIdNumber;
+        const propertyIdNumber = annonce.propertyIdNumber;
       const graphqlQuery = {
         operationName: "GetProperty",
         query: `query GetProperty($propertyId: String!) {
@@ -205,22 +222,29 @@ fs.readFile(filePath, 'utf8', (err, data) => {
         const response = await axios(options);
         allResponses.push({ propertyIdNumber, data: response.data.data.property });
         console.log(`Data for ${propertyIdNumber} fetched`);
-      } catch (error) {
+    } catch (error) {
         console.error('Error fetching data for', propertyIdNumber, ':', error);
-      }
-
-      // Avoid overloading the server with a delay between requests
-      await sleep(1000);
     }
 
-    const fileName = `../../Resultat_Annonce/Koliving_Annonce/Data_Koliving_Annonces_${getCurrentDateString()}.json`;
-    fs.writeFileSync(fileName, JSON.stringify(allResponses, null, 2), 'utf-8'); // Écrire toutes les données dans un seul fichier
-    console.log(`All data saved to ${fileName}!`);
-  };
+    await sleep(1000); // Pause pour éviter de surcharger le serveur
+}
 
-  fetchData();
+const newAnnouncements = allResponses.filter(item => !previousData.some(oldItem => oldItem.propertyIdNumber === item.propertyIdNumber));
+const removedAnnouncements = previousData.filter(item => !allResponses.some(newItem => newItem.propertyIdNumber === item.propertyIdNumber));
+const upToDateAnnouncements = allResponses.filter(item => !newAnnouncements.includes(item));
+
+const fileName = path.join(__dirname, `../../Resultat_Annonce/Koliving_Annonce/Data_Koliving_Annonces_${currentDate}.json`);
+const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Koliving_Annonce_Up_To_Date/Updated_Data_Koliving_Annonces_${currentDate}.json`);
+
+fs.writeFileSync(fileName, JSON.stringify(allResponses, null, 2), 'utf-8');
+fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+
+console.log(`All data saved to ${fileName}!`);
+console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Koliving.`);
+console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
 });
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+return new Promise(resolve => setTimeout(resolve, ms));
 }
