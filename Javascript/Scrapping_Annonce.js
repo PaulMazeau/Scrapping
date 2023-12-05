@@ -2,13 +2,13 @@ const { exec } = require('child_process');
 
 const scripts = [
   './Scrapping_Scripts/Annonce/Appartager_Annonce',
-  './Scrapping_Scripts/Annonce/Rentola_Annonce',
-  './Scrapping_Scripts/Annonce/Flatlooker_Annonce',
   './Scrapping_Scripts/Annonce/Coliving_Annonce',
+  './Scrapping_Scripts/Annonce/Flatlooker_Annonce',
   './Scrapping_Scripts/Annonce/ImmoJeune_Annonce',
   './Scrapping_Scripts/Annonce/Koliving_Annonce',
   './Scrapping_Scripts/Annonce/MorningCroissant_Annonce',
   './Scrapping_Scripts/Annonce/ParuVendu_Annonce',
+  './Scrapping_Scripts/Annonce/Rentola_Annonce',
 ];
 
 async function runScript(script) {

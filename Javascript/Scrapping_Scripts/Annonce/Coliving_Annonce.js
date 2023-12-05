@@ -106,18 +106,27 @@ async function scrapePage(browser, url, roomsApiUrl) {
 
     await browser.close();
 
-    const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-    const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
-    const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+    if (previousData.length === 0) {
+        console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
+        // Écrire directement toutes les annonces actuelles comme à jour si il n'y a pas de jour précédent
+        const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Coliving_Annonce_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
+        fs.writeFileSync(upToDateDataPath, JSON.stringify(allData, null, 2), 'utf-8');
+        console.log(`${allData.length} annonce(s) à jour.`);
+    } else {
+        // Traitement des annonces avec comparaison entre l"es données du jour actuel et précédent
+        const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+        const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
+        const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
 
-    const fileName = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${currentDate}.json`);
-    const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Coliving_Annonce_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
+        const fileName = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${currentDate}.json`);
+        const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Coliving_Annonce_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
 
-    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
-    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+        fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
+        fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
 
-    console.log(`All data saved to ${fileName}!`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Coliving.`);
-    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+        console.log(`All data saved to ${fileName}!`);
+        console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Coliving.`);
+        console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+        console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    }
 })();
