@@ -46,13 +46,13 @@ const scrapeData = async () => {
 
     const totalCount = response.data.count;
     const totalPages = Math.ceil(totalCount / params["search_params.page_size"]);
-    allData = allData.concat(response.data.items || []);  // Correction : utilisation de "items" à la place de "listings"
+    allData = allData.concat(response.data.items || []); 
 
     for (let i = 2; i <= totalPages; i++) {
         params["search_params.page_number"] = i;
         const nextPageResponse = await axios.get(baseURL, { params: params });
         if (nextPageResponse.status === 200) {
-            allData = allData.concat(nextPageResponse.data.items || []);  // Correction : utilisation de "items" à la place de "listings"
+            allData = allData.concat(nextPageResponse.data.items || []); 
         }
     }
 
