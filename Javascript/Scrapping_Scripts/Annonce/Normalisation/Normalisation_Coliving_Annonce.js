@@ -59,17 +59,27 @@ function normalizeData(data) {
 
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
-const newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-const removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
-const upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+if (previousData.length === 0) {
+    console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
 
-const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Coliving/Normalized_Data_Coliving_Annonces_${currentDate}.json`);
-const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Coliving_Normalisation_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
+    const upToDateAnnouncements = normalizedDataArray;
 
-fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
-fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Coliving_Normalisation_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+} else {
+    const newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+    const removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
+    const upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
 
-console.log(`Il y a ${normalizedDataArray.length} annonces sur Coliving.`);
-console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Coliving.`);
-console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Coliving/Normalized_Data_Coliving_Annonces_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Coliving_Normalisation_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
+
+    fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+    console.log(`Il y a ${normalizedDataArray.length} annonces sur Coliving.`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Coliving.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+}
