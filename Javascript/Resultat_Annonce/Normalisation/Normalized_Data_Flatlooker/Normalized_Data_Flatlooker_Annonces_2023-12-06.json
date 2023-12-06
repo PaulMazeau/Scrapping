@@ -1,7 +1,11 @@
 [
   {
     "title": "Location d'un T1 non meublé au 160 Rue D'aubervilliers, 75019, Paris",
-    "address": "160 Rue D'aubervilliers, 75019, Paris",
+    "location": {
+      "address": "160 Rue D'aubervilliers, 75019, Paris",
+      "city": "Paris",
+      "postalCode": "75019"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/sprp5cfll75pk9sh0a1trzttiwcp",
       "https://d3hcppa1ebcqsj.cloudfront.net/2092jq9ehwwboi5905lqtn68y0ha",
@@ -33,106 +37,30 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/dwbhhvi80nvmevarokzn9dp2al9c",
       "https://d3hcppa1ebcqsj.cloudfront.net/sz0lm5hqnsljw7zjea7mvy8sa4dq"
     ],
+    "price": {
+      "rent": "1190",
+      "deposit": "1140",
+      "charge": "50"
+    },
+    "furnished": "Oui",
+    "description": "Situé Paris 19, ce studio meublé se trouve rue d'Aubervilliers. Non loin de l'arrêt Crimée et RER Rosa Parks, le logement est proche du Parc de la Villette et de toutes commodités.Il dispose d'un balcon, d'une cave et d'un parking, et l'eau chaude et le chauffage sont inclus dans les charges.Le studio est composé du spacieux séjour, de la cuisine ouverte et de la salle d'eau avec baignoire.Ce joli studio n'attend que vous !",
     "amenities": [
       "Parking",
       "Balcon ou terrasse"
     ],
-    "price": "1190",
-    "charge": "50",
-    "description": "Situé Paris 19, ce studio meublé se trouve rue d'Aubervilliers. Non loin de l'arrêt Crimée et RER Rosa Parks, le logement est proche du Parc de la Villette et de toutes commodités.Il dispose d'un balcon, d'une cave et d'un parking, et l'eau chaude et le chauffage sont inclus dans les charges.Le studio est composé du spacieux séjour, de la cuisine ouverte et de la salle d'eau avec baignoire.Ce joli studio n'attend que vous !",
-    "features": {
-      "Parking": "Oui",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "1 / 11",
-      "Cave": "Oui",
-      "Gardiennage": "Oui",
-      "Honoraires de location": "437 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "36 mois",
-      "Dépôt de garantie": "1140 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Collectif",
-      "Type de chauffage": "Collectif",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "43 dB",
-      "Intensité sonore fenêtres fermées": "34 dB",
-      "Orientation principale": "297° - Nord-Ouest",
-      "Nombre de fenêtres": "2",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "248 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "71 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Eau chaude",
-        "Entretien parties communes",
-        "Gardien",
-        "Ascenseur",
-        "Chauffage",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Gaz",
-        "Internet (Fibre)",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres"
-      ],
-      "nonDisponibles": [
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit double",
-        "Lit simple",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "Dressing",
-        "Bureau",
-        "TV",
-        "Chaise",
-        "Table",
-        "Canapé"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "43 dB",
-        "Intensité sonore fenêtres fermées": "34 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "297° - Nord-Ouest",
-        "Nombre de fenêtres": "2",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "248 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "1 / 11"
-      },
-      "Humidité": {
-        "Taux d'humidité": "71 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 meublé au 16 Rue D'arcueil, 92120, Montrouge",
-    "address": "16 Rue D'arcueil, 92120, Montrouge",
+    "location": {
+      "address": "16 Rue D'arcueil, 92120, Montrouge",
+      "city": "Montrouge",
+      "postalCode": "92120"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/7hy664a6yq6c84oxlef4bvwpc7fg",
       "https://d3hcppa1ebcqsj.cloudfront.net/v45gzs7ij56dotfthadm64nyxllt",
@@ -200,105 +128,45 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/kh56fyjqjp7jkxuhgylpvfasbpd8",
       "https://d3hcppa1ebcqsj.cloudfront.net/gcubcnkisec5raa9n5zihgvh9rid"
     ],
+    "price": {
+      "rent": "1490",
+      "deposit": "2590",
+      "charge": "195"
+    },
+    "furnished": "Oui",
+    "description": "Situé à Montrouge, ce T3 meublé se trouve rue d'Arcueil. Non loin de l'arrêt de métro Barbara, le logement est proche de la Porte d'Orléans et de toutes les commodités.",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "1490",
-    "charge": "195",
-    "description": "Situé à Montrouge, ce T3 meublé se trouve rue d'Arcueil. Non loin de l'arrêt de métro Barbara, le logement est proche de la Porte d'Orléans et de toutes les commodités.",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "5 / 6",
-      "Cave": "Non",
-      "Gardiennage": "Oui",
-      "Honoraires de location": "750 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "2590 €",
-      "Accessible PMR": "Oui",
-      "Nature du chauffage": "Fioul",
-      "Type de chauffage": "Collectif",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "40 dB",
-      "Intensité sonore fenêtres fermées": "36 dB",
-      "Orientation principale": "280° - Ouest",
-      "Nombre de fenêtres": "4",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "248 cm",
-      "Distance au vis-à-vis": "30 m",
-      "Taux d'humidité": "49 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Gardien",
-        "Ascenseur",
-        "Chauffage",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Internet (Fibre)",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit double",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "Dressing",
-        "Bureau",
-        "Chaises",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Lit simple",
-        "Micro-ondes",
-        "TV"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "40 dB",
-        "Intensité sonore fenêtres fermées": "36 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "280° - Ouest",
-        "Nombre de fenêtres": "4",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "248 cm",
-        "Distance au vis-à-vis": "30 m",
-        "Étage": "5 / 6"
-      },
-      "Humidité": {
-        "Taux d'humidité": "49 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Toilettes séparées",
+      "Canapé lit",
+      "Lit double",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "Dressing",
+      "Bureau",
+      "Chaises",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 meublé au 2 Rue Henri Bergson, 92600, Asnières-sur-Seine",
-    "address": "2 Rue Henri Bergson, 92600, Asnières-sur-Seine",
+    "location": {
+      "address": "2 Rue Henri Bergson, 92600, Asnières-sur-Seine",
+      "city": "Asnières-sur-Seine",
+      "postalCode": "92600"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/suivwy0yilyma7k9sfe014phfzzb",
       "https://d3hcppa1ebcqsj.cloudfront.net/473wigiutwxi54jw6co5c6egf26z",
@@ -378,107 +246,42 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/mzg0q74vuhpusy2nbn05f3pk38rd",
       "https://d3hcppa1ebcqsj.cloudfront.net/a700gcy8cibjzvmcphuz1a3rfki9"
     ],
+    "price": {
+      "rent": "1299",
+      "deposit": "2398",
+      "charge": "100"
+    },
+    "furnished": "Oui",
+    "description": "Situé à Asnières-sur-Seine, ce T2 meublé se trouve rue Henri Bergson. Non loin de l'arrêt de RER Les Grésillons, le logement est proche des quais de Seines et de toutes commodités, et dispose d'un balcon et d'un parking.L'appartement neuf et lumineux est composé du séjour avec fauteuils et table à manger, de la cuisine ouverte équipée, de la chambre avec lit double et armoire et de la salle d'eau avec baignoire.Ce joli T2 n'attend que vous !",
     "amenities": [
       "Machine à laver",
       "Parking",
       "Balcon ou terrasse"
     ],
-    "price": "1299",
-    "charge": "100",
-    "description": "Situé à Asnières-sur-Seine, ce T2 meublé se trouve rue Henri Bergson. Non loin de l'arrêt de RER Les Grésillons, le logement est proche des quais de Seines et de toutes commodités, et dispose d'un balcon et d'un parking.L'appartement neuf et lumineux est composé du séjour avec fauteuils et table à manger, de la cuisine ouverte équipée, de la chambre avec lit double et armoire et de la salle d'eau avec baignoire.Ce joli T2 n'attend que vous !",
-    "features": {
-      "Parking": "Oui",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "6 / 8",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "615 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "2398 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Gaz",
-      "Type de chauffage": "Collectif",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "38 dB",
-      "Intensité sonore fenêtres fermées": "36 dB",
-      "Orientation principale": "584° - Nord",
-      "Nombre de fenêtres": "2",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "249 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "66 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Ascenseur",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Lit double",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Plaques",
-        "Bureau",
-        "Chaises",
-        "Table"
-      ],
-      "nonDisponibles": [
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit simple",
-        "Lave vaisselle",
-        "Four",
-        "Dressing",
-        "TV",
-        "Canapé"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "38 dB",
-        "Intensité sonore fenêtres fermées": "36 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "584° - Nord",
-        "Nombre de fenêtres": "2",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "249 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "6 / 8"
-      },
-      "Humidité": {
-        "Taux d'humidité": "66 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Lit double",
+      "Micro-ondes",
+      "Congélateur",
+      "Réfrigérateur",
+      "Plaques",
+      "Bureau",
+      "Chaises",
+      "Table"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'une chambre dans un T5 meublé au 4 Villa Juliette, 94000, Créteil",
-    "address": "4 Villa Juliette, 94000, Créteil",
+    "location": {
+      "address": "4 Villa Juliette, 94000, Créteil",
+      "city": "Créteil",
+      "postalCode": "94000"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/xn7y6gsgc9b3sucr09yn1ifs6f64",
       "https://d3hcppa1ebcqsj.cloudfront.net/0o4ibqk1e63urjn22i9lq98iyvkg",
@@ -554,107 +357,46 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/nbleshlkca8xrplfac2335ror65y",
       "https://d3hcppa1ebcqsj.cloudfront.net/5p76rkd87m5o6knlqr1l8euj2fqs"
     ],
+    "price": {
+      "rent": "610",
+      "deposit": "1036",
+      "charge": "92"
+    },
+    "furnished": "Oui",
+    "description": "Située à Créteil, cette chambre en colocation  dans un T5 meublé de 67m2 se trouve Villa Juliette. Non loin de l'arrêt de métro Créteil - L'échat, le logement est proche de toutes les commodités et dispose d'une cave. L'électricité, le chauffage, l'eau chaude et internet sont inclus dans les charges.",
     "amenities": [
       "Tout inclus",
       "Internet",
       "Machine à laver"
     ],
-    "price": "610",
-    "charge": "92",
-    "description": "Située à Créteil, cette chambre en colocation  dans un T5 meublé de 67m2 se trouve Villa Juliette. Non loin de l'arrêt de métro Créteil - L'échat, le logement est proche de toutes les commodités et dispose d'une cave. L'électricité, le chauffage, l'eau chaude et internet sont inclus dans les charges.",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "2 / 2",
-      "Cave": "Oui",
-      "Gardiennage": "Non",
-      "Honoraires de location": "174 €",
-      "Ascenseur": "Non",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "1036 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Gaz",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "0 dB",
-      "Intensité sonore fenêtres fermées": "0 dB",
-      "Orientation principale": "0° - Nord",
-      "Nombre de fenêtres": "6",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "0 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "50 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Entretien parties communes",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Gardien",
-        "Ascenseur"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Toilettes séparées",
-        "Lit simple",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "Dressing",
-        "Bureau",
-        "Chaise",
-        "Table"
-      ],
-      "nonDisponibles": [
-        "Canapé lit",
-        "Lit double",
-        "TV",
-        "Canapé"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "0 dB",
-        "Intensité sonore fenêtres fermées": "0 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "0° - Nord",
-        "Nombre de fenêtres": "6",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "0 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "2 / 2"
-      },
-      "Humidité": {
-        "Taux d'humidité": "50 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Toilettes séparées",
+      "Lit simple",
+      "Micro-ondes",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "Dressing",
+      "Bureau",
+      "Chaise",
+      "Table"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'une chambre dans un T3 meublé au 187 Avenue Jean Jaurès, 93700, Drancy",
-    "address": "187 Avenue Jean Jaurès, 93700, Drancy",
+    "location": {
+      "address": "187 Avenue Jean Jaurès, 93700, Drancy",
+      "city": "Drancy",
+      "postalCode": "93700"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/bf23ju2ecn49k35pfucq56k252km",
       "https://d3hcppa1ebcqsj.cloudfront.net/yizy9dzfylkkw22slpev6bgcguc8",
@@ -739,108 +481,47 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/ep8w3v1rdw7qxq41gcam86fduw6o",
       "https://d3hcppa1ebcqsj.cloudfront.net/nbleshlkca8xrplfac2335ror65y"
     ],
+    "price": {
+      "rent": "590",
+      "deposit": "1020",
+      "charge": "80"
+    },
+    "furnished": "Oui",
+    "description": "Situé à Drancy, ce T3 en colocation meublée se trouve avenue Jean Jaurès. Non loin de l'arrêt de RER Drancy et de métro Bobigny - Pablo Picasso, le logement est proche de toutes commodités, et dispose d'un balcon, et toutes les charges sont incluses.L'appartement est composé du séjour avec canapé, écran plat et table à manger, de la cuisine ouverte entièrement équipée, de la salle d'eau avec baignoire et des deux chambres.Les deux chambres sont meublées d'un lit double et d'une armoire de rangements.Cette jolie colocation n'attend que vous !",
     "amenities": [
       "Tout inclus",
       "Internet",
       "Machine à laver",
       "Balcon ou terrasse"
     ],
-    "price": "590",
-    "charge": "80",
-    "description": "Situé à Drancy, ce T3 en colocation meublée se trouve avenue Jean Jaurès. Non loin de l'arrêt de RER Drancy et de métro Bobigny - Pablo Picasso, le logement est proche de toutes commodités, et dispose d'un balcon, et toutes les charges sont incluses.L'appartement est composé du séjour avec canapé, écran plat et table à manger, de la cuisine ouverte entièrement équipée, de la salle d'eau avec baignoire et des deux chambres.Les deux chambres sont meublées d'un lit double et d'une armoire de rangements.Cette jolie colocation n'attend que vous !",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "2 / 5",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "338 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "1020 €",
-      "Accessible PMR": "Oui",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "40 dB",
-      "Intensité sonore fenêtres fermées": "39 dB",
-      "Orientation principale": "50° - Nord-Est",
-      "Nombre de fenêtres": "2",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "250 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "54 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Eau chaude",
-        "Gaz",
-        "Entretien parties communes",
-        "Ascenseur",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Gardien"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lits doubles",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "TV",
-        "Chaises",
-        "Table"
-      ],
-      "nonDisponibles": [
-        "Lit simple",
-        "Dressing",
-        "Bureau",
-        "Canapé"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "40 dB",
-        "Intensité sonore fenêtres fermées": "39 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "50° - Nord-Est",
-        "Nombre de fenêtres": "2",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "250 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "2 / 5"
-      },
-      "Humidité": {
-        "Taux d'humidité": "54 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Toilettes séparées",
+      "Canapé lit",
+      "Lits doubles",
+      "Micro-ondes",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "TV",
+      "Chaises",
+      "Table"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'une chambre dans un T3 meublé au 187 Avenue Jean Jaurès, 93700, Drancy",
-    "address": "187 Avenue Jean Jaurès, 93700, Drancy",
+    "location": {
+      "address": "187 Avenue Jean Jaurès, 93700, Drancy",
+      "city": "Drancy",
+      "postalCode": "93700"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/j4nakyj62oxr24s3ojd5b2385pyj",
       "https://d3hcppa1ebcqsj.cloudfront.net/pzll9nf9shbek2x9y0whqnchd6up",
@@ -925,108 +606,47 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/ep8w3v1rdw7qxq41gcam86fduw6o",
       "https://d3hcppa1ebcqsj.cloudfront.net/nbleshlkca8xrplfac2335ror65y"
     ],
+    "price": {
+      "rent": "590",
+      "deposit": "1020",
+      "charge": "80"
+    },
+    "furnished": "Oui",
+    "description": "Situé à Drancy, ce T3 en colocation meublée se trouve avenue Jean Jaurès. Non loin de l'arrêt de RER Drancy et de métro Bobigny - Pablo Picasso, le logement est proche de toutes commodités, et dispose d'un balcon, et toutes les charges sont incluses.L'appartement est composé du séjour avec canapé, écran plat et table à manger, de la cuisine ouverte entièrement équipée, de la salle d'eau avec baignoire et des deux chambres.Les deux chambres sont meublées d'un lit double et d'une armoire de rangements.Cette jolie colocation n'attend que vous !",
     "amenities": [
       "Tout inclus",
       "Internet",
       "Machine à laver",
       "Balcon ou terrasse"
     ],
-    "price": "590",
-    "charge": "80",
-    "description": "Situé à Drancy, ce T3 en colocation meublée se trouve avenue Jean Jaurès. Non loin de l'arrêt de RER Drancy et de métro Bobigny - Pablo Picasso, le logement est proche de toutes commodités, et dispose d'un balcon, et toutes les charges sont incluses.L'appartement est composé du séjour avec canapé, écran plat et table à manger, de la cuisine ouverte entièrement équipée, de la salle d'eau avec baignoire et des deux chambres.Les deux chambres sont meublées d'un lit double et d'une armoire de rangements.Cette jolie colocation n'attend que vous !",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "2 / 5",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "339 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "1020 €",
-      "Accessible PMR": "Oui",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "40 dB",
-      "Intensité sonore fenêtres fermées": "39 dB",
-      "Orientation principale": "50° - Nord-Est",
-      "Nombre de fenêtres": "2",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "250 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "54 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Eau chaude",
-        "Gaz",
-        "Entretien parties communes",
-        "Ascenseur",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Gardien"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lits doubles",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "TV",
-        "Chaises",
-        "Table"
-      ],
-      "nonDisponibles": [
-        "Lit simple",
-        "Dressing",
-        "Bureau",
-        "Canapé"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "40 dB",
-        "Intensité sonore fenêtres fermées": "39 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "50° - Nord-Est",
-        "Nombre de fenêtres": "2",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "250 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "2 / 5"
-      },
-      "Humidité": {
-        "Taux d'humidité": "54 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Toilettes séparées",
+      "Canapé lit",
+      "Lits doubles",
+      "Micro-ondes",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "TV",
+      "Chaises",
+      "Table"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T3 meublé au 80 Rue Saint-Denis, 75001, Paris",
-    "address": "80 Rue Saint-Denis, 75001, Paris",
+    "location": {
+      "address": "80 Rue Saint-Denis, 75001, Paris",
+      "city": "Paris",
+      "postalCode": "75001"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/xoqdhtdiutsm498vwcd6i7z4e8nr",
       "https://d3hcppa1ebcqsj.cloudfront.net/sw8n8xqfskn8in1as18ikrceudlo",
@@ -1110,105 +730,42 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/erylt0p8lv5ykralrlkmwsyjsv4d",
       "https://d3hcppa1ebcqsj.cloudfront.net/ss6atdn1d1vd4qsrcsbd61hc7vb6"
     ],
+    "price": {
+      "rent": "3095",
+      "deposit": "5860",
+      "charge": "165"
+    },
+    "furnished": "Oui",
+    "description": "Situé à Paris dans le Ier arrondissement, ce T3 meublé se trouve rue Saint-Denis. Non loin de l'arrêt de métro Châtelet-Les-Halles, le logement est proche de toutes commodités, et dispose d'une cave.",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "3095",
-    "charge": "165",
-    "description": "Situé à Paris dans le Ier arrondissement, ce T3 meublé se trouve rue Saint-Denis. Non loin de l'arrêt de métro Châtelet-Les-Halles, le logement est proche de toutes commodités, et dispose d'une cave.",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Non",
-      "Box / garage": "Non",
-      "Étage": "3 / 5",
-      "Cave": "Non",
-      "Gardiennage": "Oui",
-      "Honoraires de location": "1185 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "5860 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Gaz",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "45 dB",
-      "Intensité sonore fenêtres fermées": "34 dB",
-      "Orientation principale": "290° - Ouest",
-      "Nombre de fenêtres": "5",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "302 cm",
-      "Distance au vis-à-vis": "17 m",
-      "Taux d'humidité": "46 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Gardien",
-        "Ascenseur",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Internet",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lits doubles",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "Chaises",
-        "Table"
-      ],
-      "nonDisponibles": [
-        "Lit simple",
-        "Micro-ondes",
-        "Dressing",
-        "Bureau",
-        "TV",
-        "Canapé"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "45 dB",
-        "Intensité sonore fenêtres fermées": "34 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "290° - Ouest",
-        "Nombre de fenêtres": "5",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "302 cm",
-        "Distance au vis-à-vis": "17 m",
-        "Étage": "3 / 5"
-      },
-      "Humidité": {
-        "Taux d'humidité": "46 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Toilettes séparées",
+      "Canapé lit",
+      "Lits doubles",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "Chaises",
+      "Table"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 meublé au 32 Rue Beauregard, 75002, Paris 2e Arrondissement",
-    "address": "32 Rue Beauregard, 75002, Paris 2e Arrondissement",
+    "location": {
+      "address": "32 Rue Beauregard, 75002, Paris 2e Arrondissement",
+      "city": "Paris 2e Arrondissement",
+      "postalCode": "75002"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/04fkblah964ki5c228cv7hrp8377",
       "https://d3hcppa1ebcqsj.cloudfront.net/9f7egur74oqk4hiu0un4t4q7qbxo",
@@ -1264,210 +821,84 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/c3s0nr4ypudge5k3nmkg06nbcw1g",
       "https://d3hcppa1ebcqsj.cloudfront.net/fhcuakgbz5kbayw0y3m2qfo85pz0"
     ],
+    "price": {
+      "rent": "1512",
+      "deposit": "2840",
+      "charge": "81"
+    },
+    "furnished": "Oui",
+    "description": "Flatlooker vous propose un appartement 2 pièces meublé situé 31 Rue Beauregard 75002 Paris à environ 2 minutes à pied de la station métro Bonne Nouvelle Ligne 8 & 9.La pièce principale est équipée d'un canapé lit, d'une table basse, d'un fauteuil, d'une table à manger avec 4 chaises, La cuisine est équipée d'un grand plan de travail, d'un évier, d'une plaque de cuisson, d'un micro-ondes, d'un lave linge, d'un four traditionnel, d'un réfrigérateur et d'espaces de rangement.La chambre est équipée d'un lit double, de deux tables de nuit, d'une commode.La salle d'eau est équipée d'un lavabo simple vasque, d'un d'un miroir, d'un meuble de rangement, d'une cabine de douche, des W.C et d'un espace de rangement.N'hésitez pas à candidater !",
     "amenities": [
       "Internet",
       "Machine à laver"
     ],
-    "price": "1512",
-    "charge": "81",
-    "description": "Flatlooker vous propose un appartement 2 pièces meublé situé 31 Rue Beauregard 75002 Paris à environ 2 minutes à pied de la station métro Bonne Nouvelle Ligne 8 & 9.La pièce principale est équipée d'un canapé lit, d'une table basse, d'un fauteuil, d'une table à manger avec 4 chaises, La cuisine est équipée d'un grand plan de travail, d'un évier, d'une plaque de cuisson, d'un micro-ondes, d'un lave linge, d'un four traditionnel, d'un réfrigérateur et d'espaces de rangement.La chambre est équipée d'un lit double, de deux tables de nuit, d'une commode.La salle d'eau est équipée d'un lavabo simple vasque, d'un d'un miroir, d'un meuble de rangement, d'une cabine de douche, des W.C et d'un espace de rangement.N'hésitez pas à candidater !",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "5 / 5",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "440 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "2840 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "45 dB",
-      "Intensité sonore fenêtres fermées": "42 dB",
-      "Orientation principale": "0° - Nord",
-      "Nombre de fenêtres": "4",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "250 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "53 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Ascenseur",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Lit double",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Plaques",
-        "Four",
-        "TV",
-        "Chaises",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit simple",
-        "Lave vaisselle",
-        "Dressing",
-        "Bureau"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "45 dB",
-        "Intensité sonore fenêtres fermées": "42 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "0° - Nord",
-        "Nombre de fenêtres": "4",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "250 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "5 / 5"
-      },
-      "Humidité": {
-        "Taux d'humidité": "53 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Lit double",
+      "Micro-ondes",
+      "Congélateur",
+      "Réfrigérateur",
+      "Plaques",
+      "Four",
+      "TV",
+      "Chaises",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T3 meublé au 101 Boulevard Saint-Michel, 75005, Paris",
-    "address": "101 Boulevard Saint-Michel, 75005, Paris",
+    "location": {
+      "address": "101 Boulevard Saint-Michel, 75005, Paris",
+      "city": "Paris",
+      "postalCode": "75005"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/1de73n9e879nm63ktzze8piado8i",
       "https://d3hcppa1ebcqsj.cloudfront.net/b2p4s5xc7db5nkkzbzyodxw76asj",
       "https://d3hcppa1ebcqsj.cloudfront.net/m2ni189b8y46nbger26umcfcwnwf"
     ],
+    "price": {
+      "rent": "2100",
+      "deposit": "3850",
+      "charge": "175"
+    },
+    "furnished": "Oui",
+    "description": "3 pieces 2 chambre et un salon avec cuisine",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "2100",
-    "charge": "175",
-    "description": "3 pieces 2 chambre et un salon avec cuisine",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "1 / 5",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "825 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "3850 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Non",
-      "Intensité sonore fenêtres ouvertes": "0 dB",
-      "Intensité sonore fenêtres fermées": "0 dB",
-      "Orientation principale": "0° - Nord",
-      "Nombre de fenêtres": "0",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "0 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "50 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Ascenseur",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Machine à laver",
-        "Lits doubles",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "TV",
-        "Chaises",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Interphone",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit simple",
-        "Dressing",
-        "Bureau"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Non",
-        "Intensité sonore fenêtres ouvertes": "0 dB",
-        "Intensité sonore fenêtres fermées": "0 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "0° - Nord",
-        "Nombre de fenêtres": "0",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "0 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "1 / 5"
-      },
-      "Humidité": {
-        "Taux d'humidité": "50 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Machine à laver",
+      "Lits doubles",
+      "Micro-ondes",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "TV",
+      "Chaises",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 meublé au 324 Rue Saint-Honoré, 75001, Paris",
-    "address": "324 Rue Saint-Honoré, 75001, Paris",
+    "location": {
+      "address": "324 Rue Saint-Honoré, 75001, Paris",
+      "city": "Paris",
+      "postalCode": "75001"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/tumhlnpmhb8yxqc66xyvux6dkv14",
       "https://d3hcppa1ebcqsj.cloudfront.net/nw7p26xadijnrx06rn9xrs0shfj7",
@@ -1543,105 +974,43 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/1de73n9e879nm63ktzze8piado8i",
       "https://d3hcppa1ebcqsj.cloudfront.net/qbbrrvc70wf1qr4tezjz23kvn3h3"
     ],
+    "price": {
+      "rent": "2200",
+      "deposit": "4224",
+      "charge": "88"
+    },
+    "furnished": "Oui",
+    "description": "Situé à Paris, ce T2 meublé se trouve rue Saint-Honoré. Non loin de l'arrêt de métro Tuileries, le logement est proche de toute commodité et situé dans un quartier calme et agréable.",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "2200",
-    "charge": "88",
-    "description": "Situé à Paris, ce T2 meublé se trouve rue Saint-Honoré. Non loin de l'arrêt de métro Tuileries, le logement est proche de toute commodité et situé dans un quartier calme et agréable.",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "4 / 6",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "645 €",
-      "Ascenseur": "Non",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "4224 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "54 dB",
-      "Intensité sonore fenêtres fermées": "34 dB",
-      "Orientation principale": "195° - Sud",
-      "Nombre de fenêtres": "3",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "259 cm",
-      "Distance au vis-à-vis": "23 m",
-      "Taux d'humidité": "62 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Ascenseur",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Machine à laver",
-        "Toilettes séparées",
-        "Lit double",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "TV",
-        "Chaises",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Interphone",
-        "Canapé lit",
-        "Lit simple",
-        "Dressing",
-        "Bureau"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "54 dB",
-        "Intensité sonore fenêtres fermées": "34 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "195° - Sud",
-        "Nombre de fenêtres": "3",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "259 cm",
-        "Distance au vis-à-vis": "23 m",
-        "Étage": "4 / 6"
-      },
-      "Humidité": {
-        "Taux d'humidité": "62 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Machine à laver",
+      "Toilettes séparées",
+      "Lit double",
+      "Micro-ondes",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "TV",
+      "Chaises",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 meublé au 83 Rue du Faubourg Saint-Martin, 75010, Paris",
-    "address": "83 Rue du Faubourg Saint-Martin, 75010, Paris",
+    "location": {
+      "address": "83 Rue du Faubourg Saint-Martin, 75010, Paris",
+      "city": "Paris",
+      "postalCode": "75010"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/cj2e9x8hs49bs0wvsumlmvcb9ve7",
       "https://d3hcppa1ebcqsj.cloudfront.net/jyhxqcinwcpoggwehjxzpo1kaqxa",
@@ -1729,105 +1098,41 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/yxz45osl7d838zkz7acvo4bhlioq",
       "https://d3hcppa1ebcqsj.cloudfront.net/sz0lm5hqnsljw7zjea7mvy8sa4dq"
     ],
+    "price": {
+      "rent": "1150",
+      "deposit": "2140",
+      "charge": "80"
+    },
+    "furnished": "Oui",
+    "description": "Situé à Paris, ce T2 meublé se trouve rue du Faubourg Saint-Martin. Non loin de l'arrêt de métro Château d'Eau, le logement est proche de la gare de l'Est et des grands axes parisiens ( places de la république , opéra etc..)",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "1150",
-    "charge": "80",
-    "description": "Situé à Paris, ce T2 meublé se trouve rue du Faubourg Saint-Martin. Non loin de l'arrêt de métro Château d'Eau, le logement est proche de la gare de l'Est et des grands axes parisiens ( places de la république , opéra etc..)",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "RDC / 5",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "435 €",
-      "Ascenseur": "Non",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "2140 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "40 dB",
-      "Intensité sonore fenêtres fermées": "38 dB",
-      "Orientation principale": "282° - Ouest",
-      "Nombre de fenêtres": "3",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "249 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "50 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Ascenseur",
-        "Internet",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Machine à laver",
-        "Lit double",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "Bureau",
-        "TV",
-        "Chaise",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Interphone",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit simple",
-        "Micro-ondes",
-        "Congélateur",
-        "Dressing"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "40 dB",
-        "Intensité sonore fenêtres fermées": "38 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "282° - Ouest",
-        "Nombre de fenêtres": "3",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "249 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "RDC / 5"
-      },
-      "Humidité": {
-        "Taux d'humidité": "50 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Machine à laver",
+      "Lit double",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "Bureau",
+      "TV",
+      "Chaise",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T3 meublé au 3 Rue De Montholon, 75009, Paris",
-    "address": "3 Rue De Montholon, 75009, Paris",
+    "location": {
+      "address": "3 Rue De Montholon, 75009, Paris",
+      "city": "Paris",
+      "postalCode": "75009"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/xcgnfzfy5tzzvl7gpscj0zt37hoa",
       "https://d3hcppa1ebcqsj.cloudfront.net/xl2fo8b9rhuhnd46jwtnzl263mb2",
@@ -1930,105 +1235,40 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/gt3qlthu4o0rmkivh2mo61meit98",
       "https://d3hcppa1ebcqsj.cloudfront.net/eoytyiky8t317ekj8fkp28unvyh0"
     ],
+    "price": {
+      "rent": "2260",
+      "deposit": "4120",
+      "charge": "200"
+    },
+    "furnished": "Oui",
+    "description": "Situé Paris 9, ce T3 meublé lumineux se trouve rue de Montholon. Non loin de l'arrêt Poissonnière, le logement est proche du square Montholon et de la Gare du Nord.L'appartement, exposé Sud/Ouest, en duplex, est composé d'un séjour avec canapé, d'une cuisine ouverte avec comptoir, d'une chambre avec lit double et d'une salle d'eau avec baignoire.À l'étage se trouve la seconde chambre mansardée avec salle d'eau attenante et WC séparé.Ce joli T3 n'attend que vous !",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "2260",
-    "charge": "200",
-    "description": "Situé Paris 9, ce T3 meublé lumineux se trouve rue de Montholon. Non loin de l'arrêt Poissonnière, le logement est proche du square Montholon et de la Gare du Nord.L'appartement, exposé Sud/Ouest, en duplex, est composé d'un séjour avec canapé, d'une cuisine ouverte avec comptoir, d'une chambre avec lit double et d'une salle d'eau avec baignoire.À l'étage se trouve la seconde chambre mansardée avec salle d'eau attenante et WC séparé.Ce joli T3 n'attend que vous !",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "5 / 6",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "974 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "4120 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Gaz",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "37 dB",
-      "Intensité sonore fenêtres fermées": "36 dB",
-      "Orientation principale": "219° - Sud-Ouest",
-      "Nombre de fenêtres": "9",
-      "Appartement traversant": "Oui",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "230 cm",
-      "Distance au vis-à-vis": "9 m",
-      "Taux d'humidité": "67 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Ascenseur",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Toilettes séparées",
-        "Lit double",
-        "Micro-ondes",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Chaises",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Canapé lit",
-        "Lit simple",
-        "Congélateur",
-        "Four",
-        "Dressing",
-        "Bureau",
-        "TV",
-        "Table"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "37 dB",
-        "Intensité sonore fenêtres fermées": "36 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "219° - Sud-Ouest",
-        "Nombre de fenêtres": "9",
-        "Appartement traversant": "Oui"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "230 cm",
-        "Distance au vis-à-vis": "9 m",
-        "Étage": "5 / 6"
-      },
-      "Humidité": {
-        "Taux d'humidité": "67 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Toilettes séparées",
+      "Lit double",
+      "Micro-ondes",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Chaises",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T1 meublé au 18 Rue Moret, 75011, Paris",
-    "address": "18 Rue Moret, 75011, Paris",
+    "location": {
+      "address": "18 Rue Moret, 75011, Paris",
+      "city": "Paris",
+      "postalCode": "75011"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/0emcrdjrw6sujvxi8psmudw7v01x",
       "https://d3hcppa1ebcqsj.cloudfront.net/vqcuvie6yu8bxpgjg5k8p2anwtyi",
@@ -2060,105 +1300,39 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/hda1osr7s5evs9dfpv4pid4t3plk",
       "https://d3hcppa1ebcqsj.cloudfront.net/83zp2ci9orzl30mtnd1h007vqya9"
     ],
+    "price": {
+      "rent": "1190",
+      "deposit": "2290",
+      "charge": "45"
+    },
+    "furnished": "Oui",
+    "description": "Flatlooker vous présente aujourd'hui un T1 très lumineux de 25m² refait à neuf, entièrement meublé avec des meubles neufs en plein coeur du 11ème arrondissement, à proximité du métro Couronnes. L'appartement dispose d'une machine à laver le linge ainsi que tout le nécessaire de cuisine. La cuisine est ouverte sur l'espace à vivre. Le salon dispose d'un canapé, d'une table basse, de chaises, d'un meuble télé et d'une télévision.Le gros point fort de cet appartement est l'espace chambre séparé derrière une verrière ouvrante sur le salon. Cet appartement est une opportunité exceptionnelle à saisir rapidement sur Flatlooker.com",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "1190",
-    "charge": "45",
-    "description": "Flatlooker vous présente aujourd'hui un T1 très lumineux de 25m² refait à neuf, entièrement meublé avec des meubles neufs en plein coeur du 11ème arrondissement, à proximité du métro Couronnes. L'appartement dispose d'une machine à laver le linge ainsi que tout le nécessaire de cuisine. La cuisine est ouverte sur l'espace à vivre. Le salon dispose d'un canapé, d'une table basse, de chaises, d'un meuble télé et d'une télévision.Le gros point fort de cet appartement est l'espace chambre séparé derrière une verrière ouvrante sur le salon. Cet appartement est une opportunité exceptionnelle à saisir rapidement sur Flatlooker.com",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "2 / 4",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "375 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "2290 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "43 dB",
-      "Intensité sonore fenêtres fermées": "42 dB",
-      "Orientation principale": "0° - Nord",
-      "Nombre de fenêtres": "2",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "250 cm",
-      "Distance au vis-à-vis": "11 m",
-      "Taux d'humidité": "52 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Ascenseur",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Machine à laver",
-        "Lit double",
-        "Micro-ondes",
-        "Réfrigérateur",
-        "Plaques",
-        "Dressing",
-        "TV",
-        "Chaises",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Raccordement machine",
-        "Interphone",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit simple",
-        "Congélateur",
-        "Lave vaisselle",
-        "Four",
-        "Bureau"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "43 dB",
-        "Intensité sonore fenêtres fermées": "42 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "0° - Nord",
-        "Nombre de fenêtres": "2",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "250 cm",
-        "Distance au vis-à-vis": "11 m",
-        "Étage": "2 / 4"
-      },
-      "Humidité": {
-        "Taux d'humidité": "52 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Machine à laver",
+      "Lit double",
+      "Micro-ondes",
+      "Réfrigérateur",
+      "Plaques",
+      "Dressing",
+      "TV",
+      "Chaises",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T1 meublé au 1 Rue du Sénégal, 75020, Paris",
-    "address": "1 Rue du Sénégal, 75020, Paris",
+    "location": {
+      "address": "1 Rue du Sénégal, 75020, Paris",
+      "city": "Paris",
+      "postalCode": "75020"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/2l7zzjl8sdvyenw4vsbuzrp8bko8",
       "https://d3hcppa1ebcqsj.cloudfront.net/6w05q9azqpfnfaear6ik785t3t8b",
@@ -2190,105 +1364,38 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/pzkxt34lf144vlzlgfzgod0xgozg",
       "https://d3hcppa1ebcqsj.cloudfront.net/0upnnv9siwhw9rwuc0co2zsdajq7"
     ],
+    "price": {
+      "rent": "875",
+      "deposit": "1590",
+      "charge": "80"
+    },
+    "furnished": "Oui",
+    "description": "Entre les métros Couronnes (Ligne 2), Belleville (Lignes 2 & 11) et Pyrénées (Ligne 11), Flatlooker vous propose un superbe studio rue du Sénégal. Situé au 1er étage sans ascenseur, cet appartement a été rénové entièrement et se loue meublé. Le logement se situe à quelques minutes du parc de Belleville et proche de tous les commerces.",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "875",
-    "charge": "80",
-    "description": "Entre les métros Couronnes (Ligne 2), Belleville (Lignes 2 & 11) et Pyrénées (Ligne 11), Flatlooker vous propose un superbe studio rue du Sénégal. Situé au 1er étage sans ascenseur, cet appartement a été rénové entièrement et se loue meublé. Le logement se situe à quelques minutes du parc de Belleville et proche de tous les commerces.",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Non",
-      "Box / garage": "Non",
-      "Étage": "1 / 5",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "300 €",
-      "Ascenseur": "Non",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "1590 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "47 dB",
-      "Intensité sonore fenêtres fermées": "43 dB",
-      "Orientation principale": "225° - Sud-Ouest",
-      "Nombre de fenêtres": "3",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "250 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "52 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Ascenseur",
-        "Internet",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Raccordement machine",
-        "Machine à laver",
-        "Canapé lit",
-        "Micro-ondes",
-        "Réfrigérateur",
-        "Plaques",
-        "Four",
-        "TV",
-        "Chaises",
-        "Table"
-      ],
-      "nonDisponibles": [
-        "Boîte aux lettres",
-        "Interphone",
-        "Toilettes séparées",
-        "Lit double",
-        "Lit simple",
-        "Congélateur",
-        "Lave vaisselle",
-        "Dressing",
-        "Bureau",
-        "Canapé"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "47 dB",
-        "Intensité sonore fenêtres fermées": "43 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "225° - Sud-Ouest",
-        "Nombre de fenêtres": "3",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "250 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "1 / 5"
-      },
-      "Humidité": {
-        "Taux d'humidité": "52 %"
-      }
-    }
+    "meuble": [
+      "Raccordement machine",
+      "Machine à laver",
+      "Canapé lit",
+      "Micro-ondes",
+      "Réfrigérateur",
+      "Plaques",
+      "Four",
+      "TV",
+      "Chaises",
+      "Table"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 meublé au 63 Rue de Dunkerque, 75009, Paris",
-    "address": "63 Rue de Dunkerque, 75009, Paris",
+    "location": {
+      "address": "63 Rue de Dunkerque, 75009, Paris",
+      "city": "Paris",
+      "postalCode": "75009"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/g5ihhq1p8yk2l423e8yyrbafze7t",
       "https://d3hcppa1ebcqsj.cloudfront.net/pjy1nwv7iq3af8wkwho6dyx4wz3l",
@@ -2363,106 +1470,44 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/1de73n9e879nm63ktzze8piado8i",
       "https://d3hcppa1ebcqsj.cloudfront.net/s46j5upfnly50x2i8qg5r1b8rcaq"
     ],
+    "price": {
+      "rent": "2030",
+      "deposit": "3880",
+      "charge": "90"
+    },
+    "furnished": "Oui",
+    "description": "Situé à Paris, ce T2 meublé se trouve rue de Dunkerque. Non loin de l'arrêt de métro Barbès-Rochechouart (Lignes 2 et 4), le logement est proche de la gare du Nord.",
     "amenities": [
       "Internet",
       "Machine à laver"
     ],
-    "price": "2030",
-    "charge": "90",
-    "description": "Situé à Paris, ce T2 meublé se trouve rue de Dunkerque. Non loin de l'arrêt de métro Barbès-Rochechouart (Lignes 2 et 4), le logement est proche de la gare du Nord.",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Non",
-      "Box / garage": "Non",
-      "Étage": "2 / 5",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "890 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "3880 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Gaz",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "36 dB",
-      "Intensité sonore fenêtres fermées": "34 dB",
-      "Orientation principale": "28° - Nord-Est",
-      "Nombre de fenêtres": "5",
-      "Appartement traversant": "Oui",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "282 cm",
-      "Distance au vis-à-vis": "6 m",
-      "Taux d'humidité": "39 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Ascenseur",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Internet",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Machine à laver",
-        "Lit double",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "Dressing",
-        "TV",
-        "Chaises",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Interphone",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit simple",
-        "Bureau"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "36 dB",
-        "Intensité sonore fenêtres fermées": "34 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "28° - Nord-Est",
-        "Nombre de fenêtres": "5",
-        "Appartement traversant": "Oui"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "282 cm",
-        "Distance au vis-à-vis": "6 m",
-        "Étage": "2 / 5"
-      },
-      "Humidité": {
-        "Taux d'humidité": "39 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Machine à laver",
+      "Lit double",
+      "Micro-ondes",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "Dressing",
+      "TV",
+      "Chaises",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 non meublé au 10 Rue de Budapest, 75009, Paris",
-    "address": "10 Rue de Budapest, 75009, Paris",
+    "location": {
+      "address": "10 Rue de Budapest, 75009, Paris",
+      "city": "Paris",
+      "postalCode": "75009"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/b8fa0b5g4heswnh2k67eccpvfv77",
       "https://d3hcppa1ebcqsj.cloudfront.net/ccaol9shr0vcyqeh8wvj6kaw8ozw",
@@ -2518,105 +1563,33 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/rjbnczk32sm94c5jselq3ockcnto",
       "https://d3hcppa1ebcqsj.cloudfront.net/yxz45osl7d838zkz7acvo4bhlioq"
     ],
+    "price": {
+      "rent": "1007",
+      "deposit": "770",
+      "charge": "190"
+    },
+    "furnished": "Oui",
+    "description": "A 3 minutes à pied de la station de métro et de la gare Saint-Lazare (Lignes 3, 12, 13, 14), Flatlooker vous propose ce T2 en duplex  en location au 5ᵉ étage avec ascenseur, non meublé dans une résidence calme et agréable. Votre séjour est spacieux, possède deux éléments de rangements et donne sur la cour de l’immeuble.Votre cuisine disposera d’un évier, deux plaques de cuisson, un réfrigérateur, une machine à laver et des placards et étagères de rangements.Dans votre salle d’eau, vous disposerez d’une baignoire, un lavabo avec miroir et des toilettes. Votre chambre, à l’étage, est lumineuse et donne sur la cour.Belles prestations pour ce T2 en location spacieux, lumineux et calme.Les charges comprennent l’eau courante, l’eau chaude, le chauffage, l’électricité et l’entretien des parties communes.Situé à proximité de commerces, restaurants et au cœur du 9ᵉ arrondissement, cet appartement n’attend que vous !",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "1007",
-    "charge": "190",
-    "description": "A 3 minutes à pied de la station de métro et de la gare Saint-Lazare (Lignes 3, 12, 13, 14), Flatlooker vous propose ce T2 en duplex  en location au 5ᵉ étage avec ascenseur, non meublé dans une résidence calme et agréable. Votre séjour est spacieux, possède deux éléments de rangements et donne sur la cour de l’immeuble.Votre cuisine disposera d’un évier, deux plaques de cuisson, un réfrigérateur, une machine à laver et des placards et étagères de rangements.Dans votre salle d’eau, vous disposerez d’une baignoire, un lavabo avec miroir et des toilettes. Votre chambre, à l’étage, est lumineuse et donne sur la cour.Belles prestations pour ce T2 en location spacieux, lumineux et calme.Les charges comprennent l’eau courante, l’eau chaude, le chauffage, l’électricité et l’entretien des parties communes.Situé à proximité de commerces, restaurants et au cœur du 9ᵉ arrondissement, cet appartement n’attend que vous !",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "5 / 6",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "405 €",
-      "Ascenseur": "Non",
-      "Durée du bail": "36 mois",
-      "Dépôt de garantie": "770 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Fioul",
-      "Type de chauffage": "Collectif",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "37 dB",
-      "Intensité sonore fenêtres fermées": "35 dB",
-      "Orientation principale": "176° - Sud",
-      "Nombre de fenêtres": "2",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "233 cm",
-      "Distance au vis-à-vis": "5 m",
-      "Taux d'humidité": "56 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Eau chaude",
-        "Entretien parties communes",
-        "Chauffage",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Gaz",
-        "Gardien",
-        "Ascenseur",
-        "Internet",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Réfrigérateur",
-        "Plaques"
-      ],
-      "nonDisponibles": [
-        "Boîte aux lettres",
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit double",
-        "Lit simple",
-        "Micro-ondes",
-        "Congélateur",
-        "Lave vaisselle",
-        "Four",
-        "Dressing",
-        "Bureau",
-        "TV",
-        "Chaise",
-        "Table",
-        "Canapé"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "37 dB",
-        "Intensité sonore fenêtres fermées": "35 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "176° - Sud",
-        "Nombre de fenêtres": "2",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "233 cm",
-        "Distance au vis-à-vis": "5 m",
-        "Étage": "5 / 6"
-      },
-      "Humidité": {
-        "Taux d'humidité": "56 %"
-      }
-    }
+    "meuble": [
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Réfrigérateur",
+      "Plaques"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 meublé au 75 Avenue Philippe-Auguste, 75011, Paris",
-    "address": "75 Avenue Philippe-Auguste, 75011, Paris",
+    "location": {
+      "address": "75 Avenue Philippe-Auguste, 75011, Paris",
+      "city": "Paris",
+      "postalCode": "75011"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/9s2svwhmltl04dwrd8r5etuca83i",
       "https://d3hcppa1ebcqsj.cloudfront.net/c9a0tss53vigh3wmziakgdtf5zau",
@@ -2708,105 +1681,44 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/4begw5v3f4xhv611pzeai0dzsfj2",
       "https://d3hcppa1ebcqsj.cloudfront.net/4u58v1g8fhq265s69pz4pjcxvys0"
     ],
+    "price": {
+      "rent": "1538",
+      "deposit": "2620",
+      "charge": "148"
+    },
+    "furnished": "Oui",
+    "description": "A quelques minutes du métro Rue des Boulets, Flatlooker propose un T2 en location avenue Philippe-Auguste. Situé au 1er étage avec ascenseur, cet appartement lumineux est loué meublé.L'entrée ouvre sur un dégagement avec placard intégré. La pièce de vie est chaleureuse et lumineuse. Elle se compose de l'espace salon et de l'espace salle à manger. La grande baie vitrée offre une vue apaisante sur jardin calme et arboré. La cuisine est séparée et entièrement équipée. La chambre propose un lit double, une armoire à dressing et une seconde pièce aménagée en bureau avec grande baie vitrée sur jardin. La salle de bain propose une baignoire douche et un espace de rangement sous vasque. Les WC sont dans la salle de bain. Très belles prestations pour ce T2 en location : grande pièce de vie, lumineux, très calme car sur jardin, parquet chaleureux dans toutes les pièces, rangements, entièrement meublé et équipé...Le métro Rue des Boulets (ligne 9) est à quelques minutes à pied, tous les commerces sont à deux pas et le quartier est calme mais plutôt vivant.Idéal pour un couple, ce superbe appartement n'attend plus que vous !",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "1538",
-    "charge": "148",
-    "description": "A quelques minutes du métro Rue des Boulets, Flatlooker propose un T2 en location avenue Philippe-Auguste. Situé au 1er étage avec ascenseur, cet appartement lumineux est loué meublé.L'entrée ouvre sur un dégagement avec placard intégré. La pièce de vie est chaleureuse et lumineuse. Elle se compose de l'espace salon et de l'espace salle à manger. La grande baie vitrée offre une vue apaisante sur jardin calme et arboré. La cuisine est séparée et entièrement équipée. La chambre propose un lit double, une armoire à dressing et une seconde pièce aménagée en bureau avec grande baie vitrée sur jardin. La salle de bain propose une baignoire douche et un espace de rangement sous vasque. Les WC sont dans la salle de bain. Très belles prestations pour ce T2 en location : grande pièce de vie, lumineux, très calme car sur jardin, parquet chaleureux dans toutes les pièces, rangements, entièrement meublé et équipé...Le métro Rue des Boulets (ligne 9) est à quelques minutes à pied, tous les commerces sont à deux pas et le quartier est calme mais plutôt vivant.Idéal pour un couple, ce superbe appartement n'attend plus que vous !",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Non",
-      "Box / garage": "Non",
-      "Étage": "1 / 13",
-      "Cave": "Non",
-      "Gardiennage": "Oui",
-      "Honoraires de location": "660 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "2620 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Gaz",
-      "Type de chauffage": "Collectif",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "35 dB",
-      "Intensité sonore fenêtres fermées": "34 dB",
-      "Orientation principale": "245° - Sud-Ouest",
-      "Nombre de fenêtres": "3",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "254 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "52 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Eau chaude",
-        "Entretien parties communes",
-        "Gardien",
-        "Ascenseur",
-        "Chauffage",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Gaz",
-        "Internet",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Lit double",
-        "Micro-ondes",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "Bureau",
-        "TV",
-        "Chaises",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit simple",
-        "Dressing"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "35 dB",
-        "Intensité sonore fenêtres fermées": "34 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "245° - Sud-Ouest",
-        "Nombre de fenêtres": "3",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "254 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "1 / 13"
-      },
-      "Humidité": {
-        "Taux d'humidité": "52 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Lit double",
+      "Micro-ondes",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "Bureau",
+      "TV",
+      "Chaises",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 meublé au 104 Avenue Simón Bolívar, 75019, Paris",
-    "address": "104 Avenue Simón Bolívar, 75019, Paris",
+    "location": {
+      "address": "104 Avenue Simón Bolívar, 75019, Paris",
+      "city": "Paris",
+      "postalCode": "75019"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/3k103vas4mtn0qap74n57u7wntnt",
       "https://d3hcppa1ebcqsj.cloudfront.net/r8cjuqooeaena9ucju2dvemi8ys0",
@@ -2890,106 +1802,44 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/etjq7a3v9t3s20mcgu3fw85o1ul6",
       "https://d3hcppa1ebcqsj.cloudfront.net/v8cafv22cm0z7c0clz9n2imgt4jf"
     ],
+    "price": {
+      "rent": "1990",
+      "deposit": "2595",
+      "charge": "260"
+    },
+    "furnished": "Oui",
+    "description": "/!\\ Bail mobilité 10 mois ou bail meublé classique du 02/01/2024 au 01/01/2025 avec congé bailleur pour reprise du logement /!\\Situé à Paris, dans le 19ᵉ arrondissement, ce T2 meublé de 64 m² se trouve Avenue Simón Bolívar, à 50 mètres des Buttes Chaumont. Non loin des arrêts de métro Bolivar, Jaurès et Colonel Fabien, le logement est de toutes les commodités et dispose d'un balcon.  L’appartement est situé au 2ᵉ étage, avec ascenseur.L'appartement est très lumineux et dispose de beaux volumes. Il est composé d'une entrée avec placard, d’un salon/salle à manger, d'une cuisine ouverte, d'une chambre avec accès au balcon et d'une salle de bain avec douche et WC. Dans la pièce principale, vous trouverez deux canapés, un fauteuil, une table basse, une table à manger, deux chaises et une TV. La cuisine est équipée avec four, plaques de cuisson, réfrigérateur, congélateur, lave-vaisselle et lave-linge. La chambre dispose d’un lit double.",
     "amenities": [
       "Machine à laver",
       "Balcon ou terrasse"
     ],
-    "price": "1990",
-    "charge": "260",
-    "description": "/!\\ Bail mobilité 10 mois ou bail meublé classique du 02/01/2024 au 01/01/2025 avec congé bailleur pour reprise du logement /!\\Situé à Paris, dans le 19ᵉ arrondissement, ce T2 meublé de 64 m² se trouve Avenue Simón Bolívar, à 50 mètres des Buttes Chaumont. Non loin des arrêts de métro Bolivar, Jaurès et Colonel Fabien, le logement est de toutes les commodités et dispose d'un balcon.  L’appartement est situé au 2ᵉ étage, avec ascenseur.L'appartement est très lumineux et dispose de beaux volumes. Il est composé d'une entrée avec placard, d’un salon/salle à manger, d'une cuisine ouverte, d'une chambre avec accès au balcon et d'une salle de bain avec douche et WC. Dans la pièce principale, vous trouverez deux canapés, un fauteuil, une table basse, une table à manger, deux chaises et une TV. La cuisine est équipée avec four, plaques de cuisson, réfrigérateur, congélateur, lave-vaisselle et lave-linge. La chambre dispose d’un lit double.",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Non",
-      "Box / garage": "Non",
-      "Étage": "2 / 7",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "890 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "2595 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "0 dB",
-      "Intensité sonore fenêtres fermées": "0 dB",
-      "Orientation principale": "0° - Nord",
-      "Nombre de fenêtres": "5",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "0 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "50 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Ascenseur",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Internet (Fibre)",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Interphone",
-        "Machine à laver",
-        "Lit double",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "Dressing",
-        "TV",
-        "Chaises",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Toilettes séparées",
-        "Canapé lit",
-        "Lit simple",
-        "Micro-ondes",
-        "Bureau"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "0 dB",
-        "Intensité sonore fenêtres fermées": "0 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "0° - Nord",
-        "Nombre de fenêtres": "5",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "0 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "2 / 7"
-      },
-      "Humidité": {
-        "Taux d'humidité": "50 %"
-      }
-    }
+    "meuble": [
+      "Boîte aux lettres",
+      "Raccordement machine",
+      "Interphone",
+      "Machine à laver",
+      "Lit double",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "Dressing",
+      "TV",
+      "Chaises",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T2 meublé au 46 Avenue Simón Bolívar, 75019, Paris",
-    "address": "46 Avenue Simón Bolívar, 75019, Paris",
+    "location": {
+      "address": "46 Avenue Simón Bolívar, 75019, Paris",
+      "city": "Paris",
+      "postalCode": "75019"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/iw7j5bzdxzbpe74x7h80kci0pvuk",
       "https://d3hcppa1ebcqsj.cloudfront.net/5xz8x7sv9ybe094jgxyg1m0efvbf",
@@ -3024,105 +1874,40 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/eg10r92pgt378940wzrq2sljntmd",
       "https://d3hcppa1ebcqsj.cloudfront.net/q0a9r0ig3enb2cfjym5ppwyxv5nr"
     ],
+    "price": {
+      "rent": "1748",
+      "deposit": "3000",
+      "charge": "160"
+    },
+    "furnished": "Oui",
+    "description": "Situé dans le 19ème arrondissement de Paris, ce beau T2 meublé se trouve Avenue Simon Bolivar. Non loin de l’arrêt de métro Buttes Chaumont, le logement est à moins 50 mètres de l'entrée du Parc des Buttes-Chaumont.",
     "amenities": [
       "Machine à laver"
     ],
-    "price": "1748",
-    "charge": "160",
-    "description": "Situé dans le 19ème arrondissement de Paris, ce beau T2 meublé se trouve Avenue Simon Bolivar. Non loin de l’arrêt de métro Buttes Chaumont, le logement est à moins 50 mètres de l'entrée du Parc des Buttes-Chaumont.",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "2 / 8",
-      "Cave": "Oui",
-      "Gardiennage": "Oui",
-      "Honoraires de location": "700 €",
-      "Ascenseur": "Oui",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "3000 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Gaz",
-      "Type de chauffage": "Collectif",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "44 dB",
-      "Intensité sonore fenêtres fermées": "41 dB",
-      "Orientation principale": "270° - Ouest",
-      "Nombre de fenêtres": "4",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Rue",
-      "Hauteur sous plafond": "260 cm",
-      "Distance au vis-à-vis": "Lointain",
-      "Taux d'humidité": "55 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Eau chaude",
-        "Entretien parties communes",
-        "Gardien",
-        "Ascenseur",
-        "Chauffage",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Gaz",
-        "Internet",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Interphone",
-        "Machine à laver",
-        "Canapé lit",
-        "Lit double",
-        "Congélateur",
-        "Réfrigérateur",
-        "Lave vaisselle",
-        "Plaques",
-        "Four",
-        "Chaises",
-        "Table",
-        "Canapé"
-      ],
-      "nonDisponibles": [
-        "Boîte aux lettres",
-        "Raccordement machine",
-        "Toilettes séparées",
-        "Lit simple",
-        "Micro-ondes",
-        "Dressing",
-        "Bureau",
-        "TV"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "44 dB",
-        "Intensité sonore fenêtres fermées": "41 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "270° - Ouest",
-        "Nombre de fenêtres": "4",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Rue",
-        "Hauteur sous plafond": "260 cm",
-        "Distance au vis-à-vis": "Lointain",
-        "Étage": "2 / 8"
-      },
-      "Humidité": {
-        "Taux d'humidité": "55 %"
-      }
-    }
+    "meuble": [
+      "Interphone",
+      "Machine à laver",
+      "Canapé lit",
+      "Lit double",
+      "Congélateur",
+      "Réfrigérateur",
+      "Lave vaisselle",
+      "Plaques",
+      "Four",
+      "Chaises",
+      "Table",
+      "Canapé"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   },
   {
     "title": "Location d'un T1 meublé au 32 Rue Philippe de Girard, 75010, Paris",
-    "address": "32 Rue Philippe de Girard, 75010, Paris",
+    "location": {
+      "address": "32 Rue Philippe de Girard, 75010, Paris",
+      "city": "Paris",
+      "postalCode": "75010"
+    },
     "images": [
       "https://d3hcppa1ebcqsj.cloudfront.net/l64scicrtbhk3wkkc3bhji8p8goy",
       "https://d3hcppa1ebcqsj.cloudfront.net/wpzlyzyd4vxalrjm089okr5j8nvl",
@@ -3157,98 +1942,26 @@
       "https://d3hcppa1ebcqsj.cloudfront.net/uafh7ku29q4hjuo0ecnfhpd7pvgv",
       "https://d3hcppa1ebcqsj.cloudfront.net/vkxw1p1kbsws83rs7u2q0h1x1rz4"
     ],
-    "amenities": [],
-    "price": "730",
-    "charge": "40",
+    "price": {
+      "rent": "730",
+      "deposit": "1380",
+      "charge": "40"
+    },
+    "furnished": "Oui",
     "description": "A deux pas du métro La Chapelle, Flatlooker propose un T1 en location rue Philippe de Girard. Situé au rez-de-chaussée, cet appartement meublé a été refait à neuf. L'entrée donne dans la pièce de vie et dispose de l'interphone.La pièce principale propose un canapé convertible, une table basse, une commode à cinq tiroirs, une armoire à dressing, une table pliante et deux chaises pour l'espace repas. Les deux fenêtres ouvrent sur le local à vélos extérieur, très calme. La cuisine est ouverte et équipée : évier, plaque de cuisson, four, micro-ondes, placards avec vaisselle et ustensiles.La salle de bain dispose d'une baignoire avec pare-douche, d'un lavabo, d'un miroir et d'un placard de rangement. Les WC sont dans la salle de bain. Très belles prestations pour ce T1 en location : appartement refait à neuf, très calme, lumineux, meublé et équipé totalement à neuf, parfaitement agencé et optimisé...Le métro La Chapelle ligne 2 est à deux pas, tous les commerces sont à proximité immédiate et le quartier est vivant.Gare du Nord et Gare de l’Est sont respectivement à 600m et 900mIdéal pour jeune actif(ve), ce superbe studio n'attend plus que vous !",
-    "features": {
-      "Parking": "Non",
-      "Colocation acceptée": "Oui",
-      "Box / garage": "Non",
-      "Étage": "RDC / 6",
-      "Cave": "Non",
-      "Gardiennage": "Non",
-      "Honoraires de location": "255 €",
-      "Ascenseur": "Non",
-      "Durée du bail": "12 mois",
-      "Dépôt de garantie": "1380 €",
-      "Accessible PMR": "Non",
-      "Nature du chauffage": "Électricité",
-      "Type de chauffage": "Individuel",
-      "Double Vitrage": "Oui",
-      "Intensité sonore fenêtres ouvertes": "45 dB",
-      "Intensité sonore fenêtres fermées": "40 dB",
-      "Orientation principale": "172° - Sud",
-      "Nombre de fenêtres": "2",
-      "Appartement traversant": "Non",
-      "Nature du vis-à-vis": "Cour",
-      "Hauteur sous plafond": "300 cm",
-      "Distance au vis-à-vis": "15 m",
-      "Taux d'humidité": "64 %"
-    },
-    "chargesDetails": {
-      "incluses": [
-        "Ordures",
-        "Entretien parties communes",
-        "Eau courante"
-      ],
-      "nonIncluses": [
-        "Ménage",
-        "Eau chaude",
-        "Gaz",
-        "Gardien",
-        "Ascenseur",
-        "Internet",
-        "Chauffage",
-        "Électricité"
-      ]
-    },
-    "furnitureDetails": {
-      "disponibles": [
-        "Boîte aux lettres",
-        "Interphone",
-        "Canapé lit",
-        "Micro-ondes",
-        "Réfrigérateur",
-        "Plaques",
-        "Four",
-        "Chaises",
-        "Table"
-      ],
-      "nonDisponibles": [
-        "Raccordement machine",
-        "Machine à laver",
-        "Toilettes séparées",
-        "Lit double",
-        "Lit simple",
-        "Congélateur",
-        "Lave vaisselle",
-        "Dressing",
-        "Bureau",
-        "TV",
-        "Canapé"
-      ]
-    },
-    "measuresDetails": {
-      "Son": {
-        "Double Vitrage": "Oui",
-        "Intensité sonore fenêtres ouvertes": "45 dB",
-        "Intensité sonore fenêtres fermées": "40 dB"
-      },
-      "Luminosité": {
-        "Orientation principale": "172° - Sud",
-        "Nombre de fenêtres": "2",
-        "Appartement traversant": "Non"
-      },
-      "Caractéristiques": {
-        "Nature du vis-à-vis": "Cour",
-        "Hauteur sous plafond": "300 cm",
-        "Distance au vis-à-vis": "15 m",
-        "Étage": "RDC / 6"
-      },
-      "Humidité": {
-        "Taux d'humidité": "64 %"
-      }
-    }
+    "amenities": [],
+    "meuble": [
+      "Boîte aux lettres",
+      "Interphone",
+      "Canapé lit",
+      "Micro-ondes",
+      "Réfrigérateur",
+      "Plaques",
+      "Four",
+      "Chaises",
+      "Table"
+    ],
+    "publicationDate": "2023-12-06",
+    "lastUpdate": "2023-12-06"
   }
 ]
