@@ -51,23 +51,28 @@ async function scrapePage(browser, url) {
 }
 
 (async () => {
+    // Obtention des dates actuelle et précédente
     const currentDate = getCurrentDateString();
     const previousDate = getPreviousDateString();
 
+    // Tentative de lecture des données du jour précédent
     const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${previousDate}.json`);
     let previousData;
     try {
         previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
     } catch (error) {
-        previousData = []; // Si le fichier du jour précédent n'existe pas
+        // Si le fichier du jour précédent n'existe pas, on initialise un tableau vide
+        previousData = []; 
     }
 
+    // Chemin du fichier contenant les liens des annonces à récupérer
     const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Appartager_Recherche_Up_To_Date/Updated_Data_Appartager_Recherche_${currentDate}.json`);
     const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
     const allData = [];
 
     const browser = await puppeteer.launch();
 
+    // Boucle sur chaque annonce pour récupérer les données
     for (let annonce of annonces) {
         try {
             const data = await scrapePage(browser, annonce.link);
@@ -79,20 +84,33 @@ async function scrapePage(browser, url) {
         }
     }
 
+    // Fermeture de Puppeteer une fois toutes les annonces traitées
     await browser.close();
 
-    const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-    const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
-    const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+    // Traitement des annonces en fonction des données du jour précédent
+    if (previousData.length === 0) {
+        console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
+        const upToDateAnnouncements = allData;
 
-    const fileName = path.join(__dirname, `../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${currentDate}.json`);
-    const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Appartager_Annonce_Up_To_Date/Updated_Data_Appartager_Annonces_${currentDate}.json`);
+        // Chemin et enregistrement des annonces considérées comme à jour
+        const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Appartager_Annonce_Up_To_Date/Updated_Data_Appartager_Annonces_${currentDate}.json`);
+        fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+        console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    } else {
+        // Identification des nouvelles annonces, des annonces supprimées et des annonces à jour
+        const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+        const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
+        const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
 
-    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
-    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+        // Chemins et enregistrement des données normalisées et des annonces à jour
+        const fileName = path.join(__dirname, `../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${currentDate}.json`);
+        const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Appartager_Annonce_Up_To_Date/Updated_Data_Appartager_Annonces_${currentDate}.json`);
 
-    console.log(`All data saved to ${fileName}!`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
-    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+        fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
+        fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+
+        console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
+        console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+        console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    }
 })();
