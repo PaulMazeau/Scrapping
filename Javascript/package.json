@@ -3,6 +3,7 @@
     "axios": "^1.6.0",
     "fs": "^0.0.1-security",
     "moment": "^2.29.4",
+    "playwright": "^1.40.1",
     "puppeteer": "^21.4.1"
   }
 }
