@@ -25,6 +25,7 @@ try {
 } catch (error) {
     previousData = []; // Si le fichier du jour précédent n'existe pas
 }
+
 function normalizeData(data) {
     return {
         title: data.title,
@@ -54,9 +55,17 @@ function normalizeData(data) {
 
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
-const newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-const removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
-const upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
+if (previousData.length === 0) {
+    console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
+    upToDateAnnouncements = normalizedDataArray;
+    newAnnouncements = [];
+    removedAnnouncements = [];
+} else {
+    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
+    upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+}
 
 const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_ImmoJeune/Normalized_Data_ImmoJeune_Annonces_${currentDate}.json`);
 const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/ImmoJeune_Normalisation_Up_To_Date/Updated_Data_ImmoJeune_Annonces_${currentDate}.json`);

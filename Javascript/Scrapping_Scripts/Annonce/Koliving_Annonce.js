@@ -229,9 +229,17 @@ fs.readFile(rawDataPath, 'utf8', async (err, data) => {
     await sleep(1000); // Pause pour éviter de surcharger le serveur
 }
 
-const newAnnouncements = allResponses.filter(item => !previousData.some(oldItem => oldItem.propertyIdNumber === item.propertyIdNumber));
-const removedAnnouncements = previousData.filter(item => !allResponses.some(newItem => newItem.propertyIdNumber === item.propertyIdNumber));
-const upToDateAnnouncements = allResponses.filter(item => !newAnnouncements.includes(item));
+let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
+if (previousData.length === 0) {
+    console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
+    upToDateAnnouncements = allResponses;
+    newAnnouncements = [];
+    removedAnnouncements = [];
+} else {
+    newAnnouncements = allResponses.filter(item => !previousData.some(oldItem => oldItem.propertyIdNumber === item.propertyIdNumber));
+    removedAnnouncements = previousData.filter(item => !allResponses.some(newItem => newItem.propertyIdNumber === item.propertyIdNumber));
+    upToDateAnnouncements = allResponses.filter(item => !newAnnouncements.includes(item));
+}
 
 const fileName = path.join(__dirname, `../../Resultat_Annonce/Koliving_Annonce/Data_Koliving_Annonces_${currentDate}.json`);
 const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Koliving_Annonce_Up_To_Date/Updated_Data_Koliving_Annonces_${currentDate}.json`);

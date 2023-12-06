@@ -70,9 +70,17 @@ function normalizeData(data) {
 
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
-const newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.address === item.location.address));
-const removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === item.title && newItem.location.address === item.location.address));
-const upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
+if (previousData.length === 0) {
+    console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
+    upToDateAnnouncements = normalizedDataArray;
+    newAnnouncements = [];
+    removedAnnouncements = [];
+} else {
+    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.address === item.location.address));
+    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === item.title && newItem.location.address === item.location.address));
+    upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+}
 
 const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_MorningCroissant/Normalized_Data_MorningCroissant_Annonces_${currentDate}.json`);
 const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/MorningCroissant_Normalisation_Up_To_Date/Updated_Data_MorningCroissant_Annonces_${currentDate}.json`);

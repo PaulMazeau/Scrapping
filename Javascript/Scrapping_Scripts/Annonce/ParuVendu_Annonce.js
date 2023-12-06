@@ -63,10 +63,9 @@ async function scrapePage(page, url) {
 
     for (let annonce of annonces) {
         try {
-            const data = await scrapePage(page, annonce.link); // Utilisez la même page pour chaque annonce
-            allData.push(data); // Ajoutez les données de l'annonce au tableau
+            const data = await scrapePage(page, annonce.link);
+            allData.push(data); 
             console.log('Annonce traitée :', annonce.link);
-            console.log(allData.length)
         } catch (error) {
             console.error(`Failed to scrape the page at ${annonce.link} due to: ${error}`);
         }
@@ -75,9 +74,17 @@ async function scrapePage(page, url) {
     await page.close();
     await browser.close();
 
-    const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.city === item.city));
-    const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.title === newItem.title && newItem.city === item.city));
-    const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+    let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
+    if (previousData.length === 0) {
+        console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
+        upToDateAnnouncements = allData;
+        newAnnouncements = [];
+        removedAnnouncements = [];
+    } else {
+        newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.city === item.city));
+        removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.title === newItem.title && newItem.city === item.city));
+        upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+    }
 
     const fileName = path.join(__dirname, `../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${currentDate}.json`);
     const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/ParuVendu_Annonce_Up_To_Date/Updated_Data_ParuVendu_Annonces_${currentDate}.json`);

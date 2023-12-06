@@ -69,8 +69,7 @@ async function scrapePage(browser, url) {
         try {
             const data = await scrapePage(browser, annonce.link);
             allData.push(data); // Ajouter les données de chaque annonce au tableau
-            console.log('Annonce faite')
-            console.log(allData.length)
+            console.log('Annonce traitée :', annonce.link);
         } catch (error) {
             console.error(`Failed to scrape the page at ${annonce.link} due to: ${error}`);
         }
@@ -78,9 +77,17 @@ async function scrapePage(browser, url) {
 
     await browser.close();
 
-    const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.address === item.address));
-    const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.title === newItem.title && newItem.address === item.address));
-    const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+    let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
+    if (previousData.length === 0) {
+        console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
+        upToDateAnnouncements = allData;
+        newAnnouncements = [];
+        removedAnnouncements = [];
+    } else {
+        newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.address === item.address));
+        removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.title === newItem.title && newItem.address === item.address));
+        upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+    }
 
     const fileName = path.join(__dirname, `../../Resultat_Annonce/Rentola_Annonce/Data_Rentola_Annonces_${currentDate}.json`);
     const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Rentola_Annonce_Up_To_Date/Updated_Data_Rentola_Annonces_${currentDate}.json`);
