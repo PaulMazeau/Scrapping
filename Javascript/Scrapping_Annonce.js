@@ -12,14 +12,13 @@ const scripts = [
 ];
 
 async function runScript(script) {
-  return new Promise((resolve, reject) => {
+  return new Promise((reject) => {
     const process = exec(`node ${script}`, (error, stdout, stderr) => {
       if (error) {
         console.warn(`Erreur avec le script ${script}:`, stderr);
         reject(error);
       } else {
         console.log(`Script ${script} terminé avec succès.`);
-        resolve(totalAnnonces);
       }
     });
   });
