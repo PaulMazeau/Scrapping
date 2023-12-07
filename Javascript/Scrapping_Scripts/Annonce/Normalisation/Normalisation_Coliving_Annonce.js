@@ -54,6 +54,7 @@ function normalizeData(data) {
         publicationDate: getCurrentDateString(),
         lastUpdate: getCurrentDateString(),
         verified: data.verified === 'Oui' ? 'Oui' : 'Non',
+        link: data.link,
     };
 }
 

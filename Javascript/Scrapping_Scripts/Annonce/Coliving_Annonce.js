@@ -13,7 +13,7 @@ function getPreviousDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-async function scrapePage(browser, url, roomsApiUrl) {
+async function scrapePage(browser, url) {
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle0' });
 
@@ -71,8 +71,7 @@ async function scrapePage(browser, url, roomsApiUrl) {
     });
 
     await page.close();
-    return {...data};
-}
+    return {...data, link: url};}
 
 (async () => {
     const currentDate = getCurrentDateString();
@@ -94,8 +93,7 @@ async function scrapePage(browser, url, roomsApiUrl) {
 
     for (let annonce of annonces) {
         try {
-            const roomsApiUrl = `https://coliving.com/listing/${annonce.id}/room-availability?location_id=${annonce.locationId}`;
-            const data = await scrapePage(browser, annonce.url, roomsApiUrl);
+            const data = await scrapePage(browser, annonce.url);
             allData.push(data);
             console.log('Annonce faite');
             console.log(allData.length);
