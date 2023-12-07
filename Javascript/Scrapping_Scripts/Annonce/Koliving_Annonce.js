@@ -220,13 +220,19 @@ fs.readFile(rawDataPath, 'utf8', async (err, data) => {
 
       try {
         const response = await axios(options);
-        allResponses.push({ propertyIdNumber, data: response.data.data.property });
+        const propertyData = response.data.data.property;
+
+        // Supposons que l'URL de l'annonce est dans 'propertyData.metadata.checkoutUrl'
+        const annonceUrl = propertyData.metadata.checkoutUrl;
+
+        // Ajoutez l'URL à l'objet que vous enregistrez
+        allResponses.push({ propertyIdNumber, data: propertyData, link: annonceUrl });
         console.log(`Data for ${propertyIdNumber} fetched`);
     } catch (error) {
         console.error('Error fetching data for', propertyIdNumber, ':', error);
     }
 
-    await sleep(1000); // Pause pour éviter de surcharger le serveur
+    await sleep(1000); // Votre pause existante
 }
 
 let newAnnouncements, removedAnnouncements, upToDateAnnouncements;

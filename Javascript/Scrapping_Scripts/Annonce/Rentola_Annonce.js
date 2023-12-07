@@ -43,7 +43,7 @@ async function scrapePage(browser, url) {
     });
 
     await page.close();
-    return data;
+    return { ...scrapedData, link: url };
 }
 
 
@@ -68,13 +68,13 @@ async function scrapePage(browser, url) {
     for (let annonce of annonces) {
         try {
             const data = await scrapePage(browser, annonce.link);
-            allData.push(data); // Ajouter les données de chaque annonce au tableau
+            allData.push(data); 
             console.log('Annonce traitée :', annonce.link);
         } catch (error) {
             console.error(`Failed to scrape the page at ${annonce.link} due to: ${error}`);
         }
     }
-
+    
     await browser.close();
 
     let newAnnouncements, removedAnnouncements, upToDateAnnouncements;

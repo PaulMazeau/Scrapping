@@ -47,6 +47,7 @@ function normalizeData(data) {
         amenities: data.amenities,
         publicationDate: data.updateDate || getCurrentDateString(),
         lastUpdate: getCurrentDateString(),
+        link: data.link,
     };
 }
 

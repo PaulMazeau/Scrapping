@@ -46,9 +46,8 @@ async function scrapePage(browser, url) {
         };
     });
 
-    await page.close(); // Fermez l'onglet après le scraping
-    return data;
-}
+    await page.close();
+    return {...data, link: url};}
 
 (async () => {
     // Obtention des dates actuelle et précédente

@@ -50,6 +50,7 @@ function normalizeData(data) {
         size: data.area.replace('m²', '').trim(),
         description: data.description.replace(/<br>\n/g, '').replace(/<[^>]*>/g, ''),
         nearTo: data.schools ? data.schools.map(school => school.name.trim()) : [],
+        link: data.link,
     };
 }
 

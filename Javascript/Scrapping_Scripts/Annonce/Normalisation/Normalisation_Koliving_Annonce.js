@@ -87,7 +87,7 @@ function normalizeData(data) {
         pieces: data.data.nbRooms ? data.data.nbRooms.toString() : '0',
         virtualTour: data.data.virtualVisitUrl || '',
         verified: data.data.isPublished ? 'Oui' : 'Non',
-        link: '',
+        link: data.data.link,
         bedroomsDetails: roomsDetails,
     };
 }

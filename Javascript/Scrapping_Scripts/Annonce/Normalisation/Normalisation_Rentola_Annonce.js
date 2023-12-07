@@ -49,6 +49,7 @@ function normalizeData(data) {
         size: data.propertyDetails && data.propertyDetails["Surface :"] ? data.propertyDetails["Surface :"].replace('m2', '').trim() : '',
         description: data.description,
         verified: data.verified === 'Oui',
+        link: data.link,
     };
 }
 

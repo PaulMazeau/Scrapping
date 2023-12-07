@@ -50,6 +50,7 @@ function normalizeData(data) {
         amenities: amenities,
         meuble: meuble,
         rooms: rooms,
+        link: data.link,
     };
 }
 

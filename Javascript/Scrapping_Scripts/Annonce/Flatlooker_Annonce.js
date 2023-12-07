@@ -135,8 +135,7 @@ async function scrapePage(browser, url) {
     });
 
     await page.close(); 
-    return data;
-}
+    return { ...data, link: url };}
 
 (async () => {
     const currentDate = getCurrentDateString();

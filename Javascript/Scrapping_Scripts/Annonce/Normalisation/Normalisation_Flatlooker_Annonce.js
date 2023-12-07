@@ -52,6 +52,7 @@ function normalizeData(data) {
         meuble: data.furnitureDetails.disponibles || [],
         publicationDate: getCurrentDateString(),
         lastUpdate: getCurrentDateString(),
+        link: data.link,
     };
 }
 

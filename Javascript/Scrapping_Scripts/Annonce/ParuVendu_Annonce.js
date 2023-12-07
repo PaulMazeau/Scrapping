@@ -39,7 +39,7 @@ async function scrapePage(page, url) {
         };
     });
 
-    return data;
+    return { ...data, link: url };
 }
 
 (async () => {

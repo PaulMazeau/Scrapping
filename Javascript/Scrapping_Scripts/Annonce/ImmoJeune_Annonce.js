@@ -61,7 +61,7 @@ async function scrapePage(page, url) {
     });
 
     // La page n'est pas fermée ici, elle sera réutilisée
-    return data;
+    return { ...data, link: url };
 }
 
 (async () => {

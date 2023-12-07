@@ -86,6 +86,7 @@ function normalizeData(data) {
         rules: rules,
         publicationDate: getCurrentDateString(),
         lastUpdate: getCurrentDateString(),
+        link: data.link,
     };
 }
 
