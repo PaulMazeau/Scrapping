@@ -29,6 +29,13 @@ try {
 function normalizeData(data) {
     const images = data.photos ? data.photos.map(photo => photo.url) : [];
 
+    const cityEncoded = encodeURIComponent(data.city || '');
+    const propertyTypeEncoded = encodeURIComponent(data.propertyType || '');
+    const roomsQuantityEncoded = encodeURIComponent(data.roomsQuantity ? `${data.roomsQuantity}pieces` : '0pieces');
+    const idEncoded = encodeURIComponent(data.id || '');
+
+    const url = `https://www.bienici.com/annonce/location/${cityEncoded}/${propertyTypeEncoded}/${roomsQuantityEncoded}/${idEncoded}`;
+
     return {
         title: data.title || '',
         location: {
@@ -55,6 +62,7 @@ function normalizeData(data) {
         publicationDate: data.publicationDate || '',
         lastUpdate: data.modificationDate || '',
         verified: data.adCreatedByPro ? 'Oui' : 'Non',
+        link: url,
     };
 }
 
