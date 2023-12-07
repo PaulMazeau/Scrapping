@@ -1,12 +1,30 @@
 const fs = require('fs');
+const path = require('path');
 
 function getCurrentDateString() {
     const date = new Date();
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-const rawDataPath = `../../../Resultat_Recherche/BienIci_Recherche/Data_BienIci_Recherche_${getCurrentDateString()}.json`;
+function getPreviousDateString() {
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
+const currentDate = getCurrentDateString();
+const previousDate = getPreviousDateString();
+
+const rawDataPath = path.join(__dirname, `../../../Resultat_Recherche/BienIci_Recherche/Data_BienIci_Recherche_${currentDate}.json`);
 let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+
+const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${previousDate}.json`);
+let previousData;
+try {
+    previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+} catch (error) {
+    previousData = []; // Si le fichier du jour précédent n'existe pas
+}
 
 function normalizeData(data) {
     const images = data.photos ? data.photos.map(photo => photo.url) : [];
@@ -41,5 +59,27 @@ function normalizeData(data) {
 }
 
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
-const normalizedDataPath = `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${getCurrentDateString()}.json`;
-fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+
+if (previousData.length === 0) {
+    const upToDateAnnouncements = normalizedDataArray;
+
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/BienIci_Normalisation_Up_To_Date/Updated_Data_BienIci_Annonces_${currentDate}.json`);
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+    console.log(`Aucune donnée précédente disponible. ${upToDateAnnouncements.length} annonce(s) traitée(s) comme à jour.`);
+} else {
+    const newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.address === item.location.address));
+    const removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === newItem.title && newItem.location.address === item.location.address));
+    const upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+
+    const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/BienIci_Normalisation_Up_To_Date/Updated_Data_BienIci_Annonces_${currentDate}.json`);
+
+    fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+    console.log(`Il y a ${normalizedDataArray.length} annonces sur BienIci.`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur BienIci.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+}

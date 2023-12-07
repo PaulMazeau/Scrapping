@@ -59,9 +59,24 @@ if (previousData.length === 0) {
     newAnnouncements = [];
     removedAnnouncements = [];
 } else {
-    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.city === item.location.city));
-    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === newItem.title && newItem.location.city === item.location.city));
-    upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+    newAnnouncements = normalizedDataArray.filter(item => 
+        !previousData.some(oldItem => 
+            oldItem.title === item.title && 
+            oldItem.location?.city === item.location?.city
+        )
+    );
+    
+    removedAnnouncements = previousData.filter(item => 
+        !normalizedDataArray.some(newItem => 
+            newItem.title === item.title && 
+            newItem.location?.city === item.location?.city
+        )
+    );
+    
+    upToDateAnnouncements = normalizedDataArray.filter(item => 
+        !newAnnouncements.includes(item)
+    );
+    
 }
 
 const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_ParuVendu/Normalized_Data_ParuVendu_Annonces_${currentDate}.json`);
