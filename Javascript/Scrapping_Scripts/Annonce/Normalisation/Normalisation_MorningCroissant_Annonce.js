@@ -27,48 +27,71 @@ try {
 }
 
 function normalizeData(data) {
-    const [city, postalCode] = data.address?.split(',').map(item => item.trim()) || ["Inconnu", "Inconnu"];
-    const amenities = data.amenities.reduce((acc, amenity) => {
-        const key = Object.keys(amenity)[0];
-        if (amenity[key] === true) {
-            acc.push(key);
-        }
-        return acc;
-    }, []);
+    // Diviser l'adresse en adresse, ville et code postal
+    const addressComponents = data.address.split(',').map(item => item.trim());
+    const city = addressComponents.length > 1 ? addressComponents[addressComponents.length - 2] : "Inconnu";
+    const postalCode = addressComponents.length > 1 ? addressComponents[addressComponents.length - 1] : "Inconnu";
 
+    // Compléter les URLs des images
+    const images = data.images.map(img => `https://www.morningcroissant.fr${img}`);
+
+    // Mappage des détails du prix
+    const price = {
+        rent: data.rentDetails["Loyer mensuel charges comprises"],
+        rentWithoutCharge: data.rentDetails["Loyer mensuel hors charges"],
+        charge: (data.rentDetails["Loyer mensuel charges comprises"] - data.rentDetails["Loyer mensuel hors charges"]).toString(),
+        deposit: data.rentDetails["Dépôt de garantie ?"],
+    };
+
+    // Extraction d'informations depuis la section `details`
+    const furnished = data.details["Meublé / non meublé"];
+    const type = data.details["Catégorie"];
+    const bedrooms = data.details["Chambres"];
+    const bathrooms = data.details["Salles de bains"];
+    const residents = data.details["Capacité"];
+    const size = data.details["Superficie"];
+
+    // Transformation des commodités (`amenities`)
+    const amenities = data.amenities.filter(amenity => Object.values(amenity)[0]).map(amenity => Object.keys(amenity)[0]);
+
+    // Traitement des règles et modalités (`modalities`)
+    const rules = {
+        minStay: data.modalities["Durée minimum"],
+        maxStay: data.modalities["Durée maximum"],
+        // Ajouter d'autres règles si nécessaires
+    };
+
+    // Retourner l'objet normalisé
     return {
         title: data.title,
         location: {
-            address: data.address,
+            address: addressComponents[0],
             city: city,
-            postalCode: postalCode
+            postalCode: postalCode,
         },
-        images: data.images.map(img => `https://www.morningcroissant.fr${img}`),
-        price: {
-            rent: data.price,
-            rentWithoutCharge: data.rentDetails["Loyer mensuel hors charges"],
-            charge: data.rentDetails["Charges mensuelles ?"],
-            deposit: data.rentDetails["Dépôt de garantie ?"],
-        },
-        furnished: data.details["Meublé / non meublé"],
-        type: data.details.Catégorie,
-        bedrooms: data.details.Chambres,
-        bathrooms: data.details["Salles de bains"],
-        residents: data.details.Capacité,
-        size: data.size,
-        minStay: data.modalities["Durée minimum"],
-        maxStay: data.modalities["Durée maximum"],
+        images: images,
+        price: price,
+        furnished: furnished,
+        type: type,
+        bedrooms: bedrooms,
+        bathrooms: bathrooms,
+        residents: residents,
+        size: size,
+        minStay: rules.minStay,
+        maxStay: rules.maxStay,
         description: data.description,
-        amenities: amenities,        
-        rooms: data.bedDisposal.map(bed => ({ room: bed.room, beds: bed.beds })),
-        nearTo: data.neighborhoodDescription,
-        rules: data.modalities,
+        amenities: amenities,
+        meuble: [], // À compléter si nécessaire
+        rooms: data.bedDisposal, // À vérifier et ajuster si nécessaire
+        rules: rules,
         publicationDate: getCurrentDateString(),
         lastUpdate: getCurrentDateString(),
     };
 }
 
-let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
+
+let normalizedDataArray = rawData.map(item => normalizeData(item));
+
 
 let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
 if (previousData.length === 0) {
@@ -77,9 +100,15 @@ if (previousData.length === 0) {
     newAnnouncements = [];
     removedAnnouncements = [];
 } else {
-    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.address === item.location.address));
-    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === item.title && newItem.location.address === item.location.address));
-    upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+    newAnnouncements = normalizedDataArray.filter(item => 
+        !previousData.some(oldItem => oldItem.link === item.link)
+    );
+    removedAnnouncements = previousData.filter(item => 
+        !normalizedDataArray.some(newItem => newItem.link === item.link)
+    );
+    upToDateAnnouncements = normalizedDataArray.filter(item => 
+        !newAnnouncements.includes(item)
+    );
 }
 
 const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_MorningCroissant/Normalized_Data_MorningCroissant_Annonces_${currentDate}.json`);
