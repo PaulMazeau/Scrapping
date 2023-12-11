@@ -53,26 +53,26 @@ function normalizeData(data) {
 
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
+// Traitement des annonces en fonction des données du jour précédent
+let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
+
 if (previousData.length === 0) {
-    const upToDateAnnouncements = normalizedDataArray;
-
-    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Roomster_Normalisation_Up_To_Date/Updated_Data_Roomster_Annonces_${currentDate}.json`);
-    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
-
-    console.log(`Aucune donnée précédente disponible. ${upToDateAnnouncements.length} annonce(s) traitée(s) comme à jour.`);
+    newAnnouncements = [];
+    removedAnnouncements = [];
+    upToDateAnnouncements = normalizedDataArray;
 } else {
-    const newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.address === item.location.address));
-    const removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === newItem.title && newItem.location.address === item.location.address));
-    const upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
-
-    const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Roomster/Normalized_Data_Roomster_Annonces_${currentDate}.json`);
-    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Roomster_Normalisation_Up_To_Date/Updated_Data_Roomster_Annonces_${currentDate}.json`);
-
-    fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
-    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
-
-    console.log(`Il y a ${normalizedDataArray.length} annonces sur Roomster.`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Roomster.`);
-    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.address === item.location.address));
+    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === newItem.title && newItem.location.address === item.location.address));
+    upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
 }
+
+const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Roomster/Normalized_Data_Roomster_Annonces_${currentDate}.json`);
+const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Roomster_Normalisation_Up_To_Date/Updated_Data_Roomster_Annonces_${currentDate}.json`);
+
+fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+console.log(`Il y a ${normalizedDataArray.length} annonces sur Roomster.`);
+console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Roomster.`);
+console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
+console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
