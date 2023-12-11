@@ -13,9 +13,27 @@ function getPreviousDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
+async function acceptCookies(browser) {
+    const page = await browser.newPage();
+    // Utilisez une URL où vous savez que le pop-up des cookies apparaît
+    await page.goto('https://rentola.fr', { waitUntil: 'load' });
+
+    try {
+        const acceptButton = await page.$('#acceptButton');
+        if (acceptButton) {
+            await page.evaluate(button => button.scrollIntoView(), acceptButton);
+            await acceptButton.click();
+        }
+    } catch (error) {
+        console.log('Erreur lors de la gestion du pop-up de cookies:', error);
+    }
+
+    await page.close();
+}
+
 async function scrapePage(browser, url) {
     const page = await browser.newPage();
-    await page.goto(url, { waitUntil: 'networkidle0' });
+    await page.goto(url, { waitUntil: 'load' });
 
     const data = await page.evaluate(() => {
         const images = Array.from(document.querySelectorAll('img.fotorama__img')).map(img => img.src);
@@ -43,7 +61,7 @@ async function scrapePage(browser, url) {
     });
 
     await page.close();
-    return { ...scrapedData, link: url };
+    return { ...data, link: url };
 }
 
 
@@ -64,6 +82,8 @@ async function scrapePage(browser, url) {
     const allData = [];
 
     const browser = await puppeteer.launch();
+
+    await acceptCookies(browser);
 
     for (let annonce of annonces) {
         try {
