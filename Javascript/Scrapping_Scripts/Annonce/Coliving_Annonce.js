@@ -73,58 +73,57 @@ async function scrapePage(browser, url) {
     await page.close();
     return {...data, link: url};}
 
-(async () => {
-    const currentDate = getCurrentDateString();
-    const previousDate = getPreviousDateString();
-
-    const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${previousDate}.json`);
-    let previousData;
-    try {
-        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-    } catch (error) {
-        previousData = []; // Si le fichier du jour précédent n'existe pas
-    }
-
-    const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date/Updated_Data_Coliving_Recherche_${currentDate}.json`);
-    const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
-    const allData = [];
-
-    const browser = await puppeteer.launch();
-
-    for (let annonce of annonces) {
+    (async () => {
+        const currentDate = getCurrentDateString();
+        const previousDate = getPreviousDateString();
+    
+        const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${previousDate}.json`);
+        let previousData;
         try {
-            const data = await scrapePage(browser, annonce.url);
-            allData.push(data);
-            console.log('Annonce faite');
-            console.log(allData.length);
+            previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
         } catch (error) {
-            console.error(`Failed to scrape the page at ${annonce.url} due to: ${error}`);
+            previousData = []; // Si le fichier du jour précédent n'existe pas
         }
-    }
-
-    await browser.close();
-
-    if (previousData.length === 0) {
-        console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
-        // Écrire directement toutes les annonces actuelles comme à jour si il n'y a pas de jour précédent
-        const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Coliving_Annonce_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
-        fs.writeFileSync(upToDateDataPath, JSON.stringify(allData, null, 2), 'utf-8');
-        console.log(`${allData.length} annonce(s) à jour.`);
-    } else {
-        // Traitement des annonces avec comparaison entre l"es données du jour actuel et précédent
-        const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-        const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
-        const upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
-
+    
+        const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date/Updated_Data_Coliving_Recherche_${currentDate}.json`);
+        const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
+        const allData = [];
+    
+        const browser = await puppeteer.launch();
+    
+        for (let annonce of annonces) {
+            try {
+                const data = await scrapePage(browser, annonce.url);
+                allData.push(data);
+                console.log('Annonce traitée');
+                console.log(`Nombre total d'annonces traitées: ${allData.length}`);
+            } catch (error) {
+                console.error(`Échec du scraping de la page à l'URL ${annonce.url} : ${error}`);
+            }
+        }
+    
+        await browser.close();
+    
+        let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
+        if (previousData.length === 0) {
+            newAnnouncements = [];
+            removedAnnouncements = [];
+            upToDateAnnouncements = allData;
+        } else {
+            newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+            removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
+            upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+        }
+    
         const fileName = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${currentDate}.json`);
         const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Coliving_Annonce_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
-
+    
         fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
         fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
-
-        console.log(`All data saved to ${fileName}!`);
-        console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Coliving.`);
+    
+        console.log(`Toutes les données ont été sauvegardées dans ${fileName} !`);
+        console.log(`TOTAL_NOUVELLES_ANNONCES : ${newAnnouncements.length} nouvelles annonces sur Coliving.`);
         console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
         console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
-    }
-})();
+    })();
+    
