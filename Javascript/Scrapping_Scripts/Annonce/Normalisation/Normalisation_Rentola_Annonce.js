@@ -62,8 +62,8 @@ if (previousData.length === 0) {
     removedAnnouncements = [];
     upToDateAnnouncements = normalizedDataArray;
 } else {
-    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.address === item.location.address));
-    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === newItem.title && newItem.location.address === item.location.address));
+    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
     upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
 }
 
