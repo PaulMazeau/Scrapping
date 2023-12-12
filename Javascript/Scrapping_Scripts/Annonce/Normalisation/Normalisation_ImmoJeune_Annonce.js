@@ -35,7 +35,6 @@ function normalizeData(data) {
             postalCode: data.postalCode || ''
         },
         images: data.images,
-        address: data.address,
         price: {
             rent: data.price,
             deposit: data.deposit,
@@ -49,7 +48,7 @@ function normalizeData(data) {
         virtualTour: data.virtualTour || '',
         size: data.area.replace('m²', '').trim(),
         description: data.description.replace(/<br>\n/g, '').replace(/<[^>]*>/g, ''),
-        nearTo: data.schools ? data.schools.map(school => school.name.trim()) : [],
+        nearTo: data.nearTo ? data.nearTo.map(nearTo => nearTo.name.trim()) : [],
         link: data.link,
     };
 }
