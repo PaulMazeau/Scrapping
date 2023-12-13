@@ -29,14 +29,14 @@ try {
 function normalizeData(data) {
     // Extraction de la ville et du code postal depuis l'adresse
     const addressParts = data.address.split(',');
+    const address = addressParts[0].trim(); // Prend seulement la partie avant la première virgule
     const postalCode = addressParts.length > 1 ? addressParts[1].trim() : '';
-    const city = addressParts.length > 2 ? addressParts[2].trim() : '';
-
+    const city = addressParts.length > 2 ? addressParts[2].trim() : '';    
 
     return {
         title: data.title,
         location: {
-            address: data.address,
+            address: address,
             city: city,
             postalCode: postalCode
         },
@@ -46,7 +46,6 @@ function normalizeData(data) {
             deposit: data.features["Dépôt de garantie"] ? data.features["Dépôt de garantie"].replace('€', '').trim() : '',
             charge: data.charge
         },
-        furnished: 'Oui', 
         description: data.description,
         amenities: data.amenities || [],
         meuble: data.furnitureDetails.disponibles || [],

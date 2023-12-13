@@ -2,7 +2,7 @@
   {
     "title": "Location d'un T1 non meublé au 160 Rue D'aubervilliers, 75019, Paris",
     "location": {
-      "address": "160 Rue D'aubervilliers, 75019, Paris",
+      "address": "160 Rue D'aubervilliers",
       "city": "Paris",
       "postalCode": "75019"
     },
@@ -42,7 +42,6 @@
       "deposit": "1140",
       "charge": "50"
     },
-    "furnished": "Oui",
     "description": "Situé Paris 19, ce studio meublé se trouve rue d'Aubervilliers. Non loin de l'arrêt Crimée et RER Rosa Parks, le logement est proche du Parc de la Villette et de toutes commodités.Il dispose d'un balcon, d'une cave et d'un parking, et l'eau chaude et le chauffage sont inclus dans les charges.Le studio est composé du spacieux séjour, de la cuisine ouverte et de la salle d'eau avec baignoire.Ce joli studio n'attend que vous !",
     "amenities": [
       "Parking",
@@ -58,7 +57,7 @@
   {
     "title": "Location d'un T3 meublé au 3 Rue De Montholon, 75009, Paris",
     "location": {
-      "address": "3 Rue De Montholon, 75009, Paris",
+      "address": "3 Rue De Montholon",
       "city": "Paris",
       "postalCode": "75009"
     },
@@ -170,7 +169,6 @@
       "deposit": "4120",
       "charge": "200"
     },
-    "furnished": "Oui",
     "description": "Situé Paris 9, ce T3 meublé lumineux se trouve rue de Montholon. Non loin de l'arrêt Poissonnière, le logement est proche du square Montholon et de la Gare du Nord.L'appartement, exposé Sud/Ouest, en duplex, est composé d'un séjour avec canapé, d'une cuisine ouverte avec comptoir, d'une chambre avec lit double et d'une salle d'eau avec baignoire.À l'étage se trouve la seconde chambre mansardée avec salle d'eau attenante et WC séparé.Ce joli T3 n'attend que vous !",
     "amenities": [
       "Machine à laver"
@@ -196,7 +194,7 @@
   {
     "title": "Location d'un T2 meublé au 104 Avenue Simón Bolívar, 75019, Paris",
     "location": {
-      "address": "104 Avenue Simón Bolívar, 75019, Paris",
+      "address": "104 Avenue Simón Bolívar",
       "city": "Paris",
       "postalCode": "75019"
     },
@@ -288,7 +286,6 @@
       "deposit": "2595",
       "charge": "260"
     },
-    "furnished": "Oui",
     "description": "/!\\ Bail mobilité 10 mois ou bail meublé classique du 02/01/2024 au 01/01/2025 avec congé bailleur pour reprise du logement /!\\Situé à Paris, dans le 19ᵉ arrondissement, ce T2 meublé de 64 m² se trouve Avenue Simón Bolívar, à 50 mètres des Buttes Chaumont. Non loin des arrêts de métro Bolivar, Jaurès et Colonel Fabien, le logement est de toutes les commodités et dispose d'un balcon.  L’appartement est situé au 2ᵉ étage, avec ascenseur.L'appartement est très lumineux et dispose de beaux volumes. Il est composé d'une entrée avec placard, d’un salon/salle à manger, d'une cuisine ouverte, d'une chambre avec accès au balcon et d'une salle de bain avec douche et WC. Dans la pièce principale, vous trouverez deux canapés, un fauteuil, une table basse, une table à manger, deux chaises et une TV. La cuisine est équipée avec four, plaques de cuisson, réfrigérateur, congélateur, lave-vaisselle et lave-linge. La chambre dispose d’un lit double.",
     "amenities": [
       "Machine à laver",
@@ -318,7 +315,7 @@
   {
     "title": "Location d'un T2 meublé au 14 Rue Dulac, 75015, Paris",
     "location": {
-      "address": "14 Rue Dulac, 75015, Paris",
+      "address": "14 Rue Dulac",
       "city": "Paris",
       "postalCode": "75015"
     },
@@ -426,7 +423,6 @@
       "deposit": "2976",
       "charge": "178"
     },
-    "furnished": "Oui",
     "description": "Situé à Paris, ce T2 meublé se trouve rue Dulac. Non loin de l'arrêt de métro Pasteur, le logement est proche de la gare Montparnasse, et dispose d'un balconnet, d'un parking et d'une cave, et l'eau chaude est incluse dans les charges.",
     "amenities": [
       "Machine à laver",
@@ -458,7 +454,7 @@
   {
     "title": "Location d'un T2 meublé au Rue De L'avenir, 93170, Bagnolet",
     "location": {
-      "address": "Rue De L'avenir, 93170, Bagnolet",
+      "address": "Rue De L'avenir",
       "city": "Bagnolet",
       "postalCode": "93170"
     },
@@ -590,7 +586,6 @@
       "deposit": "6884",
       "charge": "58"
     },
-    "furnished": "Oui",
     "description": "Situé à Bagnolet, ce grand loft (T2 meublé) se trouve rue de l'Avenir, non loin des arrêts Gallieni (M3) et Robespierre (M9). Le logement, situé dans une copropriété et un quartier (les Coutures) sympathiques, est proche du parc des Guilands. L'appartement est composé d'un séjour avec canapé et table à manger, d'une cuisine ouverte entièrement équipée, d'une chambre (ouverte sur séjour) avec lit double, d'une seconde chambre, d'une salle d'eau avec douche à l'italienne et d'une cave attenante offrant des espaces de rangement (en plus des trois dressings existants). L'appartement dispose également d'un patio, d'une cave attenante et d'une possibilité de parking. Certains meubles présents sur les visuels seront différents. Ce loft n'attend que vous !",
     "amenities": [
       "Machine à laver"
@@ -618,7 +613,7 @@
   {
     "title": "Location d'un T2 étudiant au 22 Rue Molière, 94200, Ivry-sur-Seine",
     "location": {
-      "address": "22 Rue Molière, 94200, Ivry-sur-Seine",
+      "address": "22 Rue Molière",
       "city": "Ivry-sur-Seine",
       "postalCode": "94200"
     },
@@ -661,7 +656,6 @@
       "deposit": "1500",
       "charge": "32"
     },
-    "furnished": "Oui",
     "description": "À quelques minutes de la gare d’Ivry-sur-Seine, Flatlooker vous propose un T2 en location rue Molière. Situé au rez-de-chaussée, cet appartement est loué meublé. La pièce de vie est composée d’une table d’appoint, d’une TV et il est possible d’y mettre un fauteuil. On y trouve aussi une table avec deux chaises.La cuisine ouverte est équipée de plaques de cuisson, d’une hotte, d’un micro-onde, un réfrigérateur et un lave-linge. La chambre comprend un lit double ainsi qu’une grande armoire. La salle de bain, quant à elle, est dotée d’une douche, d’un lavabo, d’un porte-serviette, d’une armoire murale et de WC. Belles prestations pour ce T2 en location : bon état, quartier calme, bien aménagé, cuisine bien équipée, transports en commun à proximité et nombreux commerces aux alentours. Idéal pour jeune étudiant(e) ou actif(ve). N’hésitez pas à déposer votre dossier !",
     "amenities": [
       "Machine à laver"
@@ -684,7 +678,7 @@
   {
     "title": "Location d'un T4 meublé au 1 Avenue De La Porte De Sèvres, 75015, Paris",
     "location": {
-      "address": "1 Avenue De La Porte De Sèvres, 75015, Paris",
+      "address": "1 Avenue De La Porte De Sèvres",
       "city": "Paris",
       "postalCode": "75015"
     },
@@ -760,7 +754,6 @@
       "deposit": "2175",
       "charge": "225"
     },
-    "furnished": "Oui",
     "description": "Situé à Paris 15, ce T4 non meublé se trouve avenue de la Porte de Sèvres. Non loin de l'arrêt Balard, le logement est proche du Parc Omnisport Suzanne Lenglen, et dispose d'un balcon et d'une cave.L'appartement lumineux est composé d'un vaste double séjour donnant sur le balcon, d'une cuisine séparée entièrement équipée, de deux chambres et d'une salle avec douche à l'italienne.Actuellement l'appartement dispose des éléments suivants : - Luminaires- Miroir de la salle de bain - Aspirateurs et nécessaire d'entretien - Armoire-penderie dans une chambre - Bibliothèque encastrée dans le salon.Des meubles sont disponibles et peuvent être installés avant l'emménagement en fonction des besoins des futurs locataires. Les meubles disponibles sont les suivants (photos disponibles) : - Vaisselle et ustensiles de cuisine - Canapé et méridienne- Table basse- Petite télé- Pour la deuxième chambre : une armoire + un lit en fonction des besoins (clic-clac, lit simple ou double)- Pour la chambre principale : lit double et armoireCe joli T4 n'attend que vous !",
     "amenities": [
       "Balcon ou terrasse"
@@ -782,7 +775,7 @@
   {
     "title": "Location d'une chambre dans un T5 étudiant au Rue Des Bordières, 94000, Créteil - Maison Alfort",
     "location": {
-      "address": "Rue Des Bordières, 94000, Créteil - Maison Alfort",
+      "address": "Rue Des Bordières",
       "city": "Créteil - Maison Alfort",
       "postalCode": "94000"
     },
@@ -913,7 +906,6 @@
       "deposit": "1034",
       "charge": "133"
     },
-    "furnished": "Oui",
     "description": "Située à Créteil, à la limite avec Maisons - Alfort les Juliottes, cette chambre à louer dans une colocation. A 5 min à pied du métro ligne 8 et à 5 stations de Paris, le logement est proche des commerces, et dispose d'une cave et d'une grande terrasse aménagée, et internet, eau chaude, chauffage, et électricité sont inclus dans les charges. Le logement est éligible aux APLs.Il s'agit d'un bail mobilité qui se terminera le 15 juin.",
     "amenities": [
       "Tout inclus",
@@ -946,7 +938,7 @@
   {
     "title": "Location d'un T3 non meublé au 9 Rue de la Collégiale, 75005, Paris",
     "location": {
-      "address": "9 Rue de la Collégiale, 75005, Paris",
+      "address": "9 Rue de la Collégiale",
       "city": "Paris",
       "postalCode": "75005"
     },
@@ -1098,7 +1090,6 @@
       "deposit": "1336",
       "charge": "61"
     },
-    "furnished": "Oui",
     "description": "",
     "amenities": [],
     "meuble": [
@@ -1117,7 +1108,7 @@
   {
     "title": "Location d'un T1 meublé au 59 Boulevard Saint-Marcel, 75013, Paris",
     "location": {
-      "address": "59 Boulevard Saint-Marcel, 75013, Paris",
+      "address": "59 Boulevard Saint-Marcel",
       "city": "Paris",
       "postalCode": "75013"
     },
@@ -1181,7 +1172,6 @@
       "deposit": "1770",
       "charge": "30"
     },
-    "furnished": "Oui",
     "description": "Situé à Paris, ce T1 meublé se trouve boulevard Saint-Marcel. Non loin de l'arrêt de métro Saint-Marcel, le logement est proche de toute commodité.",
     "amenities": [
       "Machine à laver"
