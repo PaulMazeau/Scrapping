@@ -2,7 +2,7 @@
   {
     "title": "Cherche colocataire",
     "location": {
-      "address": "72 Rue Du Landy, Saint-Denis, France",
+      "address": "72 Rue Du Landy",
       "city": "Saint-Denis",
       "postalCode": "93210"
     },
@@ -16,11 +16,22 @@
     "price": {
       "rent": "493"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
+    "furnished": false,
+    "amenities": [
+      "Terrasse ou Patio",
+      "Planchers de bois",
+      "Garage",
+      "Ascenseur",
+      "Laverie",
+      "Lave-vaisselle",
+      "Prise télévision câble",
+      "Placard Privé",
+      "Wifi"
+    ],
+    "disponibility": "2023-12-04T00:00:00",
     "description": "2 amies travaillant dans l’audiovisuel cherchent un.e 3e colocataire pour notre logement T à La plaine Saint Denis , aux portes de paris (RER B/D metro , velib) quartier calme et familial. Loyer mensuel de € + caution solidaire + € de charges (eau électricité). LGBTQI+, toute confession religieuse bienvenue",
-    "amenities": [],
     "publicationDate": "2023-12-04T19:28:56.497Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28634065"
@@ -28,7 +39,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "12 Rue De Bellevue, Boulogne-Billancourt, France",
+      "address": "12 Rue De Bellevue",
       "city": "Boulogne-Billancourt",
       "postalCode": "92100"
     },
@@ -43,11 +54,17 @@
     "price": {
       "rent": "850"
     },
-    "furnished": "Oui",
     "type": "",
     "bedrooms": "0",
+    "furnished": true,
+    "amenities": [
+      "Lave-vaisselle",
+      "Prise télévision câble",
+      "Placard Privé",
+      "Wifi"
+    ],
+    "disponibility": "2023-11-27T00:00:00",
     "description": "",
-    "amenities": [],
     "publicationDate": "2023-12-12T01:18:10.843Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28608228"
@@ -55,7 +72,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -65,11 +82,14 @@
     "price": {
       "rent": "680"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
+    "furnished": false,
+    "amenities": [
+      "Planchers de bois"
+    ],
+    "disponibility": "2023-11-12T00:00:00",
     "description": "Photos are coming",
-    "amenities": [],
     "publicationDate": "2023-11-21T08:51:54.937Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28535558"
@@ -77,7 +97,7 @@
   {
     "title": "Chambre:  dans appart' à Paris",
     "location": {
-      "address": "66 Av Jean Jaures, Paris, France",
+      "address": "66 Av Jean Jaures",
       "city": "Paris",
       "postalCode": ""
     },
@@ -88,11 +108,15 @@
     "price": {
       "rent": "650"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
+    "furnished": false,
+    "amenities": [
+      "Ascenseur",
+      "Laverie"
+    ],
+    "disponibility": "2023-11-13T00:00:00",
     "description": "Pour du court terme : chambre de  dans appartement de standing refait à neuf de  au sol dans Paris.\n\nPossibilité de passer par Airbnb.\n\nPas de paiement accepté sans visite préalable.",
-    "amenities": [],
     "publicationDate": "2023-11-13T08:18:55.733Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28564507"
@@ -100,7 +124,7 @@
   {
     "title": "Recherche colocataire jeune",
     "location": {
-      "address": "54 Rue Saint-Germain, Fontenay-sous-Bois, France",
+      "address": "54 Rue Saint-Germain",
       "city": "Fontenay-sous-Bois",
       "postalCode": "94120"
     },
@@ -111,11 +135,18 @@
     "price": {
       "rent": "504"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
+    "furnished": false,
+    "amenities": [
+      "Planchers de bois",
+      "Ascenseur",
+      "Laverie",
+      "Prise télévision câble",
+      "Wifi"
+    ],
+    "disponibility": "2023-10-14T00:00:00",
     "description": "Recherche colocataire \nBonjour je propose une colocation jeune sur fontenay sous bois, proche du boulevard de verdun et a  stations rer A et proches des commerces. \nVotre partie privée est composée d’1 chambre vide à meubler. Vous pourrez partager les pieces communes : la salle de bain( baignoire), la cuisine, les toilettes et le salon. L'appartement est orienté sud-est, votre chambre bénéficie du soleil l’après-midi.L'appartement dispose d'une cave et d'un ascenseur. Et il y a une petite colocatrice en plus, une adorable petite chienne.\nPrix: € électricité + gaz + wifi (en moyenne).",
-    "amenities": [],
     "publicationDate": "2023-10-15T13:56:33.047Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28466119"
@@ -123,7 +154,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -133,11 +164,12 @@
     "price": {
       "rent": "550"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-12-08T00:00:00",
+    "description": "",
     "publicationDate": "2023-12-09T00:56:17.573Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28646812"
@@ -145,7 +177,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -155,11 +187,12 @@
     "price": {
       "rent": "700"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-12-07T00:00:00",
+    "description": "",
     "publicationDate": "2023-12-07T22:16:52.627Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28645204"
@@ -167,7 +200,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -177,11 +210,12 @@
     "price": {
       "rent": "900"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-11-29T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-29T01:45:59.717Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28614128"
@@ -189,7 +223,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -199,11 +233,12 @@
     "price": {
       "rent": "1500"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-11-27T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-28T08:56:45.45Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28611502"
@@ -211,7 +246,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -221,11 +256,12 @@
     "price": {
       "rent": "1000"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": null,
     "amenities": [],
+    "disponibility": "2023-11-20T00:00:00",
+    "description": "",
     "publicationDate": "2023-12-08T22:28:27.297Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28587071"
@@ -233,7 +269,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -243,11 +279,12 @@
     "price": {
       "rent": "1000"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-11-18T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-18T19:31:07.237Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28581794"
@@ -255,7 +292,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "75010, Paris, France",
+      "address": "75010",
       "city": "Paris",
       "postalCode": "75010"
     },
@@ -265,11 +302,12 @@
     "price": {
       "rent": "450"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": null,
     "amenities": [],
+    "disponibility": "2023-11-18T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-28T16:33:48.72Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28579969"
@@ -277,7 +315,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Versailles, France",
+      "address": "Versailles",
       "city": "Versailles",
       "postalCode": ""
     },
@@ -287,11 +325,12 @@
     "price": {
       "rent": "1200"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-11-15T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-24T16:55:54.11Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28577771"
@@ -299,7 +338,7 @@
   {
     "title": "Chambre à louer ( mois",
     "location": {
-      "address": "75019, Paris, France",
+      "address": "75019",
       "city": "Paris",
       "postalCode": "75019"
     },
@@ -309,11 +348,15 @@
     "price": {
       "rent": "680"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
+    "furnished": false,
+    "amenities": [
+      "Planchers de bois",
+      "Wifi"
+    ],
+    "disponibility": "2023-11-13T00:00:00",
     "description": "Appartement m2 ensoleillé \nParis ème, vu sur le canal",
-    "amenities": [],
     "publicationDate": "2023-11-21T08:51:54.937Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28564811"
@@ -321,7 +364,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Mail, Paris, France",
+      "address": "Mail",
       "city": "Paris",
       "postalCode": ""
     },
@@ -331,11 +374,12 @@
     "price": {
       "rent": "200"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-10-30T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-07T21:13:33.38Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28519271"
@@ -343,7 +387,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -353,11 +397,12 @@
     "price": {
       "rent": "600"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-10-30T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-03T10:52:13.267Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28515929"
@@ -365,7 +410,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Montrouge, France",
+      "address": "Montrouge",
       "city": "Montrouge",
       "postalCode": ""
     },
@@ -375,11 +420,12 @@
     "price": {
       "rent": "800"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-10-24T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-03T15:17:43.547Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28498481"
@@ -387,7 +433,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -397,11 +443,12 @@
     "price": {
       "rent": "800"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-10-22T00:00:00",
+    "description": "",
     "publicationDate": "2023-10-22T17:54:31.527Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28492447"
@@ -409,7 +456,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "75011, Paris, France",
+      "address": "75011",
       "city": "Paris",
       "postalCode": "75011"
     },
@@ -419,11 +466,12 @@
     "price": {
       "rent": "850"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-10-21T00:00:00",
+    "description": "",
     "publicationDate": "2023-10-27T14:30:17.25Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28489299"
@@ -431,7 +479,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -441,11 +489,12 @@
     "price": {
       "rent": "850"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-10-21T00:00:00",
+    "description": "",
     "publicationDate": "2023-10-27T20:21:26.233Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28488779"
@@ -453,7 +502,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Meudon, France",
+      "address": "Meudon",
       "city": "Meudon",
       "postalCode": ""
     },
@@ -463,11 +512,12 @@
     "price": {
       "rent": "800"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-10-19T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-13T14:55:16.423Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28483509"
@@ -475,7 +525,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -485,11 +535,12 @@
     "price": {
       "rent": "300"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-10-16T00:00:00",
+    "description": "",
     "publicationDate": "2023-10-16T16:51:48.703Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28472834"
@@ -497,7 +548,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -507,11 +558,12 @@
     "price": {
       "rent": "1500"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-10-12T00:00:00",
+    "description": "",
     "publicationDate": "2023-11-19T18:50:25.547Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28464623"
@@ -519,7 +571,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "Paris, France",
+      "address": "Paris",
       "city": "Paris",
       "postalCode": ""
     },
@@ -529,11 +581,12 @@
     "price": {
       "rent": "954"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": null,
     "amenities": [],
+    "disponibility": "2023-10-12T00:00:00",
+    "description": "",
     "publicationDate": "2023-10-17T09:27:33.517Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28460440"
@@ -541,7 +594,7 @@
   {
     "title": "New Listing",
     "location": {
-      "address": "19e Arrondissement, Paris, France",
+      "address": "19e Arrondissement",
       "city": "Paris",
       "postalCode": ""
     },
@@ -551,11 +604,12 @@
     "price": {
       "rent": "200"
     },
-    "furnished": "Non",
     "type": "",
     "bedrooms": "0",
-    "description": "",
+    "furnished": false,
     "amenities": [],
+    "disponibility": "2023-09-13T00:00:00",
+    "description": "",
     "publicationDate": "2023-10-30T20:56:05.877Z",
     "verified": "Oui",
     "link": "https://www.roomster.com/listings/28364433"

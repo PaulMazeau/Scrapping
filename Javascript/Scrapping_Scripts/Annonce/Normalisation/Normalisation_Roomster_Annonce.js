@@ -27,27 +27,50 @@ try {
 }
 
 function normalizeData(data) {
+    const fullAddress = data.listing.geo_location.full_address || '';
+    const addressParts = fullAddress.split(',');
+    const address = addressParts[0].trim();
+    const amenityMapping = {
+        2: 'Terrasse ou Patio',
+        4: 'Planchers de bois',
+        128: 'Garage',
+        256: 'Ascenseur',
+        1024: 'Laverie',
+        8192: 'Lave-vaisselle',
+        524288: 'Prise télévision câble',
+        1048576: 'Placard Privé',
+        4194304: 'Wifi'
+    };
+
+    // Vérifiez si room_amenities est défini et est un tableau
+    const amenities = Array.isArray(data.listing.share_details.room_amenities)
+        ? data.listing.share_details.room_amenities.map(amenityNum => amenityMapping[amenityNum]).filter(Boolean)
+        : [];
+
     const images = data.listing.images ? data.listing.images.map(img => img) : [];
 
     return {
         title: data.listing.headline || '',
         location: {
-            address: data.listing.geo_location.full_address || '',
+            address: address,
             city: data.listing.geo_location.city || '',
             postalCode: data.listing.geo_location.postal_code || ''
         },
         images: images,
         price: {
             rent: data.listing.rates ? data.listing.rates.monthly_rate.toString() : '0',
+            moveinfee: data.movein_fee,
         },
-        furnished: data.listing.share_details ? (data.listing.share_details.is_furnished ? 'Oui' : 'Non') : 'Non',
         type: data.listing.listing ? data.listing.listing.type : '',
         bedrooms: data.listing.roomsQuantity ? data.listing.roomsQuantity.toString() : '0',
+        residents: data.listing.people_in_household,
+        furnished: data.listing.share_details ? data.listing.share_details.is_furnished : false,      
+        amenities: amenities,
+        disponibility: data.listing.calendar.date_in,       
         description: data.listing.description_actual || '',
-        amenities: data.listing.apartment_amenities || [],
         publicationDate: data.listing.refreshed || '',
         verified: data.user.verified ? 'Oui' : 'Non',
-        link: data.listing.url || ''
+        link: data.listing.url || '',
     };
 }
 
