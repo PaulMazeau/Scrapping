@@ -7,7 +7,7 @@ const scripts = [
   './Scrapping_Scripts/Recherche/BienIci_Recherche',
   './Scrapping_Scripts/Recherche/Coliving_Recherche',
   './Scrapping_Scripts/Recherche/ImmoJeune_Recherche',
-  './Scrapping_Scripts/Recherche/Koliving_Recherche',
+  //'./Scrapping_Scripts/Recherche/Koliving_Recherche',
   './Scrapping_Scripts/Recherche/MorningCroissant_Recherche',
   './Scrapping_Scripts/Recherche/ParuVendu_Recherche',
   './Scrapping_Scripts/Recherche/Roomster_Recherche'

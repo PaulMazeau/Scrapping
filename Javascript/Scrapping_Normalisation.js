@@ -6,7 +6,7 @@ const scripts = [
   './Scrapping_Scripts/Annonce/Normalisation/Normalisation_Coliving_Annonce',
   './Scrapping_Scripts/Annonce/Normalisation/Normalisation_Flatlooker_Annonce',
   './Scrapping_Scripts/Annonce/Normalisation/Normalisation_ImmoJeune_Annonce',
-  './Scrapping_Scripts/Annonce/Normalisation/Normalisation_Koliving_Annonce',
+  //'./Scrapping_Scripts/Annonce/Normalisation/Normalisation_Koliving_Annonce',
   './Scrapping_Scripts/Annonce/Normalisation/Normalisation_MorningCroissant_Annonce',
   './Scrapping_Scripts/Annonce/Normalisation/Normalisation_ParuVendu_Annonce',
   './Scrapping_Scripts/Annonce/Normalisation/Normalisation_Rentola_Annonce',
