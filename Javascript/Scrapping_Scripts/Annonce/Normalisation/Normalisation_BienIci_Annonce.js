@@ -47,7 +47,7 @@ function normalizeData(data) {
         price: {
             rent: data.price ? data.price.toString() : '0',
             rentWithoutCharge: data.rentWithoutCharges ? data.rentWithoutCharges.toString() : '0',
-            pricem2: data.pricePerSquareMeter ? data.pricePerSquareMeter.toString() : '0',
+            pricem2: data.pricePerSquareMeter ? Math.round(parseFloat(data.pricePerSquareMeter)).toString() : '0',
             charge: data.charges ? data.charges.toString() : '0',
         },
         type: data.propertyType || '',

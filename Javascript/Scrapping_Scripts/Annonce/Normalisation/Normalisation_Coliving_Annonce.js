@@ -37,7 +37,7 @@ function normalizeData(data) {
             city: city,
             postalCode: postalCode
         },
-        images: data.images.map(link => ({ photo1: link })),
+        images: data.images,
         price: {
             rent: data.price ? data.price.replace('€', '').trim() : '0',
             deposit: '',
@@ -45,7 +45,7 @@ function normalizeData(data) {
         furnished: 'Oui', 
         bedrooms: data.bedrooms.replace('bedrooms', '').trim(),
         bathrooms: data.bathrooms.replace('baths', '').trim(),
-        residents: data.residents || '',
+        residents: data.residents.replace(' residents', '').trim() || '',
         size: data.size.replace('m2', '').trim(),
         minStay: data.minStay || '',
         description: data.description,
