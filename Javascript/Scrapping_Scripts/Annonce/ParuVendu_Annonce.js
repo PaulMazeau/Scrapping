@@ -29,13 +29,20 @@ async function scrapePage(page, url) {
         const updateDateElement = featuresList ? featuresList.lastElementChild.querySelector('span') : null;
         const updateDate = updateDateElement ? updateDateElement.textContent.trim() : null;
 
+        const priceElement = document.querySelector('#autoprix');
+        let price = priceElement ? priceElement.textContent.trim() : '';
+        
+        // Nettoyez le texte pour enlever tout ce qui n'est pas numérique ou espace
+        price = price.replace(/[^\d\s]/g, '').trim();
+        
         return {
             description,
             images,
             title,
             city,
             amenities, 
-            updateDate
+            updateDate,
+            price
         };
     });
 

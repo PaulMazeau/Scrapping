@@ -1,5 +1,40 @@
 [
   {
+    "title": "Appartement 2 pièces 44 m²",
+    "location": {
+      "city": "Paris 12 ",
+      "postalCode": "75012"
+    },
+    "images": [
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/80/38/L21lZGlhLXBhL1dJMTcvMi84L1dJMTcyODU3MzY5XzEuanBlZz8yMDIzMTIxMzA5MzIwOA_rct?func=crop&w=1000&gravity=auto",
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/16/5e/L21lZGlhLXBhL1dJMTcvMi84L1dJMTcyODU3MzY5XzIuanBlZz8yMDIzMTIxMzA5MzIwOA_rct?func=crop&w=1000&gravity=auto",
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/3d/a7/L21lZGlhLXBhL1dJMTcvMi84L1dJMTcyODU3MzY5XzMuanBlZz8yMDIzMTIxMzA5MzIwOA_rct?func=crop&w=1000&gravity=auto",
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/e7/d1/L21lZGlhLXBhL1dJMTcvMi84L1dJMTcyODU3MzY5XzQuanBlZz8yMDIzMTIxMzA5MzIwOA_rct?func=crop&w=1000&gravity=auto",
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/b0/b1/L21lZGlhLXBhL1dJMTcvMi84L1dJMTcyODU3MzY5XzUuanBlZz8yMDIzMTIxMzA5MzIwOA_rct?func=crop&w=1000&gravity=auto"
+    ],
+    "price": {
+      "rent": "1 650"
+    },
+    "furnished": "Oui",
+    "size": "44m2",
+    "description": "Beau t2 meublé très lumineux\n\n\nGrand T2 44M2 Meublé entièrement équipé parquet grande chambre placard grands fenêtres 3 étage ascenseur proche Bercy Gare de Lyon Bastille Métro L1 disponible Janvier Professionnels. s abstenir\n\nLieu : Paris (75)\n\n\n\nLire la suite\n\n\t\tvar hauteur=document.getElementById(\"txtAnnonceTrunc\").offsetHeight;\n\n\t\t\n\t\tfunction maskTxt(){\n\t\t\t$('#txtAnnonceTrunc').addClass('txt_annoncetrunc');\n\t\t\t$('#degradeAnnonceTrunc').show();\n\t\t\t$('#linkAnnonceTrunc').show();\n\t\t}\n\t\tfunction demaskTxt(){\n\t\t\t$('#txtAnnonceTrunc').removeClass('txt_annoncetrunc');\n\t\t\t$('#degradeAnnonceTrunc').hide();\n\t\t\t$('#linkAnnonceTrunc').hide();\n\t\t}\n\t\t$( document ).ready(function() {\n\t\t\tif (hauteur>150){\n\t\t\t\tmaskTxt();\n\t\t\t}\n\t\t});Grand T2 44M2 Meublé entièrement équipé parquet grande chambre placard grands fenêtres 3 étage ascenseur proche Bercy Gare de Lyon Bastille Métro L1 disponible Janvier <br>Professionnels. s abstenir<br>\n<div id=\"localisation_bar_header\" style=\"display: none;\">\nLieu : Paris (75)\n</div>\n<!--\n<div id=\"degradeAnnonceTrunc\" class=\"degrade_annoncetrunc\" style=\"display:none;\"></div>\n-->",
+    "amenities": [
+      "2 pièces",
+      "44m2 Loi Carrez",
+      "1 chambre",
+      "Meublé",
+      "Accès\t\t\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAscenseur\nInterphone",
+      "Général\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\nSurface loi Carrez : 44\nm2",
+      "Agencement\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n1 chambre\n\n\n1 salle de bain",
+      "Annexe\t\t\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVue",
+      "Réf. annonce\nParuVendu                         WI172857369",
+      "Mise à jour\n13/12/2023 à 09:32"
+    ],
+    "publicationDate": "2023-12-13",
+    "lastUpdate": "2023-12-13",
+    "link": "https://www.paruvendu.fr/immobilier/location/appartement/particulier/paris-75012/1272206140A1KILHAP000"
+  },
+  {
     "title": "Appartement 2/3 pièces 45 m²",
     "location": {
       "city": "Paris 15 ",
@@ -13,7 +48,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/a3/c2/L21lZGlhLXBhL1dJMTcvMi84L1dJMTcyODU0NDQ3XzUuanBlZz8yMDIzMTIxMjEzMzMyOA_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 790"
     },
     "furnished": "Oui",
     "size": "45m2",
@@ -47,7 +82,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/01/db/L29mZmljZTcvbGFkcmVzMTZfMjEwODE4MTQwMi9jYXRhbG9nL2ltYWdlcy9wcl93ZWIvMS8zLzAvNy83LzEvMi83LzEzMDc3MTI3ZC5qcGc_REFURU1BSj0xMi8wOS8yMDIyLTEwOjM0OjE1JjIwMjMxMjEyMDgxMTE0_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 500 \n\n\n\n  \n180 \n\n\n\n  \n\n4 840"
     },
     "furnished": "Oui",
     "size": "67m2",
@@ -81,7 +116,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/de/0d/L29mZmljZTcvbGFkcmVzc2VfcGFyaXNfYnV0dGVhdXhfY2FpbGxlL2NhdGFsb2cvaW1hZ2VzL3ByX3AvMS8zLzQvOC83LzQvMy85LzEzNDg3NDM5ZS5qcGc_REFURU1BSj0xMS8xMi8yMDIzLTE4OjQzOjMyJjIwMjMxMjEzMDkxMDI2_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 064 \n\n\n\n  \n190 \n\n\n\n  \n\n3 748 \n\n\n\n\n \n\n930"
     },
     "furnished": "Oui",
     "size": "62m2",
@@ -119,7 +154,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/49/05/L29mZmljZTcvbGFkcmVzc2VfdmFpcmVzX3N1cl9tYXJuZS9jYXRhbG9nL2ltYWdlcy9wcl93ZWIvMS8yLzcvOC85LzEvNi81LzEyNzg5MTY1ZS5qcGc_REFURU1BSj0yNi8wNS8yMDIxLTIxOjQ2OjQ1JjIwMjMxMjEyMDcwNDU1_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 530 \n\n\n\n  \n193 \n\n\n\n  \n\n1 337 \n\n\n\n\n \n\n699"
     },
     "furnished": "Non",
     "size": "47m2",
@@ -153,7 +188,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/10/3e/Lzc1MjM0NS80MDcyNTk1ODcvcGhvdG9zLzMuanBnPzIwMjMxMjEyMDQzNjM2_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 380 \n\n\n\n  \n150 \n\n\n\n  \n\n2 000 \n\n\n\n\n \n\n460"
     },
     "furnished": "Oui",
     "size": "31m2",
@@ -186,7 +221,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.rodacom.net/df/86/L3Jlc2l6ZS9-QzBRMkhSTVpHUTBQRlJ3b1cxWlRTMFZiV1ZST1FsZ0xWRUZBQ3cxVVRFUU5XVjVPVHd4ZFVSb1VDRmtGSGtjSURRTWNGQlVkVkNjRUhROEpIQlliQ2pnY0ZWMWJWVUVXVVZjR1FFZFlXVkFjUWw1Y0FVeEZXbGRmVGhSUUN3VkpRVnhiQXgxRUQxZ0VCRUJkQzFZZF__/__FRcFlVaHNTV3dvQ1NVNVlWdz09LmpwZz93aWR0aD0xMjgwJmhlaWdodD0xMjgwJm1vZGU9Zml0JjIwMjMxMjExMjA1NjAx_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 445 \n\n\n\n  \n300 \n\n\n\n  \n\n4 290 \n\n\n\n\n \n\n840"
     },
     "furnished": "Oui",
     "size": "56m2",
@@ -222,7 +257,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/5a/03/LzM0MDM2OS80MDU2MjIzMDEvcGhvdG9zLzUuanBnPzIwMjMxMjExMDgwNDI5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 190 \n\n\n\n  \n60 \n\n\n\n  \n\n1 130 \n\n\n\n\n \n\n510"
     },
     "furnished": "Non",
     "size": "34m2",
@@ -254,7 +289,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/20/50/LzM0MDM2OS80MDQ5MTI0ODkvcGhvdG9zLzUuanBnPzIwMjMxMjExMDgwNDI5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "850 \n\n\n\n  \n50 \n\n\n\n  \n\n1 600 \n\n\n\n\n \n\n375"
     },
     "furnished": "Non",
     "size": "16m2",
@@ -283,7 +318,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/ed/bd/L21lZGlhLXBhL1dJMTcvMi84L1dJMTcyODQ2NTMxXzMuanBlZz8yMDIzMTIxMDE4MTcyMg_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "960"
     },
     "furnished": "Non",
     "size": "37m2",
@@ -313,7 +348,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/1a/d7/L21lZGlhLXBhL1dJMTcvMi84L1dJMTcyODQ1NTI2XzMuanBlZz8yMDIzMTIxMjE2MDEyOA_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 230"
     },
     "furnished": "Non",
     "size": "43m2",
@@ -345,7 +380,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/6b/da/L21lZGlhLXBhL1dJMTcvMi84L1dJMTcyODQzOTA4XzUuanBlZz8yMDIzMTIxMDA4MjAyNQ_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "3 000"
     },
     "furnished": "Oui",
     "size": "21m2",
@@ -378,7 +413,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/17/10/L29mZmljZTcvbGFkcmVzc2VwYXJpczEyXzA5MTIyMi9jYXRhbG9nL2ltYWdlcy9wcl93ZWIvMS8zLzQvNi83LzAvOS8zLzEzNDY3MDkzZS5qcGc_REFURU1BSj0yOC8xMS8yMDIzLTA5OjU0OjEzJjIwMjMxMjEyMDgxNjM5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 381 \n\n\n\n  \n70 \n\n\n\n  \n\n2 622 \n\n\n\n\n \n\n717"
     },
     "furnished": "Non",
     "size": "48m2",
@@ -410,7 +445,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/a0/d6/L29mZmljZTcvbGFkcmVzXzIwMDYyNDE2MjQvY2F0YWxvZy9pbWFnZXMvcHJfcC8xLzMvNC84LzQvNy8yLzAvMTM0ODQ3MjBlLmpwZz9EQVRFTUFKPTA4LzEyLzIwMjMtMTE6MzE6MzMmMjAyMzEyMTMwOTM1MDg_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "3 300 \n\n\n\n  \n300 \n\n\n\n  \n\n3 000 \n\n\n\n\n \n\n1 823"
     },
     "furnished": "Non",
     "size": "122m2",
@@ -446,7 +481,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/e8/b1/Lzc1MjM0NS80MDcwMjY1NzEvcGhvdG9zLzMuanBnPzIwMjMxMjEwMDYyNzI1_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "880 \n\n\n\n  \n69 \n\n\n\n  \n\n1 622 \n\n\n\n\n \n\n405"
     },
     "furnished": "Oui",
     "size": "27m2",
@@ -475,7 +510,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/5f/5d/L21lZGlhLXBhL1dJMTcvMS84L1dJMTcxODExNDUxXzEuanBnPzIwMjMxMjA4MTgzMzA5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 127 \n\n\n\n  \n185 \n\n\n\n  \n\n942"
     },
     "furnished": "Non",
     "size": "52m2",
@@ -504,7 +539,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/www.immo-diffusion.pro/14/d7/L3Bob3Rvcy1wdWIvNjc0L2xvY2F0aW9uLzI0MDQ0L1JyMjQwNDRkLmpwZz9VcGRhdGU9MDgxMiYyMDIzMTIwODE1MDgyMg_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "4 040 \n\n\n\n  \n\n\n\n\n\n\n \n\n1 755"
     },
     "furnished": "Non",
     "size": "117m2",
@@ -538,7 +573,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/bc/05/Lzc1MjM0NS80MDY4OTA5NDcvcGhvdG9zLzMuanBnPzIwMjMxMjEzMDQzNzE4_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 121 \n\n\n\n  \n70 \n\n\n\n  \n\n1 051 \n\n\n\n\n \n\n527"
     },
     "furnished": "Non",
     "size": "35m2",
@@ -570,7 +605,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/a1/c9/Lzc1MjM0NS80MDY4OTE0NjYvcGhvdG9zLzMuanBnPzIwMjMxMjEwMDYyNzI0_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 718 \n\n\n\n  \n178 \n\n\n\n  \n\n2 976 \n\n\n\n\n \n\n705"
     },
     "furnished": "Oui",
     "size": "47m2",
@@ -603,7 +638,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/b2/97/L21lZGlhLXBhL1dJMTYvMi8yL1dJMTYyMjE0MDA0XzMuanBlZz8yMDIzMTIwNzExMjIxMQ_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "750"
     },
     "furnished": "Oui",
     "size": "10m2",
@@ -637,7 +672,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/f6/be/L29mZmljZTIvZ2xpXzEyMTYxOC9jYXRhbG9nL2ltYWdlcy9wcl9wLzIvNS85LzYvNC8wLzkvMS8yNTk2NDA5MWEuanBnP0RBVEVNQUo9MDYvMTIvMjAyMy0xMTo0OToyMyYyMDIzMTIwODA3MzczMw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "3 226 \n\n\n\n  \n180 \n\n\n\n  \n\n3 046 \n\n\n\n\n \n\n1 549"
     },
     "furnished": "Non",
     "size": "103m2",
@@ -671,7 +706,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/21/89/Lzc1MjM0NS80MDY3NjkzMjcvcGhvdG9zLzMuanBnPzIwMjMxMjA4MDQ0NDEy_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 616 \n\n\n\n  \n85 \n\n\n\n  \n\n3 062 \n\n\n\n\n \n\n660"
     },
     "furnished": "Oui",
     "size": "44m2",
@@ -705,7 +740,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/1c/fa/Lzc1MjM0NS80MDMwNjQ2MzQvcGhvdG9zLzMuanBnPzIwMjMxMjA3MDQzODI5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "879 \n\n\n\n  \n52 \n\n\n\n  \n\n1 600 \n\n\n\n\n \n\n345"
     },
     "furnished": "Oui",
     "size": "23m2",
@@ -738,7 +773,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.rodacom.net/7e/01/L3Jlc2l6ZS9-QzBRMkhSTVpHUTBQRlJ3b1h3cFJTazVjV0ZGQlJsMElBUjFEWFZnR1NrUmRXd1VlVHd0YlVVRVdDQW9FUzBCWldsOGVFaFVkVkNjRUhROEpIQlliQ2pnY0ZWMWJWVUVXVVZjR1FFZFlXVkFjUWw1Y0FVeEZXbGRmVGhSUUN3VkpRVnhiQXgxRUQxZ0VCQkpiREZJZF__/__JReGZWaHBCQ0FzQ1N4TUtEUT09LmpwZz93aWR0aD0xMjgwJmhlaWdodD0xMjgwJm1vZGU9Zml0JjIwMjMxMjA2MjA1MzM3_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 133 \n\n\n\n  \n160 \n\n\n\n  \n\n3 946 \n\n\n\n\n \n\n843"
     },
     "furnished": "Oui",
     "size": "56m2",
@@ -768,7 +803,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/4e/70/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkyODk0XzEuanBlZz8yMDIzMTIwNjE0MjUxNw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 560"
     },
     "furnished": "Non",
     "size": "41m2",
@@ -801,7 +836,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/4f/0d/L29mZmljZTcvbGFkcmVzc2VBYzMtMzU1L2NhdGFsb2cvaW1hZ2VzL3ByX3dlYi8xLzIvOC8wLzQvOS84LzcvMTI4MDQ5ODdlLmpwZz9EQVRFTUFKPTA3LzEyLzIwMjMtMTc6NTc6MDcmMjAyMzEyMTMwODQ2NTI_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 890 \n\n\n\n  \n230 \n\n\n\n  \n\n5 320 \n\n\n\n\n \n\n1 242"
     },
     "furnished": "Oui",
     "size": "83m2",
@@ -835,7 +870,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/61/74/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkxNTc5XzEuanBlZz8yMDIzMTIwODE1MDIwNg_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 640"
     },
     "furnished": "Non",
     "size": "41m2",
@@ -868,7 +903,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/www.agencesprivees.com/18/0a/L3Bob3RvX2Fubm9uY2VfaW1tb2JpbGllcmUvMTA0NS80ODE0MjdfNS5qcGc_MTY4MTgzMjQ0OCYyMDIzMTIwOTA1MTUxNQ_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 750"
     },
     "furnished": "Non",
     "size": "25m2",
@@ -895,14 +930,14 @@
       "postalCode": "75018"
     },
     "images": [
-      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/65/91/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzEuanBlZz8yMDIzMTIxMTEwNTU1MA_rct?func=crop&w=1000&gravity=auto",
-      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/99/1b/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzIuanBlZz8yMDIzMTIxMTEwNTU1MA_rct?func=crop&w=1000&gravity=auto",
-      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/88/ad/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzMuanBlZz8yMDIzMTIxMTEwNTU1MA_rct?func=crop&w=1000&gravity=auto",
-      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/7e/15/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzQuanBlZz8yMDIzMTIxMTEwNTU1MA_rct?func=crop&w=1000&gravity=auto",
-      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/9f/c8/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzUuanBlZz8yMDIzMTIxMTEwNTU1MA_rct?func=crop&w=1000&gravity=auto"
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/93/ee/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzEuanBlZz8yMDIzMTIxMzExNTEzOA_rct?func=crop&w=1000&gravity=auto",
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/2a/67/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzIuanBlZz8yMDIzMTIxMzExNTEzOA_rct?func=crop&w=1000&gravity=auto",
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/1a/f6/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzMuanBlZz8yMDIzMTIxMzExNTEzOA_rct?func=crop&w=1000&gravity=auto",
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/11/91/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzQuanBlZz8yMDIzMTIxMzExNTEzOA_rct?func=crop&w=1000&gravity=auto",
+      "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/7c/b9/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzkwMzQ1XzUuanBlZz8yMDIzMTIxMzExNTEzOA_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "3 100"
     },
     "furnished": "Oui",
     "size": "38m2",
@@ -912,10 +947,10 @@
       "38m2 environ",
       "2 chambres",
       "Meublé",
-      "Accès\t\t\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tConcierge",
       "Agencement\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n2 chambres\n\n\n1 salle de bain",
+      "Accès\t\t\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tConcierge",
       "Réf. annonce\nParuVendu                         WI172790345",
-      "Mise à jour\n11/12/2023 à 10:55"
+      "Mise à jour\n13/12/2023 à 11:51"
     ],
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
@@ -935,7 +970,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/78/3b/Lzc1MjM0NS80MDY1MTQ1NDMvcGhvdG9zLzMuanBnPzIwMjMxMjEyMDQzNjI2_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 600 \n\n\n\n  \n80 \n\n\n\n  \n\n3 040 \n\n\n\n\n \n\n575"
     },
     "furnished": "Oui",
     "size": "38m2",
@@ -970,7 +1005,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/4d/34/Lzc1MjM0NS80MDY1MTcxNjgvcGhvdG9zLzMuanBnPzIwMjMxMjA1MDUxNjE3_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "875 \n\n\n\n  \n80 \n\n\n\n  \n\n1 590 \n\n\n\n\n \n\n300"
     },
     "furnished": "Oui",
     "size": "20m2",
@@ -1003,7 +1038,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/1c/d3/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzg1NTI2XzUuanBlZz8yMDIzMTIwNDE1NDYyMg_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 370"
     },
     "furnished": "Non",
     "size": "46m2",
@@ -1039,7 +1074,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/eb/14/L29mZmljZTcvYWRyZXNzZV9wYXJpc19qb3VyZGFpbi9jYXRhbG9nL2ltYWdlcy9wcl93ZWIvMS8zLzQvMy80LzQvMS8wLzEzNDM0NDEwZS5qcGc_REFURU1BSj0yNC8xMC8yMDIzLTEzOjQ2OjQ0JjIwMjMxMjAzMDgwNTI4_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 648 \n\n\n\n  \n170 \n\n\n\n  \n\n2 688 \n\n\n\n\n \n\n572"
     },
     "furnished": "Non",
     "size": "48m2",
@@ -1073,7 +1108,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/a1/5f/L29mZmljZTcvbGFkcmVzc2VwYXJpcy9jYXRhbG9nL2ltYWdlcy9wcl9wLzkvNi83LzEvOS80LzAvOTY3MTk0MGQuanBnP0RBVEVNQUo9MDkvMDkvMjAxNC0xMjoxMDowOCYyMDIzMTIwMzA4MDQzOQ_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 359 \n\n\n\n  \n319 \n\n\n\n  \n\n\n\n\n\n\n \n\n852"
     },
     "furnished": "Non",
     "size": "71m2",
@@ -1110,7 +1145,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/97/d9/L29mZmljZTcvbGFkcmVzc2VwYXJpczEyXzA5MTIyMi9jYXRhbG9nL2ltYWdlcy9wcl93ZWIvMS8zLzQvNC85LzcvOS8wLzEzNDQ5NzkwZS5qcGc_REFURU1BSj0xNC8xMS8yMDIzLTE0OjMzOjA1JjIwMjMxMjEyMDgxNjM5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 990 \n\n\n\n  \n220 \n\n\n\n  \n\n3 540 \n\n\n\n\n \n\n1 143"
     },
     "furnished": "Non",
     "size": "76m2",
@@ -1142,7 +1177,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/94/e6/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzc4MjE5XzUucG5nPzIwMjMxMjAyMTcwNTM5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "870"
     },
     "furnished": "Non",
     "size": "134m2",
@@ -1174,7 +1209,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/8d/26/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzc3NzE2XzMuanBlZz8yMDIzMTIwMjE0NDIxMw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 600"
     },
     "furnished": "Oui",
     "size": "83m2",
@@ -1205,7 +1240,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/71/72/L29mZmljZTkvbGFmb3JldF9sZWNoZXNuYXkvY2F0YWxvZy9pbWFnZXMvcHJfcC8yLzEvOS8zLzIvNS8zLzAvMjE5MzI1MzBlLmpwZz9EQVRFTUFKPTAxLzEyLzIwMjMtMTI6MTA6MzMmMjAyMzEyMDIwNzU2MzM_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 468 \n\n\n\n  \n400 \n\n\n\n  \n\n2 068 \n\n\n\n\n \n\n1 331"
     },
     "furnished": "Non",
     "size": "89m2",
@@ -1239,7 +1274,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/a5/76/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzYwNTAxXzUuanBlZz8yMDIzMTIwMTIyNTIxMg_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "800"
     },
     "furnished": "Oui",
     "size": "15m2",
@@ -1273,7 +1308,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/5c/5f/L21lZGlhLXBhL1dJMTcvMS8zL1dJMTcxMzEyNTA3XzUuanBlZz8yMDIzMTIwMTEyNTIxNg_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "895"
     },
     "furnished": "Oui",
     "size": "16m2",
@@ -1307,7 +1342,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/6a/ec/Lzc1MjM0NS80MDUzMTkxMzkvcGhvdG9zLzMuanBnPzIwMjMxMjAxMDgwNDQw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 030 \n\n\n\n  \n90 \n\n\n\n  \n\n3 880 \n\n\n\n\n \n\n890"
     },
     "furnished": "Oui",
     "size": "48m2",
@@ -1340,7 +1375,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/5b/ef/Lzc1MjM0NS80MDYwMDc3MTEvcGhvdG9zLzMuanBnPzIwMjMxMjAxMDgwNDQw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 390 \n\n\n\n  \n120 \n\n\n\n  \n\n2 540 \n\n\n\n\n \n\n645"
     },
     "furnished": "Oui",
     "size": "43m2",
@@ -1373,7 +1408,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/11/ef/Lzc1MjM0NS80MDQzMDU3OTcvcGhvdG9zLzMuanBnPzIwMjMxMjAxMDgwNDQw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 007 \n\n\n\n  \n190 \n\n\n\n  \n\n770 \n\n\n\n\n \n\n405"
     },
     "furnished": "Non",
     "size": "27m2",
@@ -1406,7 +1441,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/4d/85/Lzc1MjM0NS80MDM0NDE2MDUvcGhvdG9zLzMuanBnPzIwMjMxMjAxMDgwNDQw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 990 \n\n\n\n  \n260 \n\n\n\n  \n\n2 595 \n\n\n\n\n \n\n890"
     },
     "furnished": "Oui",
     "size": "64m2",
@@ -1442,7 +1477,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/d8/c8/Lzc1MjM0NS80MDUxMzcxNTMvcGhvdG9zLzMuanBnPzIwMjMxMjAxMDgwNDQw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 382 \n\n\n\n  \n103 \n\n\n\n  \n\n2 558 \n\n\n\n\n \n\n585"
     },
     "furnished": "Oui",
     "size": "39m2",
@@ -1475,7 +1510,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/11/a4/Lzc1MjM0NS80MDYxMjc1MjgvcGhvdG9zLzMuanBnPzIwMjMxMjAxMDUwMzU5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "730 \n\n\n\n  \n40 \n\n\n\n  \n\n1 380 \n\n\n\n\n \n\n255"
     },
     "furnished": "Oui",
     "size": "17m2",
@@ -1507,7 +1542,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/05/2a/Lzc1MjM0NS80MDYwNjQ0MzIvcGhvdG9zLzMuanBnPzIwMjMxMjAxMDUwMzU5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 007 \n\n\n\n  \n48 \n\n\n\n  \n\n1 810 \n\n\n\n\n \n\n225"
     },
     "furnished": "Oui",
     "size": "15m2",
@@ -1540,7 +1575,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/42/6b/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzYzMzcwXzUuanBlZz8yMDIzMTIwMzE3NDkxOQ_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 885"
     },
     "furnished": "Oui",
     "size": "42m2",
@@ -1575,7 +1610,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/d2/29/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzY0NjI4XzUuanBlZz8yMDIzMTIwMzEzMjg0Ng_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 800"
     },
     "furnished": "Oui",
     "size": "49m2",
@@ -1609,7 +1644,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/55/8e/L21lZGlhLXBhL1dJMTcvMi82L1dJMTcyNjk5MjA4XzUuanBlZz8yMDIzMTIwODE2MjMyMQ_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 480"
     },
     "furnished": "Oui",
     "size": "19m2",
@@ -1643,7 +1678,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/a2/a2/L29mZmljZTcvbGFkcmVzc2VBYzMtMzU1L2NhdGFsb2cvaW1hZ2VzL3ByX3dlYi8xLzIvNi8wLzIvNy84LzgvMTI2MDI3ODhlLmpwZz9EQVRFTUFKPTA2LzEyLzIwMjMtMTU6NTI6MDYmMjAyMzEyMTMwODQ2NTE_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "3 900 \n\n\n\n  \n117 \n\n\n\n  \n\n7 566 \n\n\n\n\n \n\n1 755"
     },
     "furnished": "Oui",
     "size": "117m2",
@@ -1677,7 +1712,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/f1/97/Lzc1MjM0NS80MDU4Nzc4MjYvcGhvdG9zLzMuanBnPzIwMjMxMTI5MDQyNTEz_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 999 \n\n\n\n  \n200 \n\n\n\n  \n\n3 498 \n\n\n\n\n \n\n780"
     },
     "furnished": "Oui",
     "size": "52m2",
@@ -1711,7 +1746,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/34/a6/Lzc1MjM0NS80MDU4MDIwNTUvcGhvdG9zLzMuanBnPzIwMjMxMTI5MDQyNTEz_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 130 \n\n\n\n  \n70 \n\n\n\n  \n\n2 120 \n\n\n\n\n \n\n397"
     },
     "furnished": "Oui",
     "size": "26m2",
@@ -1743,7 +1778,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/cf/7d/Lzc1MjM0NS80MDU3NTA0NTIvcGhvdG9zLzMuanBnPzIwMjMxMTI4MDQ1MjI0_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 130 \n\n\n\n  \n75 \n\n\n\n  \n\n2 110 \n\n\n\n\n \n\n620"
     },
     "furnished": "Oui",
     "size": "32m2",
@@ -1777,7 +1812,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/79/0d/Lzc1MjM0NS80MDU3NTA1MTgvcGhvdG9zLzMuanBnPzIwMjMxMTMwMDQzNDI5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 190 \n\n\n\n  \n45 \n\n\n\n  \n\n2 290 \n\n\n\n\n \n\n375"
     },
     "furnished": "Oui",
     "size": "25m2",
@@ -1808,7 +1843,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/78/12/Lzc1MjM0NS80MDU3NTA2NzcvcGhvdG9zLzMuanBnPzIwMjMxMTI4MDQ1MjI0_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 520 \n\n\n\n  \n200 \n\n\n\n  \n\n1 320 \n\n\n\n\n \n\n630"
     },
     "furnished": "Non",
     "size": "42m2",
@@ -1842,7 +1877,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/d3/fa/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzUyMTU5XzUuanBlZz8yMDIzMTEyNzE1NDMzMg_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 200"
     },
     "furnished": "Oui",
     "size": "25m2",
@@ -1875,7 +1910,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/4c/8a/Lzc1MjM0NS80MDUzODQ2MDgvcGhvdG9zLzMuanBnPzIwMjMxMTMwMDQzNTEy_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 260 \n\n\n\n  \n200 \n\n\n\n  \n\n4 120 \n\n\n\n\n \n\n974"
     },
     "furnished": "Oui",
     "size": "64m2",
@@ -1908,7 +1943,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/f0/6c/Lzc1MjM0NS80MDQ1NTI0NjMvcGhvdG9zLzMuanBnPzIwMjMxMjEzMDQzNzE1_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 400 \n\n\n\n  \n225 \n\n\n\n  \n\n2 175 \n\n\n\n\n \n\n1 000"
     },
     "furnished": "Oui",
     "size": "80m2",
@@ -1944,7 +1979,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/a3/cd/Lzc1MjM0NS80MDAyMzg4MzgvcGhvdG9zLzMuanBnPzIwMjMxMjA2MDUxNTE2_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 604 \n\n\n\n  \n50 \n\n\n\n  \n\n1 450 \n\n\n\n\n \n\n780"
     },
     "furnished": "Non",
     "size": "52m2",
@@ -1976,7 +2011,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/0b/89/Lzc1MjM0NS8zOTkzNDEzNzkvcGhvdG9zLzMuanBnPzIwMjMxMTI5MDUxNTE5_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 995 \n\n\n\n  \n152 \n\n\n\n  \n\n3 686 \n\n\n\n\n \n\n1 020"
     },
     "furnished": "Oui",
     "size": "68m2",
@@ -2011,7 +2046,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/86/7e/Lzc1MjM0NS80MDI4OTM2MTkvcGhvdG9zLzMuanBnPzIwMjMxMTI0MDgwNTQw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 600 \n\n\n\n  \n190 \n\n\n\n  \n\n4 500 \n\n\n\n\n \n\n1 035"
     },
     "furnished": "Oui",
     "size": "69m2",
@@ -2046,7 +2081,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/d6/de/Lzc1MjM0NS80MDQ0MzA0MzIvcGhvdG9zLzMuanBnPzIwMjMxMTI0MDgwNTQw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 299 \n\n\n\n  \n250 \n\n\n\n  \n\n2 049 \n\n\n\n\n \n\n1 245"
     },
     "furnished": "Non",
     "size": "83m2",
@@ -2081,7 +2116,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/photos.ubiflow.net/17/37/Lzc1MjM0NS80MDcwMjY2NzAvcGhvdG9zLzMuanBnPzIwMjMxMjA5MDcwNzQy_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 190 \n\n\n\n  \n50 \n\n\n\n  \n\n1 140 \n\n\n\n\n \n\n437"
     },
     "furnished": "Non",
     "size": "29m2",
@@ -2111,7 +2146,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/ae/df/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzM2OTIzXzIucG5nPzIwMjMxMTI0MTczNzUy_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "960"
     },
     "furnished": "Oui",
     "size": "24m2",
@@ -2143,7 +2178,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/7c/d9/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzIxNjk0XzUuanBlZz8yMDIzMTIwMTA4MTg0Mw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "950"
     },
     "furnished": "Oui",
     "size": "25m2",
@@ -2180,7 +2215,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/5f/a7/L21lZGlhLXBhL1dJMTcvMi80L1dJMTcyNDY4MjQ4XzUuanBlZz8yMDIzMTEyMDA4MjIxNA_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "4 200"
     },
     "furnished": "Oui",
     "size": "83m2",
@@ -2218,7 +2253,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/5f/4b/L29mZmljZTcvbGFkcmVzc2VfcG9pc3N5L2NhdGFsb2cvaW1hZ2VzL3ByX3dlYi8xLzMvMi84LzgvNy80LzIvMTMyODg3NDJlLmpwZz9EQVRFTUFKPTAxLzA2LzIwMjMtMTY6MTk6NTkmMjAyMzExMjYwNTE1MjA_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 774 \n\n\n\n  \n250 \n\n\n\n  \n\n4 748 \n\n\n\n\n \n\n1 066"
     },
     "furnished": "Oui",
     "size": "71m2",
@@ -2254,7 +2289,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/87/83/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzE4MTQyXzUuanBlZz8yMDIzMTEyMTEwNDM1NQ_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 300"
     },
     "furnished": "Oui",
     "size": "44m2",
@@ -2288,7 +2323,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/29/74/L21lZGlhLXBhL1dJMTcvMi83L1dJMTcyNzAzMzkzXzUuanBlZz8yMDIzMTExNTIyMzIxMg_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 600"
     },
     "furnished": "Oui",
     "size": "47m2",
@@ -2322,7 +2357,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.immo-facile.com/79/d5/L29mZmljZTcvbGFkcmVzc2VwYXJpczEyXzA5MTIyMi9jYXRhbG9nL2ltYWdlcy9wcl9wLzEvMy8yLzcvOC80LzEvMC8xMzI3ODQxMGUuanBnP0RBVEVNQUo9MDYvMTIvMjAyMy0xNzozMzoxOCYyMDIzMTIxMjA4MTY0Mw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "690 \n\n\n\n  \n\n1 380 \n\n\n\n\n \n\n690"
     },
     "furnished": "Oui",
     "size": "11m2",
@@ -2355,7 +2390,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/8f/46/L21lZGlhLXBhL1dJMTcvMi82L1dJMTcyNjQyNDQ2XzUuanBlZz8yMDIzMTEwOTE3NTIwOA_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "5 110"
     },
     "furnished": "Oui",
     "size": "130m2",
@@ -2387,7 +2422,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/9e/c6/L21lZGlhLXBhLzk5MjYvNC83Lzk5MjY0NzUwNzBfNS5qcGc_MjAyMzEyMDQxNjMxMDM_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 250 \n\n\n\n  \n\n4 000 \n\n\n\n\n \n\n600"
     },
     "furnished": "Oui",
     "size": "60m2",
@@ -2415,7 +2450,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/09/ad/L21lZGlhLXBhL1dJMTcvMi81L1dJMTcyNTU0NDE5XzMuanBlZz8yMDIzMTEyMzE4MzgzMw_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "1 500"
     },
     "furnished": "Oui",
     "size": "48m2",
@@ -2445,7 +2480,7 @@
       "https://img.paruvendu.fr/media_ext/_https_/media.paruvendu.fr/bf/ef/L21lZGlhLXBhL1dJMTcvMi81L1dJMTcyNTE4MTcwXzUuanBlZz8yMDIzMTAwNjEyMTYzNA_rct?func=crop&w=1000&gravity=auto"
     ],
     "price": {
-      "rent": ""
+      "rent": "2 300"
     },
     "furnished": "Oui",
     "size": "76m2",
