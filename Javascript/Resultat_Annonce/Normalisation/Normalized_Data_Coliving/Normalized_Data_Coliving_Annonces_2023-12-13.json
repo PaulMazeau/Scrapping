@@ -1,9 +1,8 @@
 [
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue du Cambodge",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/12353/photos/y5LiwhSr33.jpg?h=960",
@@ -84,13 +83,50 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Rooms with shared bathroom",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Lock on door",
+          "WiFi"
+        ],
+        "price": "1,200",
+        "availability": "Dec 25",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/20097/photos/7V7RxhHHT9.jpg?h=960"
+      },
+      {
+        "title": "Room with private bathroom",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "13",
+        "bathroom": "Private",
+        "amenities": [
+          "Chair",
+          "Cleaning",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Lock on door",
+          "WiFi"
+        ],
+        "price": "1,360",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/20096/photos/tb1GLVwoI3.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/8rigywvt"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue des Montiboeufs",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17563/photos/Kb1WZYraML.jpg?h=960",
@@ -175,13 +211,52 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Private room with shared bathroom",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Cleaning",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Lock on door",
+          "WiFi"
+        ],
+        "price": "1,097",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35963/photos/xri5hzJ6au.jpg?h=960"
+      },
+      {
+        "title": "Private room with private bathroom",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "11",
+        "bathroom": "Private",
+        "amenities": [
+          "Chair",
+          "Cleaning",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Lock on door",
+          "WiFi"
+        ],
+        "price": "1,242",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35962/photos/xyGyUWdkTU.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/gu1cnmug"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue de Saussure 75017 Paris",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16850/photos/4mkTrW2Tvx.jpg?h=960",
@@ -272,13 +347,224 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "148 Saussure 1 - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "962",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36662/photos/TBWaOD8pE7.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 0 - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,014",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34463/photos/EaWtNJwxCc.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 1 - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,017",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38335/photos/4VEGUcKEW9.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 7A - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,082",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33085/photos/pZX8dD3kYy.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 1 - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,084",
+        "availability": "Dec 16",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33632/photos/nLh07R2WK0.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 0 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,102",
+        "availability": "Dec 16",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33118/photos/rj2PFYP8nm.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 1 - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,115",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33244/photos/X6hur4JABe.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 7A - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,116",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34766/photos/MD1idCc5vx.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 5 - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,125",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33104/photos/NYyT2xPxuR.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 0 - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,142",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35839/photos/CP8jGqWAkk.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 5 - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,159",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36709/photos/rMsyt2cb8p.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 5 - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,159",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33056/photos/OwGbqFkAtr.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 1 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,200",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34477/photos/E53iNCbR8z.jpg?h=960"
+      },
+      {
+        "title": "148 Saussure 5 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,256",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37153/photos/Qtf99eNylQ.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/vl1wu13a"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue de l'Industrie",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/8968/photos/DN4qpc3Ggy.jpg?h=960",
@@ -356,13 +642,50 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Private Bedroom with Shared Bathroom",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "8",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Desk/workspace",
+          "Essentials",
+          "Lock on door",
+          "WiFi"
+        ],
+        "price": "1,120",
+        "availability": "Dec 01",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35976/photos/P89eFr06jj.jpg?h=960"
+      },
+      {
+        "title": "Private Room with Private Bathroom",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "11",
+        "bathroom": "Private",
+        "amenities": [
+          "Balcony",
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Lock on door",
+          "WiFi"
+        ],
+        "price": "1,331",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/14942/photos/fZ1ksW03Vu.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/1esh4icw"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue du Docteur Paquelin",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16555/photos/uNFPGFm1FZ.jpg?h=960",
@@ -415,13 +738,77 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Cosy and comfortable room - 13m² - PA6",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "900",
+        "availability": "Jun 30, 2025",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16522/photos/wftc9NqJh9.jpg?h=960"
+      },
+      {
+        "title": "Cosy and bright room – 15m² - PA5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "May 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16525/photos/h2l4rpn5U7.jpg?h=960"
+      },
+      {
+        "title": "Large cosy room - 16m² - PA7",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "958",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16523/photos/7X6v1eTtJV.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/nwq4erfb"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue de Douai",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17423/photos/IJqpf6owSq.jpg?h=960",
@@ -564,13 +951,194 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "10 Douai Studio 202 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "26",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,558",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34913/photos/ovt2oPoGTw.jpg?h=960"
+      },
+      {
+        "title": "10 Douai Studio 302 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "26",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,694",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37117/photos/glIhqykJRy.jpg?h=960"
+      },
+      {
+        "title": "10 Douai Studio 402 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "26",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,734",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37293/photos/iAWlCWQYjv.jpg?h=960"
+      },
+      {
+        "title": "10 Douai Studio 304 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "24",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,741",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37213/photos/howjusvQ9U.jpg?h=960"
+      },
+      {
+        "title": "10 Douai 1-Bedroom Apartment 502 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "30",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "2,030",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37436/photos/vo8js9v3Jg.jpg?h=960"
+      },
+      {
+        "title": "10 Douai 1-Bedroom Apartment 403 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "33",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "2,120",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37375/photos/1WdBEbZ2eZ.jpg?h=960"
+      },
+      {
+        "title": "10 Douai 1-Bedroom Apartment 504 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "27",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "2,127",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37621/photos/SZuFlthf0k.jpg?h=960"
+      },
+      {
+        "title": "10 Douai Studio (Sofa Bed) 401 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "22",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "2,127",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38252/photos/rcDsvBBnsr.jpg?h=960"
+      },
+      {
+        "title": "10 Douai 1-Bedroom Apartment 303 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "33",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "2,235",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37692/photos/ioyOWkzLMv.jpg?h=960"
+      },
+      {
+        "title": "10 Douai Studio (Sofa Bed) 301 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "22",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "2,247",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37116/photos/ZuQNWmKiW1.jpg?h=960"
+      },
+      {
+        "title": "10 Douai Studio 404 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "24",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "2,402",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37237/photos/tBhhMypRAP.jpg?h=960"
+      },
+      {
+        "title": "10 Douai 1-Bedroom Apartment 505 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "28",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "2,572",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37925/photos/KpGETIrhmJ.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/m3bcryjg"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue Larmeroux",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/12678/photos/rdnE4oVenQ.jpg?h=960",
@@ -648,13 +1216,75 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Cosy Room",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Cleaning",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Heating",
+          "Iron",
+          "Lock on door",
+          "Sheets & Pillows",
+          "WiFi"
+        ],
+        "price": "958",
+        "availability": "Jan 01, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/21401/photos/uJXzXnHCUy.jpg?h=960"
+      },
+      {
+        "title": "First Room",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "18",
+        "bathroom": "Private",
+        "amenities": [
+          "Cleaning",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Heating",
+          "Lock on door",
+          "Sheets & Pillows",
+          "WiFi"
+        ],
+        "price": "1,113",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/21403/photos/vEOUZxyp18.jpg?h=960"
+      },
+      {
+        "title": "Premium Room",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "14",
+        "bathroom": "Private",
+        "amenities": [
+          "Chair",
+          "Cleaning",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Heating",
+          "Lock on door",
+          "Sheets & Pillows",
+          "WiFi"
+        ],
+        "price": "1,210",
+        "availability": "Jan 01, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/21402/photos/EYqrUFMqJB.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/m62cegkk"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "B Rue Chaligny",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17952/photos/RiyXH5CD7b.jpg?h=960",
@@ -808,13 +1438,434 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "11B Chaligny C5D - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "954",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38932/photos/qy1vMcXzbX.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny C6G - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "954",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38984/photos/nMBreWAP4i.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny C6G - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "954",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38985/photos/Kg3emA2L0t.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny C5D - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "966",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38931/photos/ijatjjCj9R.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R3D - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "966",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38801/photos/9djA3vjCfb.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny C5D - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "981",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38930/photos/frPygrYM7g.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R5D - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "983",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38916/photos/iylA0qhPvT.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R4D - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,001",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38423/photos/DKTs4019W9.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R6D - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,006",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38395/photos/VgIg4s0TAa.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R5D - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,009",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38915/photos/r1MI03K8fn.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R5D - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,020",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38917/photos/kh7uhu1x5o.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R6F - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,032",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38425/photos/k4VumBtwOM.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R6D - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,034",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38393/photos/JdgMx7Zxpe.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R5G - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,035",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38603/photos/mZCv0voukg.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R5G - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,035",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38604/photos/9KLLH9poYu.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R3D - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,043",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38799/photos/Y9bhQNQ7Df.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R6D - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,043",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38394/photos/bd0k7Nmr00.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R1G - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,050",
+        "availability": "Dec 27",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38795/photos/TFC6uIWJwu.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R1G - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,050",
+        "availability": "Dec 27",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38796/photos/eyht09xpxr.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R3D - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,051",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38800/photos/NnygaaNhys.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R5G - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,087",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38605/photos/eqAPdObgmR.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R1G - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,092",
+        "availability": "Dec 27",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38798/photos/15NQc9kmmO.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R4D - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,093",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38422/photos/imLJO6OC2z.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R1G - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,110",
+        "availability": "Dec 27",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38797/photos/YLn0kNrNGM.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R5G - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,113",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38606/photos/Nc37v75In2.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R4D - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,132",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38421/photos/SXlc26GswK.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny R6F - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,150",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38424/photos/U8OeurwiUK.jpg?h=960"
+      },
+      {
+        "title": "11B Chaligny Studio C5F - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,353",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38947/photos/1Ewlmv1RaQ.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/7livpgyu"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Boulevard Macdonald",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17859/photos/IQL3xLFPbe.jpg?h=960",
@@ -865,13 +1916,99 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Rent this contemporary 11 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Balcony",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "900",
+        "availability": "Apr 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33883/photos/57fHdxjj2b.jpg?h=960"
+      },
+      {
+        "title": "Rent this sleek 14 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "900",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33882/photos/0nZwxE4JQ9.jpg?h=960"
+      },
+      {
+        "title": "Rent this modern 13 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "919",
+        "availability": "Jun 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33884/photos/73szm9ufa9.jpg?h=960"
+      },
+      {
+        "title": "Rent this cute 12 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "958",
+        "availability": "Apr 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33881/photos/BoLZNkLkae.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/xvq6okpb"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue de Belleville",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16872/photos/4gAMjk5TPa.jpg?h=960",
@@ -906,13 +2043,87 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "333 Belleville 3 - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "999",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36902/photos/fk1AV5IiaI.jpg?h=960"
+      },
+      {
+        "title": "333 Belleville 3 - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "18",
+        "bathroom": "Shared",
+        "amenities": [
+          ""
+        ],
+        "price": "1,026",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33082/photos/jHVSfGsn9y.jpg?h=960"
+      },
+      {
+        "title": "333 Belleville 3 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,155",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36899/photos/oetkuEFKPB.jpg?h=960"
+      },
+      {
+        "title": "333 Belleville 3 - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,155",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36900/photos/mPlDK2y0kk.jpg?h=960"
+      },
+      {
+        "title": "333 Belleville 2 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,159",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38761/photos/xTv1tDOoWY.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/syaoghev"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "boulevard Malesherbes",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16978/photos/yzhoKjINwT.jpg?h=960",
@@ -995,13 +2206,269 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "167 Malesherbes 3B - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "986",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36849/photos/MDKKPA3LCA.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 3B - Bedroom 8",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,032",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36443/photos/X9B2Yis9kg.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 6A - Bedroom 6",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,038",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35196/photos/mKo5hOAdfD.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 6A - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,044",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35185/photos/ysyFSdCte8.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 3B - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,047",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34210/photos/THyEwAMKML.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 4B - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,084",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36986/photos/7jVIsDR5Te.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 6A - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "18",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,102",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36660/photos/3Ta7hr0eLc.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 5A - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,139",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33246/photos/IsSZIPWtWf.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 6A - Bedroom 7",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "21",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,159",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36711/photos/mUbTcVjEpP.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 4B - Bedroom 7",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,185",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37211/photos/14Hioyh1qW.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 6A - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "21",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,195",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36494/photos/08R4DXZIOl.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 3B - Bedroom 6",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "17",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,200",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36923/photos/WaV8YRWg7E.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 5A - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,231",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38590/photos/HI0gnowetv.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 4B - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "22",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,238",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36143/photos/oTig1j0HxM.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 5A - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,241",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38334/photos/yXn2g6BzQZ.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 5A - Bedroom 6",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "17",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,369",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33405/photos/tVIjCE5CjI.jpg?h=960"
+      },
+      {
+        "title": "167 Malesherbes 5A - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "21",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,436",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34283/photos/Kp9YgkBSho.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/yutxopt7"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Bis Avenue de Gambetta",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17025/photos/9wDtIEVXq7.jpg?h=960",
@@ -1062,13 +2529,59 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "85B Gambetta - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,043",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38347/photos/2uPzowHvVG.jpg?h=960"
+      },
+      {
+        "title": "85B Gambetta - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,202",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33331/photos/vwFQUnehRi.jpg?h=960"
+      },
+      {
+        "title": "85B Gambetta - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "19",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,220",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38579/photos/mbI4Jp9R4d.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/u1xtzljp"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Boulevard Macdonald",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16614/photos/Vpnijrry2v.jpg?h=960",
@@ -1123,13 +2636,99 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Rent this 10 m² nice bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "774",
+        "availability": "Jan 12, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/31777/photos/fhQiQ3gaok.jpg?h=960"
+      },
+      {
+        "title": "Rent this 15 m² bedroom with a cosy atmosphere",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Balcony",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "774",
+        "availability": "Jul 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/31778/photos/dAuwJBNV5y.jpg?h=960"
+      },
+      {
+        "title": "Rent this Bohemian 10 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "774",
+        "availability": "Jul 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/31776/photos/exmq4Pytqk.jpg?h=960"
+      },
+      {
+        "title": "Rent this cocooning 13 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "774",
+        "availability": "Oct 01, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/31775/photos/ptBwwouV9q.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/qfblygxr"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue Louis Vicat",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16496/photos/kvPfvowycO.jpg?h=960",
@@ -1179,13 +2778,98 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Comfortable 9.50 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "842",
+        "availability": "Apr 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/25549/photos/4NYdGL9ld7.jpg?h=960"
+      },
+      {
+        "title": "Charming 10 m² bedroom for rent",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "881",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/25547/photos/WWgKZnQnXJ.jpg?h=960"
+      },
+      {
+        "title": "Pleasant 11 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "881",
+        "availability": "Feb 15, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/25548/photos/c75oNpPB9K.jpg?h=960"
+      },
+      {
+        "title": "Spacious 16m² bedroom for rent",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "977",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/25550/photos/sVPrgscXVj.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/zrznrjhz"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue Claude Lorrain",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17700/photos/bivHrYSWS6.jpg?h=960",
@@ -1218,13 +2902,59 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "24 Lorrain - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "964",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36874/photos/yrdMQKUVDS.jpg?h=960"
+      },
+      {
+        "title": "24 Lorrain - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "17",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,142",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36959/photos/aNOeSn3biT.jpg?h=960"
+      },
+      {
+        "title": "24 Lorrain - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "23",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,238",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37073/photos/TzvvTY6kif.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/wo9jilig"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Avenue Jean Jaures",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17607/photos/Ndi1FnDnJy.jpg?h=960",
@@ -1257,13 +2987,74 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "54 Jaures - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "927",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38557/photos/T3Ij5SV4o8.jpg?h=960"
+      },
+      {
+        "title": "54 Jaures - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "992",
+        "availability": "Dec 16",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36216/photos/xgzotS7YNY.jpg?h=960"
+      },
+      {
+        "title": "54 Jaures - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,063",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38791/photos/CGfX3YkZGQ.jpg?h=960"
+      },
+      {
+        "title": "54 Jaures - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,063",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36916/photos/hte3jCcUgY.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/cad8pqlw"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue de Tilsitt",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17576/photos/kNvbXw0Acp.jpg?h=960",
@@ -1304,13 +3095,44 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "14 Tilsitt - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,018",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36062/photos/37cqzcvmIg.jpg?h=960"
+      },
+      {
+        "title": "14 Tilsitt - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,159",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36612/photos/JZ6O0HoFma.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/zrwxlk7i"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "bis avenue de Versailles",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17035/photos/EkqRocgLhH.jpg?h=960",
@@ -1351,13 +3173,44 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "197B Versailles - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "913",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33373/photos/SFUdyvPi6R.jpg?h=960"
+      },
+      {
+        "title": "197B Versailles - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "945",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38352/photos/PEYfyOJcJN.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/axl9x7gg"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue Condorcet",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17485/photos/3ff4XBw4IJ.jpg?h=960",
@@ -1401,13 +3254,74 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "64 Condorcet - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,159",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35614/photos/IfRGzciQBb.jpg?h=960"
+      },
+      {
+        "title": "64 Condorcet - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,256",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38589/photos/iI0BcSZVpG.jpg?h=960"
+      },
+      {
+        "title": "64 Condorcet - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "21",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,326",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36604/photos/KIiZ7pB1aP.jpg?h=960"
+      },
+      {
+        "title": "64 Condorcet - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "27",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,348",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36659/photos/OGvY2fxfQl.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/w5ulocxs"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Boulevard de la Villette",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17083/photos/IWVYuOOkiD.jpg?h=960",
@@ -1447,13 +3361,29 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "212 Villette - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "997",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33520/photos/hR2SeJGxUM.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/5eunslbo"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue des Cloys",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16847/photos/4eJlDic8lt.jpg?h=960",
@@ -1593,13 +3523,473 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "61 Cloys 5 - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "836",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34813/photos/RG5AqYSuqE.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 5 - Bedroom 9",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "858",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36714/photos/TslwwN4j7i.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 4 - Bedroom 6",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "865",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33178/photos/x4p2yjZYGO.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 5 - Bedroom 8",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          ""
+        ],
+        "price": "869",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33052/photos/i1ryB22h9G.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6 - Bedroom 9",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "869",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36108/photos/qb3UaqBNvX.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 5 - Bedroom 6",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "886",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33125/photos/NFK1zbVUgI.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 4 - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          ""
+        ],
+        "price": "894",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33176/photos/GF6fAUki9Y.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 4 - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "896",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33182/photos/nEWoa2gXGp.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 5 - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "898",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33128/photos/N6VBRq83Eb.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 5 - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          ""
+        ],
+        "price": "898",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33098/photos/56hwe8petO.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6 - Bedroom 6",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "906",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36156/photos/ga28X2pyFp.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6 - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "923",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36535/photos/A7WOlYDYOr.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 5B - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "928",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37971/photos/ut1y3qMqgz.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 2B - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "937",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35199/photos/SEtzNPHXpn.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 5B - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "941",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37970/photos/tazWtADwaR.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6 - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "954",
+        "availability": "Dec 16",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34322/photos/FJxln658fx.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6 - Bedroom 8",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "957",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/38340/photos/RCRAq3yZge.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 2C - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "962",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37414/photos/SJrhMhUZeK.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6 - Bedroom 7",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "987",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37186/photos/rTuPfDRQq9.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 4 - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "991",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33181/photos/Lzz6Rz63ZG.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6B - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "994",
+        "availability": "Dec 16",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37624/photos/iaBdwL0ArQ.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6 - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "997",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35964/photos/i9ua6BZHqc.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 5 - Bedroom 7",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,006",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34812/photos/SkCyE9SjgE.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 4 - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,021",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33180/photos/4nIy5aQiO7.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6 - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,026",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35832/photos/wrGANwsdYp.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 2C - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,038",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37415/photos/VnTPWahXUj.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 5B - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,093",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37972/photos/JnTVbsrTSB.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6B - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,104",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37623/photos/co9gVt4qCT.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 4 - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,113",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33187/photos/a4UlfxZMB0.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 6B - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,114",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37622/photos/VSMteVK66u.jpg?h=960"
+      },
+      {
+        "title": "61 Cloys 2C - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,159",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37413/photos/bM3x4eMr7I.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/qawbqmi6"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue Georges Lardennois",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17181/photos/TiyR7wgOf4.jpg?h=960",
@@ -1678,13 +4068,49 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Shared bathroom",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "Unknown Size",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Desk/workspace",
+          "Essentials",
+          "Lock on door",
+          "WiFi"
+        ],
+        "price": "1,198",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33880/photos/p6Strds8NK.jpg?h=960"
+      },
+      {
+        "title": "Private shower",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "11",
+        "bathroom": "Private",
+        "amenities": [
+          "Chair",
+          "Desk/workspace",
+          "Essentials",
+          "Heating",
+          "Lock on door",
+          "WiFi"
+        ],
+        "price": "1,299",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33879/photos/KPoxP8eHw8.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/son843qx"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue du Faubourg Saint Denis",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16510/photos/srE6QAQ1t7.jpg?h=960",
@@ -1734,13 +4160,120 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Nice comfortable room - 10m² - PA55",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "842",
+        "availability": "Jun 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16318/photos/k7dQeyP7WO.jpg?h=960"
+      },
+      {
+        "title": "Pleasant and cosy room - 10m² - PA56",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "842",
+        "availability": "Feb 29, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16317/photos/smQVg1BEIt.jpg?h=960"
+      },
+      {
+        "title": "Large bright bedroom - 14m² - PA57",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "890",
+        "availability": "Mar 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16315/photos/IG35ms2Fox.jpg?h=960"
+      },
+      {
+        "title": "Cosy and bright room - 12m² - PA59",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "Dec 19",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16314/photos/d5FQWwRQJJ.jpg?h=960"
+      },
+      {
+        "title": "Spacious and comfortable room - 13m² - PA58",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Balcony",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "Dec 18",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16316/photos/cMrPRWYtot.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/4nlzl4cx"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue Sédillot",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17578/photos/SwzB8RYBox.jpg?h=960",
@@ -1773,13 +4306,29 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "8 Sédillot - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,230",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36064/photos/K6G9mXQOgK.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/dedvqsnf"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Avenue Reille",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17265/photos/BE1WVzZbwD.jpg?h=960",
@@ -1812,13 +4361,44 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "37 Reille - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "869",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34191/photos/PY7nakkFC8.jpg?h=960"
+      },
+      {
+        "title": "37 Reille - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "18",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,040",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35192/photos/viR01AcWtd.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/lptkul4f"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Avenue de la Bourdonnais",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17289/photos/ZrS24S1ChH.jpg?h=960",
@@ -1851,13 +4431,44 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "29 Bourdonnais - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,063",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34318/photos/ayp1IPykUN.jpg?h=960"
+      },
+      {
+        "title": "29 Bourdonnais - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,224",
+        "availability": "Available now",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/35920/photos/5EuZvwMR31.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/kpk4ax4t"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Boulevard de Charonne",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16941/photos/fQGveJ1Hla.jpg?h=960",
@@ -1908,13 +4519,98 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Beautiful bright room - 11m² - PA8",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "890",
+        "availability": "Jun 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16516/photos/Jdn8ydohqU.jpg?h=960"
+      },
+      {
+        "title": "Belle chambre lumineuse – 12m² - PA9",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "900",
+        "availability": "Jun 15, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16513/photos/R2sj4713O5.jpg?h=960"
+      },
+      {
+        "title": "Spacious and bright room - 15m² - PA10",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "May 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16514/photos/EPrDeoxFpE.jpg?h=960"
+      },
+      {
+        "title": "Beautiful bright room - 16m² - PA11",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "963",
+        "availability": "Dec 22",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16511/photos/2BkFlVwPPQ.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/3e9q40gc"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Cité de la Chapelle",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16813/photos/nG5leearFu.jpg?h=960",
@@ -1962,13 +4658,77 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Comfortable and cosy room - 15m² - PA19",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "842",
+        "availability": "Mar 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16502/photos/82bVrz5Zww.jpg?h=960"
+      },
+      {
+        "title": "Spacious and comfortable room - 16m² - PA20",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "890",
+        "availability": "Dec 20",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16497/photos/GjMv2caBDN.jpg?h=960"
+      },
+      {
+        "title": "Spacious and luminous room - 16m² - PA18",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "890",
+        "availability": "May 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16499/photos/M4jXVzbrsy.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/p4u4qd7a"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue Jean-François Lepine",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16509/photos/lkqf4VqxiK.jpg?h=960",
@@ -2021,13 +4781,77 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Luminous and cosy room - 13m² - PA61",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "900",
+        "availability": "Aug 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16312/photos/Y54GuQorbF.jpg?h=960"
+      },
+      {
+        "title": "Pleasant and luminous room - 13m² - PA60",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "900",
+        "availability": "Jan 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16313/photos/k3Ll9HxA4I.jpg?h=960"
+      },
+      {
+        "title": "Spacious luminous bedroom - 16m² - PA62",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "Feb 29, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16311/photos/9wc0onKyme.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/rb8aolir"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Boulevard Exelmans",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16524/photos/bYvMWbj5pg.jpg?h=960",
@@ -2078,13 +4902,98 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Luminous and cosy room - 13m² - PA49",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "Feb 15, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16380/photos/tqXQ20ViU0.jpg?h=960"
+      },
+      {
+        "title": "Cosy and luminous room - 14m² - PA48",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "1,035",
+        "availability": "Apr 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16386/photos/YIG440BMhs.jpg?h=960"
+      },
+      {
+        "title": "Luminous large bedroom - 15m² - PA46",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "1,035",
+        "availability": "Jul 08, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16384/photos/X6DVXWRBO8.jpg?h=960"
+      },
+      {
+        "title": "Very spacious and cosy room - 15m² - PA47",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "1,035",
+        "availability": "Dec 31",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16383/photos/BLH3bTiHdu.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/3ohaehtj"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue Clignancourt",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16546/photos/kuxXxLulZb.jpg?h=960",
@@ -2131,13 +5040,77 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Warm and bright room - 14m² - PA14",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "842",
+        "availability": "Jun 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16494/photos/WRc4otnUdA.jpg?h=960"
+      },
+      {
+        "title": "Spacious and bright room - 16m² - PA13",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "881",
+        "availability": "Jan 07, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16491/photos/rf4DlCwARK.jpg?h=960"
+      },
+      {
+        "title": "Large welcoming room - 22m² - PA12",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "22",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "Feb 29, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16495/photos/m6og57EdA4.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/q4cxh44m"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue Cesaria Evora",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17735/photos/KBMk1NJYYW.jpg?h=960",
@@ -2188,13 +5161,98 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Rent this pleasant 10 m²",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "890",
+        "availability": "Aug 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37270/photos/FbN3n7vPAA.jpg?h=960"
+      },
+      {
+        "title": "Rent this 11 m²",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "919",
+        "availability": "Jan 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37273/photos/1kJ63zMuaC.jpg?h=960"
+      },
+      {
+        "title": "Rent this luminous 11 m²",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "Jun 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37271/photos/rHmR2JvuaU.jpg?h=960"
+      },
+      {
+        "title": "Rent this spacious 12 m²",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "12",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "958",
+        "availability": "Jul 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37272/photos/SfREwGwYis.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/suwjdlnf"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue Cesaria Evora",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16989/photos/HDZ9kKrhUn.jpg?h=960",
@@ -2242,13 +5300,98 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Rent this cosy 11 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "900",
+        "availability": "Feb 10, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/31773/photos/ZCkFGbKy6K.jpg?h=960"
+      },
+      {
+        "title": "Rent this modern 11 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "900",
+        "availability": "May 15, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/31772/photos/07viBHPZcB.jpg?h=960"
+      },
+      {
+        "title": "Rent this majestic 15 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "15",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "944",
+        "availability": "Jun 30, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/31774/photos/z8naaQxja8.jpg?h=960"
+      },
+      {
+        "title": "Rent this gorgeous 24 m² bedroom",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "24",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "1,055",
+        "availability": "May 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/31771/photos/RFr06MGrLi.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/vakvtlxc"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Avenue Daumesnil",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16521/photos/D9LRJ2ECrF.jpg?h=960",
@@ -2298,13 +5441,119 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "Comfortable and bright room - 11m² - PA54",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "890",
+        "availability": "Dec 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16362/photos/SryMhtVvCQ.jpg?h=960"
+      },
+      {
+        "title": "Comfortable and cosy room - 14m² - PA53",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "May 15, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16363/photos/Bwq2DQs9UX.jpg?h=960"
+      },
+      {
+        "title": "Pleasant and bright room - 14m² - PA52",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "14",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "939",
+        "availability": "Feb 29, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16364/photos/zWsT7WSQwZ.jpg?h=960"
+      },
+      {
+        "title": "Large bright room - 19m² - PA51",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "19",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "1,074",
+        "availability": "May 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16365/photos/76j0ZbQQfP.jpg?h=960"
+      },
+      {
+        "title": "Spacious and cosy room - 17m² - PA50",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "17",
+        "bathroom": "Shared",
+        "amenities": [
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Hair dryer",
+          "Iron",
+          "Kitchenette",
+          "Lock box",
+          "Lock on door",
+          "Unfurnished"
+        ],
+        "price": "1,074",
+        "availability": "Jan 31, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/16366/photos/1nAlVZWdNa.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/yaz3ppxf"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Pl. Édouard VII",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/16616/photos/kaNUYwH6eW.jpg?h=960",
@@ -2358,13 +5607,34 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "First Room",
+        "occupancy": "Single",
+        "bedType": "Double",
+        "size": "14",
+        "bathroom": "Private",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace",
+          "Essentials",
+          "Heating",
+          "Lock on door",
+          "Sheets & Pillows",
+          "WiFi"
+        ],
+        "price": "1,481",
+        "availability": "Jan 01, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/31809/photos/kLip73XFCg.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/gpjd5rdn"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "Rue du Château des Rentiers",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17672/photos/irf6SlfKn3.jpg?h=960",
@@ -2400,13 +5670,44 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "193 Rentiers - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "10",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "925",
+        "availability": "Dec 15",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36661/photos/ilX31uq0zO.jpg?h=960"
+      },
+      {
+        "title": "193 Rentiers - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,097",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/37127/photos/W84DfAdXNW.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/fkcp3p3g"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue de la santé",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17577/photos/NvbQXWM2m8.jpg?h=960",
@@ -2441,13 +5742,44 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "79 Santé - Bedroom 2",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "11",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "923",
+        "availability": "Dec 16",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36063/photos/vNyPbbIZ4a.jpg?h=960"
+      },
+      {
+        "title": "79 Santé - Bedroom 4",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "18",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,015",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36065/photos/oL4rzPt7Hj.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/k57kimsc"
   },
   {
     "location": {
-      "address": "Unknown Address",
-      "city": "Unknown City",
-      "postalCode": "Unknown Postal Code"
+      "address": "rue le Marois",
+      "city": "Paris"
     },
     "images": [
       "https://co-living.imgix.net/uploads/listings/17176/photos/M7f9EDijvL.jpg?h=960",
@@ -2482,6 +5814,53 @@
     "publicationDate": "2023-12-13",
     "lastUpdate": "2023-12-13",
     "verified": "Non",
+    "rooms": [
+      {
+        "title": "53 Marois - Bedroom 3",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "13",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "947",
+        "availability": "Dec 16",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/34826/photos/dBQd4ByL5Z.jpg?h=960"
+      },
+      {
+        "title": "53 Marois - Bedroom 5",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "9",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "989",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/36399/photos/sV3EbDOW9M.jpg?h=960"
+      },
+      {
+        "title": "53 Marois - Bedroom 1",
+        "occupancy": "Single",
+        "bedType": "Single",
+        "size": "16",
+        "bathroom": "Shared",
+        "amenities": [
+          "Chair",
+          "Closet/drawers",
+          "Desk/workspace"
+        ],
+        "price": "1,039",
+        "availability": "Jun 13, 2024",
+        "photoURL": "https://co-living.imgix.net/uploads/roomtypes/33862/photos/FZ1EZxH9BA.jpg?h=960"
+      }
+    ],
     "link": "https://coliving.com/spaces/3wemvbcv"
   }
 ]

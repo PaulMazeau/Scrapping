@@ -27,15 +27,29 @@ try {
 }
 
 function normalizeData(data) {
-    // Extraction et normalisation des informations de localisation
-    const [address, city, postalCode] = ['Unknown Address', 'Unknown City', 'Unknown Postal Code']; // Ajuster selon les données disponibles
+    let cleanedAddress = data.address.split('\n')[0].trim();
+    let cityPart = cleanedAddress.split(',')[1];
+    let city = cityPart ? cityPart.split('(')[0].trim() : 'Unknown City';
+
+    let normalizedRooms = data.rooms.map(room => {
+        return {
+            title: room.title,
+            occupancy: room.details.includes("Single occupancy") ? "Single" : "Multiple",
+            bedType: room.details.includes("Single bed") ? "Single" : "Double",
+            size: room.details.match(/(\d+) m²/)?.[1] || 'Unknown Size',
+            bathroom: room.details.includes("Shared bathroom") ? "Shared" : "Private",
+            amenities: room.amenities.map(amenity => amenity.trim()),
+            price: room.price.replace('From €', '').trim(),
+            availability: room.availability.replace('Avail. ', '').trim(),
+            photoURL: room.photoURL
+        };
+    });
 
     return {
         title: data.name,
         location: {
-            address: address,
+            address: cleanedAddress.split('(')[0].trim(),
             city: city,
-            postalCode: postalCode
         },
         images: data.images,
         price: {
@@ -54,9 +68,11 @@ function normalizeData(data) {
         publicationDate: getCurrentDateString(),
         lastUpdate: getCurrentDateString(),
         verified: data.verified === 'Oui' ? 'Oui' : 'Non',
+        rooms: normalizedRooms,
         link: data.link,
     };
 }
+
 
 let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
