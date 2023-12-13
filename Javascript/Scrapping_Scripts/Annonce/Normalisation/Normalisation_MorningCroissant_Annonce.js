@@ -48,8 +48,7 @@ function normalizeData(data) {
     const type = data.details["Catégorie"];
     const bedrooms = data.details["Chambres"];
     const bathrooms = data.details["Salles de bains"];
-    const residents = data.details["Capacité"];
-    const size = data.details["Superficie"];
+    const residents = data.details["Capacité"] ? data.details["Capacité"].replace(' personnes', '').trim() : '';
 
     // Transformation des commodités (`amenities`)
     const amenities = data.amenities.filter(amenity => Object.values(amenity)[0]).map(amenity => Object.keys(amenity)[0]);
@@ -76,7 +75,7 @@ function normalizeData(data) {
         bedrooms: bedrooms,
         bathrooms: bathrooms,
         residents: residents,
-        size: size,
+        size: data.size.replace(/\s*m²/, '').trim(),
         minStay: rules.minStay,
         maxStay: rules.maxStay,
         description: data.description,
