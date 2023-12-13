@@ -27,6 +27,7 @@ try {
 }
 
 function normalizeData(data) {
+    
     return {
         title: data.title,
         location: {
@@ -36,10 +37,9 @@ function normalizeData(data) {
         },
         images: data.images,
         price: {
-            rent: data.price,
+            rent: data.price ? data.price.split('€')[0].trim() : '0',
             deposit: data.deposit,
             agencyFees: data.agencyFees,
-
         },
         amenities: data.amenities || [],        
         publicationDate: data.publicationDate,
