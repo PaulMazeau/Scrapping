@@ -4,26 +4,24 @@ const path = require('path');
 const moment = require('moment');
 
 const BASE_URL = 'https://www.bienici.com/realEstateAds.json';
-let PARAMS = {
-    filters: JSON.stringify({
-        size: 24,
-        from: 0,
-        showAllModels: false,
-        filterType: "rent",
-        propertyType: ["house", "flat", "loft", "castle", "townhouse"],
-        page: 1,
-        sortBy: "relevance",
-        sortOrder: "desc",
-        onTheMarket: [true],
-        zoneIdsByTypes: { "zoneIds": ["-7444"] }
-    }),
-    extensionType: 'extendedIfNoResult',
-    access_token: 'XFCgRiIm/5gxwcxQg0TU81XoA5F0IuwnwxhoHtf5VDI=:653a380e4d571100b2ac40e6',
-    id: '653a380e4d571100b2ac40e6'
-};
 
-let allData = [];
-let pageNumber = 1;
+const cities = [
+    { name: "Paris", ids: "-7444"},
+    { name: "Lyon", ids: "-120965" },
+    { name: "Villeurbanne", ids: "-120955" },
+    { name: "Vénissieux", ids: "-164210" },
+    { name: "Saint-Etienne", ids: "-117905" },
+    { name: "Marseille", ids: "-76469" },
+    { name: "Toulouse", ids: "-35738" },
+    { name: "Bordeaux", ids: "-105270" },
+    { name: "Nantes", ids: "-59874" },
+    { name: "Rennes", ids: "-54517" },
+    { name: "Lille", ids: "-58404" },
+    { name: "Angers", ids: "-178351" },
+    { name: "Grenoble", ids: "-80348" },
+    { name: "Montreuil", ids: "-129423" },
+    { name: "Cergy", ids: "-120955" },
+];
 
 const getOldData = filename => {
     try {
@@ -33,9 +31,29 @@ const getOldData = filename => {
     }
 };
 
-const fetchData = async () => {
+const fetchDataForCity = async (city) => {
+    let allData = [];
+    let pageNumber = 1;
+    let PARAMS = {
+        filters: JSON.stringify({
+            size: 24,
+            from: 0,
+            showAllModels: false,
+            filterType: "rent",
+            propertyType: ["house", "flat", "loft", "castle", "townhouse"],
+            page: 1,
+            sortBy: "relevance",
+            sortOrder: "desc",
+            onTheMarket: [true],
+            zoneIdsByTypes: { "zoneIds": city.ids }
+        }),
+        extensionType: 'extendedIfNoResult',
+        access_token: 'XFCgRiIm/5gxwcxQg0TU81XoA5F0IuwnwxhoHtf5VDI=:653a380e4d571100b2ac40e6',
+        id: '653a380e4d571100b2ac40e6'
+    };
+
     while (true) {
-        console.log(`Fetching page ${pageNumber}...`);
+        console.log(`Fetching page ${pageNumber} for ${city.name}...`);
 
         try {
             const response = await axios.get(BASE_URL, { params: PARAMS });
@@ -60,29 +78,29 @@ const fetchData = async () => {
             break;
         }
     }
-};
 
-fetchData().then(() => {
     const currentDate = moment();
     const currentDateString = currentDate.format('YYYY-MM-DD');
     const previousDateString = currentDate.subtract(1, 'days').format('YYYY-MM-DD');
-    const oldFileName = path.join(__dirname, `../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_${previousDateString}.json`);
+    const oldFileName = path.join(__dirname, `../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_${city.name}_${previousDateString}.json`);
     const oldData = getOldData(oldFileName);
 
     const newAnnouncements = allData.filter(item => !oldData.some(oldItem => oldItem.id === item.id));
     const removedAnnouncements = oldData.filter(item => !allData.some(newItem => newItem.id === item.id));
     const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.id === item.id));
 
-    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_${currentDateString}.json`);
-    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/BienIci_Recherche_Up_To_Date/Updated_Data_Bienici_Recherche_${currentDateString}.json`);
+    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_${city.name}_${currentDateString}.json`);
+    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/BienIci_Recherche_Up_To_Date/Updated_Data_Bienici_Recherche_${city.name}_${currentDateString}.json`);
 
     fs.writeFileSync(outputFileName, JSON.stringify(allData, null, 4), 'utf-8');
     fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 4), 'utf-8');
 
-    console.log(`Total d'annonces scrappées: ${allData.length}`);
-    console.log(`Données du jour sauvegardées dans ${outputFileName}`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur BienIci.`);
-    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-    console.log(`${updatedData.length - newAnnouncements.length} annonce(s) conservée(s).`);
-    console.log(`Données mises à jour sauvegardées dans ${updatedFileName}`);
-});
+    console.log(`Total d'annonces scrappées pour ${city.name}: ${allData.length}`);
+    console.log(`Données du jour pour ${city.name} sauvegardées dans ${outputFileName}`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES pour ${city.name}: ${newAnnouncements.length} nouvelles annonces sur BienIci.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s) pour ${city.name}.`);
+    console.log(`${updatedData.length - newAnnouncements.length} annonce(s) conservée(s) pour ${city.name}.`);
+    console.log(`Données mises à jour pour ${city.name} sauvegardées dans ${updatedFileName}`);
+};
+
+cities.forEach(fetchDataForCity);
