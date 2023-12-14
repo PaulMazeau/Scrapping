@@ -12,19 +12,56 @@ function getPreviousDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-const currentDate = getCurrentDateString();
-const previousDate = getPreviousDateString();
+const cities = [
+    "Paris", "Montreuil", "Cergy", "Lyon", "Villeurbanne", "Saint-Priest", 
+    "Bron", "Vénissieux", "Saint-Etienne", "Marseille", "Toulouse", 
+    "Bordeaux", "Nantes", "Rennes", "Lille", "Angers", "Grenoble"
+];
 
-const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/MorningCroissant_Annonce/Data_MorningCroissant_Annonces_${currentDate}.json`);
-let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+cities.forEach(city => {
+    const currentDate = getCurrentDateString();
+    const previousDate = getPreviousDateString();
 
-const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/MorningCroissant_Annonce/Data_MorningCroissant_Annonces_${previousDate}.json`);
-let previousData;
-try {
-    previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-} catch (error) {
-    previousData = []; // Si le fichier du jour précédent n'existe pas
-}
+    const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/MorningCroissant_Annonce/Data_MorningCroissant_Annonces_${city}_${currentDate}.json`);
+    let rawData;
+    try {
+        rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+    } catch (error) {
+        console.error(`Erreur lors de la lecture du fichier pour ${city}: ${error}`);
+        return; // Passe à la ville suivante si le fichier n'existe pas
+    }
+
+    const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/MorningCroissant_Annonce/Data_MorningCroissant_Annonces_${city}_${previousDate}.json`);
+    let previousData;
+    try {
+        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+    } catch (error) {
+        previousData = []; // Si le fichier du jour précédent n'existe pas
+    }
+
+    let normalizedDataArray = rawData.map(item => normalizeData(item));
+
+    let newAnnouncements = normalizedDataArray.filter(item => 
+        !previousData.some(oldItem => oldItem.link === item.link)
+    );
+    let removedAnnouncements = previousData.filter(item => 
+        !normalizedDataArray.some(newItem => newItem.link === item.link)
+    );
+    let upToDateAnnouncements = normalizedDataArray.filter(item => 
+        !newAnnouncements.includes(item)
+    );
+
+    const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_MorningCroissant/Normalized_Data_MorningCroissant_Annonces_${city}_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/MorningCroissant_Normalisation_Up_To_Date/Updated_Data_MorningCroissant_Annonces_${city}_${currentDate}.json`);
+
+    fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+    console.log(`Il y a ${normalizedDataArray.length} annonces sur MorningCroissant pour ${city}.`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES pour ${city}: ${newAnnouncements.length} nouvelles annonces.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s) pour ${city}.`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour pour ${city}.`);
+});
 
 function normalizeData(data) {
     // Diviser l'adresse en adresse, ville et code postal
@@ -88,36 +125,3 @@ function normalizeData(data) {
         link: data.link,
     };
 }
-
-
-let normalizedDataArray = rawData.map(item => normalizeData(item));
-
-
-let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
-if (previousData.length === 0) {
-    console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
-    upToDateAnnouncements = normalizedDataArray;
-    newAnnouncements = [];
-    removedAnnouncements = [];
-} else {
-    newAnnouncements = normalizedDataArray.filter(item => 
-        !previousData.some(oldItem => oldItem.link === item.link)
-    );
-    removedAnnouncements = previousData.filter(item => 
-        !normalizedDataArray.some(newItem => newItem.link === item.link)
-    );
-    upToDateAnnouncements = normalizedDataArray.filter(item => 
-        !newAnnouncements.includes(item)
-    );
-}
-
-const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_MorningCroissant/Normalized_Data_MorningCroissant_Annonces_${currentDate}.json`);
-const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/MorningCroissant_Normalisation_Up_To_Date/Updated_Data_MorningCroissant_Annonces_${currentDate}.json`);
-
-fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
-fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
-
-console.log(`Il y a ${normalizedDataArray.length} annonces sur MorningCroissant.`);
-console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur MorningCroissant.`);
-console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);

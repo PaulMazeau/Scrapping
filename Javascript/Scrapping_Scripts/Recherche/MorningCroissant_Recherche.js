@@ -15,16 +15,33 @@ function getOldData(filename) {
     }
 }
 
+function delay(time) {
+    return new Promise(function(resolve) { 
+        setTimeout(resolve, time)
+    });
+}
+
+const cities = [
+    "Paris", "Montreuil", "Cergy",
+    "Lyon", "Villeurbanne", "Saint-Priest", "Bron", "Vénissieux",
+    "Saint-Etienne", "Marseille", "Toulouse",
+    "Bordeaux", "Nantes", "Rennes", "Lille", "Angers", "Grenoble"
+];
+
 (async () => {
     const browser = await puppeteer.launch();
-    const page = await browser.newPage();
+    const currentDate = getCurrentDateString();
+    const previousDateString = getCurrentDateString(new Date(new Date().setDate(new Date().getDate() - 1)));
 
-    let currentPage = 1;
-    let allData = [];
-
-    while (true) {
-        const url = `https://www.morningcroissant.fr/location/paris?type=&guests=${currentPage > 1 ? `&page=${currentPage}` : ''}`;
-        await page.goto(url, { waitUntil: 'networkidle2' });
+    for (const city of cities) {
+        const page = await browser.newPage();
+        const urlSlug = city.toLowerCase().replace(' ', '-');
+        let currentPage = 1;
+        let allData = [];
+    
+        while (true) {
+            const url = `https://www.morningcroissant.fr/location/${urlSlug}?type=&guests=${currentPage > 1 ? `&page=${currentPage}` : ''}`;
+            await page.goto(url, { waitUntil: 'networkidle2' });
 
 
         const data = await page.evaluate(() => {
@@ -66,30 +83,29 @@ function getOldData(filename) {
         currentPage += 1;
     }
 
-    const currentDate = getCurrentDateString();
-    const previousDate = new Date();
-    previousDate.setDate(previousDate.getDate() - 1);
-    const previousDateString = `${previousDate.getFullYear()}-${String(previousDate.getMonth() + 1).padStart(2, '0')}-${String(previousDate.getDate()).padStart(2, '0')}`;
-
-    const oldFileName = path.join(__dirname, `../../Resultat_Recherche/MorningCroissant_Recherche/Data_MorningCroissant_Recherche_${previousDateString}.json`);
+    const oldFileName = path.join(__dirname, `../../Resultat_Recherche/MorningCroissant_Recherche/Data_MorningCroissant_Recherche_${city}_${previousDateString}.json`);
     const oldData = getOldData(oldFileName);
 
     const newAnnouncements = allData.filter(item => !oldData.some(oldItem => oldItem.link === item.link));
-    const removedAnnouncements = oldData.filter(item => !allData.some(newItem => newItem.link === item.link));
+    const removedAnnouncements = oldData.filter(oldItem => !allData.some(newItem => newItem.link === oldItem.link));
     const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.link === item.link));
 
-    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/MorningCroissant_Recherche/Data_MorningCroissant_Recherche_${currentDate}.json`);
-    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/MorningCroissant_Recherche_Up_To_Date/Updated_Data_MorningCroissant_Recherche_${currentDate}.json`);
+    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/MorningCroissant_Recherche/Data_MorningCroissant_Recherche_${city}_${currentDate}.json`);
+    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/MorningCroissant_Recherche_Up_To_Date/Updated_Data_MorningCroissant_Recherche_${city}_${currentDate}.json`);
 
     fs.writeFileSync(outputFileName, JSON.stringify(allData, null, 2), 'utf-8');
     fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 2), 'utf-8');
 
-    console.log(`Total scraped items: ${allData.length}`);
-    console.log(`Today's data saved to ${outputFileName}`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
-    console.log(`${removedAnnouncements.length} removed item(s).`);
-    console.log(`${updatedData.length - newAnnouncements.length} retained item(s).`);
-    console.log(`Updated data saved to ${updatedFileName}`);
+    console.log(`Total scraped items for ${city}: ${allData.length}`);
+    console.log(`New items for ${city}: ${newAnnouncements.length}`);
+    console.log(`Removed items for ${city}: ${removedAnnouncements.length}`);
+    console.log(`Updated items for ${city}: ${updatedData.length - newAnnouncements.length}`);
+    console.log(`Today's data for ${city} saved to ${outputFileName}`);
+    console.log(`Updated data for ${city} saved to ${updatedFileName}`);
 
-    await browser.close();
+    await page.close();
+    await delay(60000); // Délai de 1 minute entre chaque ville
+}
+
+await browser.close();
 })();
