@@ -73,57 +73,71 @@ async function scrapePage(browser, url) {
     await page.close();
     return {...data, link: url};}
 
+    const cities = [
+        { name: "Paris", id: 339 },
+        { name: "Lyon", id: 638 },
+        { name: "Marseille", id: 492 },
+        { name: "Toulouse", id: 939 },
+        { name: "Bordeaux", id: 698 },
+        { name: "Nantes", id: 1221 },
+        { name: "Rennes", id: 3449 },
+        { name: "Lille", id: 659 },
+        { name: "Angers", id: 3003 },
+        { name: "Grenoble", id: 1050 }
+    ];
+
     (async () => {
-        const currentDate = getCurrentDateString();
-        const previousDate = getPreviousDateString();
-    
-        const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${previousDate}.json`);
-        let previousData;
-        try {
-            previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-        } catch (error) {
-            previousData = []; // Si le fichier du jour précédent n'existe pas
-        }
-    
-        const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date/Updated_Data_Coliving_Recherche_${currentDate}.json`);
-        const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
-        const allData = [];
-    
         const browser = await puppeteer.launch();
     
-        for (let annonce of annonces) {
+        for (const city of cities) {
+            const currentDate = getCurrentDateString();
+            const previousDate = getCurrentDateString(new Date(new Date().setDate(new Date().getDate() - 1)));
+    
+            const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${city.name}_${previousDate}.json`);
+            let previousData;
             try {
-                const data = await scrapePage(browser, annonce.url);
-                allData.push(data);
-                console.log('Annonce traitée');
-                console.log(`Nombre total d'annonces traitées: ${allData.length}`);
+                previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
             } catch (error) {
-                console.error(`Échec du scraping de la page à l'URL ${annonce.url} : ${error}`);
+                previousData = [];
             }
+    
+            const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date/Updated_Data_Coliving_${city.name}_${currentDate}.json`);
+            let annonces;
+            try {
+                annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
+            } catch (error) {
+                console.error(`Erreur lors de la lecture du fichier d'annonces pour ${city.name}: ${error}`);
+                continue;
+            }
+    
+            const allData = [];
+    
+            for (let annonce of annonces) {
+                try {
+                    const data = await scrapePage(browser, annonce.url);
+                    allData.push(data);
+                    console.log(`Annonce traitée pour ${city.name}`);
+                } catch (error) {
+                    console.error(`Échec du scraping de l'annonce ${annonce.url} pour ${city.name}: ${error}`);
+                }
+            }
+    
+            let newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+            let removedAnnouncements = previousData.filter(oldItem => !allData.some(item => item.link === oldItem.link));
+            let upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
+    
+            const fileName = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${city.name}_${currentDate}.json`);
+            const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Coliving_Annonce_Up_To_Date/Updated_Data_Coliving_Annonces_${city.name}_${currentDate}.json`);
+    
+            fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
+            fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+    
+            console.log(`Données des annonces pour ${city.name} sauvegardées dans ${fileName}`);
+            console.log(`TOTAL_NOUVELLES_ANNONCES pour ${city.name} : ${newAnnouncements.length} nouvelles annonces.`);
+            console.log(`${removedAnnouncements.length} annonce(s) supprimée(s) pour ${city.name}.`);
+            console.log(`${upToDateAnnouncements.length} annonce(s) à jour pour ${city.name}.`);
         }
     
         await browser.close();
-    
-        let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
-        if (previousData.length === 0) {
-            newAnnouncements = [];
-            removedAnnouncements = [];
-            upToDateAnnouncements = allData;
-        } else {
-            newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-            removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
-            upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
-        }
-    
-        const fileName = path.join(__dirname, `../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${currentDate}.json`);
-        const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Coliving_Annonce_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
-    
-        fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
-        fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
-    
-        console.log(`Toutes les données ont été sauvegardées dans ${fileName} !`);
-        console.log(`TOTAL_NOUVELLES_ANNONCES : ${newAnnouncements.length} nouvelles annonces sur Coliving.`);
-        console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-        console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
     })();
     

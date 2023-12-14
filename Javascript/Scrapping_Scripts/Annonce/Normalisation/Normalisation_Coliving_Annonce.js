@@ -15,11 +15,6 @@ function getPreviousDateString() {
 const currentDate = getCurrentDateString();
 const previousDate = getPreviousDateString();
 
-const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${currentDate}.json`);
-let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
-
-const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${previousDate}.json`);
-let previousData;
 try {
     previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
 } catch (error) {
@@ -73,29 +68,56 @@ function normalizeData(data) {
     };
 }
 
+const cities = [
+    { name: "Paris", id: 339 },
+    { name: "Lyon", id: 638 },
+    { name: "Marseille", id: 492 },
+    { name: "Toulouse", id: 939 },
+    { name: "Bordeaux", id: 698 },
+    { name: "Nantes", id: 1221 },
+    { name: "Rennes", id: 3449 },
+    { name: "Lille", id: 659 },
+    { name: "Angers", id: 3003 },
+    { name: "Grenoble", id: 1050 }
+];
 
-let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
+cities.forEach(city => {
+    const currentDate = getCurrentDateString();
+    const previousDate = getCurrentDateString(new Date(new Date().setDate(new Date().getDate() - 1)));
 
-// Traitement des annonces en fonction des données du jour précédent
-let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
+    const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${city.name}_${currentDate}.json`);
+    let rawData;
+    try {
+        rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+    } catch (error) {
+        console.error(`Erreur lors de la lecture du fichier de données brutes pour ${city.name}: ${error}`);
+        return; // Passe à la ville suivante si le fichier n'existe pas
+    }
 
-if (previousData.length === 0) {
-    newAnnouncements = [];
-    removedAnnouncements = [];
-    upToDateAnnouncements = normalizedDataArray;
-} else {
-    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
-    upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
-}
+    const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Coliving_Annonce/Data_Coliving_Annonces_${city.name}_${previousDate}.json`);
+    let previousData;
+    try {
+        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+    } catch (error) {
+        previousData = [];
+    }
 
-const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Coliving/Normalized_Data_Coliving_Annonces_${currentDate}.json`);
-const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Coliving_Normalisation_Up_To_Date/Updated_Data_Coliving_Annonces_${currentDate}.json`);
+    // Votre logique de normalisation des données reste la même
+    let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
+    
+    // Traitement des annonces pour la ville actuelle
+    let newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+    let removedAnnouncements = previousData.filter(oldItem => !normalizedDataArray.some(newItem => newItem.link === oldItem.link));
+    let upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
 
-fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
-fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+    const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Coliving/Normalized_Data_Coliving_Annonces_${city.name}_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Coliving_Normalisation_Up_To_Date/Updated_Data_Coliving_Annonces_${city.name}_${currentDate}.json`);
 
-console.log(`Il y a ${normalizedDataArray.length} annonces sur Coliving.`);
-console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Coliving.`);
-console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+    console.log(`Il y a ${normalizedDataArray.length} annonces sur Coliving pour ${city.name}.`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES pour ${city.name}: ${newAnnouncements.length} nouvelles annonces.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s) pour ${city.name}.`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour pour ${city.name}.`);
+});
