@@ -12,19 +12,33 @@ function getPreviousDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-const currentDate = getCurrentDateString();
-const previousDate = getPreviousDateString();
+const cities = [
+    "Paris", "Montreuil", "Cergy", "Lyon", "Villeurbanne", "Saint-Priest", 
+    "Bron", "Vénissieux", "Saint-Etienne", "Marseille", "Toulouse", 
+    "Bordeaux", "Nantes", "Rennes", "Lille", "Angers", "Grenoble"
+];
 
-const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/Rentola_Annonce/Data_Rentola_Annonces_${currentDate}.json`);
-let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+cities.forEach(city => {
+    const currentDate = getCurrentDateString();
+    const previousDate = getPreviousDateString();
 
-const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Rentola_Annonce/Data_Rentola_Annonces_${previousDate}.json`);
-let previousData;
-try {
-    previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-} catch (error) {
-    previousData = []; // Si le fichier du jour précédent n'existe pas, considérer les données actuelles comme à jour
-}
+    const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/Rentola_Annonce/Data_Rentola_Annonces_${city}_${currentDate}.json`);
+    let rawData;
+    try {
+        rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+    } catch (error) {
+        console.error(`Erreur de lecture des données pour ${city}:`, error);
+        return;
+    }
+
+    const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Rentola_Annonce/Data_Rentola_Annonces_${city}_${previousDate}.json`);
+    let previousData = [];
+    try {
+        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+    } catch (error) {
+        // Si le fichier du jour précédent n'existe pas
+        console.log(`Aucune donnée précédente disponible pour ${city}.`);
+    }
 
 function normalizeData(data) {
     return {
@@ -67,14 +81,15 @@ if (previousData.length === 0) {
     upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
 }
 
-const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Rentola/Normalized_Data_Rentola_Annonces_${currentDate}.json`);
-const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Rentola_Normalisation_Up_To_Date/Updated_Data_Rentola_Annonces_${currentDate}.json`);
+    const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Rentola/Normalized_Data_Rentola_Annonces_${city}_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Rentola_Normalisation_Up_To_Date/Updated_Data_Rentola_Annonces_${city}_${currentDate}.json`);
 
-fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
-fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+    fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
 
-console.log(`Il y a ${normalizedDataArray.length} annonces sur Rentola.`);
-console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Rentola.`);
-console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
-
+    console.log(`Traitement terminé pour ${city}.`);
+    console.log(`Il y a ${normalizedDataArray.length} annonces normalisées sur Rentola pour ${city}.`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Rentola pour ${city}.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s) pour ${city}.`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour pour ${city}.`);
+});
