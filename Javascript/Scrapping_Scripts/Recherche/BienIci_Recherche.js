@@ -6,21 +6,21 @@ const moment = require('moment');
 const BASE_URL = 'https://www.bienici.com/realEstateAds.json';
 
 const cities = [
-    { name: "Paris", ids: "-7444"},
-    { name: "Lyon", ids: "-120965" },
-    { name: "Villeurbanne", ids: "-120955" },
-    { name: "Vénissieux", ids: "-164210" },
-    { name: "Saint-Etienne", ids: "-117905" },
-    { name: "Marseille", ids: "-76469" },
-    { name: "Toulouse", ids: "-35738" },
-    { name: "Bordeaux", ids: "-105270" },
-    { name: "Nantes", ids: "-59874" },
-    { name: "Rennes", ids: "-54517" },
-    { name: "Lille", ids: "-58404" },
-    { name: "Angers", ids: "-178351" },
-    { name: "Grenoble", ids: "-80348" },
-    { name: "Montreuil", ids: "-129423" },
-    { name: "Cergy", ids: "-120955" },
+    { name: "Paris", ids: ["-7444"]},
+    { name: "Lyon", ids: ["-120965"] },
+    { name: "Villeurbanne", ids: ["-120955"] },
+    { name: "Vénissieux", ids: ["-164210"] },
+    { name: "Saint-Etienne", ids: ["-117905"] },
+    { name: "Marseille", ids: ["-76469"] },
+    { name: "Toulouse", ids: ["-35738"] },
+    { name: "Bordeaux", ids: ["-105270"] },
+    { name: "Nantes", ids: ["-59874"] },
+    { name: "Rennes", ids: ["-54517"] },
+    { name: "Lille", ids: ["-58404"] },
+    { name: "Angers", ids: ["-178351"] },
+    { name: "Grenoble", ids: ["-80348"] },
+    { name: "Montreuil", ids: ["-129423"] },
+    { name: "Cergy", ids: ["-120955"] },
 ];
 
 const getOldData = filename => {
@@ -30,6 +30,8 @@ const getOldData = filename => {
         return [];
     }
 };
+
+const delay = duration => new Promise(resolve => setTimeout(resolve, duration));
 
 const fetchDataForCity = async (city) => {
     let allData = [];
@@ -103,4 +105,11 @@ const fetchDataForCity = async (city) => {
     console.log(`Données mises à jour pour ${city.name} sauvegardées dans ${updatedFileName}`);
 };
 
-cities.forEach(fetchDataForCity);
+const fetchAllCities = async () => {
+    for (const city of cities) {
+        await fetchDataForCity(city);
+        await delay(60000); // Délai de 1 minute
+    }
+};
+
+fetchAllCities();

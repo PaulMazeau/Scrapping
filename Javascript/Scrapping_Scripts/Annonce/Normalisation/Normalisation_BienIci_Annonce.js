@@ -1,6 +1,24 @@
 const fs = require('fs');
 const path = require('path');
+const moment = require('moment');
 
+const cities = [
+    { name: "Paris", ids: ["-7444"]},
+    { name: "Lyon", ids: ["-120965"] },
+    { name: "Villeurbanne", ids: ["-120955"] },
+    { name: "Vénissieux", ids: ["-164210"] },
+    { name: "Saint-Etienne", ids: ["-117905"] },
+    { name: "Marseille", ids: ["-76469"] },
+    { name: "Toulouse", ids: ["-35738"] },
+    { name: "Bordeaux", ids: ["-105270"] },
+    { name: "Nantes", ids: ["-59874"] },
+    { name: "Rennes", ids: ["-54517"] },
+    { name: "Lille", ids: ["-58404"] },
+    { name: "Angers", ids: ["-178351"] },
+    { name: "Grenoble", ids: ["-80348"] },
+    { name: "Montreuil", ids: ["-129423"] },
+    { name: "Cergy", ids: ["-120955"] },
+];
 function getCurrentDateString() {
     const date = new Date();
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
@@ -10,20 +28,6 @@ function getPreviousDateString() {
     const date = new Date();
     date.setDate(date.getDate() - 1);
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-const currentDate = getCurrentDateString();
-const previousDate = getPreviousDateString();
-
-const rawDataPath = path.join(__dirname, `../../../Resultat_Recherche/BienIci_Recherche/Data_BienIci_Recherche_${currentDate}.json`);
-let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
-
-const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${previousDate}.json`);
-let previousData;
-try {
-    previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-} catch (error) {
-    previousData = []; // Si le fichier du jour précédent n'existe pas
 }
 
 function normalizeData(data) {
@@ -66,28 +70,49 @@ function normalizeData(data) {
     };
 }
 
-let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
+cities.forEach(city => {
+    const currentDate = getCurrentDateString();
+    const previousDate = getPreviousDateString();
 
-// Traitement des annonces en fonction des données du jour précédent
-let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
+    const rawDataPath = path.join(__dirname, `../../../Resultat_Recherche/BienIci_Recherche/Data_BienIci_Recherche_${city.name}_${currentDate}.json`);
+    let rawData;
+    try {
+        rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+    } catch (error) {
+        console.error(`Erreur lors de la lecture du fichier pour ${city.name}: ${error}`);
+        return; // Passe à la ville suivante si le fichier n'existe pas
+    }
 
-if (previousData.length === 0) {
-    newAnnouncements = [];
-    removedAnnouncements = [];
-    upToDateAnnouncements = normalizedDataArray;
-} else {
-    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.address === item.location.address));
-    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === newItem.title && newItem.location.address === item.location.address));
-    upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
-}
+    let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
 
-const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${currentDate}.json`);
-const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/BienIci_Normalisation_Up_To_Date/Updated_Data_BienIci_Annonces_${currentDate}.json`);
+    let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
 
-fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
-fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+    const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${previousDate}.json`);
+    let previousData;
+    try {
+        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+    } catch (error) {
+        previousData = []; // Si le fichier du jour précédent n'existe pas
+    }
 
-console.log(`Il y a ${normalizedDataArray.length} annonces sur BienIci.`);
-console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur BienIci.`);
-console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    if (previousData.length === 0) {
+        newAnnouncements = [];
+        removedAnnouncements = [];
+        upToDateAnnouncements = normalizedDataArray;
+    } else {
+        newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.title === item.title && oldItem.location.address === item.location.address));
+        removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.title === newItem.title && newItem.location.address === item.location.address));
+        upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+    }
+
+    const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${city.name}_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/BienIci_Normalisation_Up_To_Date/Updated_Data_BienIci_Annonces_${city.name}_${currentDate}.json`);
+
+    fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+    console.log(`Il y a ${normalizedDataArray.length} annonces sur BienIci pour ${city.name}.`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES pour ${city.name}: ${newAnnouncements.length} nouvelles annonces.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s) pour ${city.name}.`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour pour ${city.name}.`);
+});
