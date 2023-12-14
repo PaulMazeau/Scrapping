@@ -12,18 +12,18 @@ function getPreviousDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-const currentDate = getCurrentDateString();
-const previousDate = getPreviousDateString();
+function delay(time) {
+    return new Promise(function(resolve) { 
+        setTimeout(resolve, time)
+    });
+}
 
-const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/ImmoJeune_Annonce/Data_ImmoJeune_Annonces_${currentDate}.json`);
-let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
-
-const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/ImmoJeune_Annonce/Data_ImmoJeune_Annonces_${previousDate}.json`);
-let previousData;
-try {
-    previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-} catch (error) {
-    previousData = []; // Si le fichier du jour précédent n'existe pas
+function getOldData(filename) {
+    try {
+        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
+    } catch (e) {
+        return [];
+    }
 }
 
 function normalizeData(data) {
@@ -53,27 +53,58 @@ function normalizeData(data) {
     };
 }
 
-let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
+const cities = [
+    { name: "Paris", urlSlug: "paris-75" },
+    { name: "Lyon", urlSlug: "lyon-69" },
+    { name: "Montreuil", urlSlug: "montreuil-93" },
+    { name: "Cergy", urlSlug: "cergy-95" },
+    { name: "Villeubarnne", urlSlug: "villeubarnne-69" },
+    { name: "Bron", urlSlug: "bron-69" },
+    { name: "Venissieux", urlSlug: "venissieux-69200" },
+    { name: "Saint-Etienne", urlSlug: "saint-etienne-42" },
+    { name: "Marseille", urlSlug: "marseille-13" },
+    { name: "Toulouse", urlSlug: "toulouse-31" },
+    { name: "Bordeaux", urlSlug: "bordeaux-33" },
+    { name: "Nantes", urlSlug: "nantes-44" },
+    { name: "Rennes", urlSlug: "rennes-35" },
+    { name: "Angers", urlSlug: "angers-49" },
+    { name: "Grenoble", urlSlug: "grenoble-38" },
+];
 
-let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
-if (previousData.length === 0) {
-    console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
-    upToDateAnnouncements = normalizedDataArray;
-    newAnnouncements = [];
-    removedAnnouncements = [];
-} else {
-    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
-    upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
-}
+(async () => {
+    const currentDate = getCurrentDateString();
+    const previousDateString = getPreviousDateString();
 
-const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_ImmoJeune/Normalized_Data_ImmoJeune_Annonces_${currentDate}.json`);
-const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/ImmoJeune_Normalisation_Up_To_Date/Updated_Data_ImmoJeune_Annonces_${currentDate}.json`);
+    for (const city of cities) {
+        const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/ImmoJeune_Annonce/Data_ImmoJeune_Annonces_${city.name}_${currentDate}.json`);
+        let rawData;
+        try {
+            rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+        } catch (error) {
+            console.error(`Erreur lors de la lecture du fichier pour ${city.name}: ${error}`);
+            continue; // Passe à la ville suivante si le fichier n'existe pas
+        }
 
-fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
-fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+        const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/ImmoJeune_Annonce/Data_ImmoJeune_Annonces_${city.name}_${previousDateString}.json`);
+        let previousData = getOldData(previousDataPath);
 
-console.log(`Il y a ${normalizedDataArray.length} annonces sur ImmoJeune.`);
-console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur ImmoJeune.`);
-console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+        let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
+
+        let newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+        let removedAnnouncements = previousData.filter(oldItem => !normalizedDataArray.some(newItem => newItem.link === oldItem.link));
+        let upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
+
+        const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_ImmoJeune/Normalized_Data_ImmoJeune_Annonces_${city.name}_${currentDate}.json`);
+        const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/ImmoJeune_Normalisation_Up_To_Date/Updated_Data_ImmoJeune_Annonces_${city.name}_${currentDate}.json`);
+
+        fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+        fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+        console.log(`Il y a ${normalizedDataArray.length} annonces sur ImmoJeune pour ${city.name}.`);
+        console.log(`TOTAL_NOUVELLES_ANNONCES pour ${city.name}: ${newAnnouncements.length} nouvelles annonces.`);
+        console.log(`${removedAnnouncements.length} annonce(s) supprimée(s) pour ${city.name}.`);
+        console.log(`${upToDateAnnouncements.length} annonce(s) à jour pour ${city.name}.`);
+
+        await delay(60000); // Délai de 1 minute
+    }
+})();

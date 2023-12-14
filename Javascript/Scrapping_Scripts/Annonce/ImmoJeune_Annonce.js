@@ -13,6 +13,20 @@ function getPreviousDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
+function delay(time) {
+    return new Promise(function(resolve) { 
+        setTimeout(resolve, time)
+    });
+}
+
+function getOldData(filename) {
+    try {
+        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
+    } catch (e) {
+        return [];
+    }
+}
+
 async function scrapePage(page, url) {
     await page.goto(url, { waitUntil: 'networkidle0' }); // Attendez que le réseau soit inactif
 
@@ -64,58 +78,68 @@ async function scrapePage(page, url) {
     return { ...data, link: url };
 }
 
+const cities = [
+    { name: "Paris", urlSlug: "paris-75" },
+    { name: "Lyon", urlSlug: "lyon-69" },
+    { name: "Montreuil", urlSlug: "montreuil-93" },
+    { name: "Cergy", urlSlug: "cergy-95" },
+    { name: "Villeubarnne", urlSlug: "villeubarnne-69" },
+    { name: "Bron", urlSlug: "bron-69" },
+    { name: "Venissieux", urlSlug: "venissieux-69200" },
+    { name: "Saint-Etienne", urlSlug: "saint-etienne-42" },
+    { name: "Marseille", urlSlug: "marseille-13" },
+    { name: "Toulouse", urlSlug: "toulouse-31" },
+    { name: "Bordeaux", urlSlug: "bordeaux-33" },
+    { name: "Nantes", urlSlug: "nantes-44" },
+    { name: "Rennes", urlSlug: "rennes-35" },
+    { name: "Angers", urlSlug: "angers-49" },
+    { name: "Grenoble", urlSlug: "grenoble-38" },
+];
+
 (async () => {
     const currentDate = getCurrentDateString();
-    const previousDate = getPreviousDateString();
-
-    const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/ImmoJeune_Annonce/Data_ImmoJeune_Annonces_${previousDate}.json`);
-    let previousData;
-    try {
-        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-    } catch (error) {
-        previousData = []; // Si le fichier du jour précédent n'existe pas
-    }
-
-    const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/ImmoJeune_Recherche_Up_To_Date/Updated_Data_ImmoJeune_Recherche_${currentDate}.json`);
-    const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
-    const allData = [];
+    const previousDateString = getPreviousDateString;
 
     const browser = await puppeteer.launch();
-    const page = await browser.newPage();
+    
+    for (const city of cities) {
+        const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/ImmoJeune_Recherche_Up_To_Date/Updated_Data_ImmoJeune_Recherche_${city.name}_${currentDate}.json`);
+        const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
+        const allData = [];
+        const page = await browser.newPage();
 
-    for (let annonce of annonces) {
-        try {
-            const data = await scrapePage(page, annonce.link);
-            allData.push(data); 
-            console.log('Annonce traitée :', annonce.link);
-        } catch (error) {
-            console.error(`Failed to scrape the page at ${annonce.link} due to: ${error}`);
+        for (let annonce of annonces) {
+            try {
+                const data = await scrapePage(page, annonce.link);
+                allData.push(data); 
+                console.log('Annonce traitée :', annonce.link);
+            } catch (error) {
+                console.error(`Failed to scrape the page at ${annonce.link} due to: ${error}`);
+            }
         }
+
+        await page.close();
+
+        const oldFileName = path.join(__dirname, `../../Resultat_Annonce/ImmoJeune_Annonce/Data_ImmoJeune_Annonces_${city.name}_${previousDateString}.json`);
+        const oldData = getOldData(oldFileName);
+
+        let newAnnouncements = allData.filter(item => !oldData.some(oldItem => oldItem.link === item.link));
+        let removedAnnouncements = oldData.filter(oldItem => !allData.some(newItem => newItem.link === oldItem.link));
+        let updatedAnnouncements = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.link === item.link));
+
+        const fileName = path.join(__dirname, `../../Resultat_Annonce/ImmoJeune_Annonce/Data_ImmoJeune_Annonces_${city.name}_${currentDate}.json`);
+        const updatedFileName = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/ImmoJeune_Annonce_Up_To_Date/Updated_Data_ImmoJeune_Annonces_${city.name}_${currentDate}.json`);
+
+        fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
+        fs.writeFileSync(updatedFileName, JSON.stringify(updatedAnnouncements, null, 2), 'utf-8');
+
+        console.log(`Total scraped ads for ${city.name}: ${allData.length}`);
+        console.log(`TOTAL_NOUVELLES_ANNONCES for ${city.name}: ${newAnnouncements.length} new ads.`);
+        console.log(`${removedAnnouncements.length} removed ad(s) for ${city.name}.`);
+        console.log(`Updated data for ${city.name} saved to ${updatedFileName}`);
+
+        await delay(60000);
     }
 
-    await page.close();
     await browser.close();
-
-    let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
-    if (previousData.length === 0) {
-        console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
-        upToDateAnnouncements = allData;
-        newAnnouncements = [];
-        removedAnnouncements = [];
-    } else {
-        newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-        removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
-        upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
-    }
-
-    const fileName = path.join(__dirname, `../../Resultat_Annonce/ImmoJeune_Annonce/Data_ImmoJeune_Annonces_${currentDate}.json`);
-    const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/ImmoJeune_Annonce_Up_To_Date/Updated_Data_ImmoJeune_Annonces_${currentDate}.json`);
-
-    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
-    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
-
-    console.log(`All data saved to ${fileName}!`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur ImmoJeune.`);
-    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
 })();

@@ -15,12 +15,46 @@ function getOldData(filename) {
     }
 }
 
+function delay(time) {
+    return new Promise(function(resolve) { 
+        setTimeout(resolve, time)
+    });
+}
+
+const cities = [
+    { name: "Paris", urlSlug: "paris-75" },
+    { name: "Lyon", urlSlug: "lyon-69" },
+    { name: "Montreuil", urlSlug: "montreuil-93" },
+    { name: "Cergy", urlSlug: "cergy-95" },
+    { name: "Villeubarnne", urlSlug: "villeubarnne-69" },
+    { name: "Bron", urlSlug: "bron-69" },
+    { name: "Venissieux", urlSlug: "venissieux-69200" },
+    { name: "Saint-Etienne", urlSlug: "saint-etienne-42" },
+    { name: "Marseille", urlSlug: "marseille-13" },
+    { name: "Toulouse", urlSlug: "toulouse-31" },
+    { name: "Bordeaux", urlSlug: "bordeaux-33" },
+    { name: "Nantes", urlSlug: "nantes-44" },
+    { name: "Rennes", urlSlug: "rennes-35" },
+    { name: "Angers", urlSlug: "angers-49" },
+    { name: "Grenoble", urlSlug: "grenoble-38" },
+];
+
+
 (async () => {
     const browser = await puppeteer.launch();
-    const page = await browser.newPage();
 
-    const url = 'https://www.immojeune.com/location-etudiant/paris-75.html';
-    await page.goto(url, { waitUntil: 'networkidle2' });
+    for (const city of cities) {
+        const page = await browser.newPage();
+        const url = `https://www.immojeune.com/location-etudiant/${city.urlSlug}.html`;
+        await page.goto(url, { waitUntil: 'networkidle2' });
+
+        // Logique de scrapping pour chaque ville
+
+        const currentDate = getCurrentDateString();
+        const previousDateString = getCurrentDateString(new Date(new Date().setDate(new Date().getDate() - 1)));
+
+        const oldFileName = path.join(__dirname, `../../Resultat_Recherche/ImmoJeune_Recherche/Data_ImmoJeune_Recherche_${city.name}_${previousDateString}.json`);
+        const oldData = getOldData(oldFileName);
 
     let previousHeight;
     while (true) {
@@ -65,30 +99,27 @@ function getOldData(filename) {
 
     console.log(`Scrapped ${allData.length} ads from ${url}`);
 
-    const currentDate = getCurrentDateString();
-    const previousDate = new Date();
-    previousDate.setDate(previousDate.getDate() - 1);
-    const previousDateString = `${previousDate.getFullYear()}-${String(previousDate.getMonth() + 1).padStart(2, '0')}-${String(previousDate.getDate()).padStart(2, '0')}`;
-
-    const oldFileName = path.join(__dirname, `../../Resultat_Recherche/ImmoJeune_Recherche/Data_ImmoJeune_Recherche_${previousDateString}.json`);
-    const oldData = getOldData(oldFileName);
-
     const newAnnouncements = allData.filter(item => !oldData.some(oldItem => oldItem.link === item.link));
-    const removedAnnouncements = oldData.filter(item => !allData.some(newItem => newItem.link === item.link));
-    const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.link === item.link));
+        const removedAnnouncements = oldData.filter(oldItem => !allData.some(newItem => newItem.link === oldItem.link));
+        const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.link === item.link));
 
-    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/ImmoJeune_Recherche/Data_ImmoJeune_Recherche_${currentDate}.json`);
-    const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/ImmoJeune_Recherche_Up_To_Date/Updated_Data_ImmoJeune_Recherche_${currentDate}.json`);
+        const outputFileName = path.join(__dirname, `../../Resultat_Recherche/ImmoJeune_Recherche/Data_ImmoJeune_Recherche_${city.name}_${currentDate}.json`);
+        const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/ImmoJeune_Recherche_Up_To_Date/Updated_Data_ImmoJeune_Recherche_${city.name}_${currentDate}.json`);
 
-    fs.writeFileSync(outputFileName, JSON.stringify(allData, null, 2), 'utf-8');
-    fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 2), 'utf-8');
+        fs.writeFileSync(outputFileName, JSON.stringify(allData, null, 2), 'utf-8');
+        fs.writeFileSync(updatedFileName, JSON.stringify(updatedData, null, 2), 'utf-8');
 
-    console.log(`Total scraped ads: ${allData.length}`);
-    console.log(`Today's data saved to ${outputFileName}`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
-    console.log(`${removedAnnouncements.length} removed ad(s).`);
-    console.log(`${updatedData.length - newAnnouncements.length} retained ad(s).`);
-    console.log(`Updated data saved to ${updatedFileName}`);
+        console.log(`Total scraped ads for ${city.name}: ${allData.length}`);
+        console.log(`Today's data for ${city.name} saved to ${outputFileName}`);
+        console.log(`TOTAL_NOUVELLES_ANNONCES for ${city.name}: ${newAnnouncements.length} new ads.`);
+        console.log(`${removedAnnouncements.length} removed ad(s) for ${city.name}.`);
+        console.log(`${updatedData.length - newAnnouncements.length} retained ad(s) for ${city.name}.`);
+        console.log(`Updated data for ${city.name} saved to ${updatedFileName}`);
+
+        await page.close();
+
+        await delay(60000); // Délai de 1 minute
+    }
 
     await browser.close();
 })();
