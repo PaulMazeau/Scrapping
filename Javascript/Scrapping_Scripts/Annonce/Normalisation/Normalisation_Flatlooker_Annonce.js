@@ -45,8 +45,11 @@ const currentDate = getCurrentDateString();
 const previousDate = getPreviousDateString();
 
 const cities = [
-    "Paris", "Montreuil", "Cergy",
+    "Paris", "Montreuil", "Cergy", "Lyon", "Villeurbanne", "Saint-Priest", 
+    "Bron", "Vénissieux", "Saint-Etienne", "Marseille", "Toulouse", 
+    "Bordeaux", "Nantes", "Rennes", "Lille", "Angers", "Grenoble"
 ];
+
 
 cities.forEach(city => {
     const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${city}_${currentDate}.json`);

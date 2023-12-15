@@ -69,16 +69,16 @@ function normalizeData(data) {
 }
 
 const cities = [
-    { name: "Paris", id: 339 },
-    { name: "Lyon", id: 638 },
-    { name: "Marseille", id: 492 },
-    { name: "Toulouse", id: 939 },
-    { name: "Bordeaux", id: 698 },
-    { name: "Nantes", id: 1221 },
-    { name: "Rennes", id: 3449 },
-    { name: "Lille", id: 659 },
-    { name: "Angers", id: 3003 },
-    { name: "Grenoble", id: 1050 }
+    { name: "Paris" },
+    { name: "Lyon" },
+    { name: "Marseille" },
+    { name: "Toulouse" },
+    { name: "Bordeaux" },
+    { name: "Nantes" },
+    { name: "Rennes" },
+    { name: "Lille" },
+    { name: "Angers" },
+    { name: "Grenoble" }
 ];
 
 cities.forEach(city => {

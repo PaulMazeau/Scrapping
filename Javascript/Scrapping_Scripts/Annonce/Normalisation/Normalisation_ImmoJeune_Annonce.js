@@ -54,21 +54,21 @@ function normalizeData(data) {
 }
 
 const cities = [
-    { name: "Paris", urlSlug: "paris-75" },
-    { name: "Lyon", urlSlug: "lyon-69" },
-    { name: "Montreuil", urlSlug: "montreuil-93" },
-    { name: "Cergy", urlSlug: "cergy-95" },
-    { name: "Villeubarnne", urlSlug: "villeubarnne-69" },
-    { name: "Bron", urlSlug: "bron-69" },
-    { name: "Venissieux", urlSlug: "venissieux-69200" },
-    { name: "Saint-Etienne", urlSlug: "saint-etienne-42" },
-    { name: "Marseille", urlSlug: "marseille-13" },
-    { name: "Toulouse", urlSlug: "toulouse-31" },
-    { name: "Bordeaux", urlSlug: "bordeaux-33" },
-    { name: "Nantes", urlSlug: "nantes-44" },
-    { name: "Rennes", urlSlug: "rennes-35" },
-    { name: "Angers", urlSlug: "angers-49" },
-    { name: "Grenoble", urlSlug: "grenoble-38" },
+    { name: "Paris",},
+    { name: "Lyon",},
+    { name: "Montreuil",},
+    { name: "Cergy",},
+    { name: "Villeubarnne"},
+    { name: "Bron",},
+    { name: "Venissieux",},
+    { name: "Saint-Etienne",},
+    { name: "Marseille",},
+    { name: "Toulouse",},
+    { name: "Bordeaux",},
+    { name: "Nantes",},
+    { name: "Rennes",},
+    { name: "Angers",},
+    { name: "Grenoble",},
 ];
 
 (async () => {

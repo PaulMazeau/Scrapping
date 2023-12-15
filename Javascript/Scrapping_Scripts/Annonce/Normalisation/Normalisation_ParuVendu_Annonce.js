@@ -40,7 +40,12 @@ function normalizeData(data) {
 const currentDate = getCurrentDateString();
 const previousDate = getPreviousDateString();
 
-const cities = ["Paris", "Montreuil", "Cergy"];
+const cities = [
+    "Paris", "Montreuil", "Cergy", "Lyon", "Villeurbanne", "Saint-Priest", 
+    "Bron", "Vénissieux", "Saint-Etienne", "Marseille", "Toulouse", 
+    "Bordeaux", "Nantes", "Rennes", "Lille", "Angers", "Grenoble"
+];
+
 
 cities.forEach(city => {
     const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${city}_${currentDate}.json`);
