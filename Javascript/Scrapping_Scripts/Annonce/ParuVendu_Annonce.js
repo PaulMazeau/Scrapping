@@ -49,37 +49,49 @@ async function scrapePage(page, url) {
     return { ...data, link: url };
 }
 
+const cities = [
+    { name: "Paris", code: "75000" },
+    { name: "Montreuil", code: "93048" },
+    { name: "Cergy", code: "95XX0" },
+];
+
 (async () => {
+    const browser = await puppeteer.launch();
     const currentDate = getCurrentDateString();
     const previousDate = getPreviousDateString();
 
-    const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${previousDate}.json`);
-    let previousData;
-    try {
-        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-    } catch (error) {
-        previousData = []; // Si le fichier du jour précédent n'existe pas
-    }
-
-    const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/ParuVendu_Recherche_Up_To_Date/Updated_Data_ParuVendu_Recherche_${currentDate}.json`);
-    const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
-    const allData = [];
-
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-
-    for (let annonce of annonces) {
+    for (let city of cities) {
+        const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/ParuVendu_Recherche_Up_To_Date/Updated_Data_ParuVendu_Recherche_${city.name}_${currentDate}.json`);
+        const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${city.name}_${previousDate}.json`);
+        let previousData;
         try {
-            const data = await scrapePage(page, annonce.link);
-            allData.push(data); 
-            console.log('Annonce traitée :', annonce.link);
+            previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
         } catch (error) {
-            console.error(`Failed to scrape the page at ${annonce.link} due to: ${error}`);
+            previousData = []; // Si le fichier du jour précédent n'existe pas
         }
-    }
 
-    await page.close();
-    await browser.close();
+        let annonces;
+        try {
+            annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
+        } catch (error) {
+            console.error(`Erreur de lecture des annonces pour ${city.name}:`, error);
+            continue; // Passez à la ville suivante si les annonces ne peuvent être chargées
+        }
+
+        const allData = [];
+        const page = await browser.newPage();
+
+        for (let annonce of annonces) {
+            try {
+                const data = await scrapePage(page, annonce.link);
+                allData.push(data); 
+                console.log('Annonce traitée :', annonce.link);
+            } catch (error) {
+                console.error(`Failed to scrape the page at ${annonce.link} due to: ${error}`);
+            }
+        }
+
+        await page.close();
 
     let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
     if (previousData.length === 0) {
@@ -93,14 +105,17 @@ async function scrapePage(page, url) {
         upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
     }
 
-    const fileName = path.join(__dirname, `../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${currentDate}.json`);
-    const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/ParuVendu_Annonce_Up_To_Date/Updated_Data_ParuVendu_Annonces_${currentDate}.json`);
+    const fileName = path.join(__dirname, `../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${city.name}_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/ParuVendu_Annonce_Up_To_Date/Updated_Data_ParuVendu_Annonces_${city.name}_${currentDate}.json`);
 
     fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
     fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
 
-    console.log(`All data saved to ${fileName}!`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur ParuVendu.`);
-    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    console.log(`All data saved for ${city.name} to ${fileName}!`);
+    console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur ParuVendu pour ${city.name}.`);
+    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s) pour ${city.name}.`);
+    console.log(`${upToDateAnnouncements.length} annonce(s) à jour pour ${city.name}.`);
+}
+
+await browser.close();
 })();
