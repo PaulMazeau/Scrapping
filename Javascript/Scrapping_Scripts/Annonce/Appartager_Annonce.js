@@ -13,6 +13,14 @@ function getPreviousDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
+function getOldData(filename) {
+    try {
+        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
+    } catch (e) {
+        return [];
+    }
+}
+
 async function scrapePage(browser, url) {
     const page = await browser.newPage();
     await page.goto(url);
@@ -50,56 +58,68 @@ async function scrapePage(browser, url) {
     return {...data, link: url};}
 
     (async () => {
-        const currentDate = getCurrentDateString();
-        const previousDate = getPreviousDateString();
-    
-        const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${previousDate}.json`);
-        let previousData;
+    const currentDate = getCurrentDateString();
+    const previousDateString = getPreviousDateString();
+    const cities = [
+        { name: "Paris",},
+        { name: "Montreuil",},
+        { name: "Cergy",},
+        { name: "Lyon",},
+        { name: "Villeurbanne",},
+        { name: "Saint-Priest",},
+        { name: "Bron",},
+        { name: "Vénissieux",},
+        { name: "Saint-Etienne",},
+        { name: "Marseille",},
+        { name: "Toulouse",},
+        { name: "Bordeaux",},
+        { name: "Nantes",},
+        { name: "Rennes",},
+        { name: "Lille",},
+        { name: "Angers",},
+        { name: "Grenoble",},
+    ];
+
+    const browser = await puppeteer.launch();
+
+    for (const city of cities) {
+        const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Appartager_Recherche_Up_To_Date/Updated_Data_Appartager_Recherche_${city.name}_${currentDate}.json`);
+        let annonces;
         try {
-            previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+            annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
         } catch (error) {
-            previousData = []; // Si le fichier du jour précédent n'existe pas
+            console.error(`Échec de la lecture du fichier pour la ville ${city.name}: ${error}`);
+            continue;
         }
-    
-        const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Appartager_Recherche_Up_To_Date/Updated_Data_Appartager_Recherche_${currentDate}.json`);
-        const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
+
+        const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${city.name}_${previousDateString}.json`);
+        let previousData = getOldData(previousDataPath);
+
         const allData = [];
-    
-        const browser = await puppeteer.launch();
-    
+
         for (let annonce of annonces) {
             try {
                 const data = await scrapePage(browser, annonce.link);
                 allData.push(data);
-                console.log('Annonce traitée');
-                console.log(`Nombre total d'annonces traitées: ${allData.length}`);
+                console.log(`Annonce traitée pour ${city.name}`);
             } catch (error) {
                 console.error(`Échec du scraping de la page à l'URL ${annonce.link} : ${error}`);
             }
         }
-    
-        await browser.close();
-    
-        let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
-        if (previousData.length === 0) {
-            newAnnouncements = [];
-            removedAnnouncements = [];
-            upToDateAnnouncements = allData;
-        } else {
-            newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-            removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
-            upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
-        }
-    
-        const fileName = path.join(__dirname, `../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${currentDate}.json`);
-        const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Appartager_Annonce_Up_To_Date/Updated_Data_Appartager_Annonces_${currentDate}.json`);
-    
+
+        const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+        const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
+        const upToDateAnnouncements = allData.filter(item => previousData.some(oldItem => oldItem.link === item.link));
+
+        const fileName = path.join(__dirname, `../../Resultat_Annonce/Appartager_Annonce/Data_Appartager_Annonces_${city.name}_${currentDate}.json`);
+        const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Appartager_Annonce_Up_To_Date/Updated_Data_Appartager_Annonces_${city.name}_${currentDate}.json`);
+
         fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
         fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
-    
-        console.log(`Toutes les données ont été sauvegardées dans ${fileName} !`);
-        console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
-        console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-        console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
-    })();
+
+        console.log(`Traitement terminé pour la ville ${city.name}. Nouvelles annonces: ${newAnnouncements.length}. Annonces supprimées: ${removedAnnouncements.length}. Annonces mises à jour: ${upToDateAnnouncements.length}`);
+    }
+
+    await browser.close();
+})();
     
