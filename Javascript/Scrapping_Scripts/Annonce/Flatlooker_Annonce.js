@@ -12,9 +12,11 @@ function getPreviousDateString() {
     date.setDate(date.getDate() - 1);
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
+
 async function scrapePage(browser, url) {
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle0' });
+
 
     const data = await page.evaluate(() => {
 
@@ -117,8 +119,6 @@ async function scrapePage(browser, url) {
         }
     });
 
-        
-
         return {
             title,
             address,
@@ -135,59 +135,82 @@ async function scrapePage(browser, url) {
     });
 
     await page.close(); 
-    return { ...data, link: url };}
+    return { ...data, link: url };
+}
+
+async function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+}
 
 (async () => {
     const currentDate = getCurrentDateString();
     const previousDate = getPreviousDateString();
-
-    const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${previousDate}.json`);
-    let previousData;
-    try {
-        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-    } catch (error) {
-        previousData = []; // Si le fichier du jour précédent n'existe pas
-    }
-
-    const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Flatlooker_Recherche_Up_To_Date/Updated_Data_Flatlooker_Recherche_${currentDate}.json`);
-    const annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
-    const allData = [];
+    const cities = [
+        { name: "Paris" },
+        { name: "Montreuil" },
+        { name: "Cergy" },
+        { name: "Lyon" },
+        { name: "Villeurbanne" },
+        { name: "SaintPriest" },
+        { name: "Bron" },
+        { name: "Vénissieux" },
+        { name: "Saint-Etienne" },
+        { name: "Marseille " },
+        { name: "Toulouse" },
+        { name: "Bordeaux" },
+        { name: "Nantes" },
+        { name: "Rennes" },
+        { name: "Lille" },
+        { name: "Angers" },
+        { name: "Grenoble" },
+    ];
 
     const browser = await puppeteer.launch();
 
-    for (let annonce of annonces) {
+    for (const city of cities) {
+        const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Flatlooker_Recherche_Up_To_Date/Updated_Data_Flatlooker_${city.name}_${currentDate}.json`);
+        let annonces;
         try {
-            const data = await scrapePage(browser, annonce.url);
-            allData.push(data); 
-            console.log('Annonce traitée');
-            console.log(`Nombre total d'annonces traitées: ${allData.length}`);
+            annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
         } catch (error) {
-            console.error(`Échec du scraping de la page à l'URL ${annonce.url} : ${error}`);
+            console.error(`Échec de la lecture du fichier pour la ville ${city.name}: ${error}`);
+            continue; // Passer à la ville suivante si le fichier n'existe pas
         }
+
+        const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${city.name}_${previousDate}.json`);
+        let previousData;
+        try {
+            previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+        } catch (error) {
+            previousData = []; // Si le fichier du jour précédent n'existe pas
+        }
+
+        const allData = [];
+
+        for (let annonce of annonces) {
+            try {
+                const data = await scrapePage(browser, annonce.url);
+                allData.push(data); 
+                console.log(`Annonce traitée pour ${city.name}`);
+                await delay(10000); // Délai de 5 secondes
+            } catch (error) {
+                console.error(`Échec du scraping de la page à l'URL ${annonce.url} : ${error}`);
+            }
+        }
+
+        const newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+        const removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
+        const upToDateAnnouncements = allData.filter(item => previousData.some(oldItem => oldItem.link === item.link));
+
+        const newFileName = path.join(__dirname, `../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${city.name}_${currentDate}.json`);
+        const upToDateFileName = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Flatlooker_Annonce_Up_To_Date/Updated_Data_Flatlooker_Annonces_${city.name}_${currentDate}.json`);
+
+        fs.writeFileSync(newFileName, JSON.stringify(allData, null, 2), 'utf-8');
+        fs.writeFileSync(upToDateFileName, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
+
+        console.log(`Traitement terminé pour la ville ${city.name}. Nouvelles annonces: ${newAnnouncements.length}. Annonces supprimées: ${removedAnnouncements.length}. Annonces mises à jour: ${upToDateAnnouncements.length}`);
     }
 
     await browser.close();
-
-    let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
-    if (previousData.length === 0) {
-        console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
-        upToDateAnnouncements = allData;
-        newAnnouncements = [];
-        removedAnnouncements = [];
-    } else {
-        newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-        removedAnnouncements = previousData.filter(item => !allData.some(newItem => newItem.link === item.link));
-        upToDateAnnouncements = allData.filter(item => !newAnnouncements.includes(item));
-    }
-
-    const fileName = path.join(__dirname, `../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${currentDate}.json`);
-    const upToDateDataPath = path.join(__dirname, `../../Resultat_Annonce/Up_To_Date_Annonce/Flatlooker_Annonce_Up_To_Date/Updated_Data_Flatlooker_Annonces_${currentDate}.json`);
-
-    fs.writeFileSync(fileName, JSON.stringify(allData, null, 2), 'utf-8');
-    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf-8');
-
-    console.log(`Toutes les données ont été sauvegardées dans ${fileName} !`);
-    console.log(`TOTAL_NOUVELLES_ANNONCES : ${newAnnouncements.length} nouvelles annonces sur Flatlooker.`);
-    console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-    console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    console.log('Toutes les villes ont été traitées.');
 })();

@@ -12,20 +12,6 @@ function getPreviousDateString() {
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
-const currentDate = getCurrentDateString();
-const previousDate = getPreviousDateString();
-
-const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${currentDate}.json`);
-let rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
-
-const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${previousDate}.json`);
-let previousData;
-try {
-    previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-} catch (error) {
-    previousData = []; // Si le fichier du jour précédent n'existe pas
-}
-
 function normalizeData(data) {
     // Extraction de la ville et du code postal depuis l'adresse
     const addressParts = data.address.split(',');
@@ -55,27 +41,42 @@ function normalizeData(data) {
     };
 }
 
-let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
+const currentDate = getCurrentDateString();
+const previousDate = getPreviousDateString();
 
-let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
-if (previousData.length === 0) {
-    console.log('Aucune donnée précédente disponible. Traitement des annonces actuelles comme à jour.');
-    upToDateAnnouncements = normalizedDataArray;
-    newAnnouncements = [];
-    removedAnnouncements = [];
-} else {
-    newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
-    removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
-    upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
-}
+const cities = [
+    "Paris", "Montreuil", "Cergy",
+];
 
-const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Flatlooker/Normalized_Data_Flatlooker_Annonces_${currentDate}.json`);
-const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Flatlooker_Normalisation_Up_To_Date/Updated_Data_Flatlooker_Annonces_${currentDate}.json`);
+cities.forEach(city => {
+    const rawDataPath = path.join(__dirname, `../../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${city}_${currentDate}.json`);
+    let rawData;
+    try {
+        rawData = JSON.parse(fs.readFileSync(rawDataPath, 'utf8'));
+    } catch (error) {
+        console.error(`Erreur lors de la lecture des données pour ${city}: ${error}`);
+        return; // Passer à la ville suivante si le fichier n'existe pas
+    }
 
-fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
-fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+    const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${city}_${previousDate}.json`);
+    let previousData;
+    try {
+        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
+    } catch (error) {
+        previousData = []; // Si le fichier du jour précédent n'existe pas
+    }
 
-console.log(`Il y a ${normalizedDataArray.length} annonces sur Flatlooker.`);
-console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Flatlooker.`);
-console.log(`${removedAnnouncements.length} annonce(s) supprimée(s).`);
-console.log(`${upToDateAnnouncements.length} annonce(s) à jour.`);
+    let normalizedDataArray = rawData.map(annonce => normalizeData(annonce));
+
+    let newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+    let removedAnnouncements = previousData.filter(item => !normalizedDataArray.some(newItem => newItem.link === item.link));
+    let upToDateAnnouncements = normalizedDataArray.filter(item => previousData.some(oldItem => oldItem.link === item.link));
+
+    const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_Flatlooker/Normalized_Data_Flatlooker_Annonces_${city}_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Flatlooker_Normalisation_Up_To_Date/Updated_Data_Flatlooker_Annonces_${city}_${currentDate}.json`);
+
+    fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
+    fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
+
+    console.log(`Traitement terminé pour la ville ${city}. Nouvelles annonces: ${newAnnouncements.length}, Annonces supprimées: ${removedAnnouncements.length}, Annonces à jour: ${upToDateAnnouncements.length}.`);
+});
