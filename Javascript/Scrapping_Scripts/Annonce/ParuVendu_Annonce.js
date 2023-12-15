@@ -50,9 +50,23 @@ async function scrapePage(page, url) {
 }
 
 const cities = [
-    { name: "Paris", code: "75000" },
-    { name: "Montreuil", code: "93048" },
-    { name: "Cergy", code: "95XX0" },
+    { name: "Paris", },
+    { name: "Montreuil", },
+    { name: "Cergy", },
+    { name: "Lyon", },
+    { name: "Villeurbanne", },
+    { name: "Saint-Priest", },
+    { name: "Bron", },
+    { name: "Vénissieux", },
+    { name: "Saint-Etienne", },
+    { name: "Marseille", },
+    { name: "Toulouse", },
+    { name: "Bordeaux", },
+    { name: "Nantes", },
+    { name: "Rennes", },
+    { name: "Lille", },
+    { name: "Angers", },
+    { name: "Grenoble", },
 ];
 
 (async () => {
