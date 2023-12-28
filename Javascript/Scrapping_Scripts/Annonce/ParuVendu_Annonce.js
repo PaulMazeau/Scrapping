@@ -1,17 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getPreviousDateString() {
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 async function scrapePage(page, url) {
     await page.goto(url, { waitUntil: 'networkidle0' });
@@ -77,12 +68,7 @@ const cities = [
     for (let city of cities) {
         const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/ParuVendu_Recherche_Up_To_Date/Updated_Data_ParuVendu_Recherche_${city.name}_${currentDate}.json`);
         const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${city.name}_${previousDate}.json`);
-        let previousData;
-        try {
-            previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-        } catch (error) {
-            previousData = []; // Si le fichier du jour précédent n'existe pas
-        }
+        const previousData = getOldData(previousDataPath);
 
         let annonces;
         try {
