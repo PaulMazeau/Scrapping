@@ -1,7 +1,8 @@
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
-const moment = require('moment');
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 const BASE_URL = 'https://www.bienici.com/realEstateAds.json';
 
@@ -22,14 +23,6 @@ const cities = [
     { name: "Montreuil", ids: ["-129423"] },
     { name: "Cergy", ids: ["-120955"] },
 ];
-
-const getOldData = filename => {
-    try {
-        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
-    } catch (e) {
-        return [];
-    }
-};
 
 const delay = duration => new Promise(resolve => setTimeout(resolve, duration));
 
@@ -81,9 +74,8 @@ const fetchDataForCity = async (city) => {
         }
     }
 
-    const currentDate = moment();
-    const currentDateString = currentDate.format('YYYY-MM-DD');
-    const previousDateString = currentDate.subtract(1, 'days').format('YYYY-MM-DD');
+    const currentDateString = getCurrentDateString();
+    const previousDateString = getPreviousDateString();
     const oldFileName = path.join(__dirname, `../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_${city.name}_${previousDateString}.json`);
     const oldData = getOldData(oldFileName);
 
