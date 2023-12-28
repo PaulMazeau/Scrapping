@@ -1,7 +1,8 @@
 const axios = require('axios');
 const fs = require('fs').promises;
-const moment = require('moment');
 const path = require('path');
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 const delay = (duration) => new Promise(resolve => setTimeout(resolve, duration));
 
@@ -17,15 +18,6 @@ const cities = [
     { name: "Angers", id: 3003 },
     { name: "Grenoble", id: 1050 }
 ];
-
-const getOldData = async (filename) => {
-    try {
-        const fileContent = await fs.readFile(filename, 'utf-8');
-        return JSON.parse(fileContent);
-    } catch (error) {
-        return [];
-    }
-};
 
 const baseURL = "https://coliving.com/locations/search-listings";
 let params = {
@@ -70,14 +62,14 @@ const scrapeData = async (city) => {
         page++;
     }
 
-    const currentDateString = moment().format('YYYY-MM-DD');
+    const currentDateString = getCurrentDateString();
     const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Coliving_Recherche/Data_Coliving_${city.name}_${currentDateString}.json`);
     const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Coliving_Recherche_Up_To_Date/Updated_Data_Coliving_${city.name}_${currentDateString}.json`);
 
-    const previousDateString = moment().subtract(1, 'days').format('YYYY-MM-DD');
+    const previousDateString = getPreviousDateString();
     const oldFileName = path.join(__dirname, `../../Resultat_Recherche/Coliving_Recherche/Data_Coliving_${city.name}_${previousDateString}.json`);
 
-    const oldData = await getOldData(oldFileName);
+    const oldData = getOldData(oldFileName);
     const newAnnouncements = allData.filter(item => !oldData.some(oldItem => oldItem.id === item.id));
     const removedAnnouncements = oldData.filter(oldItem => !allData.some(item => item.id === oldItem.id));
     const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.id === item.id));

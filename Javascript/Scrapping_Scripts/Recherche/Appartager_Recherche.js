@@ -1,25 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getPreviousDateString() {
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getOldData(filename) {
-    try {
-        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
-    } catch (e) {
-        return [];
-    }
-}
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 (async () => {
     const browser = await puppeteer.launch();
@@ -52,7 +35,7 @@ function getOldData(filename) {
         while (true) {
             const url = `https://www.appartager.com/location/?offset=${offset}&search_id=${city.search_id}&sort_by=by_day&mode=list`;
             await page.goto(url, { waitUntil: 'networkidle2' });
-
+        
             const data = await page.evaluate(() => {
                 const cards = [...document.querySelectorAll('.result-card')];
                 return cards.map(card => {
@@ -85,14 +68,20 @@ function getOldData(filename) {
                 });
             });
 
+            allData.push(...data);
             console.log(`Scrapped ${data.length} ads from ${url}`);
 
-            if (data.length === 0 || data.length < 10) {
-                break;
+            // Vérifiez si la page suivante existe après avoir récupéré les données
+            const hasNextPage = await page.evaluate(() => {
+                const nextPageLink = document.querySelector('#paginationNextPageLink');
+                return nextPageLink && nextPageLink.getAttribute('href') !== null;
+            });
+
+            if (!hasNextPage) {
+                break; // Sortez de la boucle si aucune page suivante n'existe
             }
 
-            allData.push(...data);
-            offset += 10;
+            offset += 10; // Ou l'incrément approprié pour la pagination
         }
 
         const currentDate = getCurrentDateString();
