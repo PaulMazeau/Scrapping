@@ -1,25 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getPreviousDateString() {
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getOldData(filename) {
-    try {
-        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
-    } catch (e) {
-        return [];
-    }
-}
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 async function acceptCookies(browser) {
     const page = await browser.newPage();
@@ -74,9 +57,9 @@ async function scrapePage(browser, url) {
 
 
 const cities = [
-    "Paris", "Cergy", "Lyon", "Villeurbanne", "Saint-Priest", 
+    "Paris", "Cergy", "Lyon", "Villeurbanne", 
     "Bron", "Vénissieux", "Saint-Etienne", "Marseille", "Toulouse", 
-    "Bordeaux", "Nantes", "Rennes", "Lille", "Angers"
+    "Bordeaux", "Nantes", "Rennes", "Lille", "Angers", "Grenoble"
 ];
 
 (async () => {
@@ -102,7 +85,7 @@ const cities = [
         }
 
         const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Rentola_Annonce/Data_Rentola_Annonces_${city}_${previousDate}.json`);
-        let previousData = getOldData(previousDataPath);
+        const previousData = getOldData(previousDataPath);
 
         let newAnnouncements = allData.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
         let removedAnnouncements = previousData.filter(oldItem => !allData.some(newItem => newItem.link === oldItem.link));

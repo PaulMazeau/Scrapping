@@ -1,17 +1,9 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getPreviousDateString() {
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
 
 async function scrapePage(browser, url) {
     const page = await browser.newPage();
@@ -178,12 +170,7 @@ async function delay(time) {
         }
 
         const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Flatlooker_Annonce/Data_Flatlooker_Annonces_${city.name}_${previousDate}.json`);
-        let previousData;
-        try {
-            previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-        } catch (error) {
-            previousData = []; // Si le fichier du jour précédent n'existe pas
-        }
+        const previousData = getOldData(previousDataPath)
 
         const allData = [];
 

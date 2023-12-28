@@ -1,29 +1,15 @@
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
-
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getPreviousDateString() {
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 const currentDate = getCurrentDateString();
 const previousDate = getPreviousDateString();
 
 const rawDataPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Koliving_Recherche_Up_To_Date/Updated_Data_Koliving_Recherche_${currentDate}.json`);
 const previousDataPath = path.join(__dirname, `../../Resultat_Annonce/Koliving_Annonce/Data_Koliving_Annonces_${previousDate}.json`);
-let previousData;
-try {
-    previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-} catch (error) {
-    previousData = []; // Si le fichier du jour précédent n'existe pas
-}
+const previousData = getOldData(previousDataPath)
 
 fs.readFile(rawDataPath, 'utf8', async (err, data) => {
     if (err) {

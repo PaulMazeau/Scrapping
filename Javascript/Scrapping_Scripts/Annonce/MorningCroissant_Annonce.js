@@ -1,25 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getPreviousDateString() {
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getOldData(filename) {
-    try {
-        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
-    } catch (e) {
-        return [];
-    }
-}
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 async function scrapePage(page, url) {
     await page.goto(url, { waitUntil: 'networkidle0' });
@@ -124,8 +107,9 @@ async function scrapePage(page, url) {
 }
 
 const cities = [
-    "Paris", "Montreuil", "Cergy", "Lyon", "Villeurbanne", "Saint-Priest", 
-    "Bron", "Vénissieux", "Saint-Etienne", "Marseille", "Toulouse", 
+    "Paris", "Montreuil", "Cergy",
+    "Lyon", "Villeurbanne", "Saint-Priest", "Bron", "Vénissieux",
+    "Saint-Etienne", "Marseille", "Toulouse",
     "Bordeaux", "Nantes", "Rennes", "Lille", "Angers", "Grenoble"
 ];
 
