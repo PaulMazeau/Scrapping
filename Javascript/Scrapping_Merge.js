@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 
-const directoryPath = '...';
+const directoryPath = './Resultat_Annonce/Normalisation/Up_To_Date_Normalized';
 const filePattern = /Updated_Data_Appartager_Annonces_(.+)_(.+)\.json$/;
 
 let mergedData = [];
