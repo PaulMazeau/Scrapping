@@ -2,10 +2,10 @@ const { exec } = require('child_process');
 
 const scripts = [
   './Scrapping_Recherche.js',
+  './Scrapping_Sort.js',
   './Scrapping_Annonce.js',
   './Scrapping_Normalisation.js',
   './Scrapping_Merge.js',
-  './Scrapping_Sort.js',
 ];
 
 function runScript(script) {
