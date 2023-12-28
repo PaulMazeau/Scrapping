@@ -73,11 +73,9 @@ const scrapeData = async () => {
     await fs.writeFile(updatedFileName, JSON.stringify(updatedData, null, 4), 'utf-8');
 
     console.log(`Total scraped listings: ${allData.length}`);
-    console.log(`Today's data saved to ${outputFileName}`);
     console.log(`TOTAL_NOUVELLES_ANNONCES:${newAnnouncements.length} nouvelles annonces sur Appartager.`);
     console.log(`${removedAnnouncements.length} removed listing(s).`);
     console.log(`${updatedData.length - newAnnouncements.length} retained listing(s).`);
-    console.log(`Updated data saved to ${updatedFileName}`);
 };
 
 scrapeData().catch(error => console.error(error));

@@ -1,19 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getOldData(filename) {
-    try {
-        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
-    } catch (e) {
-        return [];
-    }
-}
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 function delay(time) {
     return new Promise(function(resolve) { 
@@ -31,7 +20,7 @@ const cities = [
 (async () => {
     const browser = await puppeteer.launch();
     const currentDate = getCurrentDateString();
-    const previousDateString = getCurrentDateString(new Date(new Date().setDate(new Date().getDate() - 1)));
+    const previousDateString = getPreviousDateString();
 
     for (const city of cities) {
         const page = await browser.newPage();

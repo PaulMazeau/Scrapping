@@ -1,25 +1,8 @@
 const axios = require('axios');
 const fs = require('fs').promises;
 const path = require('path');
-const moment = require('moment');
-
-async function getOldData(filename) {
-    try {
-        const data = await fs.readFile(filename, 'utf-8');
-        return JSON.parse(data).data.res.results;
-    } catch (error) {
-        return [];
-    }
-};
-
-async function getOldData(filename) {
-    try {
-        const data = await fs.readFile(filename, 'utf-8');
-        return JSON.parse(data).data.res.results;
-    } catch (error) {
-        return [];
-    }
-}
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 const url = 'https://kg-backend-prod.herokuapp.com/graphql';
 
@@ -170,10 +153,10 @@ const data = {
 
 axios.post(url, data, { headers: headers })
     .then(async (response) => {
-        const currentDateString = moment().format('YYYY-MM-DD'); // Utilisez moment pour obtenir la date au format désiré
+        const currentDateString = getCurrentDateString;
         const resultsToday = response.data.data.res.results || [];
 
-        const previousDayString = moment().subtract(1, 'days').format('YYYY-MM-DD'); // Obtenez la date du jour précédent avec moment
+        const previousDayString = getPreviousDateString; 
 
         const oldFileName = path.join(__dirname, '../../Resultat_Recherche/Koliving_Recherche', `Data_Koliving_Recherche_${previousDayString}.json`);        
         const oldData = await getOldData(oldFileName);

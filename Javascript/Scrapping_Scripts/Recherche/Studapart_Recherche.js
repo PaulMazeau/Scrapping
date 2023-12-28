@@ -9,14 +9,14 @@ const fs = require('fs');
     await page.goto('https://www.studapart.com/fr/login');
 
     // Attendre un peu avant de commencer à taper
-    await page.waitForTimeout(2000);
+    await new Promise(resolve => setTimeout(resolve, 5000));
 
     // Remplir le formulaire avec les identifiants et attendre
     await page.type('input[id="username"]', 'pol.mzeau@gmail.com', { delay: 150 });
     await page.type('input[id="password"]', 'ScrappingBot31+', { delay: 150 });
 
     // Attendre avant d'appuyer sur le bouton "Se connecter"
-    await page.waitForTimeout(3000);
+    await new Promise(resolve => setTimeout(resolve, 5000));
 
     // Soumettre le formulaire
     await Promise.all([
@@ -49,7 +49,7 @@ const fs = require('fs');
     await page.goto('https://www.studapart.com/fr/search/');  // Assurez-vous de remplacer 'YOUR_SEARCH_PAGE_URL'
 
     // Attendez un moment pour s'assurer que la requête est effectuée et la réponse est sauvegardée
-    await page.waitForTimeout(10000); 
+    await new Promise(resolve => setTimeout(resolve, 5000));
 
     await browser.close();
 })();

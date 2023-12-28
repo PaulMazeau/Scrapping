@@ -1,73 +1,64 @@
-const puppeteer = require('puppeteer-extra');
-const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-const fs = require('fs').promises;
-const fetch = require('node-fetch'); // Assurez-vous d'avoir 'node-fetch' installé
-const zlib = require('zlib'); // Utilisé pour la décompression Brotli
+const puppeteer = require('puppeteer');
+const fs = require('fs');
 
-puppeteer.use(StealthPlugin());
+async function interceptXHRRequests(url, city) {
+    const browser = await puppeteer.launch({ headless: false });
+    const page = await browser.newPage();
 
-(async () => {
-  const browser = await puppeteer.launch({ headless: true });
-  const page = await browser.newPage();
+    console.log(`Ouverture de la page : ${url}`);
 
-  await page.setRequestInterception(true);
+    let allData = [];
 
-  page.on('request', (req) => {
-    if (req.url().includes('lacartedescolocs.fr/listing_search/map_results')) {
-      console.log('Requête interceptée:', req.url());
-      console.log('Entêtes de requête:', req.headers());
-    }
-    req.continue();
-  });
+    // Écouter les réponses XHR et enregistrer les réponses JSON
+    page.on('response', async response => {
+        const contentType = response.headers()['content-type'] || '';
 
-  
-  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0');
-
-  // Définissez les cookies ici si nécessaire ...
-
-  await page.goto('https://www.lacartedescolocs.fr/');
-  await page.waitForSelector('#home_search_form');
-  await page.waitForTimeout(2000);
-
-  await page.type('#home_search_input', 'Paris');
-  await page.waitForTimeout(4000);
-
-  await page.click('#home_search_submit');
-  
-  page.waitForResponse('response', async (response) => {
-    if (response.url().includes('lacartedescolocs.fr/listing_search/map_results')) {
-      try {
-        console.log('prout')
-        const contentType = response.headers()['content-type'];
-        if (contentType.includes('application/json')) {
-          let text = await response.text();
-          // Décompression Brotli si nécessaire
-          if (response.headers()['content-encoding'] === 'br') {
-            const buffer = Buffer.from(text, 'binary');
-            zlib.brotliDecompress(buffer, async (err, result) => {
-              if (err) {
-                console.error('Erreur lors de la décompression Brotli:', err);
-              } else {
-                text = result.toString('utf-8');
-                const data = JSON.parse(text);
-                console.log('Données JSON:', data);
-                // Sauvegarder dans un fichier
-                await fs.writeFile('data.json', JSON.stringify(data, null, 2));
-              }
-            });
-          } else {
-            const data = JSON.parse(text);
-            console.log('Données JSON:', data);
-            // Sauvegarder dans un fichier
-            await fs.writeFile('data.json', JSON.stringify(data, null, 2));
-          }
-        } else {
-          throw new Error('Réponse non-JSON reçue');
+        if (contentType.includes('application/json') && response.url().includes('listing_search/list_results')) {
+            try {
+                const json = await response.json();
+                if (json && typeof json.results === 'string') {
+                    json.results = JSON.parse(json.results);
+                }
+                allData.push(...json.results);
+            } catch (error) {
+                console.error('Erreur lors du traitement de la réponse JSON:', error);
+            }
         }
-      } catch (error) {
-        console.error('Erreur lors du parsing JSON:', error);
-      }
-    }
-  });
+    });
 
-})();
+    await page.goto(url);
+
+    // Scroller jusqu'à ce qu'il n'y ait plus de nouvelles annonces à charger
+    let lastHeight = await page.evaluate('document.body.scrollHeight');
+    while (true) {
+      await page.evaluate('window.scrollBy(0, 1000)'); // Défilement progressif
+      await page.waitForTimeout(4000); // Augmentation du délai d'attente
+
+      let newHeight = await page.evaluate('document.body.scrollHeight');
+      if (newHeight === lastHeight) {
+          break; // Arrêter le défilement si on atteint le bas de la page
+      }
+      lastHeight = newHeight;
+  }
+
+    // Sauvegarde des données collectées
+    const filename = `data_${city}.json`;
+    fs.writeFileSync(filename, JSON.stringify(allData, null, 4));
+    console.log(`Le JSON pour ${city} a été sauvegardé dans ${filename}`);
+
+    console.log(`Fermeture du navigateur pour ${city}`);
+    await browser.close();
+}
+
+function getJson(url, city) {
+    console.log(`Début du scrap de ${city}...`);
+    const startTime = new Date().getTime();
+
+    interceptXHRRequests(url, city).then(() => {
+        const endTime = new Date().getTime();
+        console.log(`${city} bien scrappé en ${(endTime - startTime) / 1000} secondes`);
+    });
+}
+
+// Exemple d'utilisation
+getJson('https://www.lacartedescolocs.fr/logements/fr/ile-de-france', 'Paris');

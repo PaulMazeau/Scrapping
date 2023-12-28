@@ -1,19 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getOldData(filename) {
-    try {
-        return JSON.parse(fs.readFileSync(filename, 'utf-8'));
-    } catch (e) {
-        return [];
-    }
-}
+const { getCurrentDateString, getPreviousDateString } = require('../dateUtils');
+const { getOldData } = require('../dataUtils');
 
 const cities = [
     "Paris", "Cergy", "Lyon", "Villeurbanne", 
@@ -24,7 +13,7 @@ const cities = [
 (async () => {
     const browser = await puppeteer.launch();
     const currentDate = getCurrentDateString();
-    const previousDateString = getCurrentDateString(new Date(new Date().setDate(new Date().getDate() - 1)));
+    const previousDateString = getPreviousDateString();
 
     for (const city of cities) {
         const page = await browser.newPage();
@@ -86,7 +75,7 @@ const cities = [
                 if (btn) btn.click();
             });
 
-            await page.waitForTimeout(5000);
+            await new Promise(resolve => setTimeout(resolve, 5000));
         }
 
         const oldFileName = path.join(__dirname, `../../Resultat_Recherche/Rentola_Recherche/Data_Rentola_${citySlug}_${previousDateString}.json`);
