@@ -67,7 +67,7 @@ async function scrapePage(browser, url) {
     const browser = await puppeteer.launch();
 
     for (const city of cities) {
-        const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Appartager_Recherche_Up_To_Date/Updated_Data_Appartager_Recherche_${city.name}_${previousDateString}.json`);
+        const annoncesPath = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/Appartager_Recherche_Up_To_Date/Updated_Data_Appartager_Recherche_${city.name}_${currentDate}.json`);
         let annonces;
         try {
             annonces = JSON.parse(fs.readFileSync(annoncesPath, 'utf-8'));
