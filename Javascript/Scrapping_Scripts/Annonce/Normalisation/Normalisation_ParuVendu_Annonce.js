@@ -1,16 +1,8 @@
 const fs = require('fs');
 const path = require('path');
+const { getCurrentDateString, getPreviousDateString } = require('../../dateUtils');
+const { getOldData } = require('../../dataUtils');
 
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
-
-function getPreviousDateString() {
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
 
 function normalizeData(data) {
     const locationInfo = data.city.split(" ");
@@ -61,37 +53,20 @@ cities.forEach(city => {
 
     let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
     const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/ParuVendu_Annonce/Data_ParuVendu_Annonces_${city}_${previousDate}.json`);
-    let previousData;
-    try {
-        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-    } catch (error) {
-        previousData = [];
-    }
+    const previousData = getOldData(previousDataPath);
 
     if (previousData.length === 0) {
         newAnnouncements = [];
         removedAnnouncements = [];
         upToDateAnnouncements = normalizedDataArray;
     } else {
-        newAnnouncements = normalizedDataArray.filter(item => 
-            !previousData.some(oldItem => 
-                oldItem.title === item.title && 
-                oldItem.location?.city === item.location?.city
-            )
-        );
-        removedAnnouncements = previousData.filter(item => 
-            !normalizedDataArray.some(newItem => 
-                newItem.title === item.title && 
-                newItem.location?.city === item.location?.city
-            )
-        );
-        upToDateAnnouncements = normalizedDataArray.filter(item => 
-            !newAnnouncements.includes(item)
-        );
+        newAnnouncements = normalizedDataArray.filter(item => !previousData.some(oldItem => oldItem.link === item.link));
+        removedAnnouncements = previousData.filter(oldItem => !normalizedDataArray.some(newItem => newItem.link === oldItem.link));
+        upToDateAnnouncements = normalizedDataArray.filter(item => !newAnnouncements.includes(item));
     }
 
     const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_ParuVendu/Normalized_Data_ParuVendu_Annonces_${city}_${currentDate}.json`);
-    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/ParuVendu_Normalisation_Up_To_Date/Updated_Data_ParuVendu_Annonces_${city}_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Normalized_Data_${city}/Updated_Data_ParuVendu_${city}.json`);
 
     fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
     fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
