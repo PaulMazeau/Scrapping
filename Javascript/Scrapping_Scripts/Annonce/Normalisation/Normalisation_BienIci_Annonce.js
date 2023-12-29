@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const moment = require('moment');
+const { getCurrentDateString, getPreviousDateString } = require('../../dateUtils');
+const { getOldData } = require('../../dataUtils');
 
 const cities = [
     { name: "Paris", ids: ["-7444"]},
@@ -19,16 +20,7 @@ const cities = [
     { name: "Montreuil", ids: ["-129423"] },
     { name: "Cergy", ids: ["-120955"] },
 ];
-function getCurrentDateString() {
-    const date = new Date();
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
 
-function getPreviousDateString() {
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-}
 
 function normalizeData(data) {
     const images = data.photos ? data.photos.map(photo => photo.url) : [];
@@ -88,12 +80,7 @@ cities.forEach(city => {
     let newAnnouncements, removedAnnouncements, upToDateAnnouncements;
 
     const previousDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${previousDate}.json`);
-    let previousData;
-    try {
-        previousData = JSON.parse(fs.readFileSync(previousDataPath, 'utf8'));
-    } catch (error) {
-        previousData = []; // Si le fichier du jour précédent n'existe pas
-    }
+    const previousData = getOldData(previousDataPath)
 
     if (previousData.length === 0) {
         newAnnouncements = [];
@@ -106,7 +93,7 @@ cities.forEach(city => {
     }
 
     const normalizedDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Normalized_Data_BienIci/Normalized_Data_BienIci_Annonces_${city.name}_${currentDate}.json`);
-    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/BienIci_Normalisation_Up_To_Date/Updated_Data_BienIci_Annonces_${city.name}_${currentDate}.json`);
+    const upToDateDataPath = path.join(__dirname, `../../../Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Normalized_Data_${city.name}/Updated_Data_BienIci_${city.name}.json`);
 
     fs.writeFileSync(normalizedDataPath, JSON.stringify(normalizedDataArray, null, 2), 'utf8');
     fs.writeFileSync(upToDateDataPath, JSON.stringify(upToDateAnnouncements, null, 2), 'utf8');
