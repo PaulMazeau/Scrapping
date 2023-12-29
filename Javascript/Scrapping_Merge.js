@@ -2,31 +2,47 @@ const fs = require('fs');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 
-const directoryPath = './Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Appartager_Normalisation_Up_To_Date';
-const filePattern = /Updated_Data_Appartager_Annonces_(.+)\.json$/;
+const cities = [
+    "Paris", "Montreuil", "Cergy", "Lyon", "Villeurbanne", "Saint-Priest",
+    "Bron", "Vénissieux", "Saint-Etienne", "Marseille", "Toulouse",
+    "Bordeaux", "Nantes", "Rennes", "Lille", "Angers", "Grenoble"
+];
 
-let mergedData = [];
-let annonceId = 0;
+cities.forEach(city => {
+    // Construisez le chemin du dossier pour la ville courante
+    const directoryPath = path.join(__dirname, `./Resultat_Annonce/Normalisation/Up_To_Date_Normalized/Normalized_Data_${city}`);
+    let mergedData = [];
 
-fs.readdir(directoryPath, (err, files) => {
-    if (err) {
-        console.error('Erreur lors de la lecture du dossier:', err);
-        return;
+    // Assurez-vous que le dossier existe avant de lire
+    if (fs.existsSync(directoryPath)) {
+        // Lire le dossier
+        fs.readdirSync(directoryPath).forEach(file => {
+            // Vérifier si le fichier est un JSON
+            if (path.extname(file) === '.json') {
+                // Construire le chemin complet du fichier
+                const filePath = path.join(directoryPath, file);
+                // Lire le contenu du fichier
+                const data = fs.readFileSync(filePath, 'utf8');
+                // Parser le contenu du fichier et ajouter un ID unique à chaque objet
+                const annonces = JSON.parse(data).map(annonce => ({
+                    id: uuidv4(), // Ajoutez un ID unique ici
+                    ...annonce // Étalez les propriétés de l'objet existant
+                }));
+                // Ajouter les données au tableau global
+                mergedData = mergedData.concat(annonces);
+            }
+        });
+
+        // Convertir le tableau fusionné en JSON
+        const mergedJSON = JSON.stringify(mergedData, null, 2);
+        const outputDirectory = path.join(__dirname, `./Resultat`);
+
+        // Écrire le résultat dans un nouveau fichier pour chaque ville
+        const outputFilePath = path.join(outputDirectory, `Merged_Annonce_${city}.json`);
+        fs.writeFileSync(outputFilePath, mergedJSON);
+
+        console.log(`Les fichiers JSON pour ${city} ont été fusionnés et chaque annonce a maintenant un ID unique.`);
+    } else {
+        console.log(`Le dossier pour la ville ${city} n'existe pas.`);
     }
-
-    files.forEach(file => {
-        if (filePattern.test(file)) {
-            let rawData = fs.readFileSync(path.join(directoryPath, file));
-            let jsonData = JSON.parse(rawData);
-
-            jsonData.forEach(annonce => {
-                // Générer un ID unique pour chaque annonce
-                annonce.id = uuidv4();
-                mergedData.push(annonce);
-            });
-        }
-    });
-
-    fs.writeFileSync('mergedDataWithIds.json', JSON.stringify(mergedData, null, 2));
-    console.log('Fusion terminée avec IDs.');
 });
