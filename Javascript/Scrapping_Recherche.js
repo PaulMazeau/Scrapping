@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 
 const scripts = [
   './Scrapping_Scripts/Recherche/Appartager_Recherche',
-  './Scrapping_Scripts/Recherche/Rentola_Recherche', // J'ai choisis une recherche avec peu d'annonce volontairement
+  './Scrapping_Scripts/Recherche/Rentola_Recherche',
   './Scrapping_Scripts/Recherche/Flatlooker_Recherche',
   './Scrapping_Scripts/Recherche/BienIci_Recherche',
   './Scrapping_Scripts/Recherche/Coliving_Recherche',
@@ -29,13 +29,16 @@ async function runScript(script) {
   });
 }
 
-Promise.allSettled(scripts.map(runScript))
-  .then(results => {
-    results.forEach((result, index) => {
-      if (result.status === 'fulfilled') {
-        console.log(`Le script ${scripts[index]} a réussi.`);
-      } else {
-        console.log(`Le script ${scripts[index]} a échoué.`);
-      }
-    });
-  });
+async function runScriptsSequentially(scripts) {
+  for (const script of scripts) {
+    console.log(`Exécution du script ${script}...`);
+    try {
+      await runScript(script);
+      console.log(`Le script ${script} a réussi.`);
+    } catch (error) {
+      console.log(`Le script ${script} a échoué.`);
+    }
+  }
+}
+
+runScriptsSequentially(scripts);
