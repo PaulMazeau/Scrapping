@@ -76,14 +76,14 @@ const fetchDataForCity = async (city) => {
 
     const currentDateString = getCurrentDateString();
     const previousDateString = getPreviousDateString();
-    const oldFileName = path.join(__dirname, `../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_${city.name}_${previousDateString}.json`);
+    const oldFileName = path.join(__dirname, `../../Resultat_Recherche/BienIci_Recherche/Data_Bienici_Recherche_${city.name}_${previousDateString}.json`);
     const oldData = getOldData(oldFileName);
 
     const newAnnouncements = allData.filter(item => !oldData.some(oldItem => oldItem.id === item.id));
     const removedAnnouncements = oldData.filter(item => !allData.some(newItem => newItem.id === item.id));
     const updatedData = allData.filter(item => !removedAnnouncements.some(removedItem => removedItem.id === item.id));
 
-    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/Bienici_Recherche/Data_Bienici_Recherche_${city.name}_${currentDateString}.json`);
+    const outputFileName = path.join(__dirname, `../../Resultat_Recherche/BienIci_Recherche/Data_Bienici_Recherche_${city.name}_${currentDateString}.json`);
     const updatedFileName = path.join(__dirname, `../../Resultat_Recherche/Up_To_Date_Recherche/BienIci_Recherche_Up_To_Date/Updated_Data_Bienici_Recherche_${city.name}_${currentDateString}.json`);
 
     fs.writeFileSync(outputFileName, JSON.stringify(allData, null, 4), 'utf-8');
